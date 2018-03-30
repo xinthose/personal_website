@@ -1,12 +1,12 @@
+
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "personal_website"
+    "name": "MyPersonalWebsite"
   },
-  "apps": [
-    {
+  "apps": [{
       "root": "src",
-      "outDir": "dist",
+      "outDir": "dist/browser",
       "assets": [
         "assets",
         "favicon.ico"
@@ -18,12 +18,44 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
+
       "styles": [
         "../node_modules/font-awesome/scss/font-awesome.scss",
         "../node_modules/ng-mdb-pro/assets/scss/bootstrap/bootstrap.scss",
         "../node_modules/ng-mdb-pro/assets/scss/mdb.scss",
         "./styles.scss"
       ],
+
+      "scripts": [
+        "../node_modules/chart.js/dist/Chart.js",
+        "../node_modules/easy-pie-chart/dist/easypiechart.js",
+        "../node_modules/screenfull/dist/screenfull.js",
+        "../node_modules/hammerjs/hammer.min.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "platform": "server",
+      "root": "src",
+      "outDir": "dist/server",
+      "assets": [],
+      "index": "index.html",
+      "main": "main.server.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.server.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../node_modules/font-awesome/scss/font-awesome.scss",
+        "../node_modules/ng-mdb-pro/assets/scss/bootstrap/bootstrap.scss",
+        "../node_modules/ng-mdb-pro/assets/scss/mdb.scss",
+        "./styles.scss"
+      ],
+
       "scripts": [
         "../node_modules/chart.js/dist/Chart.js",
         "../node_modules/easy-pie-chart/dist/easypiechart.js",
@@ -42,8 +74,7 @@
       "config": "./protractor.conf.js"
     }
   },
-  "lint": [
-    {
+  "lint": [{
       "project": "src/tsconfig.app.json",
       "exclude": "**/node_modules/**"
     },

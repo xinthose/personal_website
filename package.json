@@ -1,11 +1,14 @@
 {
-  "name": "my-first-angular-project",
+  "name": "my-personal-website",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build": "run-s build:client build:aot build:server",
+    "build:client": "ng build -prod --build-optimizer --app 0",
+    "build:aot": "ng build --aot --app 1",
+    "build:server": "webpack -p",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

@@ -1,0 +1,19 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+      "outDir": "../out-tsc/app",
+      "baseUrl": "./",
+      "module": "commonjs",
+      "types": []
+    },
+    "exclude": [
+      "test.ts",
+      "**/*.spec.ts",
+      "server.ts"
+    ],
+    "include": ["node_modules/ng-mdb-pro/**/*.ts",  "/**/*.ts"],
+    "angularCompilerOptions": {
+      "entryModule": "app/app.server.module#AppServerModule"
+    }
+  }
+  
