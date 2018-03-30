@@ -30,7 +30,7 @@ export interface UploadFile {
   name: string;
   size: number;
   type: string;
-  progress: UploadProgress;
+  progress: UploadProgress | any;
   response?: any;
 }
 
@@ -64,9 +64,12 @@ export function humanizeBytes(bytes: number): string {
 }
 
 export class MDBUploaderService {
+  public setToNullValue: any = null;
   fileList: FileList;
-  files: UploadFile[];
-  uploads: { file?: UploadFile, files?: UploadFile[], sub: Subscription }[];
+  // files: UploadFile[];
+  files: UploadFile[] | any;
+  // uploads: { file?: UploadFile, files?: UploadFile[], sub: Subscription }[];
+  uploads: { file?: UploadFile, files?: UploadFile[], sub: Subscription }[] | any;
   serviceEvents: EventEmitter<UploadOutput>;
 
   constructor() {
@@ -79,7 +82,8 @@ export class MDBUploaderService {
     this.fileList = files;
 
     this.files = [].map.call(files, (file: File, i: number) => {
-      const uploadFile: UploadFile = {
+      // const uploadFile: UploadFile = {
+        const uploadFile: UploadFile | any = {
         fileIndex: i,
         id: this.generateId(),
         name: file.name,
@@ -104,11 +108,13 @@ export class MDBUploaderService {
   }
 
   initInputEvents(input: EventEmitter<UploadInput>): void {
-    input.subscribe((event: UploadInput) => {
+    // input.subscribe((event: UploadInput) => {
+      // input.subscribe((event: UploadInput) => {
+        input.subscribe((event: UploadInput | any) => {
       switch (event.type) {
         case 'uploadFile':
           this.serviceEvents.emit({ type: 'start', file: event.file });
-          const sub = this.uploadFile(event.file, event).subscribe(data => {
+          const sub = this.uploadFile(event.file, event).subscribe((data: any) => {
             this.serviceEvents.emit(data);
           });
 
@@ -122,8 +128,8 @@ export class MDBUploaderService {
           //   this.serviceEvents.emit(data);
           // });
 
-          this.uploads = this.uploads.concat(this.files.map(file => {
-            return { file: file, sub: null };
+          this.uploads = this.uploads.concat(this.files.map((file: any) => {
+            return { file: file, sub: this.setToNullValue };
           }));
 
           // const subscription = Observable.from(this.files.map(file => this.uploadFile(file, event)))
@@ -137,7 +143,8 @@ export class MDBUploaderService {
             return;
           }
 
-          const index = this.uploads.findIndex(upload => upload.file.id === id);
+          // const index = this.uploads.findIndex(upload => upload.file.id === id);
+          const index: any = this.uploads.findIndex((upload: any) => upload.file.id === id);
           if (index !== -1) {
             if (this.uploads[index].sub) {
               this.uploads[index].sub.unsubscribe();
@@ -148,7 +155,8 @@ export class MDBUploaderService {
           }
         break;
         case 'cancelAll':
-          this.uploads.forEach(upload => {
+          // this.uploads.forEach(upload => {
+            this.uploads.forEach((upload: any) => {
             upload.file.progress.status = UploadStatus.Canceled;
             this.serviceEvents.emit({ type: 'cancelled', file: upload.file });
           });
@@ -157,9 +165,10 @@ export class MDBUploaderService {
     });
   }
 
-  uploadFile(file: UploadFile, event: UploadInput): Observable<UploadOutput> {
+  // uploadFile(file: UploadFile, event: UploadInput): Observable<UploadOutput> {
+    uploadFile(file: UploadFile, event: UploadInput): Observable<UploadOutput> | any {
     return new Observable(observer => {
-      const url = event.url;
+      const url: any = event.url;
       const method = event.method || 'POST';
       const data = event.data || {};
       const headers = event.headers || {};
@@ -222,7 +231,7 @@ export class MDBUploaderService {
       const form = new FormData();
       try {
         const uploadFile = this.fileList.item(file.fileIndex);
-        const uploadIndex = this.uploads.findIndex(upload => upload.file.size === uploadFile.size);
+        const uploadIndex = this.uploads.findIndex((upload: any) => upload.file.size === uploadFile.size);
         if (this.uploads[uploadIndex].file.progress.status === UploadStatus.Canceled) {
           observer.complete();
         }

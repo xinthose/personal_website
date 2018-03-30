@@ -18,6 +18,7 @@ import { MDBSpinningPreloader } from 'ng-mdb-pro';
 import { AppRoutingModule }     from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { BibleComponent } from './bible/bible.component';
+import { ServerModule } from './/server.module';
 
 @NgModule({
     declarations: [
@@ -34,7 +35,8 @@ import { BibleComponent } from './bible/bible.component';
         BrowserAnimationsModule,
         ButtonsModule,
         MDBBootstrapModules.forRoot(),
-        AppRoutingModule
+        AppRoutingModule,
+        ServerModule
     ],
     schemas: [ NO_ERRORS_SCHEMA ],
     providers: [

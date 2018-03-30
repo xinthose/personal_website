@@ -7,10 +7,13 @@ import { CompleterBaseData } from './base-data.service';
 import { CompleterItem } from '../components/completer-item.component';
 
 export class RemoteData extends CompleterBaseData {
+  public setToNullValue: any = null;
   private _remoteUrl: string;
   private remoteSearch: Subscription;
-  private _urlFormater: (term: string) => string = null;
-  private _dataField: string = null;
+  // private _urlFormater: (term: string) => string | any = null;
+  private _urlFormater: (term: string) => string | any = this.setToNullValue;
+  // private _dataField: string = null;
+  private _dataField: string | any = null;
   private _headers: Headers;
   private _requestOptions: RequestOptions;
 
@@ -78,7 +81,8 @@ export class RemoteData extends CompleterBaseData {
       })
       .catch((err) => {
         this.error(err);
-        return null;
+        // return null;
+        return this.setToNullValue;
       })
       .subscribe();
   }
@@ -89,7 +93,8 @@ export class RemoteData extends CompleterBaseData {
     }
   }
 
-  public convertToItem(data: any): CompleterItem {
+  // public convertToItem(data: any): CompleterItem {
+    public convertToItem(data: any): CompleterItem | any {
     return super.convertToItem(data);
   }
 }

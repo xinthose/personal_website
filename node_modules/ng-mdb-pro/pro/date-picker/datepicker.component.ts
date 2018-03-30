@@ -1,52 +1,56 @@
-import {Component,
-    Input,
-    Output,
-    EventEmitter,
-    OnChanges,
-    SimpleChanges,
-    ElementRef,
-    ViewEncapsulation,
-    // ChangeDetectorRef,
-    Renderer,
-    forwardRef,
-    ViewChild} from '@angular/core';
+import {
+  Component,
+  Input,
+  Output,
+  EventEmitter,
+  OnChanges,
+  SimpleChanges,
+  ElementRef,
+  ViewEncapsulation,
+  // ChangeDetectorRef,
+  Renderer,
+  forwardRef,
+  ViewChild,
+  AfterViewInit
+} from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import {IMyDate,
-    IMyDateRange,
-    IMyMonth,
-    IMyCalendarDay,
-    IMyWeek,
-    IMyDayLabels,
-    IMyMonthLabels,
-    IMyInputFieldChanged,
-    IMyCalendarViewChanged,
-    IMyInputFocusBlur,
-    IMyMarkedDates,
-    IMyMarkedDate} from './interfaces/index';
+import {
+  IMyDate,
+  IMyDateRange,
+  IMyMonth,
+  IMyCalendarDay,
+  IMyWeek,
+  IMyDayLabels,
+  IMyMonthLabels,
+  IMyInputFieldChanged,
+  IMyCalendarViewChanged,
+  IMyInputFocusBlur,
+  IMyMarkedDates,
+  IMyMarkedDate,
+} from './interfaces/index';
 import { LocaleService } from './services/datepickerLocale.service';
 import { UtilService } from './services/datepickerUtil.service';
-
 export const MYDP_VALUE_ACCESSOR: any = {
   provide: NG_VALUE_ACCESSOR,
   useExisting: forwardRef(() => MDBDatePickerComponent),
   multi: true
 };
 
-enum CalToggle {Open = 1, CloseByDateSel = 2, CloseByCalBtn = 3, CloseByOutClick = 4}
-enum Year {min = 1000, max = 9999}
-enum InputFocusBlur {focus = 1, blur = 2}
-enum KeyCode {enter = 13, space = 32}
-enum MonthId {prev = 1, curr = 2, next = 3}
+enum CalToggle { Open = 1, CloseByDateSel = 2, CloseByCalBtn = 3, CloseByOutClick = 4 }
+enum Year { min = 1000, max = 9999 }
+enum InputFocusBlur { focus = 1, blur = 2 }
+enum KeyCode { enter = 13, space = 32 }
+enum MonthId { prev = 1, curr = 2, next = 3 }
 
 @Component({
   selector: 'mdb-date-picker',
   exportAs: 'mdbdatepicker',
-  templateUrl: './datapicker.component.html' ,
+  templateUrl: './datapicker.component.html',
   providers: [LocaleService, UtilService, MYDP_VALUE_ACCESSOR],
   encapsulation: ViewEncapsulation.None
 })
 
-export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
+export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor, AfterViewInit {
   @Input() options: any;
   @Input() locale: string;
   @Input() defaultMonth: string;
@@ -62,11 +66,10 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
   @Output() inputFocusBlur: EventEmitter<IMyInputFocusBlur> = new EventEmitter<IMyInputFocusBlur>();
 
   @ViewChild('divFocus') public divFocus: any;
-
   public showSelector = false;
-  public visibleMonth: IMyMonth = {monthTxt: '', monthNbr: 0, year: 1};
-  public selectedMonth: IMyMonth = {monthTxt: '', monthNbr: 0, year: 0};
-  public selectedDate: IMyDate = {year: 0, month: 0, day: 0};
+  public visibleMonth: IMyMonth = { monthTxt: '', monthNbr: 0, year: 1 };
+  public selectedMonth: IMyMonth = { monthTxt: '', monthNbr: 0, year: 0 };
+  public selectedDate: IMyDate = { year: 0, month: 0, day: 0 };
   public weekDays: Array<string> = [];
   public dates: Array<IMyWeek> = [];
   public selectionDayTxt = '';
@@ -89,56 +92,58 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
   public currMonthId: number = MonthId.curr;
   public nextMonthId: number = MonthId.next;
 
-  public  tmp: IMyDate = {year: this.getToday().year, month: this.getToday().month, day: this.getToday().day};
+  public tmp: IMyDate = { year: this.getToday().year, month: this.getToday().month, day: this.getToday().day };
 
   // Default options
   public opts: any = {
-    dayLabelsFull: <IMyDayLabels> {},
-    dayLabels: <IMyDayLabels> {},
-    monthLabelsFull: <IMyMonthLabels> {},
-    monthLabels: <IMyMonthLabels> {},
-    dateFormat: <string> '',
-    showTodayBtn: <boolean> true,
-    todayBtnTxt: <string> '',
-    firstDayOfWeek: <string> '',
-    sunHighlight: <boolean> true,
-    markCurrentDay: <boolean> true,
-    disableUntil: <IMyDate> {year: 0, month: 0, day: 0},
-    disableSince: <IMyDate> {year: 0, month: 0, day: 0},
-    disableDays: <Array<IMyDate>> [],
-    enableDays: <Array<IMyDate>> [],
-    markDates: <Array<IMyMarkedDates>> [],
-    markWeekends: <IMyMarkedDate> {},
-    disableDateRanges: <Array<IMyDateRange>> [],
-    disableWeekends: <boolean> false,
-    showWeekNumbers: <boolean> false,
-    height: <string> '32px',
-    width: <string> '100%',
-    selectionTxtFontSize: <string> '1rem',
-    showClearDateBtn: <boolean> true,
-    alignSelectorRight: <boolean> false,
-    disableHeaderButtons: <boolean> true,
-    minYear: <number> Year.min,
-    maxYear: <number> Year.max,
-    componentDisabled: <boolean> false,
-    showSelectorArrow: <boolean> true,
-    ariaLabelInputField: <string> 'Date input field',
-    ariaLabelClearDate: <string> 'Clear Date',
-    ariaLabelOpenCalendar: <string> 'Open Calendar',
-    ariaLabelPrevMonth: <string> 'Previous Month',
-    ariaLabelNextMonth: <string> 'Next Month',
-    ariaLabelPrevYear: <string> 'Previous Year',
-    ariaLabelNextYear: <string> 'Next Year'
+    dayLabelsFull: <IMyDayLabels>{},
+    dayLabels: <IMyDayLabels>{},
+    monthLabelsFull: <IMyMonthLabels>{},
+    monthLabels: <IMyMonthLabels>{},
+    dateFormat: <string>'',
+    showTodayBtn: <boolean>true,
+    todayBtnTxt: <string>'',
+    firstDayOfWeek: <string>'',
+    sunHighlight: <boolean>true,
+    markCurrentDay: <boolean>true,
+    disableUntil: <IMyDate>{ year: 0, month: 0, day: 0 },
+    disableSince: <IMyDate>{ year: 0, month: 0, day: 0 },
+    disableDays: <Array<IMyDate>>[],
+    enableDays: <Array<IMyDate>>[],
+    markDates: <Array<IMyMarkedDates>>[],
+    markWeekends: <IMyMarkedDate>{},
+    disableDateRanges: <Array<IMyDateRange>>[],
+    disableWeekends: <boolean>false,
+    showWeekNumbers: <boolean>false,
+    height: <string>'32px',
+    width: <string>'100%',
+    selectionTxtFontSize: <string>'1rem',
+    showClearDateBtn: <boolean>true,
+    alignSelectorRight: <boolean>false,
+    disableHeaderButtons: <boolean>true,
+    minYear: <number>Year.min,
+    maxYear: <number>Year.max,
+    componentDisabled: <boolean>false,
+    showSelectorArrow: <boolean>true,
+    ariaLabelInputField: <string>'Date input field',
+    ariaLabelClearDate: <string>'Clear Date',
+    ariaLabelOpenCalendar: <string>'Open Calendar',
+    ariaLabelPrevMonth: <string>'Previous Month',
+    ariaLabelNextMonth: <string>'Next Month',
+    ariaLabelPrevYear: <string>'Previous Year',
+    ariaLabelNextYear: <string>'Next Year'
   };
 
   public months: any = [];
   public years: any = [];
+  public elements = document.getElementsByClassName('mydp picker');
+  public elementNumber: any;
 
   constructor(public elem: ElementRef,
-         renderer: Renderer,
-        //private cdr: ChangeDetectorRef,
-        private localeService: LocaleService,
-        private utilService: UtilService
+    private renderer: Renderer,
+    // private cdr: ChangeDetectorRef,
+    private localeService: LocaleService,
+    private utilService: UtilService
   ) {
     this.setLocaleOptions();
     renderer.listenGlobal(this.elem.nativeElement, 'click', (event: any) => {
@@ -149,10 +154,13 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
       ) {
         this.removeInlineStyle();
         this.showSelector = false;
+        this.removeZIndex();
         this.calendarToggle.emit(CalToggle.CloseByOutClick);
+
       }
       if (event.target.classList.contains('picker__holder')) {
         this.removeInlineStyle();
+        this.removeZIndex();
         this.showSelector = false;
       }
       if (true && event.target && this.elem.nativeElement.contains(event.target)) {
@@ -161,10 +169,19 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
     });
   }
 
+  ngAfterViewInit() {
+    if (this.opts.startDate) {
+      setTimeout(() => {
+        this.onUserDateInput(this.opts.startDate);
+      }, 0);
+    }
+  }
+
   onChangeCb: (_: any) => void = () => { };
   onTouchedCb: () => void = () => { };
 
   removeInlineStyle() {
+    this.removeZIndex();
     setTimeout(() => {
       document.documentElement.style.removeProperty('overflow');
     }, 155);
@@ -178,22 +195,24 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
   }
 
   setOptions(): void {
+    const thisYear = new Date();
+    const currentYear = thisYear.getFullYear();
     if (this.options !== undefined) {
       Object.keys(this.options).forEach((k) => {
         this.opts[k] = this.options[k];
       });
     }
-    if (this.opts.minYear < Year.min) {
-      this.opts.minYear = Year.min;
-    }
-    if (this.opts.maxYear > Year.max) {
-      this.opts.maxYear = Year.max;
-    }
     if (this.disabled !== undefined) {
       this.opts.componentDisabled = this.disabled;
     }
 
-    //const separator: string = this.utilService.getDateFormatSeparator(this.opts.dateFormat);
+    if (this.opts.minYear === 1000) {
+      this.opts.minYear = currentYear - 7;
+    }
+
+    if (this.opts.maxYear === 9999) {
+      this.opts.maxYear = currentYear + 7;
+    }
   }
 
   resetMonthYearEdit(): void {
@@ -204,21 +223,22 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
   }
 
   onUserDateInput(value: string): void {
+
     this.invalidDate = false;
     if (value.length === 0) {
       this.clearDate();
     } else {
-      const date: IMyDate = this.utilService.isDateValid( value,
-                                this.opts.dateFormat,
-                                this.opts.minYear,
-                                this.opts.maxYear,
-                                this.opts.disableUntil,
-                                this.opts.disableSince,
-                                this.opts.disableWeekends,
-                                this.opts.disableDays,
-                                this.opts.disableDateRanges,
-                                this.opts.monthLabels,
-                                this.opts.enableDays);
+      const date: IMyDate = this.utilService.isDateValid(value,
+        this.opts.dateFormat,
+        this.opts.minYear,
+        this.opts.maxYear,
+        this.opts.disableUntil,
+        this.opts.disableSince,
+        this.opts.disableWeekends,
+        this.opts.disableDays,
+        this.opts.disableDateRanges,
+        this.opts.monthLabels,
+        this.opts.enableDays);
 
       if (date.day !== 0 && date.month !== 0 && date.year !== 0) {
         this.selectDate(date);
@@ -227,7 +247,7 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
       }
     }
     if (this.invalidDate) {
-      this.inputFieldChanged.emit({value: value, dateFormat: this.opts.dateFormat, valid: !(value.length === 0 || this.invalidDate)});
+      this.inputFieldChanged.emit({ value: value, dateFormat: this.opts.dateFormat, valid: !(value.length === 0 || this.invalidDate) });
       this.onChangeCb('');
       this.onTouchedCb();
     }
@@ -236,7 +256,7 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
   onFocusInput(event: any): void {
 
     this.openBtnClicked();
-    this.inputFocusBlur.emit({reason: InputFocusBlur.focus, value: event.target.value});
+    this.inputFocusBlur.emit({ reason: InputFocusBlur.focus, value: event.target.value });
     document.documentElement.style.overflow = 'hidden';
     this.divFocus.nativeElement.focus();
   }
@@ -244,7 +264,7 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
   onBlurInput(event: any): void {
     this.selectionDayTxt = event.target.value;
     this.onTouchedCb();
-    this.inputFocusBlur.emit({reason: InputFocusBlur.blur, value: event.target.value});
+    this.inputFocusBlur.emit({ reason: InputFocusBlur.blur, value: event.target.value });
   }
 
   onUserMonthInput(value: string): void {
@@ -253,7 +273,7 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
     if (m !== -1) {
       this.editMonth = false;
       if (m !== this.visibleMonth.monthNbr) {
-        this.visibleMonth = {monthTxt: this.monthText(m), monthNbr: m, year: this.visibleMonth.year};
+        this.visibleMonth = { monthTxt: this.monthText(m), monthNbr: m, year: this.visibleMonth.year };
         this.generateCalendar(m, this.visibleMonth.year, true);
       }
     } else {
@@ -267,7 +287,7 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
     if (y !== -1) {
       this.editYear = false;
       if (y !== this.visibleMonth.year) {
-        this.visibleMonth = {monthTxt: this.visibleMonth.monthTxt, monthNbr: this.visibleMonth.monthNbr, year: y};
+        this.visibleMonth = { monthTxt: this.visibleMonth.monthTxt, monthNbr: this.visibleMonth.monthNbr, year: y };
         this.generateCalendar(this.visibleMonth.monthNbr, y, true);
       }
     } else {
@@ -276,13 +296,13 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
   }
 
   isTodayDisabled(): void {
-    this.disableTodayBtn = this.utilService.isDisabledDay(  this.getToday(),
-                                this.opts.disableUntil,
-                                this.opts.disableSince,
-                                this.opts.disableWeekends,
-                                this.opts.disableDays,
-                                this.opts.disableDateRanges,
-                                this.opts.enableDays);
+    this.disableTodayBtn = this.utilService.isDisabledDay(this.getToday(),
+      this.opts.disableUntil,
+      this.opts.disableSince,
+      this.opts.disableWeekends,
+      this.opts.disableDays,
+      this.opts.disableDateRanges,
+      this.opts.enableDays);
   }
 
   parseOptions(): void {
@@ -307,7 +327,7 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
     } else if (value && value['date']) {
       this.updateDateValue(this.parseSelectedDate(value['date']), false);
     } else if (value === '') {
-      this.updateDateValue({year: 0, month: 0, day: 0}, true);
+      this.updateDateValue({ year: 0, month: 0, day: 0 }, true);
     }
   }
 
@@ -348,7 +368,7 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
       if (dm !== null && dm !== undefined && dm !== '') {
         this.selectedMonth = this.parseSelectedMonth(dm);
       } else {
-        this.selectedMonth = {monthTxt: '', monthNbr: 0, year: 0};
+        this.selectedMonth = { monthTxt: '', monthNbr: 0, year: 0 };
       }
     }
 
@@ -376,14 +396,75 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
     }
   }
 
+  // Fix for situation, when on mobile devices keyboard was released when datepicker modal was active
+  hideKeyboard() {
+    // this set timeout needed for case when hideKeyborad
+    // is called inside of 'onfocus' event handler
+    setTimeout(function () {
+
+      // creating temp field
+      const field = document.createElement('input');
+      field.setAttribute('type', 'text');
+      // hiding temp field from peoples eyes
+      // -webkit-user-modify is nessesary for Android 4.x
+      /*tslint:disable:max-line-length*/
+      field.setAttribute('style', 'position:absolute; top: 0px; opacity: 0; -webkit-user-modify: read-write-plaintext-only; left:0px;');
+      document.body.appendChild(field);
+
+      // adding onfocus event handler for out temp field
+      field.onfocus = function () {
+        // this timeout of 200ms is nessasary for Android 2.3.x
+        setTimeout(function () {
+
+          field.setAttribute('style', 'display:none;');
+          setTimeout(function () {
+            document.body.removeChild(field);
+            document.body.focus();
+          }, 14);
+
+        }, 20);
+      };
+      // focusing it
+      field.focus();
+
+    }, 50);
+  }
+
   removeBtnClicked(): void {
     // Remove date button clicked
     this.clearDate();
     if (this.showSelector) {
       this.calendarToggle.emit(CalToggle.CloseByCalBtn);
+      this.setZIndex();
     }
     // this.showSelector = false;
   }
+
+  // Adding z-index: -2 for every div.mydp picker
+  // Fix for situation, when datepicker was behind an input or something else (Case from support forum)
+  setZIndex() {
+    for (let i = 0; i <= this.elements.length; i++) {
+      if (i === this.elements.length) {
+        break;
+      }
+      this.renderer.setElementStyle(this.elements[i], 'z-index', '1');
+      if (this.elements[i] === this.elem.nativeElement.childNodes[0] || this.elements[i] === this.elem.nativeElement.childNodes[1]) {
+        this.elementNumber = i;
+        this.renderer.setElementStyle(this.elements[i], 'z-index', '50');
+      }
+    }
+  }
+
+  // Removing z-index: -2 from div.mydp picker
+  removeZIndex() {
+    for (let i = 0; i <= this.elements.length; i++) {
+      if (i === this.elements.length) {
+        break;
+      }
+      this.renderer.setElementStyle(this.elements[i], 'z-index', '50');
+    }
+  }
+
 
   openBtnClicked(): void {
     // Open selector button clicked
@@ -391,9 +472,12 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
     if (this.showSelector) {
       this.setVisibleMonth();
       this.calendarToggle.emit(CalToggle.Open);
+      this.setZIndex();
+
     } else {
       this.calendarToggle.emit(CalToggle.CloseByCalBtn);
     }
+    this.hideKeyboard();
   }
 
   setVisibleMonth(): void {
@@ -412,7 +496,7 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
       y = this.selectedDate.year;
       m = this.selectedDate.month;
     }
-    this.visibleMonth = {monthTxt: this.opts.monthLabels[m], monthNbr: m, year: y};
+    this.visibleMonth = { monthTxt: this.opts.monthLabels[m], monthNbr: m, year: y };
 
     // Create current month
     this.generateCalendar(m, y, true);
@@ -420,24 +504,21 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
 
   monthList(): void {
     this.months = [];
-    for (let i = 1; i <= 12; i++ ) {
-      this.months.push({index: i, short: this.opts.monthLabels[i], label: this.opts.monthLabelsFull[i]});
+    for (let i = 1; i <= 12; i++) {
+      this.months.push({ index: i, short: this.opts.monthLabels[i], label: this.opts.monthLabelsFull[i] });
     }
   }
 
   yearsList(): void {
-      this.years = [];
-      const currentYear = this.visibleMonth.year;
-      let firstYear = currentYear - 7 > 0 ? currentYear - 7 : 1;
-      let lastYear = currentYear - 7 > 0 ? currentYear + 7 : currentYear + 7 + firstYear % 7;
+    this.years = [];
 
-      firstYear = firstYear < this.opts.minYear ? this.opts.minYear : firstYear;
-      lastYear = lastYear > this.opts.maxYear ? this.opts.maxYear : lastYear;
+    const firstYear = this.opts.minYear;
+    const lastYear = this.opts.maxYear;
 
-      for (let i = firstYear; i <= lastYear; i++) {
-        this.years.push(i);
-      }
+    for (let i = firstYear; i <= lastYear; i++) {
+      this.years.push(i);
     }
+  }
 
   prevMonth(): void {
     // Previous month from calendar
@@ -447,7 +528,7 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
     const y: number = d.getFullYear();
     const m: number = d.getMonth() + 1;
 
-    this.visibleMonth = {monthTxt: this.monthText(m), monthNbr: m, year: y};
+    this.visibleMonth = { monthTxt: this.monthText(m), monthNbr: m, year: y };
     this.generateCalendar(m, y, true);
   }
 
@@ -459,7 +540,7 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
     const y: number = d.getFullYear();
     const m: number = d.getMonth() + 1;
 
-    this.visibleMonth = {monthTxt: this.monthText(m), monthNbr: m, year: y};
+    this.visibleMonth = { monthTxt: this.monthText(m), monthNbr: m, year: y };
     this.generateCalendar(m, y, true);
   }
 
@@ -478,18 +559,18 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
   todayClicked(): void {
     // Today button clicked
     const today: IMyDate = this.getToday();
-    if ( !this.utilService.isDisabledDay(   today,
-                        this.opts.disableUntil,
-                        this.opts.disableSince,
-                        this.opts.disableWeekends,
-                        this.opts.disableDays,
-                        this.opts.disableDateRanges,
-                        this.opts.enableDays)
+    if (!this.utilService.isDisabledDay(today,
+      this.opts.disableUntil,
+      this.opts.disableSince,
+      this.opts.disableWeekends,
+      this.opts.disableDays,
+      this.opts.disableDateRanges,
+      this.opts.enableDays)
     ) {
       this.selectDate(today);
     }
     if (today.year !== this.visibleMonth.year || today.month !== this.visibleMonth.monthNbr) {
-      this.visibleMonth = {monthTxt: this.opts.monthLabels[today.month], monthNbr: today.month, year: today.year};
+      this.visibleMonth = { monthTxt: this.opts.monthLabels[today.month], monthNbr: today.month, year: today.year };
       this.generateCalendar(today.month, today.year, true);
     }
   }
@@ -526,11 +607,12 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
 
   clearDate(): void {
     // Clears the date and notifies parent using callbacks and value accessor
-    const date: IMyDate = {year: 0, month: 0, day: 0};
-    this.dateChanged.emit({date: date, jsdate: null, formatted: '', epoc: 0});
+    const date: IMyDate = { year: 0, month: 0, day: 0 };
+    this.dateChanged.emit({ date: date, jsdate: null, formatted: '', epoc: 0 });
     this.onChangeCb('');
     this.onTouchedCb();
     this.updateDateValue(date, true);
+    this.setZIndex();
   }
 
   selectDate(date: IMyDate): void {
@@ -543,6 +625,7 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
     this.updateDateValue(date, false);
     if (this.showSelector) {
       this.calendarToggle.emit(CalToggle.CloseByDateSel);
+
     }
 
     // hide calendar when date was clicked
@@ -553,7 +636,7 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
     // Updates date values
     this.selectedDate = date;
     this.selectionDayTxt = clear ? '' : this.formatDate(date);
-    this.inputFieldChanged.emit({value: this.selectionDayTxt, dateFormat: this.opts.dateFormat, valid: !clear});
+    this.inputFieldChanged.emit({ value: this.selectionDayTxt, dateFormat: this.opts.dateFormat, valid: !clear });
     this.invalidDate = false;
   }
 
@@ -577,7 +660,7 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
     const m = val.month; // 1 - 12
     const mm = this.preZero(val.month); // 01 - 12
     const mmm = this.getMonthShort(val.month); // Jan - Dec
-    const mmmm =  this.getMonthFull(val.month); // January – December
+    const mmmm = this.getMonthFull(val.month); // January – December
     const yy = val.year.toString().slice(2, 4); // 00 - 99
     const yyyy = val.year; // 2000 - 2999
 
@@ -669,7 +752,7 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
 
   getToday(): IMyDate {
     const date: Date = new Date();
-    return {year: date.getFullYear(), month: date.getMonth() + 1, day: date.getDate()};
+    return { year: date.getFullYear(), month: date.getMonth() + 1, day: date.getDate() };
   }
 
   getTimeInMilliseconds(date: IMyDate): number {
@@ -707,36 +790,40 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
         const pm = dInPrevM - monthStart + 1;
         // Previous month
         for (let j = pm; j <= dInPrevM; j++) {
-          const date: IMyDate = {year: y, month: m - 1, day: j};
-          week.push({dateObj: date, cmo: cmo, currDay: this.isCurrDay(j, m, y, cmo, today),
+          const date: IMyDate = { year: y, month: m - 1, day: j };
+          week.push({
+            dateObj: date, cmo: cmo, currDay: this.isCurrDay(j, m, y, cmo, today),
             dayNbr: this.utilService.getDayNumber(date),
-            disabled: this.utilService.isDisabledDay(   date,
-                                  this.opts.disableUntil,
-                                  this.opts.disableSince,
-                                  this.opts.disableWeekends,
-                                  this.opts.disableDays,
-                                  this.opts.disableDateRanges,
-                                  this.opts.enableDays
-                                ),
-            markedDate: this.utilService.isMarkedDate(date, this.opts.markDates, this.opts.markWeekends)});
+            disabled: this.utilService.isDisabledDay(date,
+              this.opts.disableUntil,
+              this.opts.disableSince,
+              this.opts.disableWeekends,
+              this.opts.disableDays,
+              this.opts.disableDateRanges,
+              this.opts.enableDays
+            ),
+            markedDate: this.utilService.isMarkedDate(date, this.opts.markDates, this.opts.markWeekends)
+          });
         }
 
         cmo = this.currMonthId;
         // Current month
         const daysLeft: number = 7 - week.length;
         for (let j = 0; j < daysLeft; j++) {
-          const date: IMyDate = {year: y, month: m, day: dayNbr};
-          week.push({dateObj: date, cmo: cmo, currDay: this.isCurrDay(dayNbr, m, y, cmo, today),
+          const date: IMyDate = { year: y, month: m, day: dayNbr };
+          week.push({
+            dateObj: date, cmo: cmo, currDay: this.isCurrDay(dayNbr, m, y, cmo, today),
             dayNbr: this.utilService.getDayNumber(date),
-            disabled: this.utilService.isDisabledDay(   date,
-                                  this.opts.disableUntil,
-                                  this.opts.disableSince,
-                                  this.opts.disableWeekends,
-                                  this.opts.disableDays,
-                                  this.opts.disableDateRanges,
-                                  this.opts.enableDays
-                                ),
-            markedDate: this.utilService.isMarkedDate(date, this.opts.markDates, this.opts.markWeekends)});
+            disabled: this.utilService.isDisabledDay(date,
+              this.opts.disableUntil,
+              this.opts.disableSince,
+              this.opts.disableWeekends,
+              this.opts.disableDays,
+              this.opts.disableDateRanges,
+              this.opts.enableDays
+            ),
+            markedDate: this.utilService.isMarkedDate(date, this.opts.markDates, this.opts.markWeekends)
+          });
           dayNbr++;
         }
       } else {
@@ -747,25 +834,27 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
             dayNbr = 1;
             cmo = this.nextMonthId;
           }
-          const date: IMyDate = {year: y, month: cmo === this.currMonthId ? m : m + 1, day: dayNbr};
-          week.push({dateObj: date, cmo: cmo, currDay: this.isCurrDay(dayNbr, m, y, cmo, today),
+          const date: IMyDate = { year: y, month: cmo === this.currMonthId ? m : m + 1, day: dayNbr };
+          week.push({
+            dateObj: date, cmo: cmo, currDay: this.isCurrDay(dayNbr, m, y, cmo, today),
             dayNbr: this.utilService.getDayNumber(date),
-            disabled: this.utilService.isDisabledDay(   date,
-                                  this.opts.disableUntil,
-                                  this.opts.disableSince,
-                                  this.opts.disableWeekends,
-                                  this.opts.disableDays,
-                                  this.opts.disableDateRanges,
-                                  this.opts.enableDays
-                                ),
-            markedDate: this.utilService.isMarkedDate(date, this.opts.markDates, this.opts.markWeekends)});
+            disabled: this.utilService.isDisabledDay(date,
+              this.opts.disableUntil,
+              this.opts.disableSince,
+              this.opts.disableWeekends,
+              this.opts.disableDays,
+              this.opts.disableDateRanges,
+              this.opts.enableDays
+            ),
+            markedDate: this.utilService.isMarkedDate(date, this.opts.markDates, this.opts.markWeekends)
+          });
           dayNbr++;
         }
       }
       const weekNbr: number = this.opts.showWeekNumbers &&
-                  this.opts.firstDayOfWeek === 'mo' ?
-                    this.utilService.getWeekNumber(week[0].dateObj) : 0;
-      this.dates.push({week: week, weekNbr: weekNbr});
+        this.opts.firstDayOfWeek === 'mo' ?
+        this.utilService.getWeekNumber(week[0].dateObj) : 0;
+      this.dates.push({ week: week, weekNbr: weekNbr });
     }
 
     this.setHeaderBtnDisabledState(m, y);
@@ -800,7 +889,7 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
 
   parseSelectedDate(selDate: any): IMyDate {
     // Parse selDate value - it can be string or IMyDate object
-    let date: IMyDate = {day: 0, month: 0, year: 0};
+    let date: IMyDate = { day: 0, month: 0, year: 0 };
     if (typeof selDate === 'string') {
       const sd: string = <string>selDate;
       date.day = this.utilService.parseDatePartNumber(this.opts.dateFormat, sd, 'dd');
@@ -827,25 +916,25 @@ export class MDBDatePickerComponent implements OnChanges, ControlValueAccessor {
     let dnm = false;
     let dny = false;
     if (this.opts.disableHeaderButtons) {
-      dpm =   this.utilService.isMonthDisabledByDisableUntil({
-            year: m === 1 ? y - 1 : y,
-            month: m === 1 ? 12 : m - 1,
-            day: this.daysInMonth(m === 1 ? 12 : m - 1, m === 1 ? y - 1 : y)
-          },
-          this.opts.disableUntil);
-      dpy =   this.utilService.isMonthDisabledByDisableUntil({
-            year: y - 1,
-            month: m,
-            day: this.daysInMonth(m, y - 1)
-          },
-          this.opts.disableUntil);
-      dnm =   this.utilService.isMonthDisabledByDisableSince({
-            year: m === 12 ? y + 1 : y,
-            month: m === 12 ? 1 : m + 1,
-            day: 1
-          },
-          this.opts.disableSince);
-      dny = this.utilService.isMonthDisabledByDisableSince({year: y + 1, month: m, day: 1}, this.opts.disableSince);
+      dpm = this.utilService.isMonthDisabledByDisableUntil({
+        year: m === 1 ? y - 1 : y,
+        month: m === 1 ? 12 : m - 1,
+        day: this.daysInMonth(m === 1 ? 12 : m - 1, m === 1 ? y - 1 : y)
+      },
+        this.opts.disableUntil);
+      dpy = this.utilService.isMonthDisabledByDisableUntil({
+        year: y - 1,
+        month: m,
+        day: this.daysInMonth(m, y - 1)
+      },
+        this.opts.disableUntil);
+      dnm = this.utilService.isMonthDisabledByDisableSince({
+        year: m === 12 ? y + 1 : y,
+        month: m === 12 ? 1 : m + 1,
+        day: 1
+      },
+        this.opts.disableSince);
+      dny = this.utilService.isMonthDisabledByDisableSince({ year: y + 1, month: m, day: 1 }, this.opts.disableSince);
     }
     this.prevMonthDisabled = m === 1 && y === this.opts.minYear || dpm;
     this.prevYearDisabled = y - 1 < this.opts.minYear || dpy;

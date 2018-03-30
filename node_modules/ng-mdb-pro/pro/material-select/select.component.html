@@ -26,14 +26,6 @@
       (click)="onClearSelectionClick($event)">
       &#x2715;
     </div>
-    <div class="toggle"
-      *ngIf="isOpen">
-      &#x25B2;
-    </div>
-    <div class="toggle"
-      *ngIf="!isOpen">
-      &#x25BC;
-    </div>
   </div>
 
   <div class="multiple"
@@ -47,16 +39,6 @@
         *ngFor="let option of optionList.selection">
         <span class="deselect-option">, </span>{{option.label}}
       </div>
-      
-      <div class="toggle"
-        *ngIf="isOpen">
-        &#x25B2;
-      </div>
-      <div class="toggle"
-        *ngIf="!isOpen">
-        &#x25BC;
-      </div>
-      
   </div>
 
 </div>

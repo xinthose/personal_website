@@ -32,6 +32,7 @@ export class MdbCompleterDirective {
   private _isOpen = false;
   private _autoHighlightIndex: number;
 
+  public setToNullValue: any = null;
   public registerList(list: CompleterList) {
     this.list = list;
   }
@@ -57,7 +58,8 @@ export class MdbCompleterDirective {
 
   public search(term: string) {
     if (this._hasSelected) {
-      this.selected.emit(null);
+      // this.selected.emit(null);
+      this.selected.emit(this.setToNullValue);
       this._hasSelected = false;
     }
     if (this.list) {

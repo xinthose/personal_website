@@ -29,12 +29,15 @@ export class MdbInputDirective {
   @Input('openOnFocus') public openOnFocus = false;
 
   @Output() public ngModelChange: EventEmitter<any> = new EventEmitter();
-
   private _searchStr = '';
   private _displayStr = '';
-  private blurTimer: Subscription = null;
+  private ngModel: NgModel | any;
+  // private blurTimer: Subscription = null;
+  private blurTimer: Subscription | any = null;
+  // constructor( @Host() private completer: MdbCompleterDirective, private ngModel: NgModel, private el: ElementRef) {
+  constructor( @Host() private completer: MdbCompleterDirective, private tempngModel: NgModel, private el: ElementRef) {
+    this.ngModel = this.tempngModel;
 
-  constructor( @Host() private completer: MdbCompleterDirective, private ngModel: NgModel, private el: ElementRef) {
     this.completer.selected.subscribe((item: CompleterItem) => {
       if (!item) {
         return;
@@ -57,7 +60,8 @@ export class MdbInputDirective {
         }
       }
     });
-    this.ngModel.valueChanges.subscribe(value => {
+    // this.ngModel.valueChanges.subscribe(value => {
+    this.ngModel.valueChanges.subscribe((value: any) => {
       if (!isNil(value) && this._displayStr !== value) {
         if (this.searchStr !== value) {
           this.completer.search(value);
@@ -68,7 +72,7 @@ export class MdbInputDirective {
   }
 
   @HostListener('keyup', ['$event'])
-  public keyupHandler(event: any) {
+  public keyupHandler(event: any): any {
     if (event.keyCode === KEY_LF || event.keyCode === KEY_RT || event.keyCode === KEY_TAB) {
       // do nothing
       return;
@@ -114,7 +118,7 @@ export class MdbInputDirective {
   }
 
   @HostListener('blur', ['$event'])
-  public onBlur() {
+  public onBlur(): any {
     // Check if we need to cancel Blur for IE
     if (this.completer.isCancelBlur()) {
       setTimeout(

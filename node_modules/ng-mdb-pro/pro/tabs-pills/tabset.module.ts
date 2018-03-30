@@ -6,12 +6,11 @@ import { TabHeadingDirective } from './tab-heading.directive';
 import { TabDirective } from './tab.directive';
 import { TabsetComponent } from './tabset.component';
 import { TabsetConfig } from './tabset.config';
-import { RippleDirective } from './ripple-effect.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [NgTranscludeDirective, TabDirective, TabsetComponent, TabHeadingDirective, RippleDirective],
-  exports: [TabDirective, TabsetComponent, TabHeadingDirective, NgTranscludeDirective, RippleDirective]
+  declarations: [NgTranscludeDirective, TabDirective, TabsetComponent, TabHeadingDirective],
+  exports: [TabDirective, TabsetComponent, TabHeadingDirective, NgTranscludeDirective]
 })
 export class TabsModule {
   public static forRoot(): ModuleWithProviders {

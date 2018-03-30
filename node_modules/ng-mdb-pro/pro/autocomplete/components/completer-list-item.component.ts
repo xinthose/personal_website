@@ -17,7 +17,7 @@ export class CompleterListItemComponent implements OnInit {
   @Input() public type: string;
 
   public parts: MatchPart[] = [];
-  public ngOnInit() {
+  public ngOnInit(): any {
     if (!this.searchStr) {
       this.parts.push({ isMatch: false, text: this.text });
       return;

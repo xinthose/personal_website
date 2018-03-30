@@ -2,6 +2,7 @@ import { CompileReflector, ExternalReference } from '@angular/compiler';
 import { Component } from '@angular/core';
 export declare const MODULE_SUFFIX = "";
 export declare class JitReflector implements CompileReflector {
+    tryAnnotations: any;
     private reflectionCapabilities;
     private builtinExternalReferences;
     constructor();

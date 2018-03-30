@@ -6,6 +6,7 @@ import { IMyMarkedDates } from './markedDates.interface';
 import { IMyMarkedDate } from './markedDate.interface';
 
 export interface IMyOptions {
+  startDate?: string;
   dayLabelsFull?: IMyDayLabels;
   dayLabels?: IMyDayLabels;
   monthLabelsFull?: IMyMonthLabels;

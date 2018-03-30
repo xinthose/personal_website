@@ -11,9 +11,11 @@ export class OptionList {
   // private _filtered: Array<Option>;
   // private _value: Array<string>;
 
-  private _highlightedOption: Option = null;
+  // private _highlightedOption: Option = null;
+  private _highlightedOption: Option | any = null;
   private _hasShown: boolean;
 
+  public setToNullValue: any = null;
   // v0 and v1 are assumed not to be undefined or null.
   static equalValues(v0: Array<string>, v1: Array<string>): boolean {
 
@@ -222,7 +224,8 @@ export class OptionList {
         return option;
       }
     }
-    return null;
+    // return null;
+    return this.setToNullValue;
   }
 
   private getFirstShownSelected(): Option {
@@ -231,7 +234,8 @@ export class OptionList {
         return option;
       }
     }
-    return null;
+    // return null;
+    return this.setToNullValue;
   }
 
 }

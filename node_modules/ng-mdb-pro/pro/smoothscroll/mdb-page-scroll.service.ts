@@ -210,7 +210,8 @@ export class PageScrollService {
    * @param namespace
    * @returns {boolean}
    */
-  public stopAll(namespace?: string): boolean {
+//   public stopAll(namespace?: string): boolean {
+    public stopAll(namespace?: string | any): boolean {
     if (this.runningInstances.length > 0) {
         let stoppedSome = false;
 

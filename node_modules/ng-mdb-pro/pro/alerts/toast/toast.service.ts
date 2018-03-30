@@ -30,7 +30,8 @@ export class ToastService {
   overlayContainer: ToastContainerDirective;
 
   constructor(
-    @Inject(TOAST_CONFIG) public toastConfig: GlobalConfig,
+    // @Inject(TOAST_CONFIG) public toastConfig: GlobalConfig,
+    @Inject(TOAST_CONFIG) public toastConfig: GlobalConfig | any,
     private overlay: Overlay,
     private _injector: Injector,
     private sanitizer: DomSanitizer,
@@ -70,27 +71,36 @@ export class ToastService {
     this.toastConfig.onActivateTick = use(this.toastConfig.onActivateTick, false);
   }
   /** show successful toast */
-  show(message: string, title?: string, override?: IndividualConfig, type = '') {
+  // show(message: string, title?: string, override?: IndividualConfig, type = '') {
+    show(message: string, title?: string | any, override?: IndividualConfig, type = '') {
     return this._buildNotification(type, message, title, this.applyConfig(override));
   }
   /** show successful toast */
-  success(message: string, title?: string, override?: IndividualConfig) {
-    const type = this.toastConfig.iconClasses.success;
+  // success(message: string, title?: string, override?: IndividualConfig) {
+    success(message: string, title?: string | any, override?: IndividualConfig) {
+  //   const type = this.toastConfig.iconClasses.success;
+    const type: any = this.toastConfig.iconClasses.success;
     return this._buildNotification(type, message, title, this.applyConfig(override));
   }
   /** show error toast */
-  error(message: string, title?: string, override?: IndividualConfig) {
-    const type = this.toastConfig.iconClasses.error;
+  // error(message: string, title?: string, override?: IndividualConfig) {
+    error(message: string, title?: string | any, override?: IndividualConfig) {
+  //   const type = this.toastConfig.iconClasses.error;
+    const type: any = this.toastConfig.iconClasses.error;
     return this._buildNotification(type, message, title, this.applyConfig(override));
   }
   /** show info toast */
-  info(message: string, title?: string, override?: IndividualConfig) {
-    const type = this.toastConfig.iconClasses.info;
+  // info(message: string, title?: string, override?: IndividualConfig) {
+    info(message: string, title?: string | any, override?: IndividualConfig) {
+  //   const type = this.toastConfig.iconClasses.info;
+    const type: any = this.toastConfig.iconClasses.info;
     return this._buildNotification(type, message, title, this.applyConfig(override));
   }
   /** show warning toast */
-  warning(message: string, title?: string, override?: IndividualConfig) {
-    const type = this.toastConfig.iconClasses.warning;
+  // warning(message: string, title?: string, override?: IndividualConfig) {
+    warning(message: string, title?: string | any, override?: IndividualConfig) {
+  //   const type = this.toastConfig.iconClasses.warning;
+    const type: any = this.toastConfig.iconClasses.warning;
     return this._buildNotification(type, message, title, this.applyConfig(override));
   }
   /**
@@ -98,7 +108,8 @@ export class ToastService {
    */
   clear(toastId?: number) {
     // Call every toastRef manualClose function
-    for (const toast of this.toasts) {
+    let toast: any;
+    for (toast of this.toasts) {
       if (toastId !== undefined) {
         if (toast.toastId === toastId) {
           toast.toastRef.manualClose();
@@ -113,7 +124,8 @@ export class ToastService {
    * Remove and destroy a single toast by id
    */
   remove(toastId: number) {
-    const found = this._findToast(toastId);
+    // const found = this._findToast(toastId);
+    const found: any = this._findToast(toastId);
     if (!found) {
       return false;
     }
@@ -124,7 +136,8 @@ export class ToastService {
       return false;
     }
     if (this.currentlyActive <= +this.toastConfig.maxOpened && this.toasts[this.currentlyActive]) {
-      const p = this.toasts[this.currentlyActive].toastRef;
+      // const p = this.toasts[this.currentlyActive].toastRef;
+      const p: any = this.toasts[this.currentlyActive].toastRef;
       if (!p.isInactive()) {
         this.currentlyActive = this.currentlyActive + 1;
         p.activate();
@@ -187,7 +200,7 @@ export class ToastService {
     message: string,
     title: string,
     config: GlobalConfig,
-  ): ActiveToast | null {
+  ): ActiveToast | null | any {
     // max opened and auto dismiss = true
     if (this.toastConfig.preventDuplicates && this.isDuplicate(message)) {
       return null;
@@ -202,7 +215,8 @@ export class ToastService {
     }
     const overlayRef = this.overlay.create(config.positionClass, this.overlayContainer);
     this.index = this.index + 1;
-    let sanitizedMessage = message;
+    // let sanitizedMessage = message;
+    let sanitizedMessage: any = message;
     if (message && config.enableHtml) {
       sanitizedMessage = this.sanitizer.sanitize(SecurityContext.HTML, message);
     }
@@ -215,7 +229,8 @@ export class ToastService {
       toastType,
       toastRef,
     );
-    const ins: ActiveToast = {
+    // const ins: ActiveToast = {
+      const ins: ActiveToast | any = {
       toastId: this.index,
       message,
       toastRef,

@@ -6,7 +6,6 @@ import { MDBUploaderModule } from './file-input/';
 import { MaterialChipsModule } from './tags/';
 import { ProgressBars } from './progressbars/';
 import { TabsModule } from './tabs-pills/';
-import { ToastModule } from './alerts/';
 import { SelectModule } from './material-select/';
 import { MDBDatePickerModule } from './date-picker/';
 import { TimePickerModule } from './time-picker/';
@@ -45,10 +44,10 @@ export {
   MDBSpinningPreloader
 } from './preloader/preloader.service';
 
-export {
-  ToastComponent, ToastContainerDirective, ToastContainerModule, ToastInjector, ToastPackage, ToastRef, ToastIconClasses,
-  ToastModule, ToastService, GlobalConfig, IndividualConfig, Overlay, OVERLAY_PROVIDERS, OverlayContainer, OverlayRef
-} from './alerts/';
+// export {
+//   ToastComponent, ToastContainerDirective, ToastContainerModule, ToastInjector, ToastPackage, ToastRef, ToastIconClasses,
+//   ToastModule, ToastService, GlobalConfig, IndividualConfig, Overlay, OVERLAY_PROVIDERS, OverlayContainer, OverlayRef
+// } from './alerts/';
 
 export {
   SelectModule, Diacritics, Option, OptionList, IOption, SELECT_VALUE_ACCESSOR, SelectComponent, SelectDropdownComponent
@@ -106,7 +105,6 @@ const MODULES = [
   MaterialChipsModule,
   ProgressBars,
   TabsModule,
-  ToastModule,
   SelectModule,
   MDBDatePickerModule,
   TimePickerModule,
@@ -126,7 +124,6 @@ const MODULES = [
   MaterialChipsModule,
   ProgressBars.forRoot(),
   TabsModule.forRoot(),
-  ToastModule.forRoot(),
   SelectModule,
   MDBDatePickerModule,
   TimePickerModule,

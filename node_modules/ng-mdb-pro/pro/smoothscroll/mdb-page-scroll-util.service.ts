@@ -18,8 +18,10 @@ export class PageScrollUtilService {
     const body = document.body;
     const docEl = document.documentElement;
 
-    const windowPageYOffset: number = document.defaultView && document.defaultView.pageYOffset || undefined;
-    const windowPageXOffset: number = document.defaultView && document.defaultView.pageXOffset || undefined;
+    // const windowPageYOffset: number = document.defaultView && document.defaultView.pageYOffset || undefined;
+    const windowPageYOffset: number | any = document.defaultView && document.defaultView.pageYOffset as any || undefined;
+    // const windowPageXOffset: number = document.defaultView && document.defaultView.pageXOffset || undefined;
+    const windowPageXOffset: number | any = document.defaultView && document.defaultView.pageXOffset as any || undefined;
 
     const scrollTop = windowPageYOffset || docEl.scrollTop || body.scrollTop;
     const scrollLeft = windowPageXOffset || docEl.scrollLeft || body.scrollLeft;

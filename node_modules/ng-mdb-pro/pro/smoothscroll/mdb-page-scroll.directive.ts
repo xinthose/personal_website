@@ -37,19 +37,24 @@ export class PageScrollDirective implements OnChanges, OnDestroy {
   public href: string;
 
   @Input()
-  public pageScrollHorizontal: boolean = null;
+  // public pageScrollHorizontal: boolean = null;
+  public pageScrollHorizontal: boolean | any = null;
 
   @Input()
-  public pageScrollOffset: number = null;
+  // public pageScrollOffset: number = null;
+  public pageScrollOffset: number | any = null;
 
   @Input()
-  public pageScrollDuration: number = null;
+  // public pageScrollDuration: number = null;
+  public pageScrollDuration: number | any = null;
 
   @Input()
-  public pageScrollSpeed: number = null;
+  // public pageScrollSpeed: number = null;
+  public pageScrollSpeed: number | any = null;
 
   @Input()
-  public pageScrollEasing: EasingLogic = null;
+  // public pageScrollEasing: EasingLogic = null;
+  public pageScrollEasing: EasingLogic | any = null;
 
   @Input()
   public pageScrollInterruptible: boolean;
@@ -58,12 +63,14 @@ export class PageScrollDirective implements OnChanges, OnDestroy {
   public pageScrollAdjustHash = false;
 
   @Input()
-  public pageScroll: string = null;
+  // public pageScroll: string = null;
+  public pageScroll: string | any = null;
 
   @Output()
   pageScrollFinish: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  private pageScrollInstance: PageScrollInstance;
+  // private pageScrollInstance: PageScrollInstance;
+  private pageScrollInstance: PageScrollInstance | any;
   private document: Document;
 
   constructor(private pageScrollService: PageScrollService, @Optional() private router: Router, @Inject(DOCUMENT) document: any) {
@@ -82,7 +89,8 @@ export class PageScrollDirective implements OnChanges, OnDestroy {
     return undefined;
   }
 
-  private generatePageScrollInstance(): PageScrollInstance {
+  // private generatePageScrollInstance(): PageScrollInstance {
+    private generatePageScrollInstance(): PageScrollInstance | any {
     if (Util.isUndefinedOrNull(this.pageScrollInstance)) {
       this.pageScrollInstance = PageScrollInstance.newInstance({
           document: this.document,

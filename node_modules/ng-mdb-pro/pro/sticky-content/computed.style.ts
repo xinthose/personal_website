@@ -4,7 +4,8 @@
  * @param styleProp
  * @returns {any}
  */
-export function computedStyle(element: string | HTMLElement, styleProp: string): string {
+// export function computedStyle(element: string | HTMLElement, styleProp: string): string {
+  export function computedStyle(element: string | HTMLElement, styleProp: string): string | any {
   let el: any;
   el =  (typeof element === 'string') ? (<HTMLElement>document.querySelector(<string>element)) : element;
 

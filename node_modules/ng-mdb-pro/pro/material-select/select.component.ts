@@ -1,10 +1,12 @@
-import {Component, Input, OnChanges, OnInit, Output, EventEmitter, ExistingProvider, ViewChild,
-        ViewEncapsulation, forwardRef, ElementRef, HostListener} from '@angular/core';
-import {NG_VALUE_ACCESSOR, ControlValueAccessor} from '@angular/forms';
-import {SelectDropdownComponent} from './select-dropdown.component';
-import {IOption} from './option-interface';
-import {Option} from './option';
-import {OptionList} from './option-list';
+import {
+  Component, Input, OnChanges, OnInit, Output, EventEmitter, ExistingProvider, ViewChild,
+  ViewEncapsulation, forwardRef, ElementRef, HostListener, Renderer2, AfterViewInit
+} from '@angular/core';
+import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
+import { SelectDropdownComponent } from './select-dropdown.component';
+import { IOption } from './option-interface';
+import { Option } from './option';
+import { OptionList } from './option-list';
 
 export const SELECT_VALUE_ACCESSOR: ExistingProvider = {
   provide: NG_VALUE_ACCESSOR,
@@ -19,7 +21,7 @@ export const SELECT_VALUE_ACCESSOR: ExistingProvider = {
   encapsulation: ViewEncapsulation.None
 })
 
-export class SelectComponent implements ControlValueAccessor, OnChanges, OnInit {
+export class SelectComponent implements ControlValueAccessor, OnChanges, OnInit, AfterViewInit {
 
   @Input() options: Array<IOption>;
 
@@ -49,13 +51,13 @@ export class SelectComponent implements ControlValueAccessor, OnChanges, OnInit 
 
   // Angular lifecycle hooks.
   KEYS: any = {
-        BACKSPACE: 8,
-        TAB: 9,
-        ENTER: 13,
-        ESC: 27,
-        SPACE: 32,
-        UP: 38,
-        DOWN: 40
+    BACKSPACE: 8,
+    TAB: 9,
+    ENTER: 13,
+    ESC: 27,
+    SPACE: 32,
+    UP: 38,
+    DOWN: 40
   };
 
   _value: Array<any> = [];
@@ -80,24 +82,29 @@ export class SelectComponent implements ControlValueAccessor, OnChanges, OnInit 
   top: number;
   left: number;
 
-  onChange = (_: any) => {};
-  onTouched = () => {};
+  onChange = (_: any) => { };
+  onTouched = () => { };
 
   /** Event handlers. **/
 
   @HostListener('document:click', ['$event']) closeSelect($event: any) {
-      if (!this.isChild($event.target) && this.isOpen) {
-          this.closeDropdown();
-      }
-  };
-
+    if (!this.isChild($event.target) && this.isOpen) {
+      this.closeDropdown();
+    }
+  }
 
   // Angular lifecycle hooks.
-  constructor(public el: ElementRef) {
+  constructor(public el: ElementRef, public renderer: Renderer2) {
   }
 
   ngOnInit() {
     this.placeholderView = this.placeholder;
+  }
+
+  ngAfterViewInit() {
+    this.setArrowUpIcon();
+    this.setArrowDownIcon();
+    this.renderer.setStyle(this.selectionSpan.nativeElement.children[0].lastChild, 'visibility', 'hidden');
   }
 
   ngOnChanges(changes: any) {
@@ -110,6 +117,22 @@ export class SelectComponent implements ControlValueAccessor, OnChanges, OnInit 
       this.filterEnabled = numOptions >= minNumOptions;
     }
   }
+
+  setArrowUpIcon() {
+    const div = this.renderer.createElement('div');
+    this.renderer.appendChild(this.selectionSpan.nativeElement.children[0], div);
+    this.selectionSpan.nativeElement.children[0].lastChild.innerHTML = '&#x25BC;';
+    this.renderer.addClass(this.selectionSpan.nativeElement.children[0].lastChild, 'toggle');
+
+  }
+
+  setArrowDownIcon() {
+    const div = this.renderer.createElement('div');
+    this.renderer.appendChild(this.selectionSpan.nativeElement.children[0], div);
+    this.selectionSpan.nativeElement.children[0].lastChild.innerHTML = '&#x25B2;';
+    this.renderer.addClass(this.selectionSpan.nativeElement.children[0].lastChild, 'toggle');
+  }
+
 
   isChild(elemnt: any) {
     let node = elemnt.parentNode;
@@ -229,13 +252,13 @@ export class SelectComponent implements ControlValueAccessor, OnChanges, OnInit 
 
 
   get value(): string | string[] {
-      return this.multiple ? this._value : this._value[0];
+    return this.multiple ? this._value : this._value[0];
   }
 
   set value(v: string | string[]) {
     if (typeof v === 'undefined' || v === null || v === '') {
       v = [];
-    } else if (typeof v === 'string') {
+    } else if (typeof v === 'string' || typeof v === 'number' || typeof v === 'boolean') {
       v = [v];
     } else if (!Array.isArray(v)) {
       throw new TypeError('Value must be a string or an array.');
@@ -289,7 +312,8 @@ export class SelectComponent implements ControlValueAccessor, OnChanges, OnInit 
   /** Initialization. **/
 
   updateOptionsList(firstTime: boolean) {
-    let v: Array<string>;
+    // let v: Array<string> | any;
+    let v: Array<string> | any;
 
     if (!firstTime) {
       v = this.optionList.value;
@@ -312,7 +336,11 @@ export class SelectComponent implements ControlValueAccessor, OnChanges, OnInit 
   }
 
   openDropdown() {
+    this.renderer.setStyle(this.el.nativeElement, 'z-index', '1000');
     if (!this.isOpen) {
+      this.renderer.setStyle(this.selectionSpan.nativeElement.children[0].lastChild, 'visibility', 'visible');
+      // tslint:disable-next-line:max-line-length
+      this.renderer.setStyle(this.selectionSpan.nativeElement.children[0].children[this.selectionSpan.nativeElement.children[0].children.length - 2], 'visibility', 'hidden');
       this.updateWidth();
       this.updatePosition();
       this.isOpen = true;
@@ -325,9 +353,14 @@ export class SelectComponent implements ControlValueAccessor, OnChanges, OnInit 
 
   closeDropdown(focus: boolean = false) {
     const container = this.el.nativeElement.lastElementChild.classList;
+    this.renderer.removeStyle(this.el.nativeElement, 'z-index');
     container.remove('fadeInSelect');
-
-    setTimeout( () => {
+    if (this.isOpen) {
+      this.renderer.setStyle(this.selectionSpan.nativeElement.children[0].lastChild, 'visibility', 'hidden');
+      // tslint:disable-next-line:max-line-length
+      this.renderer.setStyle(this.selectionSpan.nativeElement.children[0].children[this.selectionSpan.nativeElement.children[0].children.length - 2], 'visibility', 'visible');
+    }
+    setTimeout(() => {
 
       if (this.isOpen) {
         this.clearFilterInput();
@@ -338,7 +371,7 @@ export class SelectComponent implements ControlValueAccessor, OnChanges, OnInit 
         this.closed.emit(null);
       }
 
-    }, 200 );
+    }, 200);
 
   }
 
@@ -403,110 +436,110 @@ export class SelectComponent implements ControlValueAccessor, OnChanges, OnInit 
 
   clearFilterInput() {
     if (this.multiple && this.filterEnabled) {
-        this.filterInput.nativeElement.value = '';
+      this.filterInput.nativeElement.value = '';
     } else {
-        this.dropdown.clearFilterInput();
+      this.dropdown.clearFilterInput();
     }
   }
 
-    setMultipleFilterInput(value: string) {
-      if (this.filterEnabled) {
-          this.filterInput.nativeElement.value = value;
-      }
+  setMultipleFilterInput(value: string) {
+    if (this.filterEnabled) {
+      this.filterInput.nativeElement.value = value;
     }
+  }
 
-    handleSelectContainerKeydown(event: any) {
-      const key = event.which;
+  handleSelectContainerKeydown(event: any) {
+    const key = event.which;
 
-      if (this.isOpen) {
-        if (key === this.KEYS.ESC ||
-              (key === this.KEYS.UP && event.altKey)) {
-          this.closeDropdown(true);
-        } else if (key === this.KEYS.TAB) {
-          this.closeDropdown();
-        } else if (key === this.KEYS.ENTER) {
-          this.selectHighlightedOption();
-        } else if (key === this.KEYS.UP) {
-          this.optionList.highlightPreviousOption();
-          this.dropdown.moveHighlightedIntoView();
-          if (!this.filterEnabled) {
-              event.preventDefault();
-          }
-        } else if (key === this.KEYS.DOWN) {
-          this.optionList.highlightNextOption();
-          this.dropdown.moveHighlightedIntoView();
-          if (!this.filterEnabled) {
-              event.preventDefault();
-          }
+    if (this.isOpen) {
+      if (key === this.KEYS.ESC ||
+        (key === this.KEYS.UP && event.altKey)) {
+        this.closeDropdown(true);
+      } else if (key === this.KEYS.TAB) {
+        this.closeDropdown();
+      } else if (key === this.KEYS.ENTER) {
+        this.selectHighlightedOption();
+      } else if (key === this.KEYS.UP) {
+        this.optionList.highlightPreviousOption();
+        this.dropdown.moveHighlightedIntoView();
+        if (!this.filterEnabled) {
+          event.preventDefault();
         }
-      } else {
-        if (key === this.KEYS.ENTER || key === this.KEYS.SPACE ||
-              (key === this.KEYS.DOWN && event.altKey)) {
-
-          /* FIREFOX HACK:
-           *
-           * The setTimeout is added to prevent the enter keydown event
-           * to be triggered for the filter input field, which causes
-           * the dropdown to be closed again.
-           */
-          setTimeout(() => { this.openDropdown(); });
+      } else if (key === this.KEYS.DOWN) {
+        this.optionList.highlightNextOption();
+        this.dropdown.moveHighlightedIntoView();
+        if (!this.filterEnabled) {
+          event.preventDefault();
         }
       }
+    } else {
+      if (key === this.KEYS.ENTER || key === this.KEYS.SPACE ||
+        (key === this.KEYS.DOWN && event.altKey)) {
 
-    }
-
-    handleMultipleFilterKeydown(event: any) {
-      const key = event.which;
-
-      if (key === this.KEYS.BACKSPACE) {
-        if (this.hasSelected && this.filterEnabled &&
-                this.filterInput.nativeElement.value === '') {
-          this.deselectLast();
-        }
+        /* FIREFOX HACK:
+         *
+         * The setTimeout is added to prevent the enter keydown event
+         * to be triggered for the filter input field, which causes
+         * the dropdown to be closed again.
+         */
+        setTimeout(() => { this.openDropdown(); });
       }
     }
 
-    handleSingleFilterKeydown(event: any) {
-      const key = event.which;
+  }
 
-      if (key === this.KEYS.ESC || key === this.KEYS.TAB
-              || key === this.KEYS.UP || key === this.KEYS.DOWN
-              || key === this.KEYS.ENTER) {
-        this.handleSelectContainerKeydown(event);
+  handleMultipleFilterKeydown(event: any) {
+    const key = event.which;
+
+    if (key === this.KEYS.BACKSPACE) {
+      if (this.hasSelected && this.filterEnabled &&
+        this.filterInput.nativeElement.value === '') {
+        this.deselectLast();
       }
     }
+  }
 
-    /** View. **/
+  handleSingleFilterKeydown(event: any) {
+    const key = event.which;
 
-    focus() {
-      this.hasFocus = true;
-      if (this.multiple && this.filterEnabled) {
-          this.filterInput.nativeElement.focus();
-      } else {
-          this.selectionSpan.nativeElement.focus();
-      }
+    if (key === this.KEYS.ESC || key === this.KEYS.TAB
+      || key === this.KEYS.UP || key === this.KEYS.DOWN
+      || key === this.KEYS.ENTER) {
+      this.handleSelectContainerKeydown(event);
     }
+  }
 
-    blur() {
-      this.hasFocus = false;
-      this.selectionSpan.nativeElement.blur();
-    }
+  /** View. **/
 
-    updateWidth() {
-      this.width = this.selectionSpan.nativeElement.offsetWidth;
+  focus() {
+    this.hasFocus = true;
+    if (this.multiple && this.filterEnabled) {
+      this.filterInput.nativeElement.focus();
+    } else {
+      this.selectionSpan.nativeElement.focus();
     }
+  }
 
-    updatePosition() {
-      const e = this.selectionSpan.nativeElement;
-      this.left = e.offsetLeft;
-      this.top = e.offsetTop + e.offsetHeight;
-    }
+  blur() {
+    this.hasFocus = false;
+    this.selectionSpan.nativeElement.blur();
+  }
 
-    updateFilterWidth() {
-      if (typeof this.filterInput !== 'undefined') {
-        const value: string = this.filterInput.nativeElement.value;
-        this.filterInputWidth = value.length === 0 ?
-            1 + this.placeholderView.length * 10 : 1 + value.length * 10;
-      }
+  updateWidth() {
+    this.width = this.selectionSpan.nativeElement.offsetWidth;
+  }
+
+  updatePosition() {
+    const e = this.selectionSpan.nativeElement;
+    this.left = e.offsetLeft;
+    this.top = e.offsetTop + e.offsetHeight;
+  }
+
+  updateFilterWidth() {
+    if (typeof this.filterInput !== 'undefined') {
+      const value: string = this.filterInput.nativeElement.value;
+      this.filterInputWidth = value.length === 0 ?
+        1 + this.placeholderView.length * 10 : 1 + value.length * 10;
     }
+  }
 }

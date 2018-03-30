@@ -41,9 +41,11 @@ export abstract class CompleterBaseData extends Subject<CompleterItem[]> impleme
   }
 
   public convertToItem(data: any) {
-    let image: string = null;
+    // let image: string = null;
+    let image: string | any = null;
     let formattedText: string;
-    let formattedDesc: string;
+    // let formattedDesc: string;
+    let formattedDesc: string | any;
 
     if (this._titleField) {
       formattedText = this.extractTitle(data);

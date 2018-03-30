@@ -15,7 +15,8 @@ import { ToastRef } from './toast.injector';
   * toast time to live in milliseconds
   * default: 5000
   */
-  timeOut?: number;
+  // timeOut?: number;
+  timeOut?: number | any;
   /**
   * toast show close button
   * default: false
@@ -26,7 +27,8 @@ import { ToastRef } from './toast.injector';
    * show toast progress bar
    * default: false
    */
-  extendedTimeOut?: number;
+  // extendedTimeOut?: number;
+  extendedTimeOut?: number | any;
   /**
    * show toast progress bar
    * default: false
@@ -46,7 +48,7 @@ import { ToastRef } from './toast.injector';
    * css class on toast container
    * default: toast-top-right
    */
-  positionClass?: string;
+  positionClass?: string | any;
   /**
    * css class on to toast title
    * default: toast-title
@@ -66,7 +68,7 @@ import { ToastRef } from './toast.injector';
    * Angular toast component to be shown
    * default: Toast
    */
-  toastComponent?: ComponentType<any>;
+  toastComponent?: ComponentType<any> | any;
   /**
    * Helps show toast from a websocket or from event outside Angular
    * default: false

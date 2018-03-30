@@ -26,22 +26,30 @@ export class MdbListDirective implements OnInit, CompleterList {
   @Input() public mdbListMinSearchLength = MIN_SEARCH_LENGTH;
   @Input() public mdbListPause = PAUSE;
   @Input() public mdbListAutoMatch = false;
-  @Input() public mdbListAutoHighlight = false;
+  @Input() public mdbListAutoHighlight: any = false;
 
-  private _dataService: CompleterData;
+  // private _dataService: CompleterData ;
+  private _dataService: CompleterData | any;
   // private results: CompleterItem[] = [];
-  private term: string = null;
+  public setToNullValue: any = null;
+  // private term: string = null;
+  private term: string | any = null;
   // private searching = false;
-  private searchTimer: Subscription = null;
-  private clearTimer: Subscription = null;
+  // private searchTimer: Subscription = null;
+  private searchTimer: Subscription | any = null;
+  // private clearTimer: Subscription = null;
+  private clearTimer: Subscription | any = null;
   private ctx = new CtrListContext([], false, false, false);
   private _initialValue: any = null;
-
+  private completer: MdbCompleterDirective | any;
   constructor(
-    @Host() private completer: MdbCompleterDirective,
+    // @Host() private completer: MdbCompleterDirective,
+    @Host() private tmpCompleter: MdbCompleterDirective,
     private templateRef: TemplateRef<CtrListContext>,
     private viewContainer: ViewContainerRef,
-    private cd: ChangeDetectorRef) { }
+    private cd: ChangeDetectorRef) {
+      this.completer = this.tmpCompleter;
+    }
 
   public ngOnInit() {
     this.completer.registerList(this);
@@ -56,8 +64,10 @@ export class MdbListDirective implements OnInit, CompleterList {
     this._dataService = newService;
     if (this._dataService) {
       this._dataService
-        .catch(err => this.handleError(err))
-        .subscribe(results => {
+        // .catch(err => this.handleError(err))
+        .catch((err: any) => this.handleError(err))
+        // .subscribe(results => {
+        .subscribe((results: any) => {
           this.ctx.searchInitialized = true;
           this.ctx.searching = false;
           this.ctx.results = results;
@@ -68,7 +78,8 @@ export class MdbListDirective implements OnInit, CompleterList {
           }
           if (this._initialValue) {
             this.initialValue = this._initialValue;
-            this._initialValue = null;
+            // this._initialValue = null;
+            this._initialValue = this.setToNullValue;
           }
           if (this.mdbListAutoHighlight) {
             this.completer.autoHighlightIndex = this.getBestMatchIndex();
@@ -147,7 +158,7 @@ export class MdbListDirective implements OnInit, CompleterList {
     this.viewContainer.clear();
   }
 
-  private searchTimerComplete(term: string) {
+  private searchTimerComplete(term: string): any {
     // Begin the search
     if (isNil(term) || term.length < this.mdbListMinSearchLength) {
       this.ctx.searching = false;

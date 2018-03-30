@@ -8,7 +8,8 @@ import { CompleterItem } from '../components/completer-item.component';
 export class LocalData extends CompleterBaseData {
 
   private _data: any[];
-  private savedTerm: string;
+  // private savedTerm: string;
+  private savedTerm: string | any;
 
   constructor() {
     super();
@@ -39,7 +40,8 @@ export class LocalData extends CompleterBaseData {
     }
   }
 
-  public convertToItem(data: any): CompleterItem {
+  // public convertToItem(data: any): CompleterItem {
+    public convertToItem(data: any): CompleterItem | any {
     return super.convertToItem(data);
   }
 }

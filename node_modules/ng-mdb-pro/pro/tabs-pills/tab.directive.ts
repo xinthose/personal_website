@@ -59,7 +59,8 @@ export class TabDirective implements OnInit {
 
   public headingRef: TemplateRef<any>;
   public tabset: TabsetComponent;
-  public el: ElementRef = null;
+  // public el: ElementRef = null;
+  public el: ElementRef | any = null;
 
   protected _active: boolean;
 

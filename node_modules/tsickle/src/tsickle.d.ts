@@ -24,6 +24,10 @@ export interface AnnotatorHost {
      * Annotation will be slower because every import must be resolved.
      */
     convertIndexImportShorthand?: boolean;
+    /**
+     * If true, do not modify quotes around property accessors.
+     */
+    disableAutoQuoting?: boolean;
 }
 /**
  * The header to be used in generated externs.  This is not included in the

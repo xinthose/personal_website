@@ -69,7 +69,9 @@ var I18NTextVisitor = (function (_super) {
         }
     };
     I18NTextVisitor.prototype.visitElement = function (element, context) {
-        this.hasI18n = element.attrs.some(function (e) { return e.name === 'i18n'; });
+        if (element.name !== 'ng-container') {
+            this.hasI18n = element.attrs.some(function (e) { return e.name === 'i18n'; });
+        }
         this.nestedElements.push(element.name);
         _super.prototype.visitElement.call(this, element, context);
         this.nestedElements.pop();

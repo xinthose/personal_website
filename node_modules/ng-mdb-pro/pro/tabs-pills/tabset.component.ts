@@ -3,7 +3,7 @@ import { Component, Output, EventEmitter, ViewChildren, HostBinding, Input, OnDe
 import { TabDirective } from './tab.directive';
 import { TabsetConfig } from './tabset.config';
 
-import { RippleDirective } from './ripple-effect.component';
+import { RippleDirective } from './../../free/ripple';
 // todo: add active event to tab
 // todo: fix? mixing static and dynamic tabs position tabs in order of creation
 @Component({
@@ -110,7 +110,8 @@ export class TabsetComponent implements OnDestroy, OnInit {
     this.isDestroyed = true;
   }
 
-  public getActive() {
+  // public getActive() {
+    public getActive(): any {
     const tabs = this.tabs.map((object, index) => {
       return {
         index: index,

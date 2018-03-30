@@ -56,7 +56,10 @@
               </div>
             </div>
             <div class="picker__footer">
-              <button type="button" class="btn-flat clockpicker-button" (click)="closeBtnClicked()">
+              <button type="button" *ngIf="buttonLabel" class="btn-flat clockpicker-button" (click)="closeBtnClicked()">
+                {{buttonLabel}}
+              </button>
+              <button type="button" *ngIf="!buttonLabel" class="btn-flat clockpicker-button" (click)="closeBtnClicked()">
                 Done
               </button>
             </div>

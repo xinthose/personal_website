@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, OnChanges, SimpleChanges, Input } from '@angular/core';
-
+import { isPlatformBrowser } from '@angular/common';
+import { PLATFORM_ID, Inject } from '@angular/core';
 declare var EasyPieChart: any;
 
 @Component({
@@ -11,8 +12,10 @@ export class EasyPieChartComponent implements OnInit, OnChanges {
   @Input('options') options: any;
   element: any;
   pieChart: any;
+  isBrowser: any = false;
 
-  constructor(el: ElementRef) {
+  constructor(el: ElementRef, @Inject(PLATFORM_ID) platformId: string) {
+    this.isBrowser = isPlatformBrowser(platformId);
     this.element = el;
     const options = {
       barColor: '#ef1e25',
@@ -32,9 +35,11 @@ export class EasyPieChartComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-    this.element.nativeElement.innerHTML = '';
-    this.pieChart = new EasyPieChart(this.element.nativeElement, this.options);
-    this.pieChart.update(this.percent);
+    if (this.isBrowser) {
+      this.element.nativeElement.innerHTML = '';
+      this.pieChart = new EasyPieChart(this.element.nativeElement, this.options);
+      this.pieChart.update(this.percent);
+    }
   }
 
   ngOnChanges(changes: SimpleChanges): void {

@@ -110,7 +110,8 @@ export class UtilService {
     return dateFormat.indexOf(datePart);
   }
 
-  parseDefaultMonth(monthString: string): IMyMonth {
+  // parseDefaultMonth(monthString: string): IMyMonth {
+    parseDefaultMonth(monthString: string | any): IMyMonth {
     const month: IMyMonth = {monthTxt: '', monthNbr: 0, year: 0};
     if (monthString !== '') {
       const split = monthString.split(monthString.match(/[^0-9]/)[0]);

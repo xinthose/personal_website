@@ -31,6 +31,8 @@ exports.Config = {
         { selector: '[ngIf]', exportAs: 'ngIf', inputs: ['ngIf'] },
         { selector: '[ngFor][ngForOf]', exportAs: 'ngFor', inputs: ['ngForTemplate', 'ngForOf'] },
         { selector: '[ngSwitch]', exportAs: 'ngSwitch', inputs: ['ngSwitch'] },
+        { selector: '[ngSwitchCase]', exportAs: 'ngSwitchCase', inputs: ['ngSwitchCase'] },
+        { selector: '[ngSwitchDefault]', exportAs: 'ngSwitchDefault', inputs: ['ngSwitchDefault'] },
         { selector: 'mat-autocomplete', exportAs: 'matAutocomplete' },
         { selector: '[mat-menu-item]', exportAs: 'matMenuItem' },
         { selector: 'mat-menu', exportAs: 'matMenu' },

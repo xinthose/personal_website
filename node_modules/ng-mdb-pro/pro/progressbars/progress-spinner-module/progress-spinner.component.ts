@@ -8,7 +8,8 @@ import {
     NgZone,
     Renderer, Directive
 } from '@angular/core';
-
+import { isPlatformBrowser } from '@angular/common';
+import { PLATFORM_ID, Inject } from '@angular/core';
 // TODO(josephperrott): Benchpress tests.
 
 /** A single degree in radians. */
@@ -27,7 +28,7 @@ const MAX_ANGLE = 359.99 / 100;
 export type ProgressSpinnerMode = 'determinate' | 'indeterminate';
 
 type EasingFn = (currentTime: number, startValue: number,
-                 changeInValue: number, duration: number) => number;
+    changeInValue: number, duration: number) => number;
 
 /**
 * Directive whose purpose is to add the mat- CSS styling to this selector.
@@ -64,6 +65,8 @@ export class MdProgressSpinnerComponent implements OnDestroy {
     private _value: number;
     private _color = 'primary';
 
+    isBrowser: any = false;
+    @Inject(PLATFORM_ID) platformId: string
     /**
     * Values for aria max and min are only defined as numbers when in a determinate mode.  We do this
     * because voiceover does not report the progress indicator as indeterminate if the aria min
@@ -96,20 +99,21 @@ export class MdProgressSpinnerComponent implements OnDestroy {
 
     /** The color of the progress-spinner. Can be primary, accent, or warn. */
     @Input()
-        get color(): string { return this._color; }
-        set color(value: string) {
+    get color(): string { return this._color; }
+    set color(value: string) {
         this._updateColor(value);
     }
 
     /** Value of the progress circle. It is bound to the host as the attribute aria-valuenow. */
     @Input()
     @HostBinding('attr.aria-valuenow')
-    get value() {
+    get value(): any {
         if (this.mode === 'determinate') {
             return this._value;
         }
+        return;
     }
-    set value(v: number) {
+    set value(v: number | any) {
         if (v != null && this.mode === 'determinate') {
             const newValue = clamp(v);
             this._animateCircle(this.value || 0, newValue);
@@ -136,15 +140,18 @@ export class MdProgressSpinnerComponent implements OnDestroy {
                 this._cleanupIndeterminateAnimation();
                 this._animateCircle(0, this._value);
             }
-        this._mode = mode;
+            this._mode = mode;
         }
     }
 
     constructor(
         private _ngZone: NgZone,
         private _elementRef: ElementRef,
-        private _renderer: Renderer
-    ) {}
+        private _renderer: Renderer,
+        @Inject(PLATFORM_ID) platformId?: string | any
+    ) {
+        this.isBrowser = isPlatformBrowser(platformId);
+    }
 
 
     /**
@@ -158,7 +165,7 @@ export class MdProgressSpinnerComponent implements OnDestroy {
     *    of the circle.
     */
     private _animateCircle(animateFrom: number, animateTo: number, ease: EasingFn = linearEase,
-                            duration = DURATION_DETERMINATE, rotation = 0) {
+        duration = DURATION_DETERMINATE, rotation = 0): void {
 
         const id = ++this._lastAnimationId;
         const startTime = Date.now();
@@ -169,23 +176,23 @@ export class MdProgressSpinnerComponent implements OnDestroy {
             this._renderArc(animateTo, rotation);
         } else {
             const animation = () => {
-            const elapsedTime = Math.max(0, Math.min(Date.now() - startTime, duration));
+                const elapsedTime = Math.max(0, Math.min(Date.now() - startTime, duration));
 
-            this._renderArc(
-                ease(elapsedTime, animateFrom, changeInValue, duration),
-                rotation
-            );
+                this._renderArc(
+                    ease(elapsedTime, animateFrom, changeInValue, duration),
+                    rotation
+                );
 
-            // Prevent overlapping animations by checking if a new animation has been called for and
-            // if the animation has lasted longer than the animation duration.
-            if (id === this._lastAnimationId && elapsedTime < duration) {
-                requestAnimationFrame(animation);
-            }
-        };
+                // Prevent overlapping animations by checking if a new animation has been called for and
+                // if the animation has lasted longer than the animation duration.
+                if (id === this._lastAnimationId && elapsedTime < duration) {
+                    requestAnimationFrame(animation);
+                }
+            };
 
-        // Run the animation outside of Angular's zone, in order to avoid
-        // hitting ZoneJS and change detection on each frame.
-        this._ngZone.runOutsideAngular(animation);
+            // Run the animation outside of Angular's zone, in order to avoid
+            // hitting ZoneJS and change detection on each frame.
+            this._ngZone.runOutsideAngular(animation);
         }
     }
 
@@ -193,7 +200,7 @@ export class MdProgressSpinnerComponent implements OnDestroy {
     /**
     * Starts the indeterminate animation interval, if it is not already running.
     */
-    private _startIndeterminateAnimation() {
+    private _startIndeterminateAnimation(): void {
         let rotationStartPoint = 0;
         let start = startIndeterminate;
         let end = endIndeterminate;
@@ -207,19 +214,22 @@ export class MdProgressSpinnerComponent implements OnDestroy {
             end = -temp;
         };
 
-        if (!this.interdeterminateInterval) {
-            this._ngZone.runOutsideAngular(() => {
-                this.interdeterminateInterval = setInterval(animate, duration + 50, 0, false);
-                animate();
-            });
+        if (this.isBrowser) {
+            if (!this.interdeterminateInterval) {
+                this._ngZone.runOutsideAngular(() => {
+                    this.interdeterminateInterval = setInterval(animate, duration + 50, 0, false);
+                    animate();
+                });
+            }
         }
+
     }
 
 
     /**
     * Removes interval, ending the animation.
     */
-    private _cleanupIndeterminateAnimation() {
+    private _cleanupIndeterminateAnimation(): void {
         this.interdeterminateInterval = null;
     }
 
@@ -227,7 +237,7 @@ export class MdProgressSpinnerComponent implements OnDestroy {
     * Renders the arc onto the SVG element. Proxies `getArc` while setting the proper
     * DOM attribute on the `<path>`.
     */
-    private _renderArc(currentValue: number, rotation = 0) {
+    private _renderArc(currentValue: number, rotation = 0): void {
         // Caches the path reference so it doesn't have to be looked up every time.
         const path = this._path = this._path || this._elementRef.nativeElement.querySelector('path');
 
@@ -242,13 +252,13 @@ export class MdProgressSpinnerComponent implements OnDestroy {
     * Updates the color of the progress-spinner by adding the new palette class to the element
     * and removing the old one.
     */
-    private _updateColor(newColor: string) {
+    private _updateColor(newColor: string): void {
         this._setElementColor(this._color, false);
         this._setElementColor(newColor, true);
         this._color = newColor;
     }
 
-  /** Sets the given palette class on the component element. */
+    /** Sets the given palette class on the component element. */
     private _setElementColor(color: string, isAdd: boolean) {
         if (color != null && color !== '') {
             this._renderer.setElementClass(this._elementRef.nativeElement, `mat-${color}`, isAdd);
@@ -302,7 +312,7 @@ function polarToCartesian(radius: number, pathRadius: number, angleInDegrees: nu
     const angleInRadians = (angleInDegrees - 90) * DEGREE_IN_RADIANS;
 
     return (radius + (pathRadius * Math.cos(angleInRadians))) +
-    ',' + (radius + (pathRadius * Math.sin(angleInRadians)));
+        ',' + (radius + (pathRadius * Math.sin(angleInRadians)));
 }
 
 
@@ -310,7 +320,7 @@ function polarToCartesian(radius: number, pathRadius: number, angleInDegrees: nu
 * Easing function for linear animation.
 */
 function linearEase(currentTime: number, startValue: number,
-                    changeInValue: number, duration: number) {
+    changeInValue: number, duration: number) {
     return changeInValue * currentTime / duration + startValue;
 }
 
@@ -319,7 +329,7 @@ function linearEase(currentTime: number, startValue: number,
  * Easing function to match material design indeterminate animation.
  */
 function materialEase(currentTime: number, startValue: number,
-                        changeInValue: number, duration: number) {
+    changeInValue: number, duration: number) {
     const time = currentTime / duration;
     const timeCubed = Math.pow(time, 3);
     const timeQuad = Math.pow(time, 4);
@@ -351,9 +361,9 @@ function getSvgArc(currentValue: number, rotation: number) {
     let largeArcFlag: number;
 
     if (endAngle < 0) {
-            largeArcFlag = endAngle >= -180 ? 0 : 1;
+        largeArcFlag = endAngle >= -180 ? 0 : 1;
     } else {
-            largeArcFlag = endAngle <= 180 ? 0 : 1;
+        largeArcFlag = endAngle <= 180 ? 0 : 1;
     }
 
     return `M${start}A${pathRadius},${pathRadius} 0 ${largeArcFlag},${arcSweep} ${end}`;

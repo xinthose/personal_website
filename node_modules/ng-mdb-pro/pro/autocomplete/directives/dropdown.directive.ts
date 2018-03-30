@@ -19,9 +19,12 @@ export class CtrRowItem {
 })
 export class MdbDropdownDirective implements CompleterDropdown, OnDestroy, OnInit, AfterViewInit {
 
+  public setToNullValue: any = null;
   private rows: CtrRowItem[] = [];
-  private currHighlighted: CtrRowItem;
-  private isScrollOn: boolean;
+  // private currHighlighted: CtrRowItem;
+  private currHighlighted: CtrRowItem | any;
+  // private isScrollOn: boolean;
+  private isScrollOn: boolean | any;
 
   constructor( @Host() private completer: MdbCompleterDirective, private el: ElementRef) {
     this.completer.registerDropdown(this);
@@ -33,7 +36,8 @@ export class MdbDropdownDirective implements CompleterDropdown, OnDestroy, OnIni
   }
 
   public ngOnDestroy() {
-    this.completer.registerDropdown(null);
+    // this.completer.registerDropdown(null);
+    this.completer.registerDropdown(this.setToNullValue);
   }
 
   public ngAfterViewInit() {
@@ -63,7 +67,7 @@ export class MdbDropdownDirective implements CompleterDropdown, OnDestroy, OnIni
     this.rows.push(row);
   }
 
-  public highlightRow(index: number) {
+  public highlightRow(index: number): any {
 
     const highlighted = this.rows.find(row => row.index === index);
 
@@ -72,7 +76,7 @@ export class MdbDropdownDirective implements CompleterDropdown, OnDestroy, OnIni
         this.currHighlighted.row.setHighlighted(false);
       }
       this.currHighlighted = undefined;
-      this.completer.onHighlighted(null);
+      this.completer.onHighlighted(this.setToNullValue);
       return;
     }
 
@@ -99,7 +103,8 @@ export class MdbDropdownDirective implements CompleterDropdown, OnDestroy, OnIni
           if (this.el.nativeElement.getBoundingClientRect().bottom - this.dropdownRowOffsetHeight(row)
             < row.getBoundingClientRect().top) {
             this.dropdownScrollTopTo(row.getBoundingClientRect().top - (this.el.nativeElement.getBoundingClientRect().top
-            + parseInt(getComputedStyle(this.el.nativeElement).paddingTop, 10)));
+            // + parseInt(getComputedStyle(this.el.nativeElement).paddingTop, 10)));
+            + parseInt(getComputedStyle(this.el.nativeElement).paddingTop as any, 10)));
           }
         }
       }
@@ -146,17 +151,20 @@ export class MdbDropdownDirective implements CompleterDropdown, OnDestroy, OnIni
   private dropdownRowTop() {
     return this.currHighlighted.row.getNativeElement().getBoundingClientRect().top -
       (this.el.nativeElement.getBoundingClientRect().top +
-        parseInt(getComputedStyle(this.el.nativeElement).paddingTop, 10));
+        // parseInt(getComputedStyle(this.el.nativeElement).paddingTop, 10));
+        parseInt(getComputedStyle(this.el.nativeElement).paddingTop as any, 10));
   }
 
   private dropdownHeight() {
     return this.el.nativeElement.getBoundingClientRect().top +
-      parseInt(getComputedStyle(this.el.nativeElement).maxHeight, 10);
+      // parseInt(getComputedStyle(this.el.nativeElement).maxHeight, 10);
+      parseInt(getComputedStyle(this.el.nativeElement).maxHeight as any, 10);
   }
 
   private dropdownRowOffsetHeight(row: any) {
     const css = getComputedStyle(row);
     return row.offsetHeight +
-      parseInt(css.marginTop, 10) + parseInt(css.marginBottom, 10);
+      // parseInt(css.marginTop, 10) + parseInt(css.marginBottom, 10);
+      parseInt(css.marginTop as any, 10) + parseInt(css.marginBottom as any, 10);
   }
 }

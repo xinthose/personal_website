@@ -15,6 +15,8 @@ import { Component, Input, OnDestroy, Output, EventEmitter, ElementRef, HostList
 })
 
 export class CarouselComponent implements OnDestroy {
+  SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
+
   protected _slides: LinkedList<SlideComponent> = new LinkedList<SlideComponent>();
   public get slides(): SlideComponent[] {
     return this._slides.toArray();
@@ -23,7 +25,8 @@ export class CarouselComponent implements OnDestroy {
   protected currentInterval: any;
   protected isPlaying: boolean;
   protected destroyed = false;
-  protected el: ElementRef = null;
+  // protected el: ElementRef = null;
+  protected el: ElementRef | any = null;
   protected animationEnd = true;
 
   /** If `true` — carousel will not cycle continuously and will have hard stops (prevent looping) */
@@ -31,14 +34,15 @@ export class CarouselComponent implements OnDestroy {
   /**  If `true` — will disable pausing on carousel mouse hover */
   @Input() public noPause: boolean;
 
+  @Input('isControls') public isControls: boolean = true;
   @Input() public keyboard: boolean;
 
   @Input('class') public class: String = '';
   @Input('type') public type: String = '';
   @Input('animation') public animation: String = '';
 
-
-  protected _currentActiveSlide: number;
+  // protected _currentActiveSlide: number;
+  protected _currentActiveSlide: number | any ;
 
   /** Will be emitted when active slide has been changed. Part of two-way-bindable [(activeSlide)] property */
   @Output() public activeSlideChange: EventEmitter <any> = new EventEmitter<any>(false);
@@ -125,7 +129,8 @@ export class CarouselComponent implements OnDestroy {
      if (this._currentActiveSlide === remIndex) {
 
        // removing of active slide
-       let nextSlideIndex: number = void 0;
+      //  let nextSlideIndex: number = void 0;
+      let nextSlideIndex: number | any = void 0;
        if (this._slides.length > 1) {
          // if this slide last - will roll to first slide, if noWrap flag is FALSE or to previous, if noWrap is TRUE
          // in case, if this slide in middle of collection, index of next slide is same to removed
@@ -149,6 +154,17 @@ export class CarouselComponent implements OnDestroy {
 
      }
    }
+   // Fixed problem while cannot swipe next / previous image while using HammerJS.
+   swipe(action = this.SWIPE_ACTION.RIGHT) {
+    if (action === this.SWIPE_ACTION.RIGHT) {
+      this.previousSlide();
+    }
+
+    if (action === this.SWIPE_ACTION.LEFT) {
+      this.nextSlide();
+    }
+  }
+
 
   /**
    * Rolling to next slide

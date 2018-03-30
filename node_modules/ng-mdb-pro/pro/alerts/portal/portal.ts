@@ -13,7 +13,8 @@ export interface ComponentType<T> {
  * A `ComponentPortal` is a portal that instantiates some Component upon attachment.
  */
 export class ComponentPortal<T> {
-  private _attachedHost: BasePortalHost;
+  // private _attachedHost: BasePortalHost;
+  private _attachedHost: BasePortalHost | any;
   /** The type of the component that will be instantiated for attachment. */
   component: ComponentType<T>;
 
@@ -54,7 +55,8 @@ export class ComponentPortal<T> {
    * Sets the PortalHost reference without performing `attach()`. This is used directly by
    * the PortalHost when it is performing an `attach()` or `detach()`.
    */
-  setAttachedHost(host: BasePortalHost) {
+  // setAttachedHost(host: BasePortalHost) {
+    setAttachedHost(host: BasePortalHost): any {
     this._attachedHost = host;
   }
 }
@@ -64,11 +66,14 @@ export class ComponentPortal<T> {
  * ComponentPortal
  */
 export abstract class BasePortalHost {
+  public setToNullValue: any = null;
   /** The portal currently attached to the host. */
-  private _attachedPortal: ComponentPortal<any>;
+  // private _attachedPortal: ComponentPortal<any>;
+  private _attachedPortal: ComponentPortal<any> | any;
 
   /** A function that will permanently dispose this host. */
-  private _disposeFn: () => void;
+  // private _disposeFn: () => void;
+  private _disposeFn: () => void | any;
 
   attach(portal: ComponentPortal<any>, newestOnTop: boolean) {
     this._attachedPortal = portal;
@@ -83,7 +88,8 @@ export abstract class BasePortalHost {
     this._attachedPortal = null;
     if (this._disposeFn != null) {
       this._disposeFn();
-      this._disposeFn = null;
+      // this._disposeFn = null;
+      this._disposeFn = this.setToNullValue;
     }
   }
 

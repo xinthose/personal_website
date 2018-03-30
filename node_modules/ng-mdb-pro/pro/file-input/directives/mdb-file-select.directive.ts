@@ -11,7 +11,8 @@ export class MDBFileSelectDirective implements OnInit, OnDestroy {
 
   upload: MDBUploaderService;
   isServer: boolean = isPlatformServer(this.platform_id);
-  el: HTMLInputElement;
+  // el: HTMLInputElement;
+  el: HTMLInputElement | any;
 
   constructor(@Inject(PLATFORM_ID) private platform_id: any, private elementRef: ElementRef) {
     this.upload = new MDBUploaderService();

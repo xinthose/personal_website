@@ -26,7 +26,7 @@
           {{option.label}}
         </span>
       </li>
-      <li *ngIf="!optionList.hasShown" class="message disabled">
+      <li *ngIf="!this.hasOptionsItems" class="message disabled">
         <span>{{notFoundMsg}}</span>
       </li>
     </ul>

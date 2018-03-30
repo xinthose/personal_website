@@ -150,12 +150,14 @@ export class PageScrollInstance {
     });
   }
 
-  public static newInstance(options: PageScrollOptions) {
+//   public static newInstance(options: PageScrollOptions) {
+    public static newInstance(options: PageScrollOptions | any) {
 
     if (Util.isUndefinedOrNull(options.namespace) || options.namespace.length <= 0) {
         options.namespace = PageScrollConfig._defaultNamespace;
     }
-    const pageScrollInstance: PageScrollInstance = new PageScrollInstance(options.namespace, document);
+    // const pageScrollInstance: PageScrollInstance = new PageScrollInstance(options.namespace, document);
+    const pageScrollInstance: PageScrollInstance | any = new PageScrollInstance(options.namespace, document);
 
     if (Util.isUndefinedOrNull(options.scrollingViews) || options.scrollingViews.length === 0) {
         pageScrollInstance._isInlineScrolling = false;
@@ -351,7 +353,8 @@ export class PageScrollInstance {
    * @returns {HTMLElement}
    */
   public extractScrollTargetPosition(): {top: number, left: number} {
-    let scrollTargetElement: HTMLElement;
+    // let scrollTargetElement: HTMLElement;
+    let scrollTargetElement: HTMLElement | any;
     if (typeof this._scrollTarget === 'string') {
         scrollTargetElement = this.document.getElementById((<string>this._scrollTarget).substr(1));
     } else {
@@ -372,7 +375,8 @@ export class PageScrollInstance {
             let parentFound = false;
 
             // Start parent is the immediate parent
-            let parent = scrollTargetElement.parentElement;
+            // let parent = scrollTargetElement.parentElement;
+            let parent: any = scrollTargetElement.parentElement;
 
             // Iterate upwards all parents
             while (!parentFound && !Util.isUndefinedOrNull(parent)) {

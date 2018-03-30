@@ -7,11 +7,11 @@ import {
   OnInit,
   Output,
   ViewChild,
-  ViewEncapsulation, ElementRef
+  ViewEncapsulation, ElementRef, HostListener
 } from '@angular/core';
 
-import {Option} from './option';
-import {OptionList} from './option-list';
+import { Option } from './option';
+import { OptionList } from './option-list';
 
 @Component({
   selector: 'mdb-select-dropdown',
@@ -45,11 +45,17 @@ export class SelectDropdownComponent
   disabledColor = '#fff';
   disabledTextColor = '9e9e9e';
 
-  constructor(private _elementRef: ElementRef) {}
+  public hasOptionsItems: boolean = true;
+
+  constructor(private _elementRef: ElementRef) { }
 
   /** Event handlers. **/
 
   // Angular life cycle hooks.
+
+  @HostListener('keyup', ['$event']) onkeyup() {
+    this.hasOptionsItems = this._elementRef.nativeElement.childNodes[0].children[1].children[0].children.length >= 1 ? true : false;
+  }
 
   ngOnInit() {
     this.optionsReset();
@@ -61,7 +67,7 @@ export class SelectDropdownComponent
     }
 
     const container = this._elementRef.nativeElement.classList;
-    setTimeout( () => { container.add('fadeInSelect'); }, 200 );
+    setTimeout(() => { container.add('fadeInSelect'); }, 200);
   }
 
   ngAfterViewInit() {
