@@ -2,14 +2,16 @@
 <header>
     <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark bg-indigo scrolling-navbar" [containerInside]="false">
         <logo>
-            <a class="logo navbar-brand" routerLink="/home"><strong>{{title}}</strong></a>
+            <a class="logo navbar-brand" routerLink="/home">
+                <strong>{{title}}</strong>
+            </a>
         </logo>
         <links>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item waves-light" mdbRippleRadius>
-                  <nav>
-                    <a class="nav-link" routerLink="/bible">Bible</a>
-                  </nav>
+                    <nav>
+                        <a class="nav-link" routerLink="/bible">Bible</a>
+                    </nav>
                 </li>
                 <li class="nav-item waves-light" mdbRippleRadius>
                     <a class="nav-link">Doctrine</a>
@@ -20,28 +22,15 @@
             </ul>
         </links>
     </mdb-navbar>
-    <div class="view hm-black-light">
-        <div class="full-bg-img flex-center">
-            <div class="container">
-                <div class="white-text text-center wow fadeInUp">
-                    <h2>This Navbar is fixed</h2>
-                    <h5>It will always stay visible on the top, even when you scroll down</h5>
-                    <br>
-                    <p>Full page intro with background image will be always displayed in full screen mode, regardless of device </p>
-                </div>
-            </div>
-        </div>
-    </div>
 </header>
 <!-- Body -->
 <router-outlet></router-outlet>
 <!-- Footer -->
-<footer class="page-footer blue center-on-small-only">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <h6>© 2017 Copyright: Adam Dunsmoor</h6>
-      </div>
+<footer class="page-footer mdb-color center-on-small-only">
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            © 2018 Copyright:
+            <a href="https://www.MDBootstrap.com"> Adam Dunsmoor </a>
+        </div>
     </div>
-  </div>
 </footer>
