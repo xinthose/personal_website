@@ -1,0 +1,99 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var util_1 = require("./../util");
+var key_events_1 = require("./key-events");
+var keys_1 = require("./keys");
+var navigation_action_1 = require("./navigation-action");
+var navigation_config_1 = require("./navigation-config");
+/**
+ * @hidden
+ */
+var NavigationService = (function () {
+    function NavigationService(config) {
+        this.navigate = new core_1.EventEmitter();
+        this.open = new core_1.EventEmitter();
+        this.close = new core_1.EventEmitter();
+        this.enter = new core_1.EventEmitter();
+        this.enterpress = new core_1.EventEmitter();
+        this.enterup = new core_1.EventEmitter();
+        this.tab = new core_1.EventEmitter();
+        this.esc = new core_1.EventEmitter();
+        this.useLeftRightArrows = config.useLeftRightArrows;
+    }
+    NavigationService.prototype.process = function (args) {
+        var keyCode = args.keyCode;
+        var keyEvent = args.keyEvent;
+        var index;
+        var action = navigation_action_1.NavigationAction.Undefined;
+        if (keyEvent === key_events_1.KeyEvents.keypress) {
+            if (this.isEnter(keyCode)) {
+                action = navigation_action_1.NavigationAction.EnterPress;
+            }
+        }
+        else if (keyEvent === key_events_1.KeyEvents.keyup) {
+            if (this.isEnter(keyCode)) {
+                action = navigation_action_1.NavigationAction.EnterUp;
+            }
+        }
+        else {
+            if (args.altKey && keyCode === keys_1.Keys.down) {
+                action = navigation_action_1.NavigationAction.Open;
+            }
+            else if (args.altKey && keyCode === keys_1.Keys.up) {
+                action = navigation_action_1.NavigationAction.Close;
+            }
+            else if (this.isEnter(keyCode)) {
+                action = navigation_action_1.NavigationAction.Enter;
+            }
+            else if (keyCode === keys_1.Keys.esc) {
+                action = navigation_action_1.NavigationAction.Esc;
+            }
+            else if (keyCode === keys_1.Keys.tab) {
+                action = navigation_action_1.NavigationAction.Tab;
+            }
+            else if (keyCode === keys_1.Keys.up || (this.useLeftRightArrows && keyCode === keys_1.Keys.left)) {
+                index = this.next({
+                    current: args.current,
+                    start: args.max,
+                    end: args.min,
+                    step: -1
+                });
+                action = navigation_action_1.NavigationAction.Navigate;
+            }
+            else if (keyCode === keys_1.Keys.down || (this.useLeftRightArrows && keyCode === keys_1.Keys.right)) {
+                index = this.next({
+                    current: args.current,
+                    start: args.min,
+                    end: args.max,
+                    step: 1
+                });
+                action = navigation_action_1.NavigationAction.Navigate;
+            }
+        }
+        if (action !== navigation_action_1.NavigationAction.Undefined) {
+            this[navigation_action_1.NavigationAction[action].toLowerCase()].emit(index);
+        }
+        return action;
+    };
+    NavigationService.prototype.isEnter = function (keyCode) {
+        return keyCode === keys_1.Keys.enter || keyCode === keys_1.Keys.space;
+    };
+    NavigationService.prototype.next = function (args) {
+        if (!util_1.isPresent(args.current)) {
+            return args.start;
+        }
+        else {
+            return args.current !== args.end ? args.current + args.step : args.end;
+        }
+    };
+    return NavigationService;
+}());
+NavigationService.decorators = [
+    { type: core_1.Injectable },
+];
+/** @nocollapse */
+NavigationService.ctorParameters = function () { return [
+    { type: undefined, decorators: [{ type: core_1.Inject, args: [navigation_config_1.NAVIGATION_CONFIG,] },] },
+]; };
+exports.NavigationService = NavigationService;

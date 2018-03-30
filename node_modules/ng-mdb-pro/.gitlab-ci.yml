@@ -1,0 +1,36 @@
+stages:
+  - lint
+  - build
+  - test
+  
+cache:
+    paths:
+        - node_modules/
+
+
+lint: 
+    stage: lint
+    script: 
+        - echo "Lint"
+    only: 
+        - master
+        - test
+        - dev
+
+build: 
+    stage: build
+    script: 
+        - echo "Build"
+    only: 
+        - master
+        - test
+        - dev
+
+test: 
+    stage: test
+    script: 
+        - echo "Test"
+    only:
+        - master
+        - test
+        - dev

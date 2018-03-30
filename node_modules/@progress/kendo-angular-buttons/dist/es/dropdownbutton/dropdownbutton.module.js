@@ -1,0 +1,29 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { PopupModule } from '@progress/kendo-angular-popup';
+import { ListModule } from '../listbutton/list.module';
+import { ButtonModule } from '../button/button.module';
+import { DropDownButtonComponent } from './dropdownbutton.component';
+/**
+ * @hidden
+ *
+ * The exported package module.
+ *
+ * The package exports:
+ * - `DropDownButtonComponent`&mdash;The DropDownButtonComponent component class.
+ */
+var DropDownButtonModule = (function () {
+    function DropDownButtonModule() {
+    }
+    return DropDownButtonModule;
+}());
+export { DropDownButtonModule };
+DropDownButtonModule.decorators = [
+    { type: NgModule, args: [{
+                declarations: [DropDownButtonComponent],
+                exports: [DropDownButtonComponent, ListModule],
+                imports: [CommonModule, PopupModule, ListModule, ButtonModule]
+            },] },
+];
+/** @nocollapse */
+DropDownButtonModule.ctorParameters = function () { return []; };

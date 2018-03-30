@@ -1,0 +1,42 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+/**
+ * @hidden
+ */
+var FocusService = (function () {
+    function FocusService() {
+        this.onFocus = new core_1.EventEmitter();
+    }
+    FocusService.prototype.isFocused = function (index) {
+        return index === this.focused;
+    };
+    FocusService.prototype.focus = function (index) {
+        if (this.isFocused(index)) {
+            return;
+        }
+        this.focused = index;
+        this.onFocus.emit(index);
+    };
+    FocusService.prototype.resetFocus = function () {
+        this.focused = -1;
+    };
+    Object.defineProperty(FocusService.prototype, "focused", {
+        get: function () {
+            return this.focusedIndex;
+        },
+        set: function (index) {
+            this.focusedIndex = index;
+            this.onFocus.emit(index);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    return FocusService;
+}());
+FocusService.decorators = [
+    { type: core_1.Injectable },
+];
+/** @nocollapse */
+FocusService.ctorParameters = function () { return []; };
+exports.FocusService = FocusService;
