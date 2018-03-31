@@ -4,8 +4,6 @@ const chalk_1 = require("chalk");
 const stringUtils = require('ember-cli-string-utils');
 const common_tags_1 = require("common-tags");
 const config_1 = require("../models/config");
-require("rxjs/add/observable/of");
-require("rxjs/add/operator/ignoreElements");
 const schematics_1 = require("../utilities/schematics");
 const dynamic_path_parser_1 = require("../utilities/dynamic-path-parser");
 const app_utils_1 = require("../utilities/app-utils");
@@ -55,22 +53,34 @@ exports.default = Command.extend({
     anonymousOptions: [
         '<schematic>'
     ],
-    getCollectionName(rawArgs) {
+    getCollectionName(rawArgs, parsedOptions) {
         let collectionName = config_1.CliConfig.getValue('defaults.schematics.collection');
-        if (rawArgs) {
+        if (!rawArgs || rawArgs.length === 0) {
+            return [collectionName, null];
+        }
+        let schematicName = rawArgs[0];
+        if (schematicName.match(/:/)) {
+            [collectionName, schematicName] = schematicName.split(':', 2);
+        }
+        else if (parsedOptions) {
+            if (parsedOptions.collection) {
+                collectionName = parsedOptions.collection;
+            }
+        }
+        else {
             const parsedArgs = this.parseArgs(rawArgs, false);
             if (parsedArgs.options.collection) {
                 collectionName = parsedArgs.options.collection;
             }
         }
-        return collectionName;
+        return [collectionName, schematicName];
     },
     beforeRun: function (rawArgs) {
         const isHelp = ['--help', '-h'].includes(rawArgs[0]);
         if (isHelp) {
             return;
         }
-        const schematicName = rawArgs[0];
+        const [collectionName, schematicName] = this.getCollectionName(rawArgs);
         if (!schematicName) {
             return Promise.reject(new SilentError(common_tags_1.oneLine `
           The "ng generate" command requires a
@@ -86,15 +96,19 @@ exports.default = Command.extend({
             ui: this.ui,
             project: this.project
         });
-        const collectionName = this.getCollectionName(rawArgs);
         return getOptionsTask.run({
             schematicName,
             collectionName
         })
             .then((availableOptions) => {
             let anonymousOptions = [];
-            const nameOption = availableOptions.filter(opt => opt.name === 'name')[0];
-            if (nameOption) {
+            if (availableOptions) {
+                const nameOption = availableOptions.filter(opt => opt.name === 'name')[0];
+                if (nameOption) {
+                    anonymousOptions = [...anonymousOptions, '<name>'];
+                }
+            }
+            else {
                 anonymousOptions = [...anonymousOptions, '<name>'];
             }
             if (collectionName === '@schematics/angular' && schematicName === 'interface') {
@@ -102,7 +116,7 @@ exports.default = Command.extend({
             }
             this.registerOptions({
                 anonymousOptions: anonymousOptions,
-                availableOptions: availableOptions
+                availableOptions: availableOptions || []
             });
         });
     },
@@ -125,7 +139,7 @@ exports.default = Command.extend({
             dryRun: commandOptions.dryRun
         };
         const parsedPath = dynamic_path_parser_1.dynamicPathParser(dynamicPathOptions);
-        commandOptions.sourceDir = parsedPath.sourceDir;
+        commandOptions.sourceDir = parsedPath.sourceDir.replace(separatorRegEx, '/');
         const root = parsedPath.sourceDir + path.sep;
         commandOptions.appRoot = parsedPath.appRoot === parsedPath.sourceDir ? '' :
             parsedPath.appRoot.startsWith(root)
@@ -137,7 +151,7 @@ exports.default = Command.extend({
                 ? commandOptions.path.substr(root.length)
                 : commandOptions.path;
         const cwd = this.project.root;
-        const schematicName = rawArgs[0];
+        const [collectionName, schematicName] = this.getCollectionName(rawArgs, commandOptions);
         if (['component', 'c', 'directive', 'd'].indexOf(schematicName) !== -1) {
             if (commandOptions.prefix === undefined) {
                 commandOptions.prefix = appConfig.prefix;
@@ -153,8 +167,6 @@ exports.default = Command.extend({
             ui: this.ui,
             project: this.project
         });
-        const collectionName = commandOptions.collection ||
-            config_1.CliConfig.getValue('defaults.schematics.collection');
         if (collectionName === '@schematics/angular' && schematicName === 'interface' && rawArgs[2]) {
             commandOptions.type = rawArgs[2];
         }
@@ -167,7 +179,7 @@ exports.default = Command.extend({
     },
     printDetailedHelp: function (_options, rawArgs) {
         const engineHost = schematics_1.getEngineHost();
-        const collectionName = this.getCollectionName();
+        const [collectionName] = this.getCollectionName();
         const collection = schematics_1.getCollection(collectionName);
         const schematicName = rawArgs[1];
         if (schematicName) {

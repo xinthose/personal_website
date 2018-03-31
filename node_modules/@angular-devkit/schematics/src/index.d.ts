@@ -12,6 +12,7 @@ export * from './tree/action';
 export * from './engine/collection';
 export * from './engine/engine';
 export * from './engine/interface';
+export { TaskConfiguration, TaskConfigurationGenerator, TaskExecutor, TaskExecutorFactory, TaskId } from './engine/task';
 export * from './exception/exception';
 export * from './tree/interface';
 export * from './rules/base';
@@ -29,6 +30,8 @@ export { UpdateRecorder } from './tree/interface';
 export * from './engine/schematic';
 export * from './sink/dryrun';
 export { FileSystemSink } from './sink/filesystem';
+import * as formats from './formats';
+export { formats };
 export interface TreeConstructor {
     empty(): TreeInterface;
     branch(tree: TreeInterface): TreeInterface;

@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const schematics_1 = require("@angular-devkit/schematics");
+const node_1 = require("@angular-devkit/schematics/tasks/node");
 const tools_1 = require("@angular-devkit/schematics/tools");
-const Observable_1 = require("rxjs/Observable");
+const of_1 = require("rxjs/observable/of");
 const path = require("path");
 const chalk_1 = require("chalk");
 const config_1 = require("../models/config");
-require("rxjs/add/operator/concatMap");
-require("rxjs/add/operator/map");
+const operators_1 = require("rxjs/operators");
 const schematics_2 = require("../utilities/schematics");
 const { green, red, yellow } = chalk_1.default;
 const Task = require('../ember-cli/lib/models/task');
@@ -15,13 +15,20 @@ exports.default = Task.extend({
     run: function (options) {
         const { taskOptions, workingDir, emptyHost, collectionName, schematicName } = options;
         const ui = this.ui;
+        const packageManager = config_1.CliConfig.fromGlobal().get('packageManager');
+        const engineHost = schematics_2.getEngineHost();
+        engineHost.registerTaskExecutor(node_1.BuiltinTaskExecutor.NodePackage, {
+            rootDirectory: workingDir,
+            packageManager: packageManager === 'default' ? 'npm' : packageManager,
+        });
+        engineHost.registerTaskExecutor(node_1.BuiltinTaskExecutor.RepositoryInitializer, { rootDirectory: workingDir });
         const collection = schematics_2.getCollection(collectionName);
         const schematic = schematics_2.getSchematic(collection, schematicName);
         const projectRoot = !!this.project ? this.project.root : workingDir;
         const preppedOptions = prepOptions(schematic, taskOptions);
         const opts = Object.assign({}, taskOptions, preppedOptions);
         const tree = emptyHost ? new schematics_1.EmptyTree() : new schematics_1.FileSystemTree(new tools_1.FileSystemHost(workingDir));
-        const host = Observable_1.Observable.of(tree);
+        const host = of_1.of(tree);
         const dryRunSink = new schematics_1.DryRunSink(workingDir, opts.force);
         const fsSink = new schematics_1.FileSystemSink(workingDir, opts.force);
         let error = false;
@@ -70,21 +77,25 @@ exports.default = Task.extend({
             }
         });
         return new Promise((resolve, reject) => {
-            schematic.call(opts, host)
-                .map((tree) => schematics_1.Tree.optimize(tree))
-                .concatMap((tree) => {
-                return dryRunSink.commit(tree).ignoreElements().concat(Observable_1.Observable.of(tree));
-            })
-                .concatMap((tree) => {
+            schematic.call(opts, host).pipe(operators_1.map((tree) => schematics_1.Tree.optimize(tree)), operators_1.concatMap((tree) => {
+                return dryRunSink.commit(tree).pipe(operators_1.ignoreElements(), operators_1.concat(of_1.of(tree)));
+            }), operators_1.concatMap((tree) => {
                 if (!error) {
                     // Output the logging queue.
                     loggingQueue.forEach(log => ui.writeLine(`  ${log.color(log.keyword)} ${log.message}`));
                 }
                 if (opts.dryRun || error) {
-                    return Observable_1.Observable.of(tree);
+                    return of_1.of(tree);
                 }
-                return fsSink.commit(tree).ignoreElements().concat(Observable_1.Observable.of(tree));
-            })
+                return fsSink.commit(tree).pipe(operators_1.ignoreElements(), operators_1.concat(of_1.of(tree)));
+            }), operators_1.concatMap(() => {
+                if (!opts.dryRun) {
+                    return schematics_2.getEngine().executePostTasks();
+                }
+                else {
+                    return [];
+                }
+            }))
                 .subscribe({
                 error(err) {
                     ui.writeLine(red(`Error: ${err.message}`));
@@ -123,11 +134,13 @@ exports.default = Task.extend({
     }
 });
 function prepOptions(schematic, options) {
-    const properties = schematic.description.schemaJson.properties;
+    const properties = schematic.description.schemaJson
+        ? schematic.description.schemaJson.properties
+        : options;
     const keys = Object.keys(properties);
     if (['component', 'c', 'directive', 'd'].indexOf(schematic.description.name) !== -1) {
         options.prefix = (options.prefix === 'false' || options.prefix === '')
-            ? '' : options.prefix;
+            ? undefined : options.prefix;
     }
     let preppedOptions = Object.assign({}, options, readDefaults(schematic.description.name, keys, options));
     preppedOptions = Object.assign({}, preppedOptions, normalizeOptions(schematic.description.name, keys, options));

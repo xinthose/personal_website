@@ -1,6 +1,39 @@
 <main class="text-center py-5" style="margin-top: 40px;">
     <div class="container">
         <div class="row">
+            <div class="col">
+                <kendo-dropdownlist
+                    [data]="dataBooks"
+                    [value]="selectedBook"
+                    [defaultItem]="defaultItemBook"
+                    [textField]="'bookName'"
+                    [valueField]="'bookId'"
+                    (valueChange)="handleBookChange($event)"
+                >
+                </kendo-dropdownlist>
+                <kendo-dropdownlist
+                    [disabled]="isDisabledChapters"
+                    [defaultItem]="defaultItemChapter"
+                    [data]="dataResultChapters"
+                    [value]="selectedChapter"
+                    [textField]="'chapterName'"
+                    [valueField]="'chapterId'"
+                    (valueChange)="handleChapterChange($event)"
+                >
+                </kendo-dropdownlist>
+                <kendo-dropdownlist
+                    [disabled]="isDisabledVerses"
+                    [defaultItem]="defaultItemVerse"
+                    [data]="dataResultVerses"
+                    [value]="selectedVerse"
+                    [textField]="'verseName'"
+                    [valueField]="'verseId'"
+                    (valueChange)="handleVerseChange($event)"
+                >
+                </kendo-dropdownlist>
+            </div>
+        </div>
+        <!-- <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="card card-cascade wider">
                     <div class="view gradient-card-header peach-gradient">
@@ -8,11 +41,11 @@
                     </div>
                     <div class="card-body text-center">
                         <p class="card-text mr-2 ml-2">
-                          Chapters 1 - 30
+                            Chapters 1-50
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </main>
