@@ -91,72 +91,964 @@ export class BibleComponent implements OnInit {
     { bookName: "Revelation", bookId: 66 },
   ];
   public dataChapters: Array<{ chapterName: string, chapterId: number, bookId: number }> = [
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 1 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 2 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 3 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 4 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 5 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 6 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 7 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 8 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 9 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 10 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 11 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 12 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 13 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 14 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 15 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 16 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 17 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 18 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 19 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 20 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 21 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 22 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 23 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 24 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 25 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 26 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 27 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 28 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 29 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 30 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 31 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 32 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 33 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 34 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 35 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 36 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 37 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 38 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 39 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 40 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 41 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 42 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 43 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 44 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 45 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 46 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 47 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 48 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 49 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 50 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 51 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 52 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 53 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 54 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 55 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 56 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 57 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 58 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 59 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 60 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 61 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 62 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 63 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 64 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 65 },
-    { chapterName: "Chapter 1", chapterId: 1, bookId: 66 },
+    /* Chapter 1 */
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 7 },  // Judges
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 8 },  // Ruth
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 15 },  // Ezra
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 16 },  // Nehemiah
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 17 },  // Esther
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 18 },  // Job
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 21 },  // Ecclesiastes
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 22 },  // Song of Solomon
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 25 },  // Lamentations
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 27 },  // Daniel
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 28 },  // Hosea
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 29 },  // Joel
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 30 },  // Amos
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 31 },  // Obadiah
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 32 },  // Jonah
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 33 },  // Micah
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 34 },  // Nahum
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 35 },  // Habakkuk
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 36 },  // Zephaniah
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 37 },  // Haggai
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 38 },  // Zechariah
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 39 },  // Malachi
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 41 },  // Mark
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 42 },  // Luke
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 43 },  // John
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 44 },  // Acts
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 45 },  // Romans
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 47 },  // 2 Corinthians
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 48 },  // Galatians
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 49 },  // Ephesians
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 50 },  // Philippians
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 51 },  // Colossians
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 52 },  // 1 Thessalonians
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 53 },  // 2 Thessalonians
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 54 },  // 1 Timothy
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 55 },  // 2 Timothy
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 56 },  // Titus
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 57 },  // Philemon
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 58 },  // Hebrews
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 59 },  // James
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 60 },  // 1 Peter
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 61 },  // 2 Peter
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 62 },  // 1 John
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 63 },  // 2 John
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 64 },  // 3 John
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 65 },  // Jude
+    { chapterName: "Chapter 1", chapterId: 1, bookId: 66 },  // Revelation
+    /* Chapter 3 */
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 7 },  // Judges
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 8 },  // Ruth
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 15 },  // Ezra
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 16 },  // Nehemiah
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 17 },  // Esther
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 18 },  // Job
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 21 },  // Ecclesiastes
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 22 },  // Song of Solomon
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 25 },  // Lamentations
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 27 },  // Daniel
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 28 },  // Hosea
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 29 },  // Joel
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 30 },  // Amos
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 32 },  // Jonah
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 33 },  // Micah
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 34 },  // Nahum
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 35 },  // Habakkuk
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 36 },  // Zephaniah
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 37 },  // Haggai
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 38 },  // Zechariah
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 39 },  // Malachi
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 41 },  // Mark
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 42 },  // Luke
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 43 },  // John
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 44 },  // Acts
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 45 },  // Romans
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 47 },  // 2 Corinthians
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 48 },  // Galatians
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 49 },  // Ephesians
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 50 },  // Philippians
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 51 },  // Colossians
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 52 },  // 1 Thessalonians
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 53 },  // 2 Thessalonians
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 54 },  // 1 Timothy
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 55 },  // 2 Timothy
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 56 },  // Titus
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 58 },  // Hebrews
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 59 },  // James
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 60 },  // 1 Peter
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 61 },  // 2 Peter
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 62 },  // 1 John
+    { chapterName: "Chapter 2", chapterId: 2, bookId: 66 },  // Revelation
+    /* Chapter 3 */
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 7 },  // Judges
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 8 },  // Ruth
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 15 },  // Ezra
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 16 },  // Nehemiah
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 17 },  // Esther
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 18 },  // Job
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 21 },  // Ecclesiastes
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 22 },  // Song of Solomon
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 25 },  // Lamentations
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 27 },  // Daniel
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 28 },  // Hosea
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 29 },  // Joel
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 30 },  // Amos
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 32 },  // Jonah
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 33 },  // Micah
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 34 },  // Nahum
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 35 },  // Habakkuk
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 36 },  // Zephaniah
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 38 },  // Zechariah
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 39 },  // Malachi
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 41 },  // Mark
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 42 },  // Luke
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 43 },  // John
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 44 },  // Acts
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 45 },  // Romans
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 47 },  // 2 Corinthians
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 48 },  // Galatians
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 49 },  // Ephesians
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 50 },  // Philippians
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 51 },  // Colossians
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 52 },  // 1 Thessalonians
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 53 },  // 2 Thessalonians
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 54 },  // 1 Timothy
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 55 },  // 2 Timothy
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 56 },  // Titus
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 58 },  // Hebrews
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 59 },  // James
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 60 },  // 1 Peter
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 61 },  // 2 Peter
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 62 },  // 1 John
+    { chapterName: "Chapter 3", chapterId: 3, bookId: 66 },  // Revelation
+    /* Chapter 4 */
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 7 },  // Judges
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 8 },  // Ruth
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 15 },  // Ezra
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 16 },  // Nehemiah
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 17 },  // Esther
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 18 },  // Job
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 21 },  // Ecclesiastes
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 22 },  // Song of Solomon
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 25 },  // Lamentations
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 27 },  // Daniel
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 28 },  // Hosea
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 29 },  // Joel
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 30 },  // Amos
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 32 },  // Jonah
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 33 },  // Micah
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 38 },  // Zechariah
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 41 },  // Mark
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 42 },  // Luke
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 43 },  // John
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 44 },  // Acts
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 45 },  // Romans
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 47 },  // 2 Corinthians
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 48 },  // Galatians
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 49 },  // Ephesians
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 50 },  // Philippians
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 51 },  // Colossians
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 52 },  // 1 Thessalonians
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 54 },  // 1 Timothy
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 55 },  // 2 Timothy
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 58 },  // Hebrews
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 59 },  // James
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 60 },  // 1 Peter
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 62 },  // 1 John
+    { chapterName: "Chapter 4", chapterId: 4, bookId: 66 },  // Revelation
+    /* Chapter 5 */
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 7 },  // Judges
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 15 },  // Ezra
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 16 },  // Nehemiah
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 17 },  // Esther
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 18 },  // Job
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 21 },  // Ecclesiastes
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 22 },  // Song of Solomon
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 25 },  // Lamentations
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 27 },  // Daniel
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 28 },  // Hosea
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 30 },  // Amos
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 33 },  // Micah
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 38 },  // Zechariah
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 41 },  // Mark
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 42 },  // Luke
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 43 },  // John
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 44 },  // Acts
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 45 },  // Romans
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 47 },  // 2 Corinthians
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 48 },  // Galatians
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 49 },  // Ephesians
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 52 },  // 1 Thessalonians
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 54 },  // 1 Timothy
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 58 },  // Hebrews
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 59 },  // James
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 60 },  // 1 Peter
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 62 },  // 1 John
+    { chapterName: "Chapter 5", chapterId: 5, bookId: 66 },  // Revelation
+    /* Chapter 6 */
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 7 },  // Judges
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 15 },  // Ezra
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 16 },  // Nehemiah
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 17 },  // Esther
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 18 },  // Job
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 21 },  // Ecclesiastes
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 22 },  // Song of Solomon
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 27 },  // Daniel
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 28 },  // Hosea
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 30 },  // Amos
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 33 },  // Micah
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 38 },  // Zechariah
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 41 },  // Mark
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 42 },  // Luke
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 43 },  // John
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 44 },  // Acts
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 45 },  // Romans
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 47 },  // 2 Corinthians
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 48 },  // Galatians
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 49 },  // Ephesians
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 54 },  // 1 Timothy
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 58 },  // Hebrews
+    { chapterName: "Chapter 6", chapterId: 6, bookId: 66 },  // Revelation
+    /* Chapter 7 */
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 7 },  // Judges
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 15 },  // Ezra
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 16 },  // Nehemiah
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 17 },  // Esther
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 18 },  // Job
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 21 },  // Ecclesiastes
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 22 },  // Song of Solomon
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 27 },  // Daniel
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 28 },  // Hosea
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 30 },  // Amos
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 33 },  // Micah
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 38 },  // Zechariah
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 41 },  // Mark
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 42 },  // Luke
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 43 },  // John
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 44 },  // Acts
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 45 },  // Romans
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 47 },  // 2 Corinthians
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 58 },  // Hebrews
+    { chapterName: "Chapter 7", chapterId: 7, bookId: 66 },  // Revelation
+    /* Chapter 8 */
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 7 },  // Judges
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 15 },  // Ezra
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 16 },  // Nehemiah
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 17 },  // Esther
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 18 },  // Job
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 21 },  // Ecclesiastes
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 22 },  // Song of Solomon
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 27 },  // Daniel
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 28 },  // Hosea
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 30 },  // Amos
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 38 },  // Zechariah
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 41 },  // Mark
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 42 },  // Luke
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 43 },  // John
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 44 },  // Acts
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 45 },  // Romans
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 47 },  // 2 Corinthians
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 58 },  // Hebrews
+    { chapterName: "Chapter 8", chapterId: 8, bookId: 66 },  // Revelation
+    /* Chapter 9 */
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 7 },  // Judges
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 15 },  // Ezra
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 16 },  // Nehemiah
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 17 },  // Esther
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 18 },  // Job
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 21 },  // Ecclesiastes
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 27 },  // Daniel
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 28 },  // Hosea
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 30 },  // Amos
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 38 },  // Zechariah
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 41 },  // Mark
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 42 },  // Luke
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 43 },  // John
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 44 },  // Acts
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 45 },  // Romans
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 47 },  // 2 Corinthians
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 58 },  // Hebrews
+    { chapterName: "Chapter 9", chapterId: 9, bookId: 66 },  // Revelation
+    /* Chapter 10 */
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 7 },  // Judges
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 15 },  // Ezra
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 16 },  // Nehemiah
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 17 },  // Esther
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 18 },  // Job
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 21 },  // Ecclesiastes
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 27 },  // Daniel
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 28 },  // Hosea
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 38 },  // Zechariah
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 41 },  // Mark
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 42 },  // Luke
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 43 },  // John
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 44 },  // Acts
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 45 },  // Romans
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 47 },  // 2 Corinthians
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 58 },  // Hebrews
+    { chapterName: "Chapter 10", chapterId: 10, bookId: 66 },  // Revelation
+    /* Chapter 11 */
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 7 },  // Judges
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 16 },  // Nehemiah
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 17 },  // Esther
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 18 },  // Job
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 21 },  // Ecclesiastes
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 27 },  // Daniel
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 28 },  // Hosea
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 38 },  // Zechariah
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 41 },  // Mark
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 42 },  // Luke
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 43 },  // John
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 44 },  // Acts
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 45 },  // Romans
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 47 },  // 2 Corinthians
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 58 },  // Hebrews
+    { chapterName: "Chapter 11", chapterId: 11, bookId: 66 },  // Revelation
+    /* Chapter 12 */
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 7 },  // Judges
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 16 },  // Nehemiah
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 17 },  // Esther
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 18 },  // Job
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 21 },  // Ecclesiastes
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 27 },  // Daniel
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 28 },  // Hosea
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 38 },  // Zechariah
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 41 },  // Mark
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 42 },  // Luke
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 43 },  // John
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 44 },  // Acts
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 45 },  // Romans
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 47 },  // 2 Corinthians
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 58 },  // Hebrews
+    { chapterName: "Chapter 12", chapterId: 12, bookId: 66 },  // Revelation
+    /* Chapter 13 */
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 7 },  // Judges
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 16 },  // Nehemiah
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 17 },  // Esther
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 18 },  // Job
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 27 },  // Daniel
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 28 },  // Hosea
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 38 },  // Zechariah
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 41 },  // Mark
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 42 },  // Luke
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 43 },  // John
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 44 },  // Acts
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 45 },  // Romans
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 47 },  // 2 Corinthians
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 58 },  // Hebrews
+    { chapterName: "Chapter 13", chapterId: 13, bookId: 66 },  // Revelation
+    /* Chapter 14 */
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 7 },  // Judges
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 17 },  // Esther
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 18 },  // Job
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 27 },  // Daniel
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 28 },  // Hosea
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 38 },  // Zechariah
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 41 },  // Mark
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 42 },  // Luke
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 43 },  // John
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 44 },  // Acts
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 45 },  // Romans
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 14", chapterId: 14, bookId: 66 },  // Revelation
+    /* Chapter 15 */
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 7 },  // Judges
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 17 },  // Esther
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 18 },  // Job
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 41 },  // Mark
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 42 },  // Luke
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 43 },  // John
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 44 },  // Acts
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 45 },  // Romans
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 15", chapterId: 15, bookId: 66 },  // Revelation
+    /* Chapter 16 */
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 7 },  // Judges
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 17 },  // Esther
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 18 },  // Job
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 41 },  // Mark
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 42 },  // Luke
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 43 },  // John
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 44 },  // Acts
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 45 },  // Romans
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 46 },  // 1 Corinthians
+    { chapterName: "Chapter 16", chapterId: 16, bookId: 66 },  // Revelation
+    /* Chapter 17 */
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 7 },  // Judges
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 18 },  // Job
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 42 },  // Luke
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 43 },  // John
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 44 },  // Acts
+    { chapterName: "Chapter 17", chapterId: 17, bookId: 66 },  // Revelation
+    /* Chapter 18 */
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 7 },  // Judges
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 18 },  // Job
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 42 },  // Luke
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 43 },  // John
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 44 },  // Acts
+    { chapterName: "Chapter 18", chapterId: 18, bookId: 66 },  // Revelation
+    /* Chapter 19 */
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 7 },  // Judges
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 18 },  // Job
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 42 },  // Luke
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 43 },  // John
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 44 },  // Acts
+    { chapterName: "Chapter 19", chapterId: 19, bookId: 66 },  // Revelation
+    /* Chapter 20 */
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 7 },  // Judges
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 18 },  // Job
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 42 },  // Luke
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 43 },  // John
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 44 },  // Acts
+    { chapterName: "Chapter 20", chapterId: 20, bookId: 66 },  // Revelation
+    /* Chapter 21 */
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 7 },  // Judges
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 18 },  // Job
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 42 },  // Luke
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 43 },  // John
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 44 },  // Acts
+    { chapterName: "Chapter 21", chapterId: 21, bookId: 66 },  // Revelation
+    /* Chapter 22 */
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 11 },  // 1 Kings
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 18 },  // Job
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 42 },  // Luke
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 44 },  // Acts
+    { chapterName: "Chapter 22", chapterId: 22, bookId: 66 },  // Revelation
+    /* Chapter 23 */
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 18 },  // Job
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 42 },  // Luke
+    { chapterName: "Chapter 23", chapterId: 23, bookId: 44 },  // Acts
+    /* Chapter 24 */
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 6 },  // Joshua
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 10 },  // 2 Samuel
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 18 },  // Job
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 42 },  // Luke
+    { chapterName: "Chapter 24", chapterId: 24, bookId: 44 },  // Acts
+    /* Chapter 25 */
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 12 },  // 2 Kings
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 18 },  // Job
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 25", chapterId: 25, bookId: 44 },  // Acts
+    /* Chapter 26 */
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 18 },  // Job
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 26", chapterId: 26, bookId: 44 },  // Acts
+    /* Chapter 27 */
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 3 },  // Leviticus
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 18 },  // Job
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 27", chapterId: 27, bookId: 44 },  // Acts
+    /* Chapter 28 */
+    { chapterName: "Chapter 28", chapterId: 28, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 28", chapterId: 28, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 28", chapterId: 28, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 28", chapterId: 28, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 28", chapterId: 28, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 28", chapterId: 28, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 28", chapterId: 28, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 28", chapterId: 28, bookId: 18 },  // Job
+    { chapterName: "Chapter 28", chapterId: 28, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 28", chapterId: 28, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 28", chapterId: 28, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 28", chapterId: 28, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 28", chapterId: 28, bookId: 26 },  // Ezekiel
+    { chapterName: "Chapter 28", chapterId: 28, bookId: 40 },  // Matthew
+    { chapterName: "Chapter 28", chapterId: 28, bookId: 44 },  // Acts
+    /* Chapter 29 */
+    { chapterName: "Chapter 29", chapterId: 29, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 29", chapterId: 29, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 29", chapterId: 29, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 29", chapterId: 29, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 29", chapterId: 29, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 29", chapterId: 29, bookId: 13 },  // 1 Chronicles
+    { chapterName: "Chapter 29", chapterId: 29, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 29", chapterId: 29, bookId: 18 },  // Job
+    { chapterName: "Chapter 29", chapterId: 29, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 29", chapterId: 29, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 29", chapterId: 29, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 29", chapterId: 29, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 29", chapterId: 29, bookId: 26 },  // Ezekiel
   ];
   public dataVerses: Array<{ verseName: string, verseId: number, chapterId: number, }> = [
     { verseName: "Verse 1", verseId: 1, chapterId: 1 },
@@ -173,7 +1065,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 1", verseId: 1, chapterId: 12 },
     { verseName: "Verse 1", verseId: 1, chapterId: 13 },
     { verseName: "Verse 1", verseId: 1, chapterId: 14 },
-    { verseName: "Verse 1", verseId: 1, chapterId: 15 },
+    { verseName: "Verse 1", verseId: 1, chapterId: 16 },
     { verseName: "Verse 1", verseId: 1, chapterId: 16 },
     { verseName: "Verse 1", verseId: 1, chapterId: 17 },
     { verseName: "Verse 1", verseId: 1, chapterId: 18 },
