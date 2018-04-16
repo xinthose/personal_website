@@ -1049,6 +1049,312 @@ export class BibleComponent implements OnInit {
     { chapterName: "Chapter 29", chapterId: 29, bookId: 23 },  // Isaiah
     { chapterName: "Chapter 29", chapterId: 29, bookId: 24 },  // Jeremiah
     { chapterName: "Chapter 29", chapterId: 29, bookId: 26 },  // Ezekiel
+    /* Chapter 30 */
+    { chapterName: "Chapter 30", chapterId: 30, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 30", chapterId: 30, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 30", chapterId: 30, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 30", chapterId: 30, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 30", chapterId: 30, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 30", chapterId: 30, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 30", chapterId: 30, bookId: 18 },  // Job
+    { chapterName: "Chapter 30", chapterId: 30, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 30", chapterId: 30, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 30", chapterId: 30, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 30", chapterId: 30, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 30", chapterId: 30, bookId: 26 },  // Ezekiel
+    /* Chapter 31 */
+    { chapterName: "Chapter 31", chapterId: 31, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 31", chapterId: 31, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 31", chapterId: 31, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 31", chapterId: 31, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 31", chapterId: 31, bookId: 9 },  // 1 Samuel
+    { chapterName: "Chapter 31", chapterId: 31, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 31", chapterId: 31, bookId: 18 },  // Job
+    { chapterName: "Chapter 31", chapterId: 31, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 31", chapterId: 31, bookId: 20 },  // Proverbs
+    { chapterName: "Chapter 31", chapterId: 31, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 31", chapterId: 31, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 31", chapterId: 31, bookId: 26 },  // Ezekiel
+    /* Chapter 32 */
+    { chapterName: "Chapter 32", chapterId: 32, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 32", chapterId: 32, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 32", chapterId: 32, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 32", chapterId: 32, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 32", chapterId: 32, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 32", chapterId: 32, bookId: 18 },  // Job
+    { chapterName: "Chapter 32", chapterId: 32, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 32", chapterId: 32, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 32", chapterId: 32, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 32", chapterId: 32, bookId: 26 },  // Ezekiel
+    /* Chapter 33 */
+    { chapterName: "Chapter 33", chapterId: 33, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 33", chapterId: 33, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 33", chapterId: 33, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 33", chapterId: 33, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 33", chapterId: 33, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 33", chapterId: 33, bookId: 18 },  // Job
+    { chapterName: "Chapter 33", chapterId: 33, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 33", chapterId: 33, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 33", chapterId: 33, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 33", chapterId: 33, bookId: 26 },  // Ezekiel
+    /* Chapter 34 */
+    { chapterName: "Chapter 34", chapterId: 34, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 34", chapterId: 34, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 34", chapterId: 34, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 34", chapterId: 34, bookId: 5 },  // Deuteronomy
+    { chapterName: "Chapter 34", chapterId: 34, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 34", chapterId: 34, bookId: 18 },  // Job
+    { chapterName: "Chapter 34", chapterId: 34, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 34", chapterId: 34, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 34", chapterId: 34, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 34", chapterId: 34, bookId: 26 },  // Ezekiel
+    /* Chapter 35 */
+    { chapterName: "Chapter 35", chapterId: 35, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 35", chapterId: 35, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 35", chapterId: 35, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 35", chapterId: 35, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 35", chapterId: 35, bookId: 18 },  // Job
+    { chapterName: "Chapter 35", chapterId: 35, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 35", chapterId: 35, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 35", chapterId: 35, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 35", chapterId: 35, bookId: 26 },  // Ezekiel
+    /* Chapter 36 */
+    { chapterName: "Chapter 36", chapterId: 36, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 36", chapterId: 36, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 36", chapterId: 36, bookId: 4 },  // Numbers
+    { chapterName: "Chapter 36", chapterId: 36, bookId: 14 },  // 2 Chronicles
+    { chapterName: "Chapter 36", chapterId: 36, bookId: 18 },  // Job
+    { chapterName: "Chapter 36", chapterId: 36, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 36", chapterId: 36, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 36", chapterId: 36, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 36", chapterId: 36, bookId: 26 },  // Ezekiel
+    /* Chapter 37 */
+    { chapterName: "Chapter 37", chapterId: 37, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 37", chapterId: 37, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 37", chapterId: 37, bookId: 18 },  // Job
+    { chapterName: "Chapter 37", chapterId: 37, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 37", chapterId: 37, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 37", chapterId: 37, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 37", chapterId: 37, bookId: 26 },  // Ezekiel
+    /* Chapter 38 */
+    { chapterName: "Chapter 38", chapterId: 38, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 38", chapterId: 38, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 38", chapterId: 38, bookId: 18 },  // Job
+    { chapterName: "Chapter 38", chapterId: 38, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 38", chapterId: 38, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 38", chapterId: 38, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 38", chapterId: 38, bookId: 26 },  // Ezekiel
+    /* Chapter 39 */
+    { chapterName: "Chapter 39", chapterId: 39, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 39", chapterId: 39, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 39", chapterId: 39, bookId: 18 },  // Job
+    { chapterName: "Chapter 39", chapterId: 39, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 39", chapterId: 39, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 39", chapterId: 39, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 39", chapterId: 39, bookId: 26 },  // Ezekiel
+    /* Chapter 40 */
+    { chapterName: "Chapter 40", chapterId: 40, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 40", chapterId: 40, bookId: 2 },  // Exodus
+    { chapterName: "Chapter 40", chapterId: 40, bookId: 18 },  // Job
+    { chapterName: "Chapter 40", chapterId: 40, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 40", chapterId: 40, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 40", chapterId: 40, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 40", chapterId: 40, bookId: 26 },  // Ezekiel
+    /* Chapter 41 */
+    { chapterName: "Chapter 41", chapterId: 41, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 41", chapterId: 41, bookId: 18 },  // Job
+    { chapterName: "Chapter 41", chapterId: 41, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 41", chapterId: 41, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 41", chapterId: 41, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 41", chapterId: 41, bookId: 26 },  // Ezekiel
+    /* Chapter 42 */
+    { chapterName: "Chapter 42", chapterId: 42, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 42", chapterId: 42, bookId: 18 },  // Job
+    { chapterName: "Chapter 42", chapterId: 42, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 42", chapterId: 42, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 42", chapterId: 42, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 42", chapterId: 42, bookId: 26 },  // Ezekiel
+    /* Chapter 43 */
+    { chapterName: "Chapter 43", chapterId: 43, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 43", chapterId: 43, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 43", chapterId: 43, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 43", chapterId: 43, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 43", chapterId: 43, bookId: 26 },  // Ezekiel
+    /* Chapter 44 */
+    { chapterName: "Chapter 44", chapterId: 44, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 44", chapterId: 44, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 44", chapterId: 44, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 44", chapterId: 44, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 44", chapterId: 44, bookId: 26 },  // Ezekiel
+    /* Chapter 45 */
+    { chapterName: "Chapter 45", chapterId: 45, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 45", chapterId: 45, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 45", chapterId: 45, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 45", chapterId: 45, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 45", chapterId: 45, bookId: 26 },  // Ezekiel
+    /* Chapter 46 */
+    { chapterName: "Chapter 46", chapterId: 46, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 46", chapterId: 46, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 46", chapterId: 46, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 46", chapterId: 46, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 46", chapterId: 46, bookId: 26 },  // Ezekiel
+    /* Chapter 47 */
+    { chapterName: "Chapter 47", chapterId: 47, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 47", chapterId: 47, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 47", chapterId: 47, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 47", chapterId: 47, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 47", chapterId: 47, bookId: 26 },  // Ezekiel
+    /* Chapter 48 */
+    { chapterName: "Chapter 48", chapterId: 48, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 48", chapterId: 48, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 48", chapterId: 48, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 48", chapterId: 48, bookId: 24 },  // Jeremiah
+    { chapterName: "Chapter 48", chapterId: 48, bookId: 26 },  // Ezekiel
+    /* Chapter 49 */
+    { chapterName: "Chapter 49", chapterId: 49, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 49", chapterId: 49, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 49", chapterId: 49, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 49", chapterId: 49, bookId: 24 },  // Jeremiah
+    /* Chapter 50 */
+    { chapterName: "Chapter 50", chapterId: 50, bookId: 1 },  // Genesis
+    { chapterName: "Chapter 50", chapterId: 50, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 50", chapterId: 50, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 50", chapterId: 50, bookId: 24 },  // Jeremiah
+    /* Chapter 51 */
+    { chapterName: "Chapter 51", chapterId: 51, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 51", chapterId: 51, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 51", chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapter 52 */
+    { chapterName: "Chapter 52", chapterId: 52, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 52", chapterId: 52, bookId: 23 },  // Isaiah
+    { chapterName: "Chapter 52", chapterId: 52, bookId: 24 },  // Jeremiah
+    /* Chapter 53 */
+    { chapterName: "Chapter 53", chapterId: 53, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 53", chapterId: 53, bookId: 23 },  // Isaiah
+    /* Chapter 54 */
+    { chapterName: "Chapter 54", chapterId: 54, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 54", chapterId: 54, bookId: 23 },  // Isaiah
+    /* Chapter 55 */
+    { chapterName: "Chapter 55", chapterId: 55, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 55", chapterId: 55, bookId: 23 },  // Isaiah
+    /* Chapter 56 */
+    { chapterName: "Chapter 56", chapterId: 56, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 56", chapterId: 56, bookId: 23 },  // Isaiah
+    /* Chapter 57 */
+    { chapterName: "Chapter 57", chapterId: 57, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 57", chapterId: 57, bookId: 23 },  // Isaiah
+    /* Chapter 58 */
+    { chapterName: "Chapter 58", chapterId: 58, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 58", chapterId: 58, bookId: 23 },  // Isaiah
+    /* Chapter 59 */
+    { chapterName: "Chapter 59", chapterId: 59, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 59", chapterId: 59, bookId: 23 },  // Isaiah
+    /* Chapter 60 */
+    { chapterName: "Chapter 60", chapterId: 60, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 60", chapterId: 60, bookId: 23 },  // Isaiah
+    /* Chapter 61 */
+    { chapterName: "Chapter 61", chapterId: 61, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 61", chapterId: 61, bookId: 23 },  // Isaiah
+    /* Chapter 62 */
+    { chapterName: "Chapter 62", chapterId: 62, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 62", chapterId: 62, bookId: 23 },  // Isaiah
+    /* Chapter 63 */
+    { chapterName: "Chapter 63", chapterId: 63, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 63", chapterId: 63, bookId: 23 },  // Isaiah
+    /* Chapter 64 */
+    { chapterName: "Chapter 64", chapterId: 64, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 64", chapterId: 64, bookId: 23 },  // Isaiah
+    /* Chapter 65 */
+    { chapterName: "Chapter 65", chapterId: 65, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 65", chapterId: 65, bookId: 23 },  // Isaiah
+    /* Chapter 66 */
+    { chapterName: "Chapter 66", chapterId: 66, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 66", chapterId: 66, bookId: 23 },  // Isaiah
+    /* Chapters 67-150 */
+    { chapterName: "Chapter 67", chapterId: 67, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 68", chapterId: 68, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 69", chapterId: 69, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 70", chapterId: 70, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 71", chapterId: 71, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 72", chapterId: 72, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 73", chapterId: 73, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 74", chapterId: 74, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 75", chapterId: 75, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 76", chapterId: 76, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 77", chapterId: 77, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 78", chapterId: 78, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 79", chapterId: 79, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 80", chapterId: 80, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 81", chapterId: 81, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 82", chapterId: 82, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 83", chapterId: 83, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 84", chapterId: 84, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 85", chapterId: 85, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 86", chapterId: 86, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 87", chapterId: 87, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 88", chapterId: 88, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 89", chapterId: 89, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 90", chapterId: 90, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 91", chapterId: 91, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 92", chapterId: 92, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 93", chapterId: 93, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 94", chapterId: 94, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 95", chapterId: 95, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 96", chapterId: 96, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 97", chapterId: 97, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 98", chapterId: 98, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 99", chapterId: 99, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 100", chapterId: 100, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 101", chapterId: 101, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 102", chapterId: 102, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 103", chapterId: 103, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 104", chapterId: 104, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 105", chapterId: 105, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 106", chapterId: 106, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 107", chapterId: 107, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 108", chapterId: 108, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 109", chapterId: 109, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 110", chapterId: 110, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 111", chapterId: 111, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 112", chapterId: 112, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 113", chapterId: 113, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 114", chapterId: 114, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 115", chapterId: 115, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 116", chapterId: 116, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 117", chapterId: 117, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 118", chapterId: 118, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 119", chapterId: 119, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 120", chapterId: 120, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 121", chapterId: 121, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 122", chapterId: 122, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 123", chapterId: 123, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 124", chapterId: 124, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 125", chapterId: 125, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 126", chapterId: 126, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 127", chapterId: 127, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 128", chapterId: 128, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 129", chapterId: 129, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 130", chapterId: 130, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 131", chapterId: 131, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 132", chapterId: 132, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 133", chapterId: 133, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 134", chapterId: 134, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 135", chapterId: 135, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 136", chapterId: 136, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 137", chapterId: 137, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 138", chapterId: 138, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 139", chapterId: 139, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 140", chapterId: 140, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 141", chapterId: 141, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 142", chapterId: 142, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 143", chapterId: 143, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 144", chapterId: 144, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 145", chapterId: 145, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 146", chapterId: 146, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 147", chapterId: 147, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 148", chapterId: 148, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 149", chapterId: 149, bookId: 19 },  // Psalms
+    { chapterName: "Chapter 150", chapterId: 150, bookId: 19 },  // Psalms
   ];
   public dataVerses: Array<{ verseName: string, verseId: number, chapterId: number, }> = [
     { verseName: "Verse 1", verseId: 1, chapterId: 1 },
@@ -1117,72 +1423,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 1", verseId: 1, chapterId: 64 },
     { verseName: "Verse 1", verseId: 1, chapterId: 65 },
     { verseName: "Verse 1", verseId: 1, chapterId: 66 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 1 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 2 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 3 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 4 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 5 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 6 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 7 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 8 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 9 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 10 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 11 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 12 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 13 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 14 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 15 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 16 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 17 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 18 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 19 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 20 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 21 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 22 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 23 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 24 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 25 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 26 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 27 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 28 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 29 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 30 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 31 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 32 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 33 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 34 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 35 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 36 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 37 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 38 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 39 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 40 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 41 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 42 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 43 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 44 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 45 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 46 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 47 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 48 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 49 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 50 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 51 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 52 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 53 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 54 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 55 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 56 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 57 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 58 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 59 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 60 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 61 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 62 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 63 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 64 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 65 },
-    { verseName: "Verse 2", verseId: 2, chapterId: 66 },
   ];
 
   // dropdown cascade result

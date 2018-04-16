@@ -197,6 +197,7 @@ function OutputStream(options) {
 
     /* -----[ beautification/minification ]----- */
 
+    var has_parens = false;
     var might_need_space = false;
     var might_need_semicolon = false;
     var might_add_newline = 0;
@@ -280,7 +281,7 @@ function OutputStream(options) {
             might_need_semicolon = false;
 
             if (prev == ":" && ch == "}" || (!ch || ";}".indexOf(ch) < 0) && prev != ";") {
-                if (options.semicolons || requireSemicolonChars(ch)) {
+                if (options.semicolons || requireSemicolonChars[ch]) {
                     OUTPUT += ";";
                     current_col++;
                     current_pos++;
@@ -340,6 +341,7 @@ function OutputStream(options) {
         }
 
         OUTPUT += str;
+        has_parens = str[str.length - 1] == "(";
         current_pos += str.length;
         var a = str.split(/\r?\n/), n = a.length - 1;
         current_line += n;
@@ -576,7 +578,7 @@ function OutputStream(options) {
         indentation     : function() { return indentation },
         current_width   : function() { return current_col - indentation },
         should_break    : function() { return options.width && this.current_width() >= options.width },
-        has_parens      : function() { return OUTPUT.slice(-1) == "(" },
+        has_parens      : function() { return has_parens },
         newline         : newline,
         print           : print,
         space           : space,
@@ -1244,7 +1246,7 @@ function OutputStream(options) {
         var expr = self.expression;
         expr.print(output);
         var prop = self.property;
-        if (output.option("ie8") && RESERVED_WORDS(prop)) {
+        if (output.option("ie8") && RESERVED_WORDS[prop]) {
             output.print("[");
             output.add_mapping(self.end);
             output.print_string(prop);
@@ -1356,7 +1358,7 @@ function OutputStream(options) {
             output.print_string(key);
         } else if ("" + +key == key && key >= 0) {
             output.print(make_num(key));
-        } else if (RESERVED_WORDS(key) ? !output.option("ie8") : is_identifier_string(key)) {
+        } else if (RESERVED_WORDS[key] ? !output.option("ie8") : is_identifier_string(key)) {
             if (quote && output.option("keep_quoted_props")) {
                 output.print_string(key, quote);
             } else {
@@ -1484,47 +1486,52 @@ function OutputStream(options) {
     /* -----[ source map generators ]----- */
 
     function DEFMAP(nodetype, generator) {
-        nodetype.DEFMETHOD("add_source_map", function(stream){
-            generator(this, stream);
+        nodetype.forEach(function(nodetype) {
+            nodetype.DEFMETHOD("add_source_map", generator);
         });
-    };
+    }
 
-    // We could easily add info for ALL nodes, but it seems to me that
-    // would be quite wasteful, hence this noop in the base class.
-    DEFMAP(AST_Node, noop);
-
-    function basic_sourcemap_gen(self, output) {
-        output.add_mapping(self.start);
-    };
+    DEFMAP([
+        // We could easily add info for ALL nodes, but it seems to me that
+        // would be quite wasteful, hence this noop in the base class.
+        AST_Node,
+        // since the label symbol will mark it
+        AST_LabeledStatement,
+        AST_Toplevel,
+    ], noop);
 
     // XXX: I'm not exactly sure if we need it for all of these nodes,
     // or if we should add even more.
-
-    DEFMAP(AST_Directive, basic_sourcemap_gen);
-    DEFMAP(AST_Debugger, basic_sourcemap_gen);
-    DEFMAP(AST_Symbol, basic_sourcemap_gen);
-    DEFMAP(AST_Jump, basic_sourcemap_gen);
-    DEFMAP(AST_StatementWithBody, basic_sourcemap_gen);
-    DEFMAP(AST_LabeledStatement, noop); // since the label symbol will mark it
-    DEFMAP(AST_Lambda, basic_sourcemap_gen);
-    DEFMAP(AST_Switch, basic_sourcemap_gen);
-    DEFMAP(AST_SwitchBranch, basic_sourcemap_gen);
-    DEFMAP(AST_BlockStatement, basic_sourcemap_gen);
-    DEFMAP(AST_Toplevel, noop);
-    DEFMAP(AST_New, basic_sourcemap_gen);
-    DEFMAP(AST_Try, basic_sourcemap_gen);
-    DEFMAP(AST_Catch, basic_sourcemap_gen);
-    DEFMAP(AST_Finally, basic_sourcemap_gen);
-    DEFMAP(AST_Definitions, basic_sourcemap_gen);
-    DEFMAP(AST_Constant, basic_sourcemap_gen);
-    DEFMAP(AST_ObjectSetter, function(self, output){
-        output.add_mapping(self.start, self.key.name);
-    });
-    DEFMAP(AST_ObjectGetter, function(self, output){
-        output.add_mapping(self.start, self.key.name);
-    });
-    DEFMAP(AST_ObjectProperty, function(self, output){
-        output.add_mapping(self.start, self.key);
+    DEFMAP([
+        AST_Array,
+        AST_BlockStatement,
+        AST_Catch,
+        AST_Constant,
+        AST_Debugger,
+        AST_Definitions,
+        AST_Directive,
+        AST_Finally,
+        AST_Jump,
+        AST_Lambda,
+        AST_New,
+        AST_Object,
+        AST_StatementWithBody,
+        AST_Symbol,
+        AST_Switch,
+        AST_SwitchBranch,
+        AST_Try,
+    ], function(output) {
+        output.add_mapping(this.start);
     });
 
+    DEFMAP([
+        AST_ObjectGetter,
+        AST_ObjectSetter,
+     ], function(output) {
+        output.add_mapping(this.start, this.key.name);
+    });
+
+    DEFMAP([ AST_ObjectProperty ], function(output) {
+        output.add_mapping(this.start, this.key);
+    });
 })();
