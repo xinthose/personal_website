@@ -1,12 +1,16 @@
 # Installation
 
 ## Linux
-//curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+cd /home/adam/Documents/svn/github/personal_website
+git config user.email "adamdunsmoor@unseen.is"
+git config user.name "xinthose"
 apt-get install nodejs npm build-essential
+
+//curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 //ln -s /usr/bin/nodejs /usr/bin/node
-sudo npm install n -g
-n ls
-n 9.6.1 (or latest version)
+//sudo npm install n -g
+//n ls
+//n 9.6.1 (or latest version)
 
 ## Kendo-UI Module
 npm install -g @angular/cli
