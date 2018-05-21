@@ -5118,7 +5118,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 3", verseId: 3, chapterId: 114, bookId: 19 },  // Psalms
     { verseName: "Verse 3", verseId: 3, chapterId: 115, bookId: 19 },  // Psalms
     { verseName: "Verse 3", verseId: 3, chapterId: 116, bookId: 19 },  // Psalms
-    { verseName: "Verse 3", verseId: 3, chapterId: 117, bookId: 19 },  // Psalms
     { verseName: "Verse 3", verseId: 3, chapterId: 118, bookId: 19 },  // Psalms
     { verseName: "Verse 3", verseId: 3, chapterId: 119, bookId: 19 },  // Psalms
     { verseName: "Verse 3", verseId: 3, chapterId: 120, bookId: 19 },  // Psalms
