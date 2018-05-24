@@ -1,0 +1,70 @@
+// These settings will be only for one version
+
+// Button Collapse Without Navbar
+.side-nav .double-navbar .bc-min {
+  padding: 5px 10px;
+  .button-collapse {
+    padding-left: 0px;
+  }
+}
+
+// When icon doesn't need padding
+.no-padding {
+  .fa {
+    padding: 0;
+  }
+}
+
+// Quick look modal
+.ql-modal,
+.product-panel {
+  .modal-dialog {
+    max-width: none;
+    width: auto;
+    margin: 2rem;
+  }
+  .modal-header {
+    text-align: center;
+  }
+  .price {
+    .badge {
+      background-color: rgba(244, 67, 54, 0.7);
+      font-size: 1.4rem;
+      display: inline-block;
+      margin-left: 1rem;
+    }
+    p {
+      display: inline-block;
+      font-size: 1.3rem;
+      .price-before {
+        color: $black;
+        text-decoration: line-through;
+        margin-left: 0.5rem;
+      }
+      .price-after {
+        font-size: 1.7rem;
+        color: map-get($green, "base");
+      }
+    }
+  }
+  .media img {
+    max-width: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ql-modal {
+    .modal-dialog {
+      margin: 0;
+    }
+    padding-left: 0;
+  }
+}
+
+// Parallax
+// .jarallax {
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   min-height: 700px;
+// }

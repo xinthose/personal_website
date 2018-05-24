@@ -12,11 +12,11 @@ import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
 
 // Bootstrap
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import { MDBBootstrapModules } from 'ng-mdb-pro';
-import { MDBSpinningPreloader } from 'ng-mdb-pro';
+import { MDBBootstrapModulesPro } from 'ng-uikit-pro-standard';
+import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
 
 // Components
-import { AppRoutingModule }     from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { BibleComponent } from './bible/bible.component';
 
@@ -28,7 +28,7 @@ import { BibleComponent } from './bible/bible.component';
     ],
     imports: [
         // General
-        MDBBootstrapModules.forRoot(),
+        MDBBootstrapModulesPro.forRoot(),
         BrowserModule.withServerTransition({ appId: 'MyPersonalWebsite' }),
         AppRoutingModule,
         BrowserAnimationsModule,
@@ -39,9 +39,9 @@ import { BibleComponent } from './bible/bible.component';
         ButtonsModule,
         DropDownsModule,
     ],
-    schemas: [ NO_ERRORS_SCHEMA ],
+    schemas: [NO_ERRORS_SCHEMA],
     providers: [
-      MDBSpinningPreloader,
+        MDBSpinningPreloader,
     ],
     bootstrap: [AppComponent]
 })
