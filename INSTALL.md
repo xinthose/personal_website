@@ -54,6 +54,7 @@ ng build --prod   // build for production
 
 ## Node.js Commands
 npm -v  // show npm version
+npm install -g npm  // update npm version
 npm update  # update all packages in the app
 npm install -g version-check
 ### Install dependencies

@@ -21,8 +21,8 @@
 
       "styles": [
         "../node_modules/font-awesome/scss/font-awesome.scss",
-        "../node_modules/ng-mdb-pro/assets/scss/bootstrap/bootstrap.scss",
-        "../node_modules/ng-mdb-pro/assets/scss/mdb.scss",
+        "../node_modules/ng-uikit-pro-standard/assets/scss/bootstrap/bootstrap.scss",
+        "../node_modules/ng-uikit-pro-standard/assets/scss/mdb.scss",
         "./styles.scss"
       ],
 
@@ -51,8 +51,8 @@
       "prefix": "app",
       "styles": [
         "../node_modules/font-awesome/scss/font-awesome.scss",
-        "../node_modules/ng-mdb-pro/assets/scss/bootstrap/bootstrap.scss",
-        "../node_modules/ng-mdb-pro/assets/scss/mdb.scss",
+        "../node_modules/ng-uikit-pro-standard/assets/scss/bootstrap/bootstrap.scss",
+        "../node_modules/ng-uikit-pro-standard/assets/scss/mdb.scss",
         "./styles.scss"
       ],
 
