@@ -18623,9 +18623,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 6, bookId: 18 },  // Job
     { verseName: "Verse 15", verseId: 15, chapterId: 6, bookId: 20 },  // Proverbs
     { verseName: "Verse 15", verseId: 15, chapterId: 6, bookId: 24 },  // Jeremiah
-    { verseName: "Verse 15", verseId: 15, chapterId: 6, bookId: 26 },  // Ezekiel
     { verseName: "Verse 15", verseId: 15, chapterId: 6, bookId: 27 },  // Daniel
-    { verseName: "Verse 15", verseId: 15, chapterId: 6, bookId: 30 },  // Amos
     { verseName: "Verse 15", verseId: 15, chapterId: 6, bookId: 33 },  // Micah
     { verseName: "Verse 15", verseId: 15, chapterId: 6, bookId: 38 },  // Zechariah
     { verseName: "Verse 15", verseId: 15, chapterId: 6, bookId: 40 },  // Matthew
@@ -18661,7 +18659,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 7, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 7, bookId: 20 },  // Proverbs
     { verseName: "Verse 15", verseId: 15, chapterId: 7, bookId: 21 },  // Ecclesiastes
-    { verseName: "Verse 15", verseId: 15, chapterId: 7, bookId: 22 },  // Song of Solomon
     { verseName: "Verse 15", verseId: 15, chapterId: 7, bookId: 23 },  // Isaiah
     { verseName: "Verse 15", verseId: 15, chapterId: 7, bookId: 24 },  // Jeremiah
     { verseName: "Verse 15", verseId: 15, chapterId: 7, bookId: 26 },  // Ezekiel
@@ -18669,7 +18666,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 7, bookId: 28 },  // Hosea
     { verseName: "Verse 15", verseId: 15, chapterId: 7, bookId: 30 },  // Amos
     { verseName: "Verse 15", verseId: 15, chapterId: 7, bookId: 33 },  // Micah
-    { verseName: "Verse 15", verseId: 15, chapterId: 7, bookId: 38 },  // Zechariah
     { verseName: "Verse 15", verseId: 15, chapterId: 7, bookId: 40 },  // Matthew
     { verseName: "Verse 15", verseId: 15, chapterId: 7, bookId: 41 },  // Mark
     { verseName: "Verse 15", verseId: 15, chapterId: 7, bookId: 42 },  // Luke
@@ -18700,13 +18696,10 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 8, bookId: 18 },  // Job
     { verseName: "Verse 15", verseId: 15, chapterId: 8, bookId: 20 },  // Proverbs
     { verseName: "Verse 15", verseId: 15, chapterId: 8, bookId: 21 },  // Ecclesiastes
-    { verseName: "Verse 15", verseId: 15, chapterId: 8, bookId: 22 },  // Song of Solomon
     { verseName: "Verse 15", verseId: 15, chapterId: 8, bookId: 23 },  // Isaiah
     { verseName: "Verse 15", verseId: 15, chapterId: 8, bookId: 24 },  // Jeremiah
     { verseName: "Verse 15", verseId: 15, chapterId: 8, bookId: 26 },  // Ezekiel
     { verseName: "Verse 15", verseId: 15, chapterId: 8, bookId: 27 },  // Daniel
-    { verseName: "Verse 15", verseId: 15, chapterId: 8, bookId: 28 },  // Hosea
-    { verseName: "Verse 15", verseId: 15, chapterId: 8, bookId: 30 },  // Amos
     { verseName: "Verse 15", verseId: 15, chapterId: 8, bookId: 38 },  // Zechariah
     { verseName: "Verse 15", verseId: 15, chapterId: 8, bookId: 40 },  // Matthew
     { verseName: "Verse 15", verseId: 15, chapterId: 8, bookId: 41 },  // Mark
@@ -18763,7 +18756,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 10, bookId: 10 },  // 2 Samuel
     { verseName: "Verse 15", verseId: 15, chapterId: 10, bookId: 11 },  // 1 Kings
     { verseName: "Verse 15", verseId: 15, chapterId: 10, bookId: 12 },  // 2 Kings
-    { verseName: "Verse 15", verseId: 15, chapterId: 10, bookId: 13 },  // 1 Chronicles
     { verseName: "Verse 15", verseId: 15, chapterId: 10, bookId: 14 },  // 2 Chronicles
     { verseName: "Verse 15", verseId: 15, chapterId: 10, bookId: 15 },  // Ezra
     { verseName: "Verse 15", verseId: 15, chapterId: 10, bookId: 16 },  // Nehemiah
@@ -18833,11 +18825,9 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 12, bookId: 16 },  // Nehemiah
     { verseName: "Verse 15", verseId: 15, chapterId: 12, bookId: 18 },  // Job
     { verseName: "Verse 15", verseId: 15, chapterId: 12, bookId: 20 },  // Proverbs
-    { verseName: "Verse 15", verseId: 15, chapterId: 12, bookId: 21 },  // Ecclesiastes
     { verseName: "Verse 15", verseId: 15, chapterId: 12, bookId: 24 },  // Jeremiah
     { verseName: "Verse 15", verseId: 15, chapterId: 12, bookId: 26 },  // Ezekiel
     { verseName: "Verse 15", verseId: 15, chapterId: 12, bookId: 28 },  // Hosea
-    { verseName: "Verse 15", verseId: 15, chapterId: 12, bookId: 38 },  // Zechariah
     { verseName: "Verse 15", verseId: 15, chapterId: 12, bookId: 40 },  // Matthew
     { verseName: "Verse 15", verseId: 15, chapterId: 12, bookId: 41 },  // Mark
     { verseName: "Verse 15", verseId: 15, chapterId: 12, bookId: 42 },  // Luke
@@ -18860,7 +18850,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 13, bookId: 10 },  // 2 Samuel
     { verseName: "Verse 15", verseId: 15, chapterId: 13, bookId: 11 },  // 1 Kings
     { verseName: "Verse 15", verseId: 15, chapterId: 13, bookId: 12 },  // 2 Kings
-    { verseName: "Verse 15", verseId: 15, chapterId: 13, bookId: 13 },  // 1 Chronicles
     { verseName: "Verse 15", verseId: 15, chapterId: 13, bookId: 14 },  // 2 Chronicles
     { verseName: "Verse 15", verseId: 15, chapterId: 13, bookId: 16 },  // Nehemiah
     { verseName: "Verse 15", verseId: 15, chapterId: 13, bookId: 17 },  // Esther
@@ -18876,7 +18865,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 13, bookId: 42 },  // Luke
     { verseName: "Verse 15", verseId: 15, chapterId: 13, bookId: 43 },  // John
     { verseName: "Verse 15", verseId: 15, chapterId: 13, bookId: 44 },  // Acts
-    { verseName: "Verse 15", verseId: 15, chapterId: 13, bookId: 45 },  // Romans
     { verseName: "Verse 15", verseId: 15, chapterId: 13, bookId: 58 },  // Hebrews
     { verseName: "Verse 15", verseId: 15, chapterId: 13, bookId: 66 },  // Revelation
     /* Chapter 14 */
@@ -18892,7 +18880,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 14, bookId: 11 },  // 1 Kings
     { verseName: "Verse 15", verseId: 15, chapterId: 14, bookId: 12 },  // 2 Kings
     { verseName: "Verse 15", verseId: 15, chapterId: 14, bookId: 13 },  // 1 Chronicles
-    { verseName: "Verse 15", verseId: 15, chapterId: 14, bookId: 14 },  // 2 Chronicles
     { verseName: "Verse 15", verseId: 15, chapterId: 14, bookId: 17 },  // Esther
     { verseName: "Verse 15", verseId: 15, chapterId: 14, bookId: 18 },  // Job
     { verseName: "Verse 15", verseId: 15, chapterId: 14, bookId: 20 },  // Proverbs
@@ -18946,10 +18933,8 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 16, bookId: 11 },  // 1 Kings
     { verseName: "Verse 15", verseId: 15, chapterId: 16, bookId: 12 },  // 2 Kings
     { verseName: "Verse 15", verseId: 15, chapterId: 16, bookId: 13 },  // 1 Chronicles
-    { verseName: "Verse 15", verseId: 15, chapterId: 16, bookId: 14 },  // 2 Chronicles
     { verseName: "Verse 15", verseId: 15, chapterId: 16, bookId: 18 },  // Job
     { verseName: "Verse 15", verseId: 15, chapterId: 16, bookId: 20 },  // Proverbs
-    { verseName: "Verse 15", verseId: 15, chapterId: 16, bookId: 23 },  // Isaiah
     { verseName: "Verse 15", verseId: 15, chapterId: 16, bookId: 24 },  // Jeremiah
     { verseName: "Verse 15", verseId: 15, chapterId: 16, bookId: 26 },  // Ezekiel
     { verseName: "Verse 15", verseId: 15, chapterId: 16, bookId: 40 },  // Matthew
@@ -18976,7 +18961,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 17, bookId: 18 },  // Job
     { verseName: "Verse 15", verseId: 15, chapterId: 17, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 17, bookId: 20 },  // Proverbs
-    { verseName: "Verse 15", verseId: 15, chapterId: 17, bookId: 23 },  // Isaiah
     { verseName: "Verse 15", verseId: 15, chapterId: 17, bookId: 24 },  // Jeremiah
     { verseName: "Verse 15", verseId: 15, chapterId: 17, bookId: 26 },  // Ezekiel
     { verseName: "Verse 15", verseId: 15, chapterId: 17, bookId: 40 },  // Matthew
@@ -19026,7 +19010,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 19, bookId: 20 },  // Proverbs
     { verseName: "Verse 15", verseId: 15, chapterId: 19, bookId: 23 },  // Isaiah
     { verseName: "Verse 15", verseId: 15, chapterId: 19, bookId: 24 },  // Jeremiah
-    { verseName: "Verse 15", verseId: 15, chapterId: 19, bookId: 26 },  // Ezekiel
     { verseName: "Verse 15", verseId: 15, chapterId: 19, bookId: 40 },  // Matthew
     { verseName: "Verse 15", verseId: 15, chapterId: 19, bookId: 42 },  // Luke
     { verseName: "Verse 15", verseId: 15, chapterId: 19, bookId: 43 },  // John
@@ -19068,10 +19051,8 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 21, bookId: 13 },  // 1 Chronicles
     { verseName: "Verse 15", verseId: 15, chapterId: 21, bookId: 14 },  // 2 Chronicles
     { verseName: "Verse 15", verseId: 15, chapterId: 21, bookId: 18 },  // Job
-    { verseName: "Verse 15", verseId: 15, chapterId: 21, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 21, bookId: 20 },  // Proverbs
     { verseName: "Verse 15", verseId: 15, chapterId: 21, bookId: 23 },  // Isaiah
-    { verseName: "Verse 15", verseId: 15, chapterId: 21, bookId: 24 },  // Jeremiah
     { verseName: "Verse 15", verseId: 15, chapterId: 21, bookId: 26 },  // Ezekiel
     { verseName: "Verse 15", verseId: 15, chapterId: 21, bookId: 40 },  // Matthew
     { verseName: "Verse 15", verseId: 15, chapterId: 21, bookId: 42 },  // Luke
@@ -19164,7 +19145,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 26, bookId: 9 },  // 1 Samuel
     { verseName: "Verse 15", verseId: 15, chapterId: 26, bookId: 13 },  // 1 Chronicles
     { verseName: "Verse 15", verseId: 15, chapterId: 26, bookId: 14 },  // 2 Chronicles
-    { verseName: "Verse 15", verseId: 15, chapterId: 26, bookId: 18 },  // Job
     { verseName: "Verse 15", verseId: 15, chapterId: 26, bookId: 20 },  // Proverbs
     { verseName: "Verse 15", verseId: 15, chapterId: 26, bookId: 23 },  // Isaiah
     { verseName: "Verse 15", verseId: 15, chapterId: 26, bookId: 24 },  // Jeremiah
@@ -19179,7 +19159,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 27, bookId: 5 },  // Deuteronomy
     { verseName: "Verse 15", verseId: 15, chapterId: 27, bookId: 13 },  // 1 Chronicles
     { verseName: "Verse 15", verseId: 15, chapterId: 27, bookId: 18 },  // Job
-    { verseName: "Verse 15", verseId: 15, chapterId: 27, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 27, bookId: 20 },  // Proverbs
     { verseName: "Verse 15", verseId: 15, chapterId: 27, bookId: 24 },  // Jeremiah
     { verseName: "Verse 15", verseId: 15, chapterId: 27, bookId: 26 },  // Ezekiel
@@ -19303,7 +19282,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 39, bookId: 1 },  // Genesis
     { verseName: "Verse 15", verseId: 15, chapterId: 39, bookId: 2 },  // Exodus
     { verseName: "Verse 15", verseId: 15, chapterId: 39, bookId: 18 },  // Job
-    { verseName: "Verse 15", verseId: 15, chapterId: 39, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 39, bookId: 24 },  // Jeremiah
     { verseName: "Verse 15", verseId: 15, chapterId: 39, bookId: 26 },  // Ezekiel
     /* Chapter 40 */
@@ -19317,7 +19295,6 @@ export class BibleComponent implements OnInit {
     /* Chapter 41 */
     { verseName: "Verse 15", verseId: 15, chapterId: 41, bookId: 1 },  // Genesis
     { verseName: "Verse 15", verseId: 15, chapterId: 41, bookId: 18 },  // Job
-    { verseName: "Verse 15", verseId: 15, chapterId: 41, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 41, bookId: 23 },  // Isaiah
     { verseName: "Verse 15", verseId: 15, chapterId: 41, bookId: 24 },  // Jeremiah
     { verseName: "Verse 15", verseId: 15, chapterId: 41, bookId: 26 },  // Ezekiel
@@ -19376,22 +19353,16 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 54, bookId: 23 },  // Isaiah
     /* Chapter 55 */
     { verseName: "Verse 15", verseId: 15, chapterId: 55, bookId: 19 },  // Psalms
-    /* Chapter 56 */
-    { verseName: "Verse 15", verseId: 15, chapterId: 56, bookId: 19 },  // Psalms
     /* Chapter 57 */
     { verseName: "Verse 15", verseId: 15, chapterId: 57, bookId: 23 },  // Isaiah
-    /* Chapter 58 */
-    { verseName: "Verse 15", verseId: 15, chapterId: 58, bookId: 23 },  // Isaiah
     /* Chapter 59 */
     { verseName: "Verse 15", verseId: 15, chapterId: 59, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 59, bookId: 23 },  // Isaiah
     /* Chapter 60 */
-    { verseName: "Verse 15", verseId: 15, chapterId: 60, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 60, bookId: 23 },  // Isaiah
     /* Chapter 63 */
     { verseName: "Verse 15", verseId: 15, chapterId: 63, bookId: 23 },  // Isaiah
     /* Chapter 65 */
-    { verseName: "Verse 15", verseId: 15, chapterId: 65, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 65, bookId: 23 },  // Isaiah
     /* Chapter 66 */
     { verseName: "Verse 15", verseId: 15, chapterId: 66, bookId: 19 },  // Psalms
@@ -19409,7 +19380,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 80, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 81, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 83, bookId: 19 },  // Psalms
-    { verseName: "Verse 15", verseId: 15, chapterId: 85, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 86, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 88, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 89, bookId: 19 },  // Psalms
@@ -19423,7 +19393,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 105, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 106, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 107, bookId: 19 },  // Psalms
-    { verseName: "Verse 15", verseId: 15, chapterId: 108, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 109, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 115, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 116, bookId: 19 },  // Psalms
@@ -19433,11 +19402,9 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 135, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 136, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 139, bookId: 19 },  // Psalms
-    { verseName: "Verse 15", verseId: 15, chapterId: 140, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 144, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 145, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 147, bookId: 19 },  // Psalms
-    { verseName: "Verse 15", verseId: 15, chapterId: 148, bookId: 19 },  // Psalms      
   ];
 
   // dropdown cascade result
