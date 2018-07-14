@@ -18355,7 +18355,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 14", verseId: 14, chapterId: 145, bookId: 19 },  // Psalms
     { verseName: "Verse 14", verseId: 14, chapterId: 147, bookId: 19 },  // Psalms
     { verseName: "Verse 14", verseId: 14, chapterId: 148, bookId: 19 },  // Psalms  
-   /************************************************************* Verse 15 *************************************************************/
+    /************************************************************* Verse 15 *************************************************************/
     /* Chapter 1 */
     { verseName: "Verse 15", verseId: 15, chapterId: 1, bookId: 1 },  // Genesis
     { verseName: "Verse 15", verseId: 15, chapterId: 1, bookId: 2 },  // Exodus
@@ -19405,6 +19405,6345 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 144, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 145, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 147, bookId: 19 },  // Psalms
+    /************************************************************* Verse 16 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 8 },  // Ruth
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 17 },  // Esther
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 22 },  // Song of Solomon
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 25 },  // Lamentations
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 27 },  // Daniel
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 29 },  // Joel
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 31 },  // Obadiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 32 },  // Jonah
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 33 },  // Micah
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 35 },  // Habakkuk
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 36 },  // Zephaniah
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 38 },  // Zechariah
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 45 },  // Romans
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 48 },  // Galatians
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 49 },  // Ephesians
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 50 },  // Philippians
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 51 },  // Colossians
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 56 },  // Titus
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 57 },  // Philemon
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 59 },  // James
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 65 },  // Jude
+    { verseName: "Verse 16", verseId: 16, chapterId: 1, bookId: 66 },  // Revelation
+    /* Chapter 2 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 8 },  // Ruth
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 15 },  // Ezra
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 17 },  // Esther
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 22 },  // Song of Solomon
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 25 },  // Lamentations
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 27 },  // Daniel
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 28 },  // Hosea
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 29 },  // Joel
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 30 },  // Amos
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 35 },  // Habakkuk
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 37 },  // Haggai
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 38 },  // Zechariah
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 39 },  // Malachi
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 45 },  // Romans
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 48 },  // Galatians
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 49 },  // Ephesians
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 50 },  // Philippians
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 51 },  // Colossians
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 52 },  // 1 Thessalonians
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 53 },  // 2 Thessalonians
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 58 },  // Hebrews
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 59 },  // James
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 62 },  // 1 John
+    { verseName: "Verse 16", verseId: 16, chapterId: 2, bookId: 66 },  // Revelation
+    /* Chapter 3 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 8 },  // Ruth
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 25 },  // Lamentations
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 27 },  // Daniel
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 34 },  // Nahum
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 35 },  // Habakkuk
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 36 },  // Zephaniah
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 39 },  // Malachi
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 45 },  // Romans
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 48 },  // Galatians
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 49 },  // Ephesians
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 50 },  // Philippians
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 51 },  // Colossians
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 53 },  // 2 Thessalonians
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 58 },  // Hebrews
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 59 },  // James
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 62 },  // 1 John
+    { verseName: "Verse 16", verseId: 16, chapterId: 3, bookId: 66 },  // Revelation
+    /* Chapter 4 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 8 },  // Ruth
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 15 },  // Ezra
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 17 },  // Esther
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 22 },  // Song of Solomon
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 25 },  // Lamentations
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 27 },  // Daniel
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 28 },  // Hosea
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 29 },  // Joel
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 45 },  // Romans
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 48 },  // Galatians
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 49 },  // Ephesians
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 50 },  // Philippians
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 51 },  // Colossians
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 52 },  // 1 Thessalonians
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 58 },  // Hebrews
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 59 },  // James
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 16", verseId: 16, chapterId: 4, bookId: 62 },  // 1 John
+    /* Chapter 5 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 15 },  // Ezra
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 22 },  // Song of Solomon
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 25 },  // Lamentations
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 27 },  // Daniel
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 30 },  // Amos
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 45 },  // Romans
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 48 },  // Galatians
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 49 },  // Ephesians
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 52 },  // 1 Thessalonians
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 59 },  // James
+    { verseName: "Verse 16", verseId: 16, chapterId: 5, bookId: 62 },  // 1 John
+    /* Chapter 6 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 15 },  // Ezra
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 27 },  // Daniel
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 33 },  // Micah
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 45 },  // Romans
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 48 },  // Galatians
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 49 },  // Ephesians
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 58 },  // Hebrews
+    { verseName: "Verse 16", verseId: 16, chapterId: 6, bookId: 66 },  // Revelation
+    /* Chapter 7 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 15 },  // Ezra
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 27 },  // Daniel
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 28 },  // Hosea
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 30 },  // Amos
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 33 },  // Micah
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 45 },  // Romans
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 58 },  // Hebrews
+    { verseName: "Verse 16", verseId: 16, chapterId: 7, bookId: 66 },  // Revelation
+    /* Chapter 8 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 15 },  // Ezra
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 17 },  // Esther
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 27 },  // Daniel
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 38 },  // Zechariah
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 45 },  // Romans
+    { verseName: "Verse 16", verseId: 16, chapterId: 8, bookId: 47 },  // 2 Corinthians
+    /* Chapter 9 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 17 },  // Esther
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 27 },  // Daniel
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 28 },  // Hosea
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 38 },  // Zechariah
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 45 },  // Romans
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 58 },  // Hebrews
+    { verseName: "Verse 16", verseId: 16, chapterId: 9, bookId: 66 },  // Revelation
+    /* Chapter 10 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 15 },  // Ezra
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 27 },  // Daniel
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 45 },  // Romans
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 10, bookId: 58 },  // Hebrews
+    /* Chapter 11 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 17 },  // Esther
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 27 },  // Daniel
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 38 },  // Zechariah
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 45 },  // Romans
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 58 },  // Hebrews
+    { verseName: "Verse 16", verseId: 16, chapterId: 11, bookId: 66 },  // Revelation
+    /* Chapter 12 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 45 },  // Romans
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 58 },  // Hebrews
+    { verseName: "Verse 16", verseId: 16, chapterId: 12, bookId: 66 },  // Revelation
+    /* Chapter 13 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 17 },  // Esther
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 27 },  // Daniel
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 58 },  // Hebrews
+    { verseName: "Verse 16", verseId: 16, chapterId: 13, bookId: 66 },  // Revelation
+    /* Chapter 14 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 17 },  // Esther
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 27 },  // Daniel
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 38 },  // Zechariah
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 45 },  // Romans
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 14, bookId: 66 },  // Revelation
+    /* Chapter 15 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 17 },  // Esther
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 45 },  // Romans
+    { verseName: "Verse 16", verseId: 16, chapterId: 15, bookId: 46 },  // 1 Corinthians
+    /* Chapter 16 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 41 },  // Mark
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 45 },  // Romans
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 16", verseId: 16, chapterId: 16, bookId: 66 },  // Revelation
+    /* Chapter 17 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 17, bookId: 66 },  // Revelation
+    /* Chapter 18 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 18, bookId: 66 },  // Revelation
+    /* Chapter 19 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 19, bookId: 66 },  // Revelation
+    /* Chapter 20 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 20, bookId: 44 },  // Acts
+    /* Chapter 21 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 7 },  // Judges
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 43 },  // John
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 21, bookId: 66 },  // Revelation
+    /* Chapter 22 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 44 },  // Acts
+    { verseName: "Verse 16", verseId: 16, chapterId: 22, bookId: 66 },  // Revelation
+    /* Chapter 23 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 23, bookId: 44 },  // Acts
+    /* Chapter 24 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 6 },  // Joshua
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 42 },  // Luke
+    { verseName: "Verse 16", verseId: 16, chapterId: 24, bookId: 44 },  // Acts
+    /* Chapter 25 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 25, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 25, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 25, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 25, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 25, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 25, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 25, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 16", verseId: 16, chapterId: 25, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 25, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 25, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 25, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 25, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 25, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 25, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 25, bookId: 44 },  // Acts
+    /* Chapter 26 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 26, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 26, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 26, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 26, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 26, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 26, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 26, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 26, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 26, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 26, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 26, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 26, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 26, bookId: 44 },  // Acts
+    /* Chapter 27 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 27, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 27, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 27, bookId: 3 },  // Leviticus
+    { verseName: "Verse 16", verseId: 16, chapterId: 27, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 27, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 27, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 27, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 27, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 27, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 27, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 27, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 27, bookId: 44 },  // Acts
+    /* Chapter 28 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 28, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 28, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 28, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 28, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 28, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 28, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 28, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 28, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 28, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 28, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 28, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 28, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 16", verseId: 16, chapterId: 28, bookId: 40 },  // Matthew
+    { verseName: "Verse 16", verseId: 16, chapterId: 28, bookId: 44 },  // Acts
+    /* Chapter 29 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 29, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 29, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 29, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 29, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 29, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 29, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 29, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 29, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 29, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 29, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 29, bookId: 26 },  // Ezekiel
+    /* Chapter 30 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 26 },  // Ezekiel
+    /* Chapter 31 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 31, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 31, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 31, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 31, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 31, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 31, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 31, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 31, bookId: 20 },  // Proverbs
+    { verseName: "Verse 16", verseId: 16, chapterId: 31, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 31, bookId: 26 },  // Ezekiel
+    /* Chapter 32 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 32, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 32, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 32, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 32, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 32, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 32, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 32, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 32, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 32, bookId: 26 },  // Ezekiel
+    /* Chapter 33 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 33, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 33, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 33, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 33, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 16", verseId: 16, chapterId: 33, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 33, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 33, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 33, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 33, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 33, bookId: 26 },  // Ezekiel
+    /* Chapter 34 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 34, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 34, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 34, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 34, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 34, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 34, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 34, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 34, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 34, bookId: 26 },  // Ezekiel
+    /* Chapter 35 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 35, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 35, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 35, bookId: 4 },  // Numbers
+    { verseName: "Verse 16", verseId: 16, chapterId: 35, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 35, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 35, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 35, bookId: 24 },  // Jeremiah
+    /* Chapter 36 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 36, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 36, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 36, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 16", verseId: 16, chapterId: 36, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 36, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 36, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 36, bookId: 26 },  // Ezekiel
+    /* Chapter 37 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 37, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 37, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 37, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 37, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 37, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 37, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 37, bookId: 26 },  // Ezekiel
+    /* Chapter 38 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 38, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 38, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 38, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 38, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 38, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 38, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 38, bookId: 26 },  // Ezekiel
+    /* Chapter 39 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 39, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 39, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 39, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 39, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 39, bookId: 26 },  // Ezekiel
+    /* Chapter 40 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 40, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 40, bookId: 2 },  // Exodus
+    { verseName: "Verse 16", verseId: 16, chapterId: 40, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 40, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 40, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 40, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 40, bookId: 26 },  // Ezekiel
+    /* Chapter 41 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 41, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 41, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 41, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 41, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 41, bookId: 26 },  // Ezekiel
+    /* Chapter 42 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 42, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 42, bookId: 18 },  // Job
+    { verseName: "Verse 16", verseId: 16, chapterId: 42, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 42, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 42, bookId: 26 },  // Ezekiel
+    /* Chapter 43 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 43, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 43, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 43, bookId: 26 },  // Ezekiel
+    /* Chapter 44 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 44, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 44, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 44, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 44, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 44, bookId: 26 },  // Ezekiel
+    /* Chapter 45 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 45, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 45, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 45, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 45, bookId: 26 },  // Ezekiel
+    /* Chapter 46 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 46, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 46, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 46, bookId: 26 },  // Ezekiel
+    /* Chapter 47 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 47, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 47, bookId: 26 },  // Ezekiel
+    /* Chapter 48 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 48, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 48, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 48, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 48, bookId: 26 },  // Ezekiel
+    /* Chapter 49 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 49, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 49, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 49, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 49, bookId: 24 },  // Jeremiah
+    /* Chapter 50 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 50, bookId: 1 },  // Genesis
+    { verseName: "Verse 16", verseId: 16, chapterId: 50, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 50, bookId: 24 },  // Jeremiah
+    /* Chapter 51 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 51, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 51, bookId: 23 },  // Isaiah
+    { verseName: "Verse 16", verseId: 16, chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapter 52 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 52, bookId: 24 },  // Jeremiah
+    /* Chapter 54 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 54, bookId: 23 },  // Isaiah
+    /* Chapter 55 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 55, bookId: 19 },  // Psalms
+    /* Chapter 57 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 57, bookId: 23 },  // Isaiah
+    /* Chapter 59 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 59, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 59, bookId: 23 },  // Isaiah
+    /* Chapter 60 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 60, bookId: 23 },  // Isaiah
+    /* Chapter 63 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 63, bookId: 23 },  // Isaiah
+    /* Chapter 65 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 65, bookId: 23 },  // Isaiah
+    /* Chapter 66 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 66, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 66, bookId: 23 },  // Isaiah
+    /* Chapters 67-150 */
+    { verseName: "Verse 16", verseId: 16, chapterId: 68, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 69, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 71, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 72, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 73, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 74, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 77, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 80, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 81, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 83, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 86, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 88, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 89, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 90, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 91, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 92, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 94, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 102, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 103, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 104, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 105, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 106, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 107, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 109, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 115, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 116, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 118, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 119, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 132, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 135, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 136, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 139, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 145, bookId: 19 },  // Psalms
+    { verseName: "Verse 16", verseId: 16, chapterId: 147, bookId: 19 },  // Psalms
+    /************************************************************* Verse 17 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 8 },  // Ruth
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 17 },  // Esther
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 22 },  // Song of Solomon
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 25 },  // Lamentations
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 27 },  // Daniel
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 29 },  // Joel
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 31 },  // Obadiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 35 },  // Habakkuk
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 36 },  // Zephaniah
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 38 },  // Zechariah
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 45 },  // Romans
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 48 },  // Galatians
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 49 },  // Ephesians
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 50 },  // Philippians
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 51 },  // Colossians
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 57 },  // Philemon
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 59 },  // James
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 65 },  // Jude
+    { verseName: "Verse 17", verseId: 17, chapterId: 1, bookId: 66 },  // Revelation
+    /* Chapter 2 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 8 },  // Ruth
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 15 },  // Ezra
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 17 },  // Esther
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 22 },  // Song of Solomon
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 25 },  // Lamentations
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 27 },  // Daniel
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 28 },  // Hosea
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 29 },  // Joel
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 35 },  // Habakkuk
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 37 },  // Haggai
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 38 },  // Zechariah
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 39 },  // Malachi
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 45 },  // Romans
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 48 },  // Galatians
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 49 },  // Ephesians
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 50 },  // Philippians
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 51 },  // Colossians
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 52 },  // 1 Thessalonians
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 53 },  // 2 Thessalonians
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 58 },  // Hebrews
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 59 },  // James
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 62 },  // 1 John
+    { verseName: "Verse 17", verseId: 17, chapterId: 2, bookId: 66 },  // Revelation
+    /* Chapter 3 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 8 },  // Ruth
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 25 },  // Lamentations
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 27 },  // Daniel
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 34 },  // Nahum
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 35 },  // Habakkuk
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 36 },  // Zephaniah
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 39 },  // Malachi
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 45 },  // Romans
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 48 },  // Galatians
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 49 },  // Ephesians
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 50 },  // Philippians
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 51 },  // Colossians
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 53 },  // 2 Thessalonians
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 58 },  // Hebrews
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 59 },  // James
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 62 },  // 1 John
+    { verseName: "Verse 17", verseId: 17, chapterId: 3, bookId: 66 },  // Revelation
+    /* Chapter 4 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 8 },  // Ruth
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 15 },  // Ezra
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 17 },  // Esther
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 25 },  // Lamentations
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 27 },  // Daniel
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 28 },  // Hosea
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 29 },  // Joel
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 45 },  // Romans
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 48 },  // Galatians
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 49 },  // Ephesians
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 50 },  // Philippians
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 51 },  // Colossians
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 52 },  // 1 Thessalonians
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 59 },  // James
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 17", verseId: 17, chapterId: 4, bookId: 62 },  // 1 John
+    /* Chapter 5 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 15 },  // Ezra
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 25 },  // Lamentations
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 27 },  // Daniel
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 30 },  // Amos
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 45 },  // Romans
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 48 },  // Galatians
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 49 },  // Ephesians
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 52 },  // 1 Thessalonians
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 59 },  // James
+    { verseName: "Verse 17", verseId: 17, chapterId: 5, bookId: 62 },  // 1 John
+    /* Chapter 6 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 15 },  // Ezra
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 27 },  // Daniel
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 45 },  // Romans
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 48 },  // Galatians
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 49 },  // Ephesians
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 58 },  // Hebrews
+    { verseName: "Verse 17", verseId: 17, chapterId: 6, bookId: 66 },  // Revelation
+    /* Chapter 7 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 15 },  // Ezra
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 27 },  // Daniel
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 30 },  // Amos
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 33 },  // Micah
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 45 },  // Romans
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 58 },  // Hebrews
+    { verseName: "Verse 17", verseId: 17, chapterId: 7, bookId: 66 },  // Revelation
+    /* Chapter 8 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 15 },  // Ezra
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 17 },  // Esther
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 27 },  // Daniel
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 38 },  // Zechariah
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 45 },  // Romans
+    { verseName: "Verse 17", verseId: 17, chapterId: 8, bookId: 47 },  // 2 Corinthians
+    /* Chapter 9 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 17 },  // Esther
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 27 },  // Daniel
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 28 },  // Hosea
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 38 },  // Zechariah
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 45 },  // Romans
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 58 },  // Hebrews
+    { verseName: "Verse 17", verseId: 17, chapterId: 9, bookId: 66 },  // Revelation
+    /* Chapter 10 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 15 },  // Ezra
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 27 },  // Daniel
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 45 },  // Romans
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 10, bookId: 58 },  // Hebrews
+    /* Chapter 11 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 17 },  // Esther
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 27 },  // Daniel
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 38 },  // Zechariah
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 45 },  // Romans
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 58 },  // Hebrews
+    { verseName: "Verse 17", verseId: 17, chapterId: 11, bookId: 66 },  // Revelation
+    /* Chapter 12 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 45 },  // Romans
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 58 },  // Hebrews
+    { verseName: "Verse 17", verseId: 17, chapterId: 12, bookId: 66 },  // Revelation
+    /* Chapter 13 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 17 },  // Esther
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 27 },  // Daniel
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 58 },  // Hebrews
+    { verseName: "Verse 17", verseId: 17, chapterId: 13, bookId: 66 },  // Revelation
+    /* Chapter 14 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 27 },  // Daniel
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 38 },  // Zechariah
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 45 },  // Romans
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 14, bookId: 66 },  // Revelation
+    /* Chapter 15 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 17 },  // Esther
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 45 },  // Romans
+    { verseName: "Verse 17", verseId: 17, chapterId: 15, bookId: 46 },  // 1 Corinthians
+    /* Chapter 16 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 41 },  // Mark
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 45 },  // Romans
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 17", verseId: 17, chapterId: 16, bookId: 66 },  // Revelation
+    /* Chapter 17 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 17, bookId: 66 },  // Revelation
+    /* Chapter 18 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 18, bookId: 66 },  // Revelation
+    /* Chapter 19 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 19, bookId: 66 },  // Revelation
+    /* Chapter 20 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 20, bookId: 44 },  // Acts
+    /* Chapter 21 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 7 },  // Judges
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 43 },  // John
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 21, bookId: 66 },  // Revelation
+    /* Chapter 22 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 44 },  // Acts
+    { verseName: "Verse 17", verseId: 17, chapterId: 22, bookId: 66 },  // Revelation
+    /* Chapter 23 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 23, bookId: 44 },  // Acts
+    /* Chapter 24 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 6 },  // Joshua
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 42 },  // Luke
+    { verseName: "Verse 17", verseId: 17, chapterId: 24, bookId: 44 },  // Acts
+    /* Chapter 25 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 25, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 25, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 25, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 25, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 25, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 25, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 25, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 17", verseId: 17, chapterId: 25, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 25, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 25, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 25, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 25, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 25, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 25, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 25, bookId: 44 },  // Acts
+    /* Chapter 26 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 26, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 26, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 26, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 26, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 26, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 26, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 26, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 26, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 26, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 26, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 26, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 26, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 26, bookId: 44 },  // Acts
+    /* Chapter 27 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 27, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 27, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 27, bookId: 3 },  // Leviticus
+    { verseName: "Verse 17", verseId: 17, chapterId: 27, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 27, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 27, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 27, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 27, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 27, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 27, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 27, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 27, bookId: 44 },  // Acts
+    /* Chapter 28 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 28, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 28, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 28, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 28, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 28, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 28, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 28, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 28, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 28, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 28, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 28, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 28, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 17", verseId: 17, chapterId: 28, bookId: 40 },  // Matthew
+    { verseName: "Verse 17", verseId: 17, chapterId: 28, bookId: 44 },  // Acts
+    /* Chapter 29 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 29, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 29, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 29, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 29, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 29, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 29, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 29, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 29, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 29, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 29, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 29, bookId: 26 },  // Ezekiel
+    /* Chapter 30 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 26 },  // Ezekiel
+    /* Chapter 31 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 31, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 31, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 31, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 31, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 31, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 31, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 31, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 31, bookId: 20 },  // Proverbs
+    { verseName: "Verse 17", verseId: 17, chapterId: 31, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 31, bookId: 26 },  // Ezekiel
+    /* Chapter 32 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 32, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 32, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 32, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 32, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 32, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 32, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 32, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 32, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 32, bookId: 26 },  // Ezekiel
+    /* Chapter 33 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 33, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 33, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 33, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 33, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 17", verseId: 17, chapterId: 33, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 33, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 33, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 33, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 33, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 33, bookId: 26 },  // Ezekiel
+    /* Chapter 34 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 34, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 34, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 34, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 34, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 34, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 34, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 34, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 34, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 34, bookId: 26 },  // Ezekiel
+    /* Chapter 35 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 35, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 35, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 35, bookId: 4 },  // Numbers
+    { verseName: "Verse 17", verseId: 17, chapterId: 35, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 35, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 35, bookId: 24 },  // Jeremiah
+    /* Chapter 36 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 36, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 36, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 36, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 17", verseId: 17, chapterId: 36, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 36, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 36, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 36, bookId: 26 },  // Ezekiel
+    /* Chapter 37 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 37, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 37, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 37, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 37, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 37, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 37, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 37, bookId: 26 },  // Ezekiel
+    /* Chapter 38 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 38, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 38, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 38, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 38, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 38, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 38, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 38, bookId: 26 },  // Ezekiel
+    /* Chapter 39 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 39, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 39, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 39, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 39, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 39, bookId: 26 },  // Ezekiel
+    /* Chapter 40 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 40, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 40, bookId: 2 },  // Exodus
+    { verseName: "Verse 17", verseId: 17, chapterId: 40, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 40, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 40, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 40, bookId: 26 },  // Ezekiel
+    /* Chapter 41 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 41, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 41, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 41, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 41, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 41, bookId: 26 },  // Ezekiel
+    /* Chapter 42 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 42, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 42, bookId: 18 },  // Job
+    { verseName: "Verse 17", verseId: 17, chapterId: 42, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 42, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 42, bookId: 26 },  // Ezekiel
+    /* Chapter 43 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 43, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 43, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 43, bookId: 26 },  // Ezekiel
+    /* Chapter 44 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 44, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 44, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 44, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 44, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 44, bookId: 26 },  // Ezekiel
+    /* Chapter 45 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 45, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 45, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 45, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 45, bookId: 26 },  // Ezekiel
+    /* Chapter 46 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 46, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 46, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 46, bookId: 26 },  // Ezekiel
+    /* Chapter 47 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 47, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 47, bookId: 26 },  // Ezekiel
+    /* Chapter 48 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 48, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 48, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 48, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 48, bookId: 26 },  // Ezekiel
+    /* Chapter 49 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 49, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 49, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 49, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 49, bookId: 24 },  // Jeremiah
+    /* Chapter 50 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 50, bookId: 1 },  // Genesis
+    { verseName: "Verse 17", verseId: 17, chapterId: 50, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 50, bookId: 24 },  // Jeremiah
+    /* Chapter 51 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 51, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 51, bookId: 23 },  // Isaiah
+    { verseName: "Verse 17", verseId: 17, chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapter 52 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 52, bookId: 24 },  // Jeremiah
+    /* Chapter 54 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 54, bookId: 23 },  // Isaiah
+    /* Chapter 55 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 55, bookId: 19 },  // Psalms
+    /* Chapter 57 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 57, bookId: 23 },  // Isaiah
+    /* Chapter 59 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 59, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 59, bookId: 23 },  // Isaiah
+    /* Chapter 60 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 60, bookId: 23 },  // Isaiah
+    /* Chapter 63 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 63, bookId: 23 },  // Isaiah
+    /* Chapter 65 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 65, bookId: 23 },  // Isaiah
+    /* Chapter 66 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 66, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 66, bookId: 23 },  // Isaiah
+    /* Chapters 67-150 */
+    { verseName: "Verse 17", verseId: 17, chapterId: 68, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 69, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 71, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 72, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 73, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 74, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 77, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 80, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 81, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 83, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 86, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 88, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 89, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 90, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 94, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 102, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 103, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 104, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 105, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 106, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 107, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 109, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 115, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 116, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 118, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 119, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 132, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 135, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 136, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 139, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 145, bookId: 19 },  // Psalms
+    { verseName: "Verse 17", verseId: 17, chapterId: 147, bookId: 19 },  // Psalms
+    /************************************************************* Verse 18 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 8 },  // Ruth
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 17 },  // Esther
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 25 },  // Lamentations
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 27 },  // Daniel
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 29 },  // Joel
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 31 },  // Obadiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 36 },  // Zephaniah
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 45 },  // Romans
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 48 },  // Galatians
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 49 },  // Ephesians
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 50 },  // Philippians
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 51 },  // Colossians
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 57 },  // Philemon
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 59 },  // James
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 65 },  // Jude
+    { verseName: "Verse 18", verseId: 18, chapterId: 1, bookId: 66 },  // Revelation
+    /* Chapter 2 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 8 },  // Ruth
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 15 },  // Ezra
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 17 },  // Esther
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 25 },  // Lamentations
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 27 },  // Daniel
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 28 },  // Hosea
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 29 },  // Joel
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 35 },  // Habakkuk
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 37 },  // Haggai
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 45 },  // Romans
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 48 },  // Galatians
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 49 },  // Ephesians
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 50 },  // Philippians
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 51 },  // Colossians
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 52 },  // 1 Thessalonians
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 58 },  // Hebrews
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 59 },  // James
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 62 },  // 1 John
+    { verseName: "Verse 18", verseId: 18, chapterId: 2, bookId: 66 },  // Revelation
+    /* Chapter 3 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 8 },  // Ruth
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 25 },  // Lamentations
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 27 },  // Daniel
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 34 },  // Nahum
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 35 },  // Habakkuk
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 36 },  // Zephaniah
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 39 },  // Malachi
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 45 },  // Romans
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 48 },  // Galatians
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 49 },  // Ephesians
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 50 },  // Philippians
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 51 },  // Colossians
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 53 },  // 2 Thessalonians
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 58 },  // Hebrews
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 59 },  // James
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 62 },  // 1 John
+    { verseName: "Verse 18", verseId: 18, chapterId: 3, bookId: 66 },  // Revelation
+    /* Chapter 4 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 8 },  // Ruth
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 15 },  // Ezra
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 25 },  // Lamentations
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 27 },  // Daniel
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 28 },  // Hosea
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 29 },  // Joel
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 45 },  // Romans
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 48 },  // Galatians
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 49 },  // Ephesians
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 50 },  // Philippians
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 51 },  // Colossians
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 52 },  // 1 Thessalonians
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 18", verseId: 18, chapterId: 4, bookId: 62 },  // 1 John
+    /* Chapter 5 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 25 },  // Lamentations
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 27 },  // Daniel
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 30 },  // Amos
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 45 },  // Romans
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 48 },  // Galatians
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 49 },  // Ephesians
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 52 },  // 1 Thessalonians
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 59 },  // James
+    { verseName: "Verse 18", verseId: 18, chapterId: 5, bookId: 62 },  // 1 John
+    /* Chapter 6 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 15 },  // Ezra
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 27 },  // Daniel
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 45 },  // Romans
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 48 },  // Galatians
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 49 },  // Ephesians
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 18", verseId: 18, chapterId: 6, bookId: 58 },  // Hebrews
+    /* Chapter 7 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 15 },  // Ezra
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 27 },  // Daniel
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 33 },  // Micah
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 45 },  // Romans
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 7, bookId: 58 },  // Hebrews
+    /* Chapter 8 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 15 },  // Ezra
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 27 },  // Daniel
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 38 },  // Zechariah
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 45 },  // Romans
+    { verseName: "Verse 18", verseId: 18, chapterId: 8, bookId: 47 },  // 2 Corinthians
+    /* Chapter 9 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 17 },  // Esther
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 27 },  // Daniel
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 45 },  // Romans
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 58 },  // Hebrews
+    { verseName: "Verse 18", verseId: 18, chapterId: 9, bookId: 66 },  // Revelation
+    /* Chapter 10 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 15 },  // Ezra
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 27 },  // Daniel
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 45 },  // Romans
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 10, bookId: 58 },  // Hebrews
+    /* Chapter 11 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 27 },  // Daniel
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 45 },  // Romans
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 58 },  // Hebrews
+    { verseName: "Verse 18", verseId: 18, chapterId: 11, bookId: 66 },  // Revelation
+    /* Chapter 12 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 45 },  // Romans
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 12, bookId: 58 },  // Hebrews
+    /* Chapter 13 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 17 },  // Esther
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 27 },  // Daniel
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 58 },  // Hebrews
+    { verseName: "Verse 18", verseId: 18, chapterId: 13, bookId: 66 },  // Revelation
+    /* Chapter 14 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 27 },  // Daniel
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 38 },  // Zechariah
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 45 },  // Romans
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 14, bookId: 66 },  // Revelation
+    /* Chapter 15 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 17 },  // Esther
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 45 },  // Romans
+    { verseName: "Verse 18", verseId: 18, chapterId: 15, bookId: 46 },  // 1 Corinthians
+    /* Chapter 16 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 41 },  // Mark
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 45 },  // Romans
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 18", verseId: 18, chapterId: 16, bookId: 66 },  // Revelation
+    /* Chapter 17 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 17, bookId: 66 },  // Revelation
+    /* Chapter 18 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 18, bookId: 66 },  // Revelation
+    /* Chapter 19 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 19, bookId: 66 },  // Revelation
+    /* Chapter 20 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 20, bookId: 44 },  // Acts
+    /* Chapter 21 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 7 },  // Judges
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 43 },  // John
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 21, bookId: 66 },  // Revelation
+    /* Chapter 22 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 44 },  // Acts
+    { verseName: "Verse 18", verseId: 18, chapterId: 22, bookId: 66 },  // Revelation
+    /* Chapter 23 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 23, bookId: 44 },  // Acts
+    /* Chapter 24 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 6 },  // Joshua
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 42 },  // Luke
+    { verseName: "Verse 18", verseId: 18, chapterId: 24, bookId: 44 },  // Acts
+    /* Chapter 25 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 25, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 25, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 25, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 25, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 25, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 25, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 25, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 18", verseId: 18, chapterId: 25, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 25, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 25, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 25, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 25, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 25, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 25, bookId: 44 },  // Acts
+    /* Chapter 26 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 26, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 26, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 26, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 26, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 26, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 26, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 26, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 26, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 26, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 26, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 26, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 26, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 26, bookId: 44 },  // Acts
+    /* Chapter 27 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 27, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 27, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 27, bookId: 3 },  // Leviticus
+    { verseName: "Verse 18", verseId: 18, chapterId: 27, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 27, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 27, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 27, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 27, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 27, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 27, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 27, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 27, bookId: 44 },  // Acts
+    /* Chapter 28 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 28, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 28, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 28, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 28, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 28, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 28, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 28, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 28, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 28, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 28, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 28, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 18", verseId: 18, chapterId: 28, bookId: 40 },  // Matthew
+    { verseName: "Verse 18", verseId: 18, chapterId: 28, bookId: 44 },  // Acts
+    /* Chapter 29 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 29, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 29, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 29, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 29, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 29, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 29, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 29, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 29, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 29, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 29, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 29, bookId: 26 },  // Ezekiel
+    /* Chapter 30 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 30, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 30, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 30, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 30, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 18", verseId: 18, chapterId: 30, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 30, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 30, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 30, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 30, bookId: 26 },  // Ezekiel
+    /* Chapter 31 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 31, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 31, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 31, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 31, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 31, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 31, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 31, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 31, bookId: 20 },  // Proverbs
+    { verseName: "Verse 18", verseId: 18, chapterId: 31, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 31, bookId: 26 },  // Ezekiel
+    /* Chapter 32 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 32, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 32, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 32, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 32, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 32, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 32, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 32, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 32, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 32, bookId: 26 },  // Ezekiel
+    /* Chapter 33 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 33, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 33, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 33, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 33, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 18", verseId: 18, chapterId: 33, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 33, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 33, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 33, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 33, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 33, bookId: 26 },  // Ezekiel
+    /* Chapter 34 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 34, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 34, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 34, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 34, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 34, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 34, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 34, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 34, bookId: 26 },  // Ezekiel
+    /* Chapter 35 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 35, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 35, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 35, bookId: 4 },  // Numbers
+    { verseName: "Verse 18", verseId: 18, chapterId: 35, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 35, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 35, bookId: 24 },  // Jeremiah
+    /* Chapter 36 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 36, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 36, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 36, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 18", verseId: 18, chapterId: 36, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 36, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 36, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 36, bookId: 26 },  // Ezekiel
+    /* Chapter 37 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 37, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 37, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 37, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 37, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 37, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 37, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 37, bookId: 26 },  // Ezekiel
+    /* Chapter 38 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 38, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 38, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 38, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 38, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 38, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 38, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 38, bookId: 26 },  // Ezekiel
+    /* Chapter 39 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 39, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 39, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 39, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 39, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 39, bookId: 26 },  // Ezekiel
+    /* Chapter 40 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 40, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 40, bookId: 2 },  // Exodus
+    { verseName: "Verse 18", verseId: 18, chapterId: 40, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 40, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 40, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 40, bookId: 26 },  // Ezekiel
+    /* Chapter 41 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 41, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 41, bookId: 18 },  // Job
+    { verseName: "Verse 18", verseId: 18, chapterId: 41, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 41, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 41, bookId: 26 },  // Ezekiel
+    /* Chapter 42 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 42, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 42, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 42, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 42, bookId: 26 },  // Ezekiel
+    /* Chapter 43 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 43, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 43, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 43, bookId: 26 },  // Ezekiel
+    /* Chapter 44 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 44, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 44, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 44, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 44, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 44, bookId: 26 },  // Ezekiel
+    /* Chapter 45 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 45, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 45, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 45, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 45, bookId: 26 },  // Ezekiel
+    /* Chapter 46 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 46, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 46, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 46, bookId: 26 },  // Ezekiel
+    /* Chapter 47 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 47, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 47, bookId: 26 },  // Ezekiel
+    /* Chapter 48 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 48, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 48, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 48, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 48, bookId: 26 },  // Ezekiel
+    /* Chapter 49 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 49, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 49, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 49, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 49, bookId: 24 },  // Jeremiah
+    /* Chapter 50 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 50, bookId: 1 },  // Genesis
+    { verseName: "Verse 18", verseId: 18, chapterId: 50, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 50, bookId: 24 },  // Jeremiah
+    /* Chapter 51 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 51, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 51, bookId: 23 },  // Isaiah
+    { verseName: "Verse 18", verseId: 18, chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapter 52 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 52, bookId: 24 },  // Jeremiah
+    /* Chapter 55 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 55, bookId: 19 },  // Psalms
+    /* Chapter 57 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 57, bookId: 23 },  // Isaiah
+    /* Chapter 59 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 59, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 59, bookId: 23 },  // Isaiah
+    /* Chapter 60 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 60, bookId: 23 },  // Isaiah
+    /* Chapter 63 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 63, bookId: 23 },  // Isaiah
+    /* Chapter 65 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 65, bookId: 23 },  // Isaiah
+    /* Chapter 66 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 66, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 66, bookId: 23 },  // Isaiah
+    /* Chapters 67-150 */
+    { verseName: "Verse 18", verseId: 18, chapterId: 68, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 69, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 71, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 72, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 73, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 74, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 77, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 80, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 83, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 88, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 89, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 94, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 102, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 103, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 104, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 105, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 106, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 107, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 109, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 115, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 116, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 118, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 119, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 132, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 135, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 136, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 139, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 145, bookId: 19 },  // Psalms
+    { verseName: "Verse 18", verseId: 18, chapterId: 147, bookId: 19 },  // Psalms
+    /************************************************************* Verse 19 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 8 },  // Ruth
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 17 },  // Esther
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 25 },  // Lamentations
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 27 },  // Daniel
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 29 },  // Joel
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 31 },  // Obadiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 45 },  // Romans
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 48 },  // Galatians
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 49 },  // Ephesians
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 50 },  // Philippians
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 51 },  // Colossians
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 57 },  // Philemon
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 59 },  // James
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 65 },  // Jude
+    { verseName: "Verse 19", verseId: 19, chapterId: 1, bookId: 66 },  // Revelation
+    /* Chapter 2 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 8 },  // Ruth
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 15 },  // Ezra
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 17 },  // Esther
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 25 },  // Lamentations
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 27 },  // Daniel
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 28 },  // Hosea
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 29 },  // Joel
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 35 },  // Habakkuk
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 37 },  // Haggai
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 45 },  // Romans
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 48 },  // Galatians
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 49 },  // Ephesians
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 50 },  // Philippians
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 51 },  // Colossians
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 52 },  // 1 Thessalonians
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 59 },  // James
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 62 },  // 1 John
+    { verseName: "Verse 19", verseId: 19, chapterId: 2, bookId: 66 },  // Revelation
+    /* Chapter 3 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 25 },  // Lamentations
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 27 },  // Daniel
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 34 },  // Nahum
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 35 },  // Habakkuk
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 36 },  // Zephaniah
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 39 },  // Malachi
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 45 },  // Romans
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 48 },  // Galatians
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 49 },  // Ephesians
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 50 },  // Philippians
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 51 },  // Colossians
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 58 },  // Hebrews
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 62 },  // 1 John
+    { verseName: "Verse 19", verseId: 19, chapterId: 3, bookId: 66 },  // Revelation
+    /* Chapter 4 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 8 },  // Ruth
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 15 },  // Ezra
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 25 },  // Lamentations
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 27 },  // Daniel
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 28 },  // Hosea
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 29 },  // Joel
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 45 },  // Romans
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 48 },  // Galatians
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 49 },  // Ephesians
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 50 },  // Philippians
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 19", verseId: 19, chapterId: 4, bookId: 62 },  // 1 John
+    /* Chapter 5 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 25 },  // Lamentations
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 27 },  // Daniel
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 30 },  // Amos
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 45 },  // Romans
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 48 },  // Galatians
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 49 },  // Ephesians
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 52 },  // 1 Thessalonians
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 59 },  // James
+    { verseName: "Verse 19", verseId: 19, chapterId: 5, bookId: 62 },  // 1 John
+    /* Chapter 6 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 15 },  // Ezra
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 27 },  // Daniel
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 45 },  // Romans
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 49 },  // Ephesians
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 19", verseId: 19, chapterId: 6, bookId: 58 },  // Hebrews
+    /* Chapter 7 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 15 },  // Ezra
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 27 },  // Daniel
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 33 },  // Micah
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 45 },  // Romans
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 19", verseId: 19, chapterId: 7, bookId: 58 },  // Hebrews
+    /* Chapter 8 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 15 },  // Ezra
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 27 },  // Daniel
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 38 },  // Zechariah
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 45 },  // Romans
+    { verseName: "Verse 19", verseId: 19, chapterId: 8, bookId: 47 },  // 2 Corinthians
+    /* Chapter 9 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 17 },  // Esther
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 27 },  // Daniel
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 45 },  // Romans
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 58 },  // Hebrews
+    { verseName: "Verse 19", verseId: 19, chapterId: 9, bookId: 66 },  // Revelation
+    /* Chapter 10 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 15 },  // Ezra
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 27 },  // Daniel
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 45 },  // Romans
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 19", verseId: 19, chapterId: 10, bookId: 58 },  // Hebrews
+    /* Chapter 11 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 27 },  // Daniel
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 45 },  // Romans
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 58 },  // Hebrews
+    { verseName: "Verse 19", verseId: 19, chapterId: 11, bookId: 66 },  // Revelation
+    /* Chapter 12 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 45 },  // Romans
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 19", verseId: 19, chapterId: 12, bookId: 58 },  // Hebrews
+    /* Chapter 13 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 17 },  // Esther
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 27 },  // Daniel
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 13, bookId: 58 },  // Hebrews
+    /* Chapter 14 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 27 },  // Daniel
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 38 },  // Zechariah
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 45 },  // Romans
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 19", verseId: 19, chapterId: 14, bookId: 66 },  // Revelation
+    /* Chapter 15 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 17 },  // Esther
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 45 },  // Romans
+    { verseName: "Verse 19", verseId: 19, chapterId: 15, bookId: 46 },  // 1 Corinthians
+    /* Chapter 16 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 41 },  // Mark
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 45 },  // Romans
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 19", verseId: 19, chapterId: 16, bookId: 66 },  // Revelation
+    /* Chapter 17 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 17, bookId: 44 },  // Acts
+    /* Chapter 18 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 18, bookId: 66 },  // Revelation
+    /* Chapter 19 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 19, bookId: 66 },  // Revelation
+    /* Chapter 20 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 20, bookId: 44 },  // Acts
+    /* Chapter 21 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 7 },  // Judges
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 43 },  // John
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 21, bookId: 66 },  // Revelation
+    /* Chapter 22 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 44 },  // Acts
+    { verseName: "Verse 19", verseId: 19, chapterId: 22, bookId: 66 },  // Revelation
+    /* Chapter 23 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 23, bookId: 44 },  // Acts
+    /* Chapter 24 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 6 },  // Joshua
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 42 },  // Luke
+    { verseName: "Verse 19", verseId: 19, chapterId: 24, bookId: 44 },  // Acts
+    /* Chapter 25 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 25, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 25, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 25, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 25, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 25, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 25, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 25, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 19", verseId: 19, chapterId: 25, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 25, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 25, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 25, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 25, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 25, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 25, bookId: 44 },  // Acts
+    /* Chapter 26 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 26, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 26, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 26, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 26, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 26, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 26, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 26, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 26, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 26, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 26, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 26, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 26, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 26, bookId: 44 },  // Acts
+    /* Chapter 27 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 27, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 27, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 27, bookId: 3 },  // Leviticus
+    { verseName: "Verse 19", verseId: 19, chapterId: 27, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 27, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 27, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 27, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 27, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 27, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 27, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 27, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 27, bookId: 44 },  // Acts
+    /* Chapter 28 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 28, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 28, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 28, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 28, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 28, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 28, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 28, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 28, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 28, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 28, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 28, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 19", verseId: 19, chapterId: 28, bookId: 40 },  // Matthew
+    { verseName: "Verse 19", verseId: 19, chapterId: 28, bookId: 44 },  // Acts
+    /* Chapter 29 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 29, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 29, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 29, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 29, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 29, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 29, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 29, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 29, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 29, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 29, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 29, bookId: 26 },  // Ezekiel
+    /* Chapter 30 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 30, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 30, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 30, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 30, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 19", verseId: 19, chapterId: 30, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 30, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 30, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 30, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 30, bookId: 26 },  // Ezekiel
+    /* Chapter 31 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 31, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 31, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 31, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 31, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 31, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 31, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 31, bookId: 20 },  // Proverbs
+    { verseName: "Verse 19", verseId: 19, chapterId: 31, bookId: 24 },  // Jeremiah
+    /* Chapter 32 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 32, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 32, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 32, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 32, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 32, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 32, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 32, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 32, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 32, bookId: 26 },  // Ezekiel
+    /* Chapter 33 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 33, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 33, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 33, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 33, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 19", verseId: 19, chapterId: 33, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 33, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 33, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 33, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 33, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 33, bookId: 26 },  // Ezekiel
+    /* Chapter 34 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 34, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 34, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 34, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 34, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 34, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 34, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 34, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 34, bookId: 26 },  // Ezekiel
+    /* Chapter 35 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 35, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 35, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 35, bookId: 4 },  // Numbers
+    { verseName: "Verse 19", verseId: 19, chapterId: 35, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 35, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 35, bookId: 24 },  // Jeremiah
+    /* Chapter 36 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 36, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 36, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 36, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 19", verseId: 19, chapterId: 36, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 36, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 36, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 36, bookId: 26 },  // Ezekiel
+    /* Chapter 37 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 37, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 37, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 37, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 37, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 37, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 37, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 37, bookId: 26 },  // Ezekiel
+    /* Chapter 38 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 38, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 38, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 38, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 38, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 38, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 38, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 38, bookId: 26 },  // Ezekiel
+    /* Chapter 39 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 39, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 39, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 39, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 39, bookId: 26 },  // Ezekiel
+    /* Chapter 40 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 40, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 40, bookId: 2 },  // Exodus
+    { verseName: "Verse 19", verseId: 19, chapterId: 40, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 40, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 40, bookId: 26 },  // Ezekiel
+    /* Chapter 41 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 41, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 41, bookId: 18 },  // Job
+    { verseName: "Verse 19", verseId: 19, chapterId: 41, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 41, bookId: 26 },  // Ezekiel
+    /* Chapter 42 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 42, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 42, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 42, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 42, bookId: 26 },  // Ezekiel
+    /* Chapter 43 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 43, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 43, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 43, bookId: 26 },  // Ezekiel
+    /* Chapter 44 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 44, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 44, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 44, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 44, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 44, bookId: 26 },  // Ezekiel
+    /* Chapter 45 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 45, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 45, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 45, bookId: 26 },  // Ezekiel
+    /* Chapter 46 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 46, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 46, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 46, bookId: 26 },  // Ezekiel
+    /* Chapter 47 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 47, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 47, bookId: 26 },  // Ezekiel
+    /* Chapter 48 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 48, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 48, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 48, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 48, bookId: 26 },  // Ezekiel
+    /* Chapter 49 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 49, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 49, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 49, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 49, bookId: 24 },  // Jeremiah
+    /* Chapter 50 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 50, bookId: 1 },  // Genesis
+    { verseName: "Verse 19", verseId: 19, chapterId: 50, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 50, bookId: 24 },  // Jeremiah
+    /* Chapter 51 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 51, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 51, bookId: 23 },  // Isaiah
+    { verseName: "Verse 19", verseId: 19, chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapter 52 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 52, bookId: 24 },  // Jeremiah
+    /* Chapter 55 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 55, bookId: 19 },  // Psalms
+    /* Chapter 57 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 57, bookId: 23 },  // Isaiah
+    /* Chapter 59 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 59, bookId: 23 },  // Isaiah
+    /* Chapter 60 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 60, bookId: 23 },  // Isaiah
+    /* Chapter 63 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 63, bookId: 23 },  // Isaiah
+    /* Chapter 65 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 65, bookId: 23 },  // Isaiah
+    /* Chapter 66 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 66, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 66, bookId: 23 },  // Isaiah
+    /* Chapters 67-150 */
+    { verseName: "Verse 19", verseId: 19, chapterId: 68, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 69, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 71, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 72, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 73, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 74, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 77, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 80, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 83, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 88, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 89, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 94, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 102, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 103, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 104, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 105, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 106, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 107, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 109, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 116, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 118, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 119, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 135, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 136, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 139, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 145, bookId: 19 },  // Psalms
+    { verseName: "Verse 19", verseId: 19, chapterId: 147, bookId: 19 },  // Psalms
+    /************************************************************* Verse 20 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 8 },  // Ruth
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 17 },  // Esther
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 25 },  // Lamentations
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 27 },  // Daniel
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 29 },  // Joel
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 31 },  // Obadiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 45 },  // Romans
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 48 },  // Galatians
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 49 },  // Ephesians
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 50 },  // Philippians
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 51 },  // Colossians
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 57 },  // Philemon
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 59 },  // James
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 65 },  // Jude
+    { verseName: "Verse 20", verseId: 20, chapterId: 1, bookId: 66 },  // Revelation
+    /* Chapter 2 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 8 },  // Ruth
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 15 },  // Ezra
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 17 },  // Esther
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 25 },  // Lamentations
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 27 },  // Daniel
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 28 },  // Hosea
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 29 },  // Joel
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 35 },  // Habakkuk
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 37 },  // Haggai
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 45 },  // Romans
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 48 },  // Galatians
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 49 },  // Ephesians
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 50 },  // Philippians
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 51 },  // Colossians
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 52 },  // 1 Thessalonians
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 59 },  // James
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 62 },  // 1 John
+    { verseName: "Verse 20", verseId: 20, chapterId: 2, bookId: 66 },  // Revelation
+    /* Chapter 3 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 25 },  // Lamentations
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 27 },  // Daniel
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 36 },  // Zephaniah
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 39 },  // Malachi
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 45 },  // Romans
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 48 },  // Galatians
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 49 },  // Ephesians
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 50 },  // Philippians
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 51 },  // Colossians
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 62 },  // 1 John
+    { verseName: "Verse 20", verseId: 20, chapterId: 3, bookId: 66 },  // Revelation
+    /* Chapter 4 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 8 },  // Ruth
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 15 },  // Ezra
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 25 },  // Lamentations
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 27 },  // Daniel
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 29 },  // Joel
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 45 },  // Romans
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 48 },  // Galatians
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 49 },  // Ephesians
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 50 },  // Philippians
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 20", verseId: 20, chapterId: 4, bookId: 62 },  // 1 John
+    /* Chapter 5 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 25 },  // Lamentations
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 27 },  // Daniel
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 30 },  // Amos
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 45 },  // Romans
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 48 },  // Galatians
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 49 },  // Ephesians
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 52 },  // 1 Thessalonians
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 59 },  // James
+    { verseName: "Verse 20", verseId: 20, chapterId: 5, bookId: 62 },  // 1 John
+    /* Chapter 6 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 15 },  // Ezra
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 27 },  // Daniel
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 45 },  // Romans
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 49 },  // Ephesians
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 20", verseId: 20, chapterId: 6, bookId: 58 },  // Hebrews
+    /* Chapter 7 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 15 },  // Ezra
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 27 },  // Daniel
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 33 },  // Micah
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 45 },  // Romans
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 20", verseId: 20, chapterId: 7, bookId: 58 },  // Hebrews
+    /* Chapter 8 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 15 },  // Ezra
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 27 },  // Daniel
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 38 },  // Zechariah
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 45 },  // Romans
+    { verseName: "Verse 20", verseId: 20, chapterId: 8, bookId: 47 },  // 2 Corinthians
+    /* Chapter 9 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 17 },  // Esther
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 27 },  // Daniel
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 45 },  // Romans
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 58 },  // Hebrews
+    { verseName: "Verse 20", verseId: 20, chapterId: 9, bookId: 66 },  // Revelation
+    /* Chapter 10 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 15 },  // Ezra
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 27 },  // Daniel
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 45 },  // Romans
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 20", verseId: 20, chapterId: 10, bookId: 58 },  // Hebrews
+    /* Chapter 11 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 27 },  // Daniel
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 45 },  // Romans
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 20", verseId: 20, chapterId: 11, bookId: 58 },  // Hebrews
+    /* Chapter 12 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 45 },  // Romans
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 20", verseId: 20, chapterId: 12, bookId: 58 },  // Hebrews
+    /* Chapter 13 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 17 },  // Esther
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 27 },  // Daniel
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 13, bookId: 58 },  // Hebrews
+    /* Chapter 14 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 27 },  // Daniel
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 38 },  // Zechariah
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 45 },  // Romans
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 20", verseId: 20, chapterId: 14, bookId: 66 },  // Revelation
+    /* Chapter 15 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 17 },  // Esther
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 45 },  // Romans
+    { verseName: "Verse 20", verseId: 20, chapterId: 15, bookId: 46 },  // 1 Corinthians
+    /* Chapter 16 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 41 },  // Mark
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 45 },  // Romans
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 20", verseId: 20, chapterId: 16, bookId: 66 },  // Revelation
+    /* Chapter 17 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 17, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 17, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 17, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 17, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 17, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 17, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 17, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 17, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 17, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 17, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 17, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 17, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 17, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 17, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 17, bookId: 44 },  // Acts
+    /* Chapter 18 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 18, bookId: 66 },  // Revelation
+    /* Chapter 19 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 19, bookId: 66 },  // Revelation
+    /* Chapter 20 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 20, bookId: 44 },  // Acts
+    /* Chapter 21 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 7 },  // Judges
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 43 },  // John
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 21, bookId: 66 },  // Revelation
+    /* Chapter 22 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 44 },  // Acts
+    { verseName: "Verse 20", verseId: 20, chapterId: 22, bookId: 66 },  // Revelation
+    /* Chapter 23 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 23, bookId: 44 },  // Acts
+    /* Chapter 24 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 6 },  // Joshua
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 42 },  // Luke
+    { verseName: "Verse 20", verseId: 20, chapterId: 24, bookId: 44 },  // Acts
+    /* Chapter 25 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 25, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 25, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 25, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 25, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 25, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 20", verseId: 20, chapterId: 25, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 25, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 25, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 25, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 25, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 25, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 25, bookId: 44 },  // Acts
+    /* Chapter 26 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 26, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 26, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 26, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 26, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 26, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 26, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 26, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 26, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 26, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 26, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 26, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 26, bookId: 44 },  // Acts
+    /* Chapter 27 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 27, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 27, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 27, bookId: 3 },  // Leviticus
+    { verseName: "Verse 20", verseId: 20, chapterId: 27, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 27, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 27, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 27, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 27, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 27, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 27, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 27, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 27, bookId: 44 },  // Acts
+    /* Chapter 28 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 28, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 28, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 28, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 28, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 28, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 28, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 28, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 28, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 28, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 28, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 28, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 20", verseId: 20, chapterId: 28, bookId: 40 },  // Matthew
+    { verseName: "Verse 20", verseId: 20, chapterId: 28, bookId: 44 },  // Acts
+    /* Chapter 29 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 29, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 29, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 29, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 29, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 29, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 29, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 29, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 29, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 29, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 29, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 29, bookId: 26 },  // Ezekiel
+    /* Chapter 30 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 30, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 30, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 30, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 30, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 20", verseId: 20, chapterId: 30, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 30, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 30, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 30, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 30, bookId: 26 },  // Ezekiel
+    /* Chapter 31 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 31, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 31, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 31, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 31, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 31, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 31, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 31, bookId: 20 },  // Proverbs
+    { verseName: "Verse 20", verseId: 20, chapterId: 31, bookId: 24 },  // Jeremiah
+    /* Chapter 32 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 32, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 32, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 32, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 32, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 32, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 32, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 32, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 32, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 32, bookId: 26 },  // Ezekiel
+    /* Chapter 33 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 33, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 33, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 33, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 33, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 20", verseId: 20, chapterId: 33, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 33, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 33, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 33, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 33, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 33, bookId: 26 },  // Ezekiel
+    /* Chapter 34 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 34, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 34, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 34, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 34, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 34, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 34, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 34, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 34, bookId: 26 },  // Ezekiel
+    /* Chapter 35 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 35, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 35, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 35, bookId: 4 },  // Numbers
+    { verseName: "Verse 20", verseId: 20, chapterId: 35, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 35, bookId: 19 },  // Psalms
+    /* Chapter 36 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 36, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 36, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 36, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 20", verseId: 20, chapterId: 36, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 36, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 36, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 36, bookId: 26 },  // Ezekiel
+    /* Chapter 37 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 37, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 37, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 37, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 37, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 37, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 37, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 37, bookId: 26 },  // Ezekiel
+    /* Chapter 38 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 38, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 38, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 38, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 38, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 38, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 38, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 38, bookId: 26 },  // Ezekiel
+    /* Chapter 39 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 39, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 39, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 39, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 39, bookId: 26 },  // Ezekiel
+    /* Chapter 40 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 40, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 40, bookId: 2 },  // Exodus
+    { verseName: "Verse 20", verseId: 20, chapterId: 40, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 40, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 40, bookId: 26 },  // Ezekiel
+    /* Chapter 41 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 41, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 41, bookId: 18 },  // Job
+    { verseName: "Verse 20", verseId: 20, chapterId: 41, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 41, bookId: 26 },  // Ezekiel
+    /* Chapter 42 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 42, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 42, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 42, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 42, bookId: 26 },  // Ezekiel
+    /* Chapter 43 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 43, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 43, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 43, bookId: 26 },  // Ezekiel
+    /* Chapter 44 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 44, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 44, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 44, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 44, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 44, bookId: 26 },  // Ezekiel
+    /* Chapter 45 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 45, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 45, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 45, bookId: 26 },  // Ezekiel
+    /* Chapter 46 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 46, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 46, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 46, bookId: 26 },  // Ezekiel
+    /* Chapter 47 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 47, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 47, bookId: 26 },  // Ezekiel
+    /* Chapter 48 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 48, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 48, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 48, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 48, bookId: 26 },  // Ezekiel
+    /* Chapter 49 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 49, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 49, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 49, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 49, bookId: 24 },  // Jeremiah
+    /* Chapter 50 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 50, bookId: 1 },  // Genesis
+    { verseName: "Verse 20", verseId: 20, chapterId: 50, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 50, bookId: 24 },  // Jeremiah
+    /* Chapter 51 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 51, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 51, bookId: 23 },  // Isaiah
+    { verseName: "Verse 20", verseId: 20, chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapter 52 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 52, bookId: 24 },  // Jeremiah
+    /* Chapter 55 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 55, bookId: 19 },  // Psalms
+    /* Chapter 57 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 57, bookId: 23 },  // Isaiah
+    /* Chapter 59 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 59, bookId: 23 },  // Isaiah
+    /* Chapter 60 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 60, bookId: 23 },  // Isaiah
+    /* Chapter 65 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 65, bookId: 23 },  // Isaiah
+    /* Chapter 66 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 66, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 66, bookId: 23 },  // Isaiah
+    /* Chapters 67-150 */
+    { verseName: "Verse 20", verseId: 20, chapterId: 68, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 69, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 71, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 72, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 73, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 74, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 77, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 80, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 89, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 94, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 102, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 103, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 104, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 105, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 106, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 107, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 109, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 118, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 119, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 135, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 136, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 139, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 145, bookId: 19 },  // Psalms
+    { verseName: "Verse 20", verseId: 20, chapterId: 147, bookId: 19 },  // Psalms
+    /************************************************************* Verse 21 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 8 },  // Ruth
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 17 },  // Esther
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 25 },  // Lamentations
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 27 },  // Daniel
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 31 },  // Obadiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 41 },  // Mark
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 45 },  // Romans
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 48 },  // Galatians
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 49 },  // Ephesians
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 50 },  // Philippians
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 51 },  // Colossians
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 57 },  // Philemon
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 59 },  // James
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 21", verseId: 21, chapterId: 1, bookId: 65 },  // Jude
+    /* Chapter 2 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 8 },  // Ruth
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 15 },  // Ezra
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 17 },  // Esther
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 25 },  // Lamentations
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 27 },  // Daniel
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 28 },  // Hosea
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 29 },  // Joel
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 37 },  // Haggai
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 41 },  // Mark
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 45 },  // Romans
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 48 },  // Galatians
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 49 },  // Ephesians
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 50 },  // Philippians
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 51 },  // Colossians
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 59 },  // James
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 62 },  // 1 John
+    { verseName: "Verse 21", verseId: 21, chapterId: 2, bookId: 66 },  // Revelation
+    /* Chapter 3 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 25 },  // Lamentations
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 27 },  // Daniel
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 39 },  // Malachi
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 41 },  // Mark
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 45 },  // Romans
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 48 },  // Galatians
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 49 },  // Ephesians
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 50 },  // Philippians
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 51 },  // Colossians
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 62 },  // 1 John
+    { verseName: "Verse 21", verseId: 21, chapterId: 3, bookId: 66 },  // Revelation
+    /* Chapter 4 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 8 },  // Ruth
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 15 },  // Ezra
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 25 },  // Lamentations
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 27 },  // Daniel
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 29 },  // Joel
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 41 },  // Mark
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 45 },  // Romans
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 48 },  // Galatians
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 49 },  // Ephesians
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 50 },  // Philippians
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 21", verseId: 21, chapterId: 4, bookId: 62 },  // 1 John
+    /* Chapter 5 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 25 },  // Lamentations
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 27 },  // Daniel
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 30 },  // Amos
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 41 },  // Mark
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 45 },  // Romans
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 48 },  // Galatians
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 49 },  // Ephesians
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 52 },  // 1 Thessalonians
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 54 },  // 1 Timothy
+    { verseName: "Verse 21", verseId: 21, chapterId: 5, bookId: 62 },  // 1 John
+    /* Chapter 6 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 15 },  // Ezra
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 27 },  // Daniel
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 41 },  // Mark
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 45 },  // Romans
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 49 },  // Ephesians
+    { verseName: "Verse 21", verseId: 21, chapterId: 6, bookId: 54 },  // 1 Timothy
+    /* Chapter 7 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 15 },  // Ezra
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 27 },  // Daniel
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 41 },  // Mark
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 45 },  // Romans
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 21", verseId: 21, chapterId: 7, bookId: 58 },  // Hebrews
+    /* Chapter 8 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 15 },  // Ezra
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 27 },  // Daniel
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 38 },  // Zechariah
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 41 },  // Mark
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 45 },  // Romans
+    { verseName: "Verse 21", verseId: 21, chapterId: 8, bookId: 47 },  // 2 Corinthians
+    /* Chapter 9 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 17 },  // Esther
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 27 },  // Daniel
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 41 },  // Mark
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 45 },  // Romans
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 58 },  // Hebrews
+    { verseName: "Verse 21", verseId: 21, chapterId: 9, bookId: 66 },  // Revelation
+    /* Chapter 10 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 15 },  // Ezra
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 27 },  // Daniel
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 41 },  // Mark
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 45 },  // Romans
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 21", verseId: 21, chapterId: 10, bookId: 58 },  // Hebrews
+    /* Chapter 11 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 27 },  // Daniel
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 41 },  // Mark
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 45 },  // Romans
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 21", verseId: 21, chapterId: 11, bookId: 58 },  // Hebrews
+    /* Chapter 12 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 41 },  // Mark
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 45 },  // Romans
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 21", verseId: 21, chapterId: 12, bookId: 58 },  // Hebrews
+    /* Chapter 13 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 17 },  // Esther
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 27 },  // Daniel
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 41 },  // Mark
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 13, bookId: 58 },  // Hebrews
+    /* Chapter 14 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 27 },  // Daniel
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 38 },  // Zechariah
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 41 },  // Mark
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 45 },  // Romans
+    { verseName: "Verse 21", verseId: 21, chapterId: 14, bookId: 46 },  // 1 Corinthians
+    /* Chapter 15 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 17 },  // Esther
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 41 },  // Mark
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 45 },  // Romans
+    { verseName: "Verse 21", verseId: 21, chapterId: 15, bookId: 46 },  // 1 Corinthians
+    /* Chapter 16 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 45 },  // Romans
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 21", verseId: 21, chapterId: 16, bookId: 66 },  // Revelation
+    /* Chapter 17 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 17, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 17, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 17, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 17, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 17, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 17, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 17, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 17, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 17, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 17, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 17, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 17, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 17, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 17, bookId: 44 },  // Acts
+    /* Chapter 18 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 18, bookId: 66 },  // Revelation
+    /* Chapter 19 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 19, bookId: 66 },  // Revelation
+    /* Chapter 20 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 20, bookId: 44 },  // Acts
+    /* Chapter 21 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 7 },  // Judges
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 43 },  // John
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 21, bookId: 66 },  // Revelation
+    /* Chapter 22 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 44 },  // Acts
+    { verseName: "Verse 21", verseId: 21, chapterId: 22, bookId: 66 },  // Revelation
+    /* Chapter 23 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 23, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 23, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 23, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 23, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 23, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 23, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 23, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 23, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 23, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 23, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 23, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 23, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 23, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 23, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 23, bookId: 44 },  // Acts
+    /* Chapter 24 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 6 },  // Joshua
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 42 },  // Luke
+    { verseName: "Verse 21", verseId: 21, chapterId: 24, bookId: 44 },  // Acts
+    /* Chapter 25 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 25, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 25, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 25, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 25, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 25, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 21", verseId: 21, chapterId: 25, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 25, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 25, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 25, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 25, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 25, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 25, bookId: 44 },  // Acts
+    /* Chapter 26 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 26, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 26, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 26, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 26, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 26, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 26, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 26, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 26, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 26, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 26, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 26, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 26, bookId: 44 },  // Acts
+    /* Chapter 27 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 27, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 27, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 27, bookId: 3 },  // Leviticus
+    { verseName: "Verse 21", verseId: 21, chapterId: 27, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 27, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 27, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 27, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 27, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 27, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 27, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 27, bookId: 40 },  // Matthew
+    { verseName: "Verse 21", verseId: 21, chapterId: 27, bookId: 44 },  // Acts
+    /* Chapter 28 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 28, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 28, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 28, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 28, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 28, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 28, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 28, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 28, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 28, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 28, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 28, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 21", verseId: 21, chapterId: 28, bookId: 44 },  // Acts
+    /* Chapter 29 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 29, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 29, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 29, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 29, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 29, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 29, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 29, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 29, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 29, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 29, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 29, bookId: 26 },  // Ezekiel
+    /* Chapter 30 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 30, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 30, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 30, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 21", verseId: 21, chapterId: 30, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 30, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 30, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 30, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 30, bookId: 26 },  // Ezekiel
+    /* Chapter 31 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 31, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 31, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 31, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 31, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 31, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 31, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 31, bookId: 20 },  // Proverbs
+    { verseName: "Verse 21", verseId: 21, chapterId: 31, bookId: 24 },  // Jeremiah
+    /* Chapter 32 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 32, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 32, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 32, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 32, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 32, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 32, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 32, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 32, bookId: 26 },  // Ezekiel
+    /* Chapter 33 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 33, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 33, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 33, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 21", verseId: 21, chapterId: 33, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 33, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 33, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 33, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 33, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 33, bookId: 26 },  // Ezekiel
+    /* Chapter 34 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 34, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 34, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 34, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 34, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 34, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 34, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 34, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 34, bookId: 26 },  // Ezekiel
+    /* Chapter 35 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 35, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 35, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 35, bookId: 4 },  // Numbers
+    { verseName: "Verse 21", verseId: 21, chapterId: 35, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 35, bookId: 19 },  // Psalms
+    /* Chapter 36 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 36, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 36, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 36, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 21", verseId: 21, chapterId: 36, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 36, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 36, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 36, bookId: 26 },  // Ezekiel
+    /* Chapter 37 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 37, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 37, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 37, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 37, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 37, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 37, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 37, bookId: 26 },  // Ezekiel
+    /* Chapter 38 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 38, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 38, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 38, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 38, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 38, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 38, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 38, bookId: 26 },  // Ezekiel
+    /* Chapter 39 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 39, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 39, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 39, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 39, bookId: 26 },  // Ezekiel
+    /* Chapter 40 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 40, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 40, bookId: 2 },  // Exodus
+    { verseName: "Verse 21", verseId: 21, chapterId: 40, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 40, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 40, bookId: 26 },  // Ezekiel
+    /* Chapter 41 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 41, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 41, bookId: 18 },  // Job
+    { verseName: "Verse 21", verseId: 21, chapterId: 41, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 41, bookId: 26 },  // Ezekiel
+    /* Chapter 42 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 42, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 42, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 42, bookId: 24 },  // Jeremiah
+    /* Chapter 43 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 43, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 43, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 43, bookId: 26 },  // Ezekiel
+    /* Chapter 44 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 44, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 44, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 44, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 44, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 44, bookId: 26 },  // Ezekiel
+    /* Chapter 45 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 45, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 45, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 45, bookId: 26 },  // Ezekiel
+    /* Chapter 46 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 46, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 46, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 46, bookId: 26 },  // Ezekiel
+    /* Chapter 47 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 47, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 47, bookId: 26 },  // Ezekiel
+    /* Chapter 48 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 48, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 48, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 48, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 48, bookId: 26 },  // Ezekiel
+    /* Chapter 49 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 49, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 49, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 49, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 49, bookId: 24 },  // Jeremiah
+    /* Chapter 50 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 50, bookId: 1 },  // Genesis
+    { verseName: "Verse 21", verseId: 21, chapterId: 50, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 50, bookId: 24 },  // Jeremiah
+    /* Chapter 51 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 51, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 51, bookId: 23 },  // Isaiah
+    { verseName: "Verse 21", verseId: 21, chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapter 52 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 52, bookId: 24 },  // Jeremiah
+    /* Chapter 55 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 55, bookId: 19 },  // Psalms
+    /* Chapter 57 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 57, bookId: 23 },  // Isaiah
+    /* Chapter 59 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 59, bookId: 23 },  // Isaiah
+    /* Chapter 60 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 60, bookId: 23 },  // Isaiah
+    /* Chapter 65 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 65, bookId: 23 },  // Isaiah
+    /* Chapter 66 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 66, bookId: 23 },  // Isaiah
+    /* Chapters 67-150 */
+    { verseName: "Verse 21", verseId: 21, chapterId: 68, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 69, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 71, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 73, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 74, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 77, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 89, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 94, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 102, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 103, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 104, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 105, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 106, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 107, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 109, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 118, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 119, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 135, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 136, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 139, bookId: 19 },  // Psalms
+    { verseName: "Verse 21", verseId: 21, chapterId: 145, bookId: 19 },  // Psalms
+    /************************************************************* Verse 22 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 8 },  // Ruth
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 17 },  // Esther
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 25 },  // Lamentations
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 41 },  // Mark
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 45 },  // Romans
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 48 },  // Galatians
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 49 },  // Ephesians
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 50 },  // Philippians
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 51 },  // Colossians
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 57 },  // Philemon
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 59 },  // James
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 22", verseId: 22, chapterId: 1, bookId: 65 },  // Jude
+    /* Chapter 2 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 8 },  // Ruth
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 15 },  // Ezra
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 17 },  // Esther
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 25 },  // Lamentations
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 27 },  // Daniel
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 28 },  // Hosea
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 29 },  // Joel
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 37 },  // Haggai
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 41 },  // Mark
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 45 },  // Romans
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 49 },  // Ephesians
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 50 },  // Philippians
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 51 },  // Colossians
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 55 },  // 2 Timothy
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 59 },  // James
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 61 },  // 2 Peter
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 62 },  // 1 John
+    { verseName: "Verse 22", verseId: 22, chapterId: 2, bookId: 66 },  // Revelation
+    /* Chapter 3 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 25 },  // Lamentations
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 27 },  // Daniel
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 39 },  // Malachi
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 41 },  // Mark
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 45 },  // Romans
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 48 },  // Galatians
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 51 },  // Colossians
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 60 },  // 1 Peter
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 62 },  // 1 John
+    { verseName: "Verse 22", verseId: 22, chapterId: 3, bookId: 66 },  // Revelation
+    /* Chapter 4 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 8 },  // Ruth
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 15 },  // Ezra
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 25 },  // Lamentations
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 27 },  // Daniel
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 41 },  // Mark
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 45 },  // Romans
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 48 },  // Galatians
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 49 },  // Ephesians
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 50 },  // Philippians
+    { verseName: "Verse 22", verseId: 22, chapterId: 4, bookId: 55 },  // 2 Timothy
+    /* Chapter 5 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 25 },  // Lamentations
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 27 },  // Daniel
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 30 },  // Amos
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 41 },  // Mark
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 48 },  // Galatians
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 49 },  // Ephesians
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 52 },  // 1 Thessalonians
+    { verseName: "Verse 22", verseId: 22, chapterId: 5, bookId: 54 },  // 1 Timothy
+    /* Chapter 6 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 15 },  // Ezra
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 27 },  // Daniel
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 41 },  // Mark
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 45 },  // Romans
+    { verseName: "Verse 22", verseId: 22, chapterId: 6, bookId: 49 },  // Ephesians
+    /* Chapter 7 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 15 },  // Ezra
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 27 },  // Daniel
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 41 },  // Mark
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 45 },  // Romans
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 22", verseId: 22, chapterId: 7, bookId: 58 },  // Hebrews
+    /* Chapter 8 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 15 },  // Ezra
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 27 },  // Daniel
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 38 },  // Zechariah
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 41 },  // Mark
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 45 },  // Romans
+    { verseName: "Verse 22", verseId: 22, chapterId: 8, bookId: 47 },  // 2 Corinthians
+    /* Chapter 9 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 17 },  // Esther
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 27 },  // Daniel
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 41 },  // Mark
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 45 },  // Romans
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 22", verseId: 22, chapterId: 9, bookId: 58 },  // Hebrews
+    /* Chapter 10 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 15 },  // Ezra
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 41 },  // Mark
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 22", verseId: 22, chapterId: 10, bookId: 58 },  // Hebrews
+    /* Chapter 11 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 27 },  // Daniel
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 41 },  // Mark
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 45 },  // Romans
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 22", verseId: 22, chapterId: 11, bookId: 58 },  // Hebrews
+    /* Chapter 12 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 41 },  // Mark
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 22", verseId: 22, chapterId: 12, bookId: 58 },  // Hebrews
+    /* Chapter 13 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 17 },  // Esther
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 27 },  // Daniel
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 41 },  // Mark
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 13, bookId: 58 },  // Hebrews
+    /* Chapter 14 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 27 },  // Daniel
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 41 },  // Mark
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 45 },  // Romans
+    { verseName: "Verse 22", verseId: 22, chapterId: 14, bookId: 46 },  // 1 Corinthians
+    /* Chapter 15 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 17 },  // Esther
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 41 },  // Mark
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 45 },  // Romans
+    { verseName: "Verse 22", verseId: 22, chapterId: 15, bookId: 46 },  // 1 Corinthians
+    /* Chapter 16 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 45 },  // Romans
+    { verseName: "Verse 22", verseId: 22, chapterId: 16, bookId: 46 },  // 1 Corinthians
+    /* Chapter 17 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 17, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 17, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 17, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 17, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 17, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 17, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 17, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 17, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 17, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 17, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 17, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 17, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 17, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 17, bookId: 44 },  // Acts
+    /* Chapter 18 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 18, bookId: 66 },  // Revelation
+    /* Chapter 19 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 19, bookId: 44 },  // Acts
+    /* Chapter 20 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 20, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 20, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 20, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 20, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 20, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 20, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 20, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 20, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 20, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 20, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 20, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 20, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 20, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 20, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 20, bookId: 44 },  // Acts
+    /* Chapter 21 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 7 },  // Judges
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 43 },  // John
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 44 },  // Acts
+    { verseName: "Verse 22", verseId: 22, chapterId: 21, bookId: 66 },  // Revelation
+    /* Chapter 22 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 22, bookId: 44 },  // Acts
+    /* Chapter 23 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 23, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 23, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 23, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 23, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 23, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 23, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 23, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 23, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 23, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 23, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 23, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 23, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 23, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 23, bookId: 44 },  // Acts
+    /* Chapter 24 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 6 },  // Joshua
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 42 },  // Luke
+    { verseName: "Verse 22", verseId: 22, chapterId: 24, bookId: 44 },  // Acts
+    /* Chapter 25 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 25, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 25, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 25, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 25, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 25, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 22", verseId: 22, chapterId: 25, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 25, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 25, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 25, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 25, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 25, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 25, bookId: 44 },  // Acts
+    /* Chapter 26 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 26, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 26, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 26, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 26, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 26, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 26, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 26, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 26, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 26, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 26, bookId: 44 },  // Acts
+    /* Chapter 27 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 27, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 27, bookId: 3 },  // Leviticus
+    { verseName: "Verse 22", verseId: 22, chapterId: 27, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 27, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 27, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 27, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 27, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 27, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 27, bookId: 40 },  // Matthew
+    { verseName: "Verse 22", verseId: 22, chapterId: 27, bookId: 44 },  // Acts
+    /* Chapter 28 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 28, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 28, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 28, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 28, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 28, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 28, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 28, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 28, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 28, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 28, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 22", verseId: 22, chapterId: 28, bookId: 44 },  // Acts
+    /* Chapter 29 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 29, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 29, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 29, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 29, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 29, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 29, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 29, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 29, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 29, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 29, bookId: 24 },  // Jeremiah
+    /* Chapter 30 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 30, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 30, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 30, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 22", verseId: 22, chapterId: 30, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 30, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 30, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 30, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 30, bookId: 26 },  // Ezekiel
+    /* Chapter 31 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 31, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 31, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 31, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 31, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 31, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 31, bookId: 20 },  // Proverbs
+    { verseName: "Verse 22", verseId: 22, chapterId: 31, bookId: 24 },  // Jeremiah
+    /* Chapter 32 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 32, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 32, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 32, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 32, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 32, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 32, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 32, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 32, bookId: 26 },  // Ezekiel
+    /* Chapter 33 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 33, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 33, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 33, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 22", verseId: 22, chapterId: 33, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 33, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 33, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 33, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 33, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 33, bookId: 26 },  // Ezekiel
+    /* Chapter 34 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 34, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 34, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 34, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 34, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 34, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 34, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 34, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 34, bookId: 26 },  // Ezekiel
+    /* Chapter 35 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 35, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 35, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 35, bookId: 4 },  // Numbers
+    { verseName: "Verse 22", verseId: 22, chapterId: 35, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 35, bookId: 19 },  // Psalms
+    /* Chapter 36 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 36, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 36, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 36, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 22", verseId: 22, chapterId: 36, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 36, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 36, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 36, bookId: 26 },  // Ezekiel
+    /* Chapter 37 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 37, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 37, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 37, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 37, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 37, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 37, bookId: 26 },  // Ezekiel
+    /* Chapter 38 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 38, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 38, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 38, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 38, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 38, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 38, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 38, bookId: 26 },  // Ezekiel
+    /* Chapter 39 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 39, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 39, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 39, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 39, bookId: 26 },  // Ezekiel
+    /* Chapter 40 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 40, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 40, bookId: 2 },  // Exodus
+    { verseName: "Verse 22", verseId: 22, chapterId: 40, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 40, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 40, bookId: 26 },  // Ezekiel
+    /* Chapter 41 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 41, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 41, bookId: 18 },  // Job
+    { verseName: "Verse 22", verseId: 22, chapterId: 41, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 41, bookId: 26 },  // Ezekiel
+    /* Chapter 42 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 42, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 42, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 42, bookId: 24 },  // Jeremiah
+    /* Chapter 43 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 43, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 43, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 43, bookId: 26 },  // Ezekiel
+    /* Chapter 44 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 44, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 44, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 44, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 44, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 44, bookId: 26 },  // Ezekiel
+    /* Chapter 45 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 45, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 45, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 45, bookId: 26 },  // Ezekiel
+    /* Chapter 46 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 46, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 46, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 46, bookId: 26 },  // Ezekiel
+    /* Chapter 47 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 47, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 47, bookId: 26 },  // Ezekiel
+    /* Chapter 48 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 48, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 48, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 48, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 48, bookId: 26 },  // Ezekiel
+    /* Chapter 49 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 49, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 49, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 49, bookId: 24 },  // Jeremiah
+    /* Chapter 50 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 50, bookId: 1 },  // Genesis
+    { verseName: "Verse 22", verseId: 22, chapterId: 50, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 50, bookId: 24 },  // Jeremiah
+    /* Chapter 51 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 51, bookId: 23 },  // Isaiah
+    { verseName: "Verse 22", verseId: 22, chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapter 52 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 52, bookId: 24 },  // Jeremiah
+    /* Chapter 55 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 55, bookId: 19 },  // Psalms
+    /* Chapter 60 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 60, bookId: 23 },  // Isaiah
+    /* Chapter 65 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 65, bookId: 23 },  // Isaiah
+    /* Chapter 66 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 66, bookId: 23 },  // Isaiah
+    /* Chapters 67-150 */
+    { verseName: "Verse 22", verseId: 22, chapterId: 68, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 69, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 71, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 73, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 74, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 89, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 94, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 102, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 103, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 104, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 105, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 106, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 107, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 109, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 118, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 119, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 136, bookId: 19 },  // Psalms
+    { verseName: "Verse 22", verseId: 22, chapterId: 139, bookId: 19 },  // Psalms
   ];
 
   // dropdown cascade result
