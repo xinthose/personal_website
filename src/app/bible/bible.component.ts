@@ -29474,6 +29474,495 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 28", verseId: 28, chapterId: 109, bookId: 19 },  // Psalms
     { verseName: "Verse 28", verseId: 28, chapterId: 118, bookId: 19 },  // Psalms
     { verseName: "Verse 28", verseId: 28, chapterId: 119, bookId: 19 },  // Psalms
+    /************************************************************* Verse 29 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 1, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 1, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 1, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 29", verseId: 29, chapterId: 1, bookId: 7 },  // Judges
+    { verseName: "Verse 29", verseId: 29, chapterId: 1, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 1, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 1, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 1, bookId: 23 },  // Isaiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 1, bookId: 41 },  // Mark
+    { verseName: "Verse 29", verseId: 29, chapterId: 1, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 1, bookId: 43 },  // John
+    { verseName: "Verse 29", verseId: 29, chapterId: 1, bookId: 45 },  // Romans
+    { verseName: "Verse 29", verseId: 29, chapterId: 1, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 29", verseId: 29, chapterId: 1, bookId: 50 },  // Philippians
+    { verseName: "Verse 29", verseId: 29, chapterId: 1, bookId: 51 },  // Colossians
+    /* Chapter 2 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 2, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 2, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 29", verseId: 29, chapterId: 2, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 2, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 2, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 2, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 2, bookId: 15 },  // Ezra
+    { verseName: "Verse 29", verseId: 29, chapterId: 2, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 2, bookId: 27 },  // Daniel
+    { verseName: "Verse 29", verseId: 29, chapterId: 2, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 2, bookId: 44 },  // Acts
+    { verseName: "Verse 29", verseId: 29, chapterId: 2, bookId: 45 },  // Romans
+    { verseName: "Verse 29", verseId: 29, chapterId: 2, bookId: 50 },  // Philippians
+    { verseName: "Verse 29", verseId: 29, chapterId: 2, bookId: 62 },  // 1 John
+    { verseName: "Verse 29", verseId: 29, chapterId: 2, bookId: 66 },  // Revelation
+    /* Chapter 3 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 3, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 3, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 29", verseId: 29, chapterId: 3, bookId: 7 },  // Judges
+    { verseName: "Verse 29", verseId: 29, chapterId: 3, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 3, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 3, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 3, bookId: 25 },  // Lamentations
+    { verseName: "Verse 29", verseId: 29, chapterId: 3, bookId: 27 },  // Daniel
+    { verseName: "Verse 29", verseId: 29, chapterId: 3, bookId: 41 },  // Mark
+    { verseName: "Verse 29", verseId: 29, chapterId: 3, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 3, bookId: 43 },  // John
+    { verseName: "Verse 29", verseId: 29, chapterId: 3, bookId: 45 },  // Romans
+    { verseName: "Verse 29", verseId: 29, chapterId: 3, bookId: 48 },  // Galatians
+    /* Chapter 4 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 4, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 4, bookId: 3 },  // Leviticus
+    { verseName: "Verse 29", verseId: 29, chapterId: 4, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 4, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 29", verseId: 29, chapterId: 4, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 4, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 4, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 4, bookId: 27 },  // Daniel
+    { verseName: "Verse 29", verseId: 29, chapterId: 4, bookId: 41 },  // Mark
+    { verseName: "Verse 29", verseId: 29, chapterId: 4, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 4, bookId: 43 },  // John
+    { verseName: "Verse 29", verseId: 29, chapterId: 4, bookId: 44 },  // Acts
+    { verseName: "Verse 29", verseId: 29, chapterId: 4, bookId: 48 },  // Galatians
+    { verseName: "Verse 29", verseId: 29, chapterId: 4, bookId: 49 },  // Ephesians
+    /* Chapter 5 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 5, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 5, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 5, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 29", verseId: 29, chapterId: 5, bookId: 7 },  // Judges
+    { verseName: "Verse 29", verseId: 29, chapterId: 5, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 5, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 5, bookId: 23 },  // Isaiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 5, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 5, bookId: 27 },  // Daniel
+    { verseName: "Verse 29", verseId: 29, chapterId: 5, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 5, bookId: 41 },  // Mark
+    { verseName: "Verse 29", verseId: 29, chapterId: 5, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 5, bookId: 43 },  // John
+    { verseName: "Verse 29", verseId: 29, chapterId: 5, bookId: 44 },  // Acts
+    { verseName: "Verse 29", verseId: 29, chapterId: 5, bookId: 49 },  // Ephesians
+    /* Chapter 6 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 6, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 6, bookId: 7 },  // Judges
+    { verseName: "Verse 29", verseId: 29, chapterId: 6, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 6, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 6, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 6, bookId: 18 },  // Job
+    { verseName: "Verse 29", verseId: 29, chapterId: 6, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 6, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 6, bookId: 27 },  // Daniel
+    { verseName: "Verse 29", verseId: 29, chapterId: 6, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 6, bookId: 41 },  // Mark
+    { verseName: "Verse 29", verseId: 29, chapterId: 6, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 6, bookId: 43 },  // John
+    /* Chapter 7 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 7, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 7, bookId: 3 },  // Leviticus
+    { verseName: "Verse 29", verseId: 29, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 7, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 7, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 7, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 7, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 7, bookId: 21 },  // Ecclesiastes
+    { verseName: "Verse 29", verseId: 29, chapterId: 7, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 7, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 7, bookId: 41 },  // Mark
+    { verseName: "Verse 29", verseId: 29, chapterId: 7, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 7, bookId: 43 },  // John
+    { verseName: "Verse 29", verseId: 29, chapterId: 7, bookId: 44 },  // Acts
+    { verseName: "Verse 29", verseId: 29, chapterId: 7, bookId: 46 },  // 1 Corinthians
+    /* Chapter 8 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 8, bookId: 3 },  // Leviticus
+    { verseName: "Verse 29", verseId: 29, chapterId: 8, bookId: 6 },  // Joshua
+    { verseName: "Verse 29", verseId: 29, chapterId: 8, bookId: 7 },  // Judges
+    { verseName: "Verse 29", verseId: 29, chapterId: 8, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 8, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 8, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 8, bookId: 15 },  // Ezra
+    { verseName: "Verse 29", verseId: 29, chapterId: 8, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 8, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 8, bookId: 41 },  // Mark
+    { verseName: "Verse 29", verseId: 29, chapterId: 8, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 8, bookId: 43 },  // John
+    { verseName: "Verse 29", verseId: 29, chapterId: 8, bookId: 44 },  // Acts
+    { verseName: "Verse 29", verseId: 29, chapterId: 8, bookId: 45 },  // Romans
+    /* Chapter 9 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 7 },  // Judges
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 17 },  // Esther
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 18 },  // Job
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 41 },  // Mark
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 43 },  // John
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 44 },  // Acts
+    { verseName: "Verse 29", verseId: 29, chapterId: 9, bookId: 45 },  // Romans
+    /* Chapter 10 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 6 },  // Joshua
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 15 },  // Ezra
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 23 },  // Isaiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 41 },  // Mark
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 43 },  // John
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 44 },  // Acts
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 29", verseId: 29, chapterId: 10, bookId: 58 },  // Hebrews
+    /* Chapter 11 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 3 },  // Leviticus
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 7 },  // Judges
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 27 },  // Daniel
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 41 },  // Mark
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 43 },  // John
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 44 },  // Acts
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 45 },  // Romans
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 29", verseId: 29, chapterId: 11, bookId: 58 },  // Hebrews
+    /* Chapter 12 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 12, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 12, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 29", verseId: 29, chapterId: 12, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 12, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 12, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 12, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 12, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 12, bookId: 41 },  // Mark
+    { verseName: "Verse 29", verseId: 29, chapterId: 12, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 12, bookId: 43 },  // John
+    { verseName: "Verse 29", verseId: 29, chapterId: 12, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 29", verseId: 29, chapterId: 12, bookId: 58 },  // Hebrews
+    /* Chapter 13 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 13, bookId: 3 },  // Leviticus
+    { verseName: "Verse 29", verseId: 29, chapterId: 13, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 13, bookId: 6 },  // Joshua
+    { verseName: "Verse 29", verseId: 29, chapterId: 13, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 13, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 13, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 13, bookId: 17 },  // Esther
+    { verseName: "Verse 29", verseId: 29, chapterId: 13, bookId: 27 },  // Daniel
+    { verseName: "Verse 29", verseId: 29, chapterId: 13, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 13, bookId: 41 },  // Mark
+    { verseName: "Verse 29", verseId: 29, chapterId: 13, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 13, bookId: 43 },  // John
+    { verseName: "Verse 29", verseId: 29, chapterId: 13, bookId: 44 },  // Acts
+    /* Chapter 14 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 3 },  // Leviticus
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 23 },  // Isaiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 27 },  // Daniel
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 41 },  // Mark
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 43 },  // John
+    { verseName: "Verse 29", verseId: 29, chapterId: 14, bookId: 46 },  // 1 Corinthians
+    /* Chapter 15 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 3 },  // Leviticus
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 6 },  // Joshua
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 18 },  // Job
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 41 },  // Mark
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 44 },  // Acts
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 45 },  // Romans
+    { verseName: "Verse 29", verseId: 29, chapterId: 15, bookId: 46 },  // 1 Corinthians
+    /* Chapter 16 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 16, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 16, bookId: 3 },  // Leviticus
+    { verseName: "Verse 29", verseId: 29, chapterId: 16, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 16, bookId: 7 },  // Judges
+    { verseName: "Verse 29", verseId: 29, chapterId: 16, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 16, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 16, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 16, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 29", verseId: 29, chapterId: 16, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 16, bookId: 43 },  // John
+    { verseName: "Verse 29", verseId: 29, chapterId: 16, bookId: 44 },  // Acts
+    /* Chapter 17 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 17, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 17, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 17, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 17, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 17, bookId: 44 },  // Acts
+    /* Chapter 18 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 18, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 18, bookId: 3 },  // Leviticus
+    { verseName: "Verse 29", verseId: 29, chapterId: 18, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 18, bookId: 7 },  // Judges
+    { verseName: "Verse 29", verseId: 29, chapterId: 18, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 18, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 18, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 18, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 18, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 18, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 18, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 29", verseId: 29, chapterId: 18, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 18, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 18, bookId: 43 },  // John
+    /* Chapter 19 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 19, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 19, bookId: 3 },  // Leviticus
+    { verseName: "Verse 29", verseId: 29, chapterId: 19, bookId: 6 },  // Joshua
+    { verseName: "Verse 29", verseId: 29, chapterId: 19, bookId: 7 },  // Judges
+    { verseName: "Verse 29", verseId: 29, chapterId: 19, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 19, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 19, bookId: 18 },  // Job
+    { verseName: "Verse 29", verseId: 29, chapterId: 19, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 19, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 19, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 19, bookId: 43 },  // John
+    { verseName: "Verse 29", verseId: 29, chapterId: 19, bookId: 44 },  // Acts
+    /* Chapter 20 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 20, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 20, bookId: 7 },  // Judges
+    { verseName: "Verse 29", verseId: 29, chapterId: 20, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 20, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 20, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 20, bookId: 18 },  // Job
+    { verseName: "Verse 29", verseId: 29, chapterId: 20, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 20, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 29", verseId: 29, chapterId: 20, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 20, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 20, bookId: 43 },  // John
+    { verseName: "Verse 29", verseId: 29, chapterId: 20, bookId: 44 },  // Acts
+    /* Chapter 21 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 21, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 21, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 21, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 21, bookId: 6 },  // Joshua
+    { verseName: "Verse 29", verseId: 29, chapterId: 21, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 21, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 21, bookId: 18 },  // Job
+    { verseName: "Verse 29", verseId: 29, chapterId: 21, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 21, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 29", verseId: 29, chapterId: 21, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 21, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 21, bookId: 44 },  // Acts
+    /* Chapter 22 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 22, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 22, bookId: 3 },  // Leviticus
+    { verseName: "Verse 29", verseId: 29, chapterId: 22, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 22, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 29", verseId: 29, chapterId: 22, bookId: 6 },  // Joshua
+    { verseName: "Verse 29", verseId: 29, chapterId: 22, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 22, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 22, bookId: 18 },  // Job
+    { verseName: "Verse 29", verseId: 29, chapterId: 22, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 22, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 22, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 22, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 29", verseId: 29, chapterId: 22, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 22, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 22, bookId: 44 },  // Acts
+    /* Chapter 23 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 23, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 23, bookId: 3 },  // Leviticus
+    { verseName: "Verse 29", verseId: 29, chapterId: 23, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 23, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 23, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 23, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 23, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 23, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 23, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 29", verseId: 29, chapterId: 23, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 23, bookId: 42 },  // Luke
+    { verseName: "Verse 29", verseId: 29, chapterId: 23, bookId: 44 },  // Acts
+    /* Chapter 24 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 24, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 24, bookId: 6 },  // Joshua
+    { verseName: "Verse 29", verseId: 29, chapterId: 24, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 24, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 24, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 24, bookId: 42 },  // Luke
+    /* Chapter 25 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 25, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 25, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 25, bookId: 3 },  // Leviticus
+    { verseName: "Verse 29", verseId: 29, chapterId: 25, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 25, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 29", verseId: 29, chapterId: 25, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 25, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 25, bookId: 40 },  // Matthew
+    /* Chapter 26 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 26, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 26, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 26, bookId: 3 },  // Leviticus
+    { verseName: "Verse 29", verseId: 29, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 26, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 26, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 26, bookId: 44 },  // Acts
+    /* Chapter 27 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 27, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 27, bookId: 3 },  // Leviticus
+    { verseName: "Verse 29", verseId: 29, chapterId: 27, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 27, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 29", verseId: 29, chapterId: 27, bookId: 40 },  // Matthew
+    { verseName: "Verse 29", verseId: 29, chapterId: 27, bookId: 44 },  // Acts
+    /* Chapter 28 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 28, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 28, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 28, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 29", verseId: 29, chapterId: 28, bookId: 23 },  // Isaiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 28, bookId: 44 },  // Acts
+    /* Chapter 29 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 29, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 29, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 29, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 29, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 29, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 29, bookId: 24 },  // Jeremiah
+    /* Chapter 30 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 30, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 30, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 30, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 29", verseId: 29, chapterId: 30, bookId: 18 },  // Job
+    { verseName: "Verse 29", verseId: 29, chapterId: 30, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 30, bookId: 20 },  // Proverbs
+    /* Chapter 31 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 31, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 31, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 31, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 29", verseId: 29, chapterId: 31, bookId: 18 },  // Job
+    { verseName: "Verse 29", verseId: 29, chapterId: 31, bookId: 20 },  // Proverbs
+    { verseName: "Verse 29", verseId: 29, chapterId: 31, bookId: 24 },  // Jeremiah
+    /* Chapter 32 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 32, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 32, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 32, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 32, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 29", verseId: 29, chapterId: 32, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 32, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 32, bookId: 26 },  // Ezekiel
+    /* Chapter 33 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 33, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 33, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 29", verseId: 29, chapterId: 33, bookId: 18 },  // Job
+    { verseName: "Verse 29", verseId: 29, chapterId: 33, bookId: 26 },  // Ezekiel
+    /* Chapter 34 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 34, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 34, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 34, bookId: 4 },  // Numbers
+    { verseName: "Verse 29", verseId: 29, chapterId: 34, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 29", verseId: 29, chapterId: 34, bookId: 18 },  // Job
+    { verseName: "Verse 29", verseId: 29, chapterId: 34, bookId: 26 },  // Ezekiel
+    /* Chapter 35 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 35, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 35, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 35, bookId: 4 },  // Numbers
+    /* Chapter 36 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 36, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 36, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 36, bookId: 18 },  // Job
+    { verseName: "Verse 29", verseId: 29, chapterId: 36, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 36, bookId: 26 },  // Ezekiel
+    /* Chapter 37 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 37, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 37, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 37, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 37, bookId: 23 },  // Isaiah
+    /* Chapter 38 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 38, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 38, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 38, bookId: 18 },  // Job
+    /* Chapter 39 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 39, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 39, bookId: 18 },  // Job
+    { verseName: "Verse 29", verseId: 29, chapterId: 39, bookId: 26 },  // Ezekiel
+    /* Chapter 40 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 40, bookId: 2 },  // Exodus
+    { verseName: "Verse 29", verseId: 29, chapterId: 40, bookId: 18 },  // Job
+    { verseName: "Verse 29", verseId: 29, chapterId: 40, bookId: 23 },  // Isaiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 40, bookId: 26 },  // Ezekiel
+    /* Chapter 41 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 41, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 41, bookId: 23 },  // Isaiah
+    /* Chapter 42 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 42, bookId: 1 },  // Genesis
+    /* Chapter 43 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 43, bookId: 1 },  // Genesis
+    /* Chapter 44 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 44, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 44, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 44, bookId: 26 },  // Ezekiel
+    /* Chapter 46 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 46, bookId: 1 },  // Genesis
+    /* Chapter 47 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 47, bookId: 1 },  // Genesis
+    /* Chapter 48 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 48, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 29", verseId: 29, chapterId: 48, bookId: 26 },  // Ezekiel
+    /* Chapter 49 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 49, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 49, bookId: 24 },  // Jeremiah
+    /* Chapter 50 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 50, bookId: 1 },  // Genesis
+    { verseName: "Verse 29", verseId: 29, chapterId: 50, bookId: 24 },  // Jeremiah
+    /* Chapter 51 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapter 52 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 52, bookId: 24 },  // Jeremiah
+    /* Chapters 68-150 */
+    { verseName: "Verse 29", verseId: 29, chapterId: 68, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 69, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 89, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 102, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 104, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 105, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 106, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 107, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 109, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 118, bookId: 19 },  // Psalms
+    { verseName: "Verse 29", verseId: 29, chapterId: 119, bookId: 19 },  // Psalms
   ];
 
   // dropdown cascade result
