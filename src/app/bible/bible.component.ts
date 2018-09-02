@@ -1356,6 +1356,7 @@ export class BibleComponent implements OnInit {
     { chapterName: "Chapter 149", chapterId: 149, bookId: 19 },  // Psalms
     { chapterName: "Chapter 150", chapterId: 150, bookId: 19 },  // Psalms
   ];
+  
   public dataVerses: Array<{ verseName: string, verseId: number, chapterId: number, bookId: number }> = [
     /************************************************************* Verse 1 *************************************************************/
     /* Chapter 1 */
@@ -18139,6 +18140,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 14", verseId: 14, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 14", verseId: 14, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 14", verseId: 14, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 14, chapterId: 30, bookId: 23 },  // Isaiah
     { verseName: "Verse 14", verseId: 14, chapterId: 30, bookId: 24 },  // Jeremiah
     { verseName: "Verse 14", verseId: 14, chapterId: 30, bookId: 26 },  // Ezekiel
     /* Chapter 31 */
@@ -19201,6 +19203,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 15", verseId: 15, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 15", verseId: 15, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 15", verseId: 15, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 15, chapterId: 30, bookId: 23 },  // Isaiah
     { verseName: "Verse 15", verseId: 15, chapterId: 30, bookId: 24 },  // Jeremiah
     { verseName: "Verse 15", verseId: 15, chapterId: 30, bookId: 26 },  // Ezekiel
     /* Chapter 31 */
@@ -20225,6 +20228,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 16, chapterId: 30, bookId: 23 },  // Isaiah
     { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 24 },  // Jeremiah
     { verseName: "Verse 16", verseId: 16, chapterId: 30, bookId: 26 },  // Ezekiel
     /* Chapter 31 */
@@ -21220,6 +21224,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 17, chapterId: 30, bookId: 23 },  // Isaiah
     { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 24 },  // Jeremiah
     { verseName: "Verse 17", verseId: 17, chapterId: 30, bookId: 26 },  // Ezekiel
     /* Chapter 31 */
@@ -22170,6 +22175,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 18", verseId: 18, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 18", verseId: 18, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 18", verseId: 18, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 18, chapterId: 30, bookId: 23 },  // Isaiah
     { verseName: "Verse 18", verseId: 18, chapterId: 30, bookId: 24 },  // Jeremiah
     { verseName: "Verse 18", verseId: 18, chapterId: 30, bookId: 26 },  // Ezekiel
     /* Chapter 31 */
@@ -23078,6 +23084,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 19", verseId: 19, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 19", verseId: 19, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 19", verseId: 19, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 19, chapterId: 30, bookId: 23 },  // Isaiah
     { verseName: "Verse 19", verseId: 19, chapterId: 30, bookId: 24 },  // Jeremiah
     { verseName: "Verse 19", verseId: 19, chapterId: 30, bookId: 26 },  // Ezekiel
     /* Chapter 31 */
@@ -23957,6 +23964,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 20", verseId: 20, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 20", verseId: 20, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 20", verseId: 20, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 20, chapterId: 30, bookId: 23 },  // Isaiah
     { verseName: "Verse 20", verseId: 20, chapterId: 30, bookId: 24 },  // Jeremiah
     { verseName: "Verse 20", verseId: 20, chapterId: 30, bookId: 26 },  // Ezekiel
     /* Chapter 31 */
@@ -24797,6 +24805,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 21", verseId: 21, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 21", verseId: 21, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 21", verseId: 21, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 21, chapterId: 30, bookId: 23 },  // Isaiah
     { verseName: "Verse 21", verseId: 21, chapterId: 30, bookId: 24 },  // Jeremiah
     { verseName: "Verse 21", verseId: 21, chapterId: 30, bookId: 26 },  // Ezekiel
     /* Chapter 31 */
@@ -25589,6 +25598,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 22", verseId: 22, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 22", verseId: 22, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 22", verseId: 22, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 22, chapterId: 30, bookId: 23 },  // Isaiah
     { verseName: "Verse 22", verseId: 22, chapterId: 30, bookId: 24 },  // Jeremiah
     { verseName: "Verse 22", verseId: 22, chapterId: 30, bookId: 26 },  // Ezekiel
     /* Chapter 31 */
@@ -26327,6 +26337,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 23", verseId: 23, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 23", verseId: 23, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 23", verseId: 23, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 23, chapterId: 30, bookId: 23 },  // Isaiah
     { verseName: "Verse 23", verseId: 23, chapterId: 30, bookId: 24 },  // Jeremiah
     { verseName: "Verse 23", verseId: 23, chapterId: 30, bookId: 26 },  // Ezekiel
     /* Chapter 31 */
@@ -27017,6 +27028,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 24", verseId: 24, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 24", verseId: 24, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 24", verseId: 24, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 24, chapterId: 30, bookId: 23 },  // Isaiah
     { verseName: "Verse 24", verseId: 24, chapterId: 30, bookId: 24 },  // Jeremiah
     { verseName: "Verse 24", verseId: 24, chapterId: 30, bookId: 26 },  // Ezekiel
     /* Chapter 31 */
@@ -27668,6 +27680,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 25", verseId: 25, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 25", verseId: 25, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 25", verseId: 25, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 25, chapterId: 30, bookId: 23 },  // Isaiah
     { verseName: "Verse 25", verseId: 25, chapterId: 30, bookId: 26 },  // Ezekiel
     /* Chapter 31 */
     { verseName: "Verse 25", verseId: 25, chapterId: 31, bookId: 1 },  // Genesis
@@ -28268,6 +28281,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 26", verseId: 26, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 26", verseId: 26, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 26", verseId: 26, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 26, chapterId: 30, bookId: 23 },  // Isaiah
     { verseName: "Verse 26", verseId: 26, chapterId: 30, bookId: 26 },  // Ezekiel
     /* Chapter 31 */
     { verseName: "Verse 26", verseId: 26, chapterId: 31, bookId: 1 },  // Genesis
@@ -28841,6 +28855,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 27", verseId: 27, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 27", verseId: 27, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 27", verseId: 27, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 27, chapterId: 30, bookId: 23 },  // Isaiah
     /* Chapter 31 */
     { verseName: "Verse 27", verseId: 27, chapterId: 31, bookId: 1 },  // Genesis
     { verseName: "Verse 27", verseId: 27, chapterId: 31, bookId: 4 },  // Numbers
@@ -29368,6 +29383,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 28", verseId: 28, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 28", verseId: 28, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 28", verseId: 28, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 28, chapterId: 30, bookId: 23 },  // Isaiah
     /* Chapter 31 */
     { verseName: "Verse 28", verseId: 28, chapterId: 31, bookId: 1 },  // Genesis
     { verseName: "Verse 28", verseId: 28, chapterId: 31, bookId: 4 },  // Numbers
@@ -29866,6 +29882,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 29", verseId: 29, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 29", verseId: 29, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 29", verseId: 29, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 29, chapterId: 30, bookId: 23 },  // Isaiah
     /* Chapter 31 */
     { verseName: "Verse 29", verseId: 29, chapterId: 31, bookId: 1 },  // Genesis
     { verseName: "Verse 29", verseId: 29, chapterId: 31, bookId: 4 },  // Numbers
@@ -30326,6 +30343,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 30", verseId: 30, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 30", verseId: 30, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 30", verseId: 30, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 30, chapterId: 30, bookId: 23 },  // Isaiah
     /* Chapter 31 */
     { verseName: "Verse 30", verseId: 30, chapterId: 31, bookId: 1 },  // Genesis
     { verseName: "Verse 30", verseId: 30, chapterId: 31, bookId: 4 },  // Numbers
@@ -30755,6 +30773,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 31", verseId: 31, chapterId: 30, bookId: 18 },  // Job
     { verseName: "Verse 31", verseId: 31, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 31", verseId: 31, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 31, chapterId: 30, bookId: 23 },  // Isaiah
     /* Chapter 31 */
     { verseName: "Verse 31", verseId: 31, chapterId: 31, bookId: 1 },  // Genesis
     { verseName: "Verse 31", verseId: 31, chapterId: 31, bookId: 4 },  // Numbers
@@ -31148,6 +31167,7 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 32", verseId: 32, chapterId: 30, bookId: 2 },  // Exodus
     { verseName: "Verse 32", verseId: 32, chapterId: 30, bookId: 19 },  // Psalms
     { verseName: "Verse 32", verseId: 32, chapterId: 30, bookId: 20 },  // Proverbs
+    { verseName: "Verse 11", verseId: 32, chapterId: 30, bookId: 23 },  // Isaiah
     /* Chapter 31 */
     { verseName: "Verse 32", verseId: 32, chapterId: 31, bookId: 1 },  // Genesis
     { verseName: "Verse 32", verseId: 32, chapterId: 31, bookId: 4 },  // Numbers
@@ -31224,6 +31244,699 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 32", verseId: 32, chapterId: 106, bookId: 19 },  // Psalms
     { verseName: "Verse 32", verseId: 32, chapterId: 107, bookId: 19 },  // Psalms
     { verseName: "Verse 32", verseId: 32, chapterId: 119, bookId: 19 },  // Psalms
+    /************************************************************* Verse 33 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 1, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 1, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 33", verseId: 33, chapterId: 1, bookId: 7 },  // Judges
+    { verseName: "Verse 33", verseId: 33, chapterId: 1, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 1, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 1, bookId: 20 },  // Proverbs
+    { verseName: "Verse 33", verseId: 33, chapterId: 1, bookId: 41 },  // Mark
+    { verseName: "Verse 33", verseId: 33, chapterId: 1, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 1, bookId: 43 },  // John
+    /* Chapter 2 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 2, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 2, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 33", verseId: 33, chapterId: 2, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 33", verseId: 33, chapterId: 2, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 2, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 2, bookId: 15 },  // Ezra
+    { verseName: "Verse 33", verseId: 33, chapterId: 2, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 33", verseId: 33, chapterId: 2, bookId: 27 },  // Daniel
+    { verseName: "Verse 33", verseId: 33, chapterId: 2, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 2, bookId: 44 },  // Acts
+    /* Chapter 3 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 3, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 3, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 33", verseId: 33, chapterId: 3, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 33", verseId: 33, chapterId: 3, bookId: 20 },  // Proverbs
+    { verseName: "Verse 33", verseId: 33, chapterId: 3, bookId: 25 },  // Lamentations
+    { verseName: "Verse 33", verseId: 33, chapterId: 3, bookId: 27 },  // Daniel
+    { verseName: "Verse 33", verseId: 33, chapterId: 3, bookId: 41 },  // Mark
+    { verseName: "Verse 33", verseId: 33, chapterId: 3, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 3, bookId: 43 },  // John
+    /* Chapter 4 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 4, bookId: 3 },  // Leviticus
+    { verseName: "Verse 33", verseId: 33, chapterId: 4, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 4, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 33", verseId: 33, chapterId: 4, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 4, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 4, bookId: 27 },  // Daniel
+    { verseName: "Verse 33", verseId: 33, chapterId: 4, bookId: 41 },  // Mark
+    { verseName: "Verse 33", verseId: 33, chapterId: 4, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 4, bookId: 43 },  // John
+    { verseName: "Verse 33", verseId: 33, chapterId: 4, bookId: 44 },  // Acts
+    /* Chapter 5 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 5, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 33", verseId: 33, chapterId: 5, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 5, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 5, bookId: 41 },  // Mark
+    { verseName: "Verse 33", verseId: 33, chapterId: 5, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 5, bookId: 43 },  // John
+    { verseName: "Verse 33", verseId: 33, chapterId: 5, bookId: 44 },  // Acts
+    { verseName: "Verse 33", verseId: 33, chapterId: 5, bookId: 49 },  // Ephesians
+    /* Chapter 6 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 6, bookId: 7 },  // Judges
+    { verseName: "Verse 33", verseId: 33, chapterId: 6, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 6, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 6, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 6, bookId: 20 },  // Proverbs
+    { verseName: "Verse 33", verseId: 33, chapterId: 6, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 6, bookId: 41 },  // Mark
+    { verseName: "Verse 33", verseId: 33, chapterId: 6, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 6, bookId: 43 },  // John
+    /* Chapter 7 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 7, bookId: 3 },  // Leviticus
+    { verseName: "Verse 33", verseId: 33, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 7, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 7, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 7, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 33", verseId: 33, chapterId: 7, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 33", verseId: 33, chapterId: 7, bookId: 41 },  // Mark
+    { verseName: "Verse 33", verseId: 33, chapterId: 7, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 7, bookId: 43 },  // John
+    { verseName: "Verse 33", verseId: 33, chapterId: 7, bookId: 44 },  // Acts
+    { verseName: "Verse 33", verseId: 33, chapterId: 7, bookId: 46 },  // 1 Corinthians
+    /* Chapter 8 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 8, bookId: 3 },  // Leviticus
+    { verseName: "Verse 33", verseId: 33, chapterId: 8, bookId: 6 },  // Joshua
+    { verseName: "Verse 33", verseId: 33, chapterId: 8, bookId: 7 },  // Judges
+    { verseName: "Verse 33", verseId: 33, chapterId: 8, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 8, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 8, bookId: 15 },  // Ezra
+    { verseName: "Verse 33", verseId: 33, chapterId: 8, bookId: 20 },  // Proverbs
+    { verseName: "Verse 33", verseId: 33, chapterId: 8, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 8, bookId: 41 },  // Mark
+    { verseName: "Verse 33", verseId: 33, chapterId: 8, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 8, bookId: 43 },  // John
+    { verseName: "Verse 33", verseId: 33, chapterId: 8, bookId: 44 },  // Acts
+    { verseName: "Verse 33", verseId: 33, chapterId: 8, bookId: 45 },  // Romans
+    /* Chapter 9 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 9, bookId: 2 },  // Exodus
+    { verseName: "Verse 33", verseId: 33, chapterId: 9, bookId: 7 },  // Judges
+    { verseName: "Verse 33", verseId: 33, chapterId: 9, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 9, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 9, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 33", verseId: 33, chapterId: 9, bookId: 18 },  // Job
+    { verseName: "Verse 33", verseId: 33, chapterId: 9, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 9, bookId: 41 },  // Mark
+    { verseName: "Verse 33", verseId: 33, chapterId: 9, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 9, bookId: 43 },  // John
+    { verseName: "Verse 33", verseId: 33, chapterId: 9, bookId: 44 },  // Acts
+    { verseName: "Verse 33", verseId: 33, chapterId: 9, bookId: 45 },  // Romans
+    /* Chapter 10 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 10, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 10, bookId: 6 },  // Joshua
+    { verseName: "Verse 33", verseId: 33, chapterId: 10, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 10, bookId: 15 },  // Ezra
+    { verseName: "Verse 33", verseId: 33, chapterId: 10, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 33", verseId: 33, chapterId: 10, bookId: 23 },  // Isaiah
+    { verseName: "Verse 33", verseId: 33, chapterId: 10, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 10, bookId: 41 },  // Mark
+    { verseName: "Verse 33", verseId: 33, chapterId: 10, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 10, bookId: 43 },  // John
+    { verseName: "Verse 33", verseId: 33, chapterId: 10, bookId: 44 },  // Acts
+    { verseName: "Verse 33", verseId: 33, chapterId: 10, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 33", verseId: 33, chapterId: 10, bookId: 58 },  // Hebrews
+    /* Chapter 11 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 11, bookId: 3 },  // Leviticus
+    { verseName: "Verse 33", verseId: 33, chapterId: 11, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 11, bookId: 7 },  // Judges
+    { verseName: "Verse 33", verseId: 33, chapterId: 11, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 11, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 11, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 33", verseId: 33, chapterId: 11, bookId: 27 },  // Daniel
+    { verseName: "Verse 33", verseId: 33, chapterId: 11, bookId: 41 },  // Mark
+    { verseName: "Verse 33", verseId: 33, chapterId: 11, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 11, bookId: 43 },  // John
+    { verseName: "Verse 33", verseId: 33, chapterId: 11, bookId: 45 },  // Romans
+    { verseName: "Verse 33", verseId: 33, chapterId: 11, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 33", verseId: 33, chapterId: 11, bookId: 47 },  // 2 Corinthians
+    { verseName: "Verse 33", verseId: 33, chapterId: 11, bookId: 58 },  // Hebrews
+    /* Chapter 12 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 12, bookId: 2 },  // Exodus
+    { verseName: "Verse 33", verseId: 33, chapterId: 12, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 12, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 12, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 33", verseId: 33, chapterId: 12, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 12, bookId: 41 },  // Mark
+    { verseName: "Verse 33", verseId: 33, chapterId: 12, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 12, bookId: 43 },  // John
+    /* Chapter 13 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 13, bookId: 3 },  // Leviticus
+    { verseName: "Verse 33", verseId: 33, chapterId: 13, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 13, bookId: 6 },  // Joshua
+    { verseName: "Verse 33", verseId: 33, chapterId: 13, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 33", verseId: 33, chapterId: 13, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 13, bookId: 27 },  // Daniel
+    { verseName: "Verse 33", verseId: 33, chapterId: 13, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 13, bookId: 41 },  // Mark
+    { verseName: "Verse 33", verseId: 33, chapterId: 13, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 13, bookId: 43 },  // John
+    { verseName: "Verse 33", verseId: 33, chapterId: 13, bookId: 44 },  // Acts
+    /* Chapter 14 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 14, bookId: 3 },  // Leviticus
+    { verseName: "Verse 33", verseId: 33, chapterId: 14, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 14, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 33", verseId: 33, chapterId: 14, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 33", verseId: 33, chapterId: 14, bookId: 20 },  // Proverbs
+    { verseName: "Verse 33", verseId: 33, chapterId: 14, bookId: 27 },  // Daniel
+    { verseName: "Verse 33", verseId: 33, chapterId: 14, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 14, bookId: 41 },  // Mark
+    { verseName: "Verse 33", verseId: 33, chapterId: 14, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 14, bookId: 46 },  // 1 Corinthians
+    /* Chapter 15 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 15, bookId: 3 },  // Leviticus
+    { verseName: "Verse 33", verseId: 33, chapterId: 15, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 15, bookId: 6 },  // Joshua
+    { verseName: "Verse 33", verseId: 33, chapterId: 15, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 33", verseId: 33, chapterId: 15, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 33", verseId: 33, chapterId: 15, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 15, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 15, bookId: 18 },  // Job
+    { verseName: "Verse 33", verseId: 33, chapterId: 15, bookId: 20 },  // Proverbs
+    { verseName: "Verse 33", verseId: 33, chapterId: 15, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 15, bookId: 41 },  // Mark
+    { verseName: "Verse 33", verseId: 33, chapterId: 15, bookId: 44 },  // Acts
+    { verseName: "Verse 33", verseId: 33, chapterId: 15, bookId: 45 },  // Romans
+    { verseName: "Verse 33", verseId: 33, chapterId: 15, bookId: 46 },  // 1 Corinthians
+    /* Chapter 16 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 16, bookId: 2 },  // Exodus
+    { verseName: "Verse 33", verseId: 33, chapterId: 16, bookId: 3 },  // Leviticus
+    { verseName: "Verse 33", verseId: 33, chapterId: 16, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 16, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 16, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 16, bookId: 20 },  // Proverbs
+    { verseName: "Verse 33", verseId: 33, chapterId: 16, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 33", verseId: 33, chapterId: 16, bookId: 43 },  // John
+    { verseName: "Verse 33", verseId: 33, chapterId: 16, bookId: 44 },  // Acts
+    /* Chapter 17 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 17, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 33", verseId: 33, chapterId: 17, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 17, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 17, bookId: 44 },  // Acts
+    /* Chapter 18 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 18, bookId: 1 },  // Genesis
+    { verseName: "Verse 33", verseId: 33, chapterId: 18, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 18, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 18, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 18, bookId: 19 },  // Psalms
+    { verseName: "Verse 33", verseId: 33, chapterId: 18, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 18, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 18, bookId: 43 },  // John
+    /* Chapter 19 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 19, bookId: 1 },  // Genesis
+    { verseName: "Verse 33", verseId: 33, chapterId: 19, bookId: 3 },  // Leviticus
+    { verseName: "Verse 33", verseId: 33, chapterId: 19, bookId: 6 },  // Joshua
+    { verseName: "Verse 33", verseId: 33, chapterId: 19, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 33", verseId: 33, chapterId: 19, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 19, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 19, bookId: 43 },  // John
+    { verseName: "Verse 33", verseId: 33, chapterId: 19, bookId: 44 },  // Acts
+    /* Chapter 20 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 20, bookId: 7 },  // Judges
+    { verseName: "Verse 33", verseId: 33, chapterId: 20, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 33", verseId: 33, chapterId: 20, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 20, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 20, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 33", verseId: 33, chapterId: 20, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 20, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 20, bookId: 44 },  // Acts
+    /* Chapter 21 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 21, bookId: 1 },  // Genesis
+    { verseName: "Verse 33", verseId: 33, chapterId: 21, bookId: 2 },  // Exodus
+    { verseName: "Verse 33", verseId: 33, chapterId: 21, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 21, bookId: 6 },  // Joshua
+    { verseName: "Verse 33", verseId: 33, chapterId: 21, bookId: 18 },  // Job
+    { verseName: "Verse 33", verseId: 33, chapterId: 21, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 33", verseId: 33, chapterId: 21, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 21, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 21, bookId: 44 },  // Acts
+    /* Chapter 22 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 22, bookId: 3 },  // Leviticus
+    { verseName: "Verse 33", verseId: 33, chapterId: 22, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 22, bookId: 6 },  // Joshua
+    { verseName: "Verse 33", verseId: 33, chapterId: 22, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 33", verseId: 33, chapterId: 22, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 22, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 22, bookId: 42 },  // Luke
+    /* Chapter 23 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 23, bookId: 2 },  // Exodus
+    { verseName: "Verse 33", verseId: 33, chapterId: 23, bookId: 3 },  // Leviticus
+    { verseName: "Verse 33", verseId: 33, chapterId: 23, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 33", verseId: 33, chapterId: 23, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 33", verseId: 33, chapterId: 23, bookId: 20 },  // Proverbs
+    { verseName: "Verse 33", verseId: 33, chapterId: 23, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 33", verseId: 33, chapterId: 23, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 33", verseId: 33, chapterId: 23, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 23, bookId: 42 },  // Luke
+    { verseName: "Verse 33", verseId: 33, chapterId: 23, bookId: 44 },  // Acts
+    /* Chapter 24 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 24, bookId: 1 },  // Genesis
+    { verseName: "Verse 33", verseId: 33, chapterId: 24, bookId: 6 },  // Joshua
+    { verseName: "Verse 33", verseId: 33, chapterId: 24, bookId: 20 },  // Proverbs
+    { verseName: "Verse 33", verseId: 33, chapterId: 24, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 24, bookId: 42 },  // Luke
+    /* Chapter 25 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 25, bookId: 1 },  // Genesis
+    { verseName: "Verse 33", verseId: 33, chapterId: 25, bookId: 2 },  // Exodus
+    { verseName: "Verse 33", verseId: 33, chapterId: 25, bookId: 3 },  // Leviticus
+    { verseName: "Verse 33", verseId: 33, chapterId: 25, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 33", verseId: 33, chapterId: 25, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 33", verseId: 33, chapterId: 25, bookId: 40 },  // Matthew
+    /* Chapter 26 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 26, bookId: 1 },  // Genesis
+    { verseName: "Verse 33", verseId: 33, chapterId: 26, bookId: 2 },  // Exodus
+    { verseName: "Verse 33", verseId: 33, chapterId: 26, bookId: 3 },  // Leviticus
+    { verseName: "Verse 33", verseId: 33, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 26, bookId: 40 },  // Matthew
+    /* Chapter 27 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 27, bookId: 1 },  // Genesis
+    { verseName: "Verse 33", verseId: 33, chapterId: 27, bookId: 3 },  // Leviticus
+    { verseName: "Verse 33", verseId: 33, chapterId: 27, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 27, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 33", verseId: 33, chapterId: 27, bookId: 40 },  // Matthew
+    { verseName: "Verse 33", verseId: 33, chapterId: 27, bookId: 44 },  // Acts
+    /* Chapter 28 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 28, bookId: 2 },  // Exodus
+    { verseName: "Verse 33", verseId: 33, chapterId: 28, bookId: 5 },  // Deuteronomy
+    /* Chapter 29 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 29, bookId: 1 },  // Genesis
+    { verseName: "Verse 33", verseId: 33, chapterId: 29, bookId: 2 },  // Exodus
+    { verseName: "Verse 33", verseId: 33, chapterId: 29, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 29, bookId: 14 },  // 2 Chronicles
+    /* Chapter 30 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 30, bookId: 1 },  // Genesis
+    { verseName: "Verse 33", verseId: 33, chapterId: 30, bookId: 2 },  // Exodus
+    { verseName: "Verse 33", verseId: 33, chapterId: 30, bookId: 19 },  // Psalms
+    { verseName: "Verse 33", verseId: 33, chapterId: 30, bookId: 20 },  // Proverbs
+    /* Chapter 31 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 31, bookId: 1 },  // Genesis
+    { verseName: "Verse 33", verseId: 33, chapterId: 31, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 31, bookId: 18 },  // Job
+    { verseName: "Verse 33", verseId: 33, chapterId: 31, bookId: 24 },  // Jeremiah
+    /* Chapter 32 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 32, bookId: 1 },  // Genesis
+    { verseName: "Verse 33", verseId: 33, chapterId: 32, bookId: 2 },  // Exodus
+    { verseName: "Verse 33", verseId: 33, chapterId: 32, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 32, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 33", verseId: 33, chapterId: 32, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 32, bookId: 24 },  // Jeremiah
+    /* Chapter 33 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 33, bookId: 4 },  // Numbers
+    { verseName: "Verse 33", verseId: 33, chapterId: 33, bookId: 18 },  // Job
+    { verseName: "Verse 33", verseId: 33, chapterId: 33, bookId: 26 },  // Ezekiel
+    /* Chapter 34 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 34, bookId: 2 },  // Exodus
+    { verseName: "Verse 33", verseId: 33, chapterId: 34, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 33", verseId: 33, chapterId: 34, bookId: 18 },  // Job
+    /* Chapter 35 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 35, bookId: 2 },  // Exodus
+    { verseName: "Verse 33", verseId: 33, chapterId: 35, bookId: 4 },  // Numbers
+    /* Chapter 36 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 36, bookId: 1 },  // Genesis
+    { verseName: "Verse 33", verseId: 33, chapterId: 36, bookId: 2 },  // Exodus
+    { verseName: "Verse 33", verseId: 33, chapterId: 36, bookId: 18 },  // Job
+    { verseName: "Verse 33", verseId: 33, chapterId: 36, bookId: 26 },  // Ezekiel
+    /* Chapter 37 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 37, bookId: 1 },  // Genesis
+    { verseName: "Verse 33", verseId: 33, chapterId: 37, bookId: 19 },  // Psalms
+    { verseName: "Verse 33", verseId: 33, chapterId: 37, bookId: 23 },  // Isaiah
+    /* Chapter 38 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 38, bookId: 18 },  // Job
+    /* Chapter 39 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 39, bookId: 2 },  // Exodus
+    /* Chapter 40 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 40, bookId: 2 },  // Exodus
+    { verseName: "Verse 33", verseId: 33, chapterId: 40, bookId: 26 },  // Ezekiel
+    /* Chapter 41 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 41, bookId: 1 },  // Genesis
+    /* Chapter 42 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 42, bookId: 1 },  // Genesis
+    /* Chapter 43 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 43, bookId: 1 },  // Genesis
+    /* Chapter 44 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 44, bookId: 1 },  // Genesis
+    /* Chapter 46 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 46, bookId: 1 },  // Genesis
+    /* Chapter 48 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 48, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 33", verseId: 33, chapterId: 48, bookId: 26 },  // Ezekiel
+    /* Chapter 49 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 49, bookId: 1 },  // Genesis
+    { verseName: "Verse 33", verseId: 33, chapterId: 49, bookId: 24 },  // Jeremiah
+    /* Chapter 50 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 50, bookId: 1 },  // Genesis
+    { verseName: "Verse 33", verseId: 33, chapterId: 50, bookId: 24 },  // Jeremiah
+    /* Chapter 51 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapter 52 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 52, bookId: 24 },  // Jeremiah
+    /* Chapters 68-150 */
+    { verseName: "Verse 33", verseId: 33, chapterId: 68, bookId: 19 },  // Psalms
+    { verseName: "Verse 33", verseId: 33, chapterId: 69, bookId: 19 },  // Psalms
+    { verseName: "Verse 33", verseId: 33, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 33", verseId: 33, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 33", verseId: 33, chapterId: 89, bookId: 19 },  // Psalms
+    { verseName: "Verse 33", verseId: 33, chapterId: 104, bookId: 19 },  // Psalms
+    { verseName: "Verse 33", verseId: 33, chapterId: 105, bookId: 19 },  // Psalms
+    { verseName: "Verse 33", verseId: 33, chapterId: 106, bookId: 19 },  // Psalms
+    { verseName: "Verse 33", verseId: 33, chapterId: 107, bookId: 19 },  // Psalms
+    { verseName: "Verse 33", verseId: 33, chapterId: 119, bookId: 19 },  // Psalms
+    /************************************************************* Verse 34 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 1, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 1, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 34", verseId: 34, chapterId: 1, bookId: 7 },  // Judges
+    { verseName: "Verse 34", verseId: 34, chapterId: 1, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 1, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 34", verseId: 34, chapterId: 1, bookId: 41 },  // Mark
+    { verseName: "Verse 34", verseId: 34, chapterId: 1, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 1, bookId: 43 },  // John
+    /* Chapter 2 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 2, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 2, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 34", verseId: 34, chapterId: 2, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 34", verseId: 34, chapterId: 2, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 2, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 34", verseId: 34, chapterId: 2, bookId: 15 },  // Ezra
+    { verseName: "Verse 34", verseId: 34, chapterId: 2, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 34", verseId: 34, chapterId: 2, bookId: 27 },  // Daniel
+    { verseName: "Verse 34", verseId: 34, chapterId: 2, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 2, bookId: 44 },  // Acts
+    /* Chapter 3 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 3, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 3, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 34", verseId: 34, chapterId: 3, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 34", verseId: 34, chapterId: 3, bookId: 20 },  // Proverbs
+    { verseName: "Verse 34", verseId: 34, chapterId: 3, bookId: 25 },  // Lamentations
+    { verseName: "Verse 34", verseId: 34, chapterId: 3, bookId: 27 },  // Daniel
+    { verseName: "Verse 34", verseId: 34, chapterId: 3, bookId: 41 },  // Mark
+    { verseName: "Verse 34", verseId: 34, chapterId: 3, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 3, bookId: 43 },  // John
+    /* Chapter 4 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 4, bookId: 3 },  // Leviticus
+    { verseName: "Verse 34", verseId: 34, chapterId: 4, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 4, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 34", verseId: 34, chapterId: 4, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 4, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 34", verseId: 34, chapterId: 4, bookId: 27 },  // Daniel
+    { verseName: "Verse 34", verseId: 34, chapterId: 4, bookId: 41 },  // Mark
+    { verseName: "Verse 34", verseId: 34, chapterId: 4, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 4, bookId: 43 },  // John
+    { verseName: "Verse 34", verseId: 34, chapterId: 4, bookId: 44 },  // Acts
+    /* Chapter 5 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 5, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 34", verseId: 34, chapterId: 5, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 5, bookId: 41 },  // Mark
+    { verseName: "Verse 34", verseId: 34, chapterId: 5, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 5, bookId: 43 },  // John
+    { verseName: "Verse 34", verseId: 34, chapterId: 5, bookId: 44 },  // Acts
+    /* Chapter 6 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 6, bookId: 7 },  // Judges
+    { verseName: "Verse 34", verseId: 34, chapterId: 6, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 34", verseId: 34, chapterId: 6, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 34", verseId: 34, chapterId: 6, bookId: 20 },  // Proverbs
+    { verseName: "Verse 34", verseId: 34, chapterId: 6, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 6, bookId: 41 },  // Mark
+    { verseName: "Verse 34", verseId: 34, chapterId: 6, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 6, bookId: 43 },  // John
+    /* Chapter 7 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 7, bookId: 3 },  // Leviticus
+    { verseName: "Verse 34", verseId: 34, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 7, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 7, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 34", verseId: 34, chapterId: 7, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 34", verseId: 34, chapterId: 7, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 34", verseId: 34, chapterId: 7, bookId: 41 },  // Mark
+    { verseName: "Verse 34", verseId: 34, chapterId: 7, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 7, bookId: 43 },  // John
+    { verseName: "Verse 34", verseId: 34, chapterId: 7, bookId: 44 },  // Acts
+    { verseName: "Verse 34", verseId: 34, chapterId: 7, bookId: 46 },  // 1 Corinthians
+    /* Chapter 8 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 8, bookId: 3 },  // Leviticus
+    { verseName: "Verse 34", verseId: 34, chapterId: 8, bookId: 6 },  // Joshua
+    { verseName: "Verse 34", verseId: 34, chapterId: 8, bookId: 7 },  // Judges
+    { verseName: "Verse 34", verseId: 34, chapterId: 8, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 8, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 34", verseId: 34, chapterId: 8, bookId: 15 },  // Ezra
+    { verseName: "Verse 34", verseId: 34, chapterId: 8, bookId: 20 },  // Proverbs
+    { verseName: "Verse 34", verseId: 34, chapterId: 8, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 8, bookId: 41 },  // Mark
+    { verseName: "Verse 34", verseId: 34, chapterId: 8, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 8, bookId: 43 },  // John
+    { verseName: "Verse 34", verseId: 34, chapterId: 8, bookId: 44 },  // Acts
+    { verseName: "Verse 34", verseId: 34, chapterId: 8, bookId: 45 },  // Romans
+    /* Chapter 9 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 9, bookId: 2 },  // Exodus
+    { verseName: "Verse 34", verseId: 34, chapterId: 9, bookId: 7 },  // Judges
+    { verseName: "Verse 34", verseId: 34, chapterId: 9, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 9, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 34", verseId: 34, chapterId: 9, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 34", verseId: 34, chapterId: 9, bookId: 18 },  // Job
+    { verseName: "Verse 34", verseId: 34, chapterId: 9, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 9, bookId: 41 },  // Mark
+    { verseName: "Verse 34", verseId: 34, chapterId: 9, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 9, bookId: 43 },  // John
+    { verseName: "Verse 34", verseId: 34, chapterId: 9, bookId: 44 },  // Acts
+    /* Chapter 10 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 10, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 10, bookId: 6 },  // Joshua
+    { verseName: "Verse 34", verseId: 34, chapterId: 10, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 10, bookId: 15 },  // Ezra
+    { verseName: "Verse 34", verseId: 34, chapterId: 10, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 34", verseId: 34, chapterId: 10, bookId: 23 },  // Isaiah
+    { verseName: "Verse 34", verseId: 34, chapterId: 10, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 10, bookId: 41 },  // Mark
+    { verseName: "Verse 34", verseId: 34, chapterId: 10, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 10, bookId: 43 },  // John
+    { verseName: "Verse 34", verseId: 34, chapterId: 10, bookId: 44 },  // Acts
+    { verseName: "Verse 34", verseId: 34, chapterId: 10, bookId: 58 },  // Hebrews
+    /* Chapter 11 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 11, bookId: 3 },  // Leviticus
+    { verseName: "Verse 34", verseId: 34, chapterId: 11, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 11, bookId: 7 },  // Judges
+    { verseName: "Verse 34", verseId: 34, chapterId: 11, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 11, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 34", verseId: 34, chapterId: 11, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 34", verseId: 34, chapterId: 11, bookId: 27 },  // Daniel
+    { verseName: "Verse 34", verseId: 34, chapterId: 11, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 11, bookId: 43 },  // John
+    { verseName: "Verse 34", verseId: 34, chapterId: 11, bookId: 45 },  // Romans
+    { verseName: "Verse 34", verseId: 34, chapterId: 11, bookId: 46 },  // 1 Corinthians
+    { verseName: "Verse 34", verseId: 34, chapterId: 11, bookId: 58 },  // Hebrews
+    /* Chapter 12 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 12, bookId: 2 },  // Exodus
+    { verseName: "Verse 34", verseId: 34, chapterId: 12, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 34", verseId: 34, chapterId: 12, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 34", verseId: 34, chapterId: 12, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 12, bookId: 41 },  // Mark
+    { verseName: "Verse 34", verseId: 34, chapterId: 12, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 12, bookId: 43 },  // John
+    /* Chapter 13 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 13, bookId: 3 },  // Leviticus
+    { verseName: "Verse 34", verseId: 34, chapterId: 13, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 34", verseId: 34, chapterId: 13, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 13, bookId: 27 },  // Daniel
+    { verseName: "Verse 34", verseId: 34, chapterId: 13, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 13, bookId: 41 },  // Mark
+    { verseName: "Verse 34", verseId: 34, chapterId: 13, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 13, bookId: 43 },  // John
+    { verseName: "Verse 34", verseId: 34, chapterId: 13, bookId: 44 },  // Acts
+    /* Chapter 14 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 14, bookId: 3 },  // Leviticus
+    { verseName: "Verse 34", verseId: 34, chapterId: 14, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 14, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 34", verseId: 34, chapterId: 14, bookId: 20 },  // Proverbs
+    { verseName: "Verse 34", verseId: 34, chapterId: 14, bookId: 27 },  // Daniel
+    { verseName: "Verse 34", verseId: 34, chapterId: 14, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 14, bookId: 41 },  // Mark
+    { verseName: "Verse 34", verseId: 34, chapterId: 14, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 14, bookId: 46 },  // 1 Corinthians
+    /* Chapter 15 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 15, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 15, bookId: 6 },  // Joshua
+    { verseName: "Verse 34", verseId: 34, chapterId: 15, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 34", verseId: 34, chapterId: 15, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 34", verseId: 34, chapterId: 15, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 15, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 15, bookId: 18 },  // Job
+    { verseName: "Verse 34", verseId: 34, chapterId: 15, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 15, bookId: 41 },  // Mark
+    { verseName: "Verse 34", verseId: 34, chapterId: 15, bookId: 44 },  // Acts
+    { verseName: "Verse 34", verseId: 34, chapterId: 15, bookId: 46 },  // 1 Corinthians
+    /* Chapter 16 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 16, bookId: 2 },  // Exodus
+    { verseName: "Verse 34", verseId: 34, chapterId: 16, bookId: 3 },  // Leviticus
+    { verseName: "Verse 34", verseId: 34, chapterId: 16, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 16, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 16, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 34", verseId: 34, chapterId: 16, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 34", verseId: 34, chapterId: 16, bookId: 44 },  // Acts
+    /* Chapter 17 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 17, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 34", verseId: 34, chapterId: 17, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 17, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 17, bookId: 44 },  // Acts
+    /* Chapter 18 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 18, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 18, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 18, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 34", verseId: 34, chapterId: 18, bookId: 19 },  // Psalms
+    { verseName: "Verse 34", verseId: 34, chapterId: 18, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 18, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 18, bookId: 43 },  // John
+    /* Chapter 19 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 19, bookId: 1 },  // Genesis
+    { verseName: "Verse 34", verseId: 34, chapterId: 19, bookId: 3 },  // Leviticus
+    { verseName: "Verse 34", verseId: 34, chapterId: 19, bookId: 6 },  // Joshua
+    { verseName: "Verse 34", verseId: 34, chapterId: 19, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 34", verseId: 34, chapterId: 19, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 19, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 19, bookId: 43 },  // John
+    { verseName: "Verse 34", verseId: 34, chapterId: 19, bookId: 44 },  // Acts
+    /* Chapter 20 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 20, bookId: 7 },  // Judges
+    { verseName: "Verse 34", verseId: 34, chapterId: 20, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 34", verseId: 34, chapterId: 20, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 20, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 34", verseId: 34, chapterId: 20, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 34", verseId: 34, chapterId: 20, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 20, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 20, bookId: 44 },  // Acts
+    /* Chapter 21 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 21, bookId: 1 },  // Genesis
+    { verseName: "Verse 34", verseId: 34, chapterId: 21, bookId: 2 },  // Exodus
+    { verseName: "Verse 34", verseId: 34, chapterId: 21, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 21, bookId: 6 },  // Joshua
+    { verseName: "Verse 34", verseId: 34, chapterId: 21, bookId: 18 },  // Job
+    { verseName: "Verse 34", verseId: 34, chapterId: 21, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 34", verseId: 34, chapterId: 21, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 21, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 21, bookId: 44 },  // Acts
+    /* Chapter 22 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 22, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 22, bookId: 6 },  // Joshua
+    { verseName: "Verse 34", verseId: 34, chapterId: 22, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 34", verseId: 34, chapterId: 22, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 22, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 22, bookId: 42 },  // Luke
+    /* Chapter 23 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 23, bookId: 3 },  // Leviticus
+    { verseName: "Verse 34", verseId: 34, chapterId: 23, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 34", verseId: 34, chapterId: 23, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 34", verseId: 34, chapterId: 23, bookId: 20 },  // Proverbs
+    { verseName: "Verse 34", verseId: 34, chapterId: 23, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 34", verseId: 34, chapterId: 23, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 34", verseId: 34, chapterId: 23, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 23, bookId: 42 },  // Luke
+    { verseName: "Verse 34", verseId: 34, chapterId: 23, bookId: 44 },  // Acts
+    /* Chapter 24 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 24, bookId: 1 },  // Genesis
+    { verseName: "Verse 34", verseId: 34, chapterId: 24, bookId: 20 },  // Proverbs
+    { verseName: "Verse 34", verseId: 34, chapterId: 24, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 24, bookId: 42 },  // Luke
+    /* Chapter 25 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 25, bookId: 1 },  // Genesis
+    { verseName: "Verse 34", verseId: 34, chapterId: 25, bookId: 2 },  // Exodus
+    { verseName: "Verse 34", verseId: 34, chapterId: 25, bookId: 3 },  // Leviticus
+    { verseName: "Verse 34", verseId: 34, chapterId: 25, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 34", verseId: 34, chapterId: 25, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 34", verseId: 34, chapterId: 25, bookId: 40 },  // Matthew
+    /* Chapter 26 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 26, bookId: 1 },  // Genesis
+    { verseName: "Verse 34", verseId: 34, chapterId: 26, bookId: 2 },  // Exodus
+    { verseName: "Verse 34", verseId: 34, chapterId: 26, bookId: 3 },  // Leviticus
+    { verseName: "Verse 34", verseId: 34, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 26, bookId: 40 },  // Matthew
+    /* Chapter 27 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 27, bookId: 1 },  // Genesis
+    { verseName: "Verse 34", verseId: 34, chapterId: 27, bookId: 3 },  // Leviticus
+    { verseName: "Verse 34", verseId: 34, chapterId: 27, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 34", verseId: 34, chapterId: 27, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 34", verseId: 34, chapterId: 27, bookId: 40 },  // Matthew
+    { verseName: "Verse 34", verseId: 34, chapterId: 27, bookId: 44 },  // Acts
+    /* Chapter 28 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 28, bookId: 2 },  // Exodus
+    { verseName: "Verse 34", verseId: 34, chapterId: 28, bookId: 5 },  // Deuteronomy
+    /* Chapter 29 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 29, bookId: 1 },  // Genesis
+    { verseName: "Verse 34", verseId: 34, chapterId: 29, bookId: 2 },  // Exodus
+    { verseName: "Verse 34", verseId: 34, chapterId: 29, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 29, bookId: 14 },  // 2 Chronicles
+    /* Chapter 30 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 30, bookId: 1 },  // Genesis
+    { verseName: "Verse 34", verseId: 34, chapterId: 30, bookId: 2 },  // Exodus
+    { verseName: "Verse 34", verseId: 34, chapterId: 30, bookId: 19 },  // Psalms
+    /* Chapter 31 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 31, bookId: 1 },  // Genesis
+    { verseName: "Verse 34", verseId: 34, chapterId: 31, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 31, bookId: 18 },  // Job
+    { verseName: "Verse 34", verseId: 34, chapterId: 31, bookId: 24 },  // Jeremiah
+    /* Chapter 32 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 32, bookId: 2 },  // Exodus
+    { verseName: "Verse 34", verseId: 34, chapterId: 32, bookId: 4 },  // Numbers
+    { verseName: "Verse 34", verseId: 34, chapterId: 32, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 34", verseId: 34, chapterId: 32, bookId: 24 },  // Jeremiah
+    /* Chapter 33 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 33, bookId: 4 },  // Numbers
+    /* Chapter 34 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 34, bookId: 2 },  // Exodus
+    { verseName: "Verse 34", verseId: 34, chapterId: 34, bookId: 18 },  // Job
+    /* Chapter 35 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 35, bookId: 2 },  // Exodus
+    { verseName: "Verse 34", verseId: 34, chapterId: 35, bookId: 4 },  // Numbers
+    /* Chapter 36 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 36, bookId: 1 },  // Genesis
+    { verseName: "Verse 34", verseId: 34, chapterId: 36, bookId: 2 },  // Exodus
+    { verseName: "Verse 34", verseId: 34, chapterId: 36, bookId: 26 },  // Ezekiel
+    /* Chapter 37 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 37, bookId: 1 },  // Genesis
+    { verseName: "Verse 34", verseId: 34, chapterId: 37, bookId: 19 },  // Psalms
+    { verseName: "Verse 34", verseId: 34, chapterId: 37, bookId: 23 },  // Isaiah
+    /* Chapter 38 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 38, bookId: 18 },  // Job
+    /* Chapter 39 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 39, bookId: 2 },  // Exodus
+    /* Chapter 40 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 40, bookId: 2 },  // Exodus
+    { verseName: "Verse 34", verseId: 34, chapterId: 40, bookId: 26 },  // Ezekiel
+    /* Chapter 41 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 41, bookId: 1 },  // Genesis
+    /* Chapter 42 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 42, bookId: 1 },  // Genesis
+    /* Chapter 43 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 43, bookId: 1 },  // Genesis
+    /* Chapter 44 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 44, bookId: 1 },  // Genesis
+    /* Chapter 46 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 46, bookId: 1 },  // Genesis
+    /* Chapter 48 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 48, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 34", verseId: 34, chapterId: 48, bookId: 26 },  // Ezekiel
+    /* Chapter 49 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 49, bookId: 24 },  // Jeremiah
+    /* Chapter 50 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 50, bookId: 1 },  // Genesis
+    { verseName: "Verse 34", verseId: 34, chapterId: 50, bookId: 24 },  // Jeremiah
+    /* Chapter 51 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapter 52 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 52, bookId: 24 },  // Jeremiah
+    /* Chapters 68-150 */
+    { verseName: "Verse 34", verseId: 34, chapterId: 68, bookId: 19 },  // Psalms
+    { verseName: "Verse 34", verseId: 34, chapterId: 69, bookId: 19 },  // Psalms
+    { verseName: "Verse 34", verseId: 34, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 34", verseId: 34, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 34", verseId: 34, chapterId: 89, bookId: 19 },  // Psalms
+    { verseName: "Verse 34", verseId: 34, chapterId: 104, bookId: 19 },  // Psalms
+    { verseName: "Verse 34", verseId: 34, chapterId: 105, bookId: 19 },  // Psalms
+    { verseName: "Verse 34", verseId: 34, chapterId: 106, bookId: 19 },  // Psalms
+    { verseName: "Verse 34", verseId: 34, chapterId: 107, bookId: 19 },  // Psalms
+    { verseName: "Verse 34", verseId: 34, chapterId: 119, bookId: 19 },  // Psalms
   ];
 
   // dropdown cascade result
