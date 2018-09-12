@@ -90,6 +90,7 @@ export class BibleComponent implements OnInit {
     { bookName: "Jude", bookId: 65 },
     { bookName: "Revelation", bookId: 66 },
   ];
+  
   public dataChapters: Array<{ chapterName: string, chapterId: number, bookId: number }> = [
     /* Chapter 1 */
     { chapterName: "Chapter 1", chapterId: 1, bookId: 1 },  // Genesis
@@ -31361,7 +31362,6 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 33", verseId: 33, chapterId: 31, bookId: 18 },  // Job
     { verseName: "Verse 33", verseId: 33, chapterId: 31, bookId: 24 },  // Jeremiah
     /* Chapter 32 */
-    { verseName: "Verse 33", verseId: 33, chapterId: 32, bookId: 1 },  // Genesis
     { verseName: "Verse 33", verseId: 33, chapterId: 32, bookId: 2 },  // Exodus
     { verseName: "Verse 33", verseId: 33, chapterId: 32, bookId: 4 },  // Numbers
     { verseName: "Verse 33", verseId: 33, chapterId: 32, bookId: 5 },  // Deuteronomy
@@ -32057,6 +32057,279 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 35", verseId: 35, chapterId: 106, bookId: 19 },  // Psalms
     { verseName: "Verse 35", verseId: 35, chapterId: 107, bookId: 19 },  // Psalms
     { verseName: "Verse 35", verseId: 35, chapterId: 119, bookId: 19 },  // Psalms
+    /************************************************************* Verse 36 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 1, bookId: 4 },  // Numbers
+    { verseName: "Verse 36", verseId: 36, chapterId: 1, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 36", verseId: 36, chapterId: 1, bookId: 7 },  // Judges
+    { verseName: "Verse 36", verseId: 36, chapterId: 1, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 1, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 36", verseId: 36, chapterId: 1, bookId: 41 },  // Mark
+    { verseName: "Verse 36", verseId: 36, chapterId: 1, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 1, bookId: 43 },  // John
+    /* Chapter 2 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 2, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 36", verseId: 36, chapterId: 2, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 36", verseId: 36, chapterId: 2, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 2, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 36", verseId: 36, chapterId: 2, bookId: 15 },  // Ezra
+    { verseName: "Verse 36", verseId: 36, chapterId: 2, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 36", verseId: 36, chapterId: 2, bookId: 27 },  // Daniel
+    { verseName: "Verse 36", verseId: 36, chapterId: 2, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 2, bookId: 44 },  // Acts
+    /* Chapter 3 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 3, bookId: 4 },  // Numbers
+    { verseName: "Verse 36", verseId: 36, chapterId: 3, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 36", verseId: 36, chapterId: 3, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 36", verseId: 36, chapterId: 3, bookId: 25 },  // Lamentations
+    { verseName: "Verse 36", verseId: 36, chapterId: 3, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 3, bookId: 43 },  // John
+    /* Chapter 4 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 4, bookId: 4 },  // Numbers
+    { verseName: "Verse 36", verseId: 36, chapterId: 4, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 36", verseId: 36, chapterId: 4, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 4, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 36", verseId: 36, chapterId: 4, bookId: 27 },  // Daniel
+    { verseName: "Verse 36", verseId: 36, chapterId: 4, bookId: 41 },  // Mark
+    { verseName: "Verse 36", verseId: 36, chapterId: 4, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 4, bookId: 43 },  // John
+    { verseName: "Verse 36", verseId: 36, chapterId: 4, bookId: 44 },  // Acts
+    /* Chapter 5 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 5, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 36", verseId: 36, chapterId: 5, bookId: 40 },  // Matthew
+    { verseName: "Verse 36", verseId: 36, chapterId: 5, bookId: 41 },  // Mark
+    { verseName: "Verse 36", verseId: 36, chapterId: 5, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 5, bookId: 43 },  // John
+    { verseName: "Verse 36", verseId: 36, chapterId: 5, bookId: 44 },  // Acts
+    /* Chapter 6 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 6, bookId: 7 },  // Judges
+    { verseName: "Verse 36", verseId: 36, chapterId: 6, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 36", verseId: 36, chapterId: 6, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 36", verseId: 36, chapterId: 6, bookId: 41 },  // Mark
+    { verseName: "Verse 36", verseId: 36, chapterId: 6, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 6, bookId: 43 },  // John
+    /* Chapter 7 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 7, bookId: 3 },  // Leviticus
+    { verseName: "Verse 36", verseId: 36, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 36", verseId: 36, chapterId: 7, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 7, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 36", verseId: 36, chapterId: 7, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 36", verseId: 36, chapterId: 7, bookId: 41 },  // Mark
+    { verseName: "Verse 36", verseId: 36, chapterId: 7, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 7, bookId: 43 },  // John
+    { verseName: "Verse 36", verseId: 36, chapterId: 7, bookId: 44 },  // Acts
+    { verseName: "Verse 36", verseId: 36, chapterId: 7, bookId: 46 },  // 1 Corinthians
+    /* Chapter 8 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 8, bookId: 3 },  // Leviticus
+    { verseName: "Verse 36", verseId: 36, chapterId: 8, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 8, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 36", verseId: 36, chapterId: 8, bookId: 15 },  // Ezra
+    { verseName: "Verse 36", verseId: 36, chapterId: 8, bookId: 20 },  // Proverbs
+    { verseName: "Verse 36", verseId: 36, chapterId: 8, bookId: 41 },  // Mark
+    { verseName: "Verse 36", verseId: 36, chapterId: 8, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 8, bookId: 43 },  // John
+    { verseName: "Verse 36", verseId: 36, chapterId: 8, bookId: 44 },  // Acts
+    { verseName: "Verse 36", verseId: 36, chapterId: 8, bookId: 45 },  // Romans
+    /* Chapter 9 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 9, bookId: 7 },  // Judges
+    { verseName: "Verse 36", verseId: 36, chapterId: 9, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 9, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 36", verseId: 36, chapterId: 9, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 36", verseId: 36, chapterId: 9, bookId: 40 },  // Matthew
+    { verseName: "Verse 36", verseId: 36, chapterId: 9, bookId: 41 },  // Mark
+    { verseName: "Verse 36", verseId: 36, chapterId: 9, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 9, bookId: 43 },  // John
+    { verseName: "Verse 36", verseId: 36, chapterId: 9, bookId: 44 },  // Acts
+    /* Chapter 10 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 10, bookId: 4 },  // Numbers
+    { verseName: "Verse 36", verseId: 36, chapterId: 10, bookId: 6 },  // Joshua
+    { verseName: "Verse 36", verseId: 36, chapterId: 10, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 10, bookId: 15 },  // Ezra
+    { verseName: "Verse 36", verseId: 36, chapterId: 10, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 36", verseId: 36, chapterId: 10, bookId: 40 },  // Matthew
+    { verseName: "Verse 36", verseId: 36, chapterId: 10, bookId: 41 },  // Mark
+    { verseName: "Verse 36", verseId: 36, chapterId: 10, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 10, bookId: 43 },  // John
+    { verseName: "Verse 36", verseId: 36, chapterId: 10, bookId: 44 },  // Acts
+    { verseName: "Verse 36", verseId: 36, chapterId: 10, bookId: 58 },  // Hebrews
+    /* Chapter 11 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 11, bookId: 3 },  // Leviticus
+    { verseName: "Verse 36", verseId: 36, chapterId: 11, bookId: 7 },  // Judges
+    { verseName: "Verse 36", verseId: 36, chapterId: 11, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 11, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 36", verseId: 36, chapterId: 11, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 36", verseId: 36, chapterId: 11, bookId: 27 },  // Daniel
+    { verseName: "Verse 36", verseId: 36, chapterId: 11, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 11, bookId: 43 },  // John
+    { verseName: "Verse 36", verseId: 36, chapterId: 11, bookId: 45 },  // Romans
+    { verseName: "Verse 36", verseId: 36, chapterId: 11, bookId: 58 },  // Hebrews
+    /* Chapter 12 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 12, bookId: 2 },  // Exodus
+    { verseName: "Verse 36", verseId: 36, chapterId: 12, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 36", verseId: 36, chapterId: 12, bookId: 16 },  // Nehemiah
+    { verseName: "Verse 36", verseId: 36, chapterId: 12, bookId: 40 },  // Matthew
+    { verseName: "Verse 36", verseId: 36, chapterId: 12, bookId: 41 },  // Mark
+    { verseName: "Verse 36", verseId: 36, chapterId: 12, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 12, bookId: 43 },  // John
+    /* Chapter 13 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 13, bookId: 3 },  // Leviticus
+    { verseName: "Verse 36", verseId: 36, chapterId: 13, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 36", verseId: 36, chapterId: 13, bookId: 40 },  // Matthew
+    { verseName: "Verse 36", verseId: 36, chapterId: 13, bookId: 41 },  // Mark
+    { verseName: "Verse 36", verseId: 36, chapterId: 13, bookId: 43 },  // John
+    { verseName: "Verse 36", verseId: 36, chapterId: 13, bookId: 44 },  // Acts
+    /* Chapter 14 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 14, bookId: 3 },  // Leviticus
+    { verseName: "Verse 36", verseId: 36, chapterId: 14, bookId: 4 },  // Numbers
+    { verseName: "Verse 36", verseId: 36, chapterId: 14, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 36", verseId: 36, chapterId: 14, bookId: 40 },  // Matthew
+    { verseName: "Verse 36", verseId: 36, chapterId: 14, bookId: 41 },  // Mark
+    { verseName: "Verse 36", verseId: 36, chapterId: 14, bookId: 46 },  // 1 Corinthians
+    /* Chapter 15 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 15, bookId: 4 },  // Numbers
+    { verseName: "Verse 36", verseId: 36, chapterId: 15, bookId: 6 },  // Joshua
+    { verseName: "Verse 36", verseId: 36, chapterId: 15, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 36", verseId: 36, chapterId: 15, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 15, bookId: 40 },  // Matthew
+    { verseName: "Verse 36", verseId: 36, chapterId: 15, bookId: 41 },  // Mark
+    { verseName: "Verse 36", verseId: 36, chapterId: 15, bookId: 44 },  // Acts
+    { verseName: "Verse 36", verseId: 36, chapterId: 15, bookId: 46 },  // 1 Corinthians
+    /* Chapter 16 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 16, bookId: 2 },  // Exodus
+    { verseName: "Verse 36", verseId: 36, chapterId: 16, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 36", verseId: 36, chapterId: 16, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 36", verseId: 36, chapterId: 16, bookId: 44 },  // Acts
+    /* Chapter 17 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 17, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 36", verseId: 36, chapterId: 17, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 17, bookId: 42 },  // Luke
+    /* Chapter 18 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 18, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 18, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 18, bookId: 19 },  // Psalms
+    { verseName: "Verse 36", verseId: 36, chapterId: 18, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 18, bookId: 43 },  // John
+    /* Chapter 19 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 19, bookId: 1 },  // Genesis
+    { verseName: "Verse 36", verseId: 36, chapterId: 19, bookId: 3 },  // Leviticus
+    { verseName: "Verse 36", verseId: 36, chapterId: 19, bookId: 6 },  // Joshua
+    { verseName: "Verse 36", verseId: 36, chapterId: 19, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 36", verseId: 36, chapterId: 19, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 19, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 19, bookId: 43 },  // John
+    { verseName: "Verse 36", verseId: 36, chapterId: 19, bookId: 44 },  // Acts
+    /* Chapter 20 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 20, bookId: 7 },  // Judges
+    { verseName: "Verse 36", verseId: 36, chapterId: 20, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 36", verseId: 36, chapterId: 20, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 20, bookId: 14 },  // 2 Chronicles
+    { verseName: "Verse 36", verseId: 36, chapterId: 20, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 36", verseId: 36, chapterId: 20, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 20, bookId: 44 },  // Acts
+    /* Chapter 21 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 21, bookId: 2 },  // Exodus
+    { verseName: "Verse 36", verseId: 36, chapterId: 21, bookId: 6 },  // Joshua
+    { verseName: "Verse 36", verseId: 36, chapterId: 21, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 36", verseId: 36, chapterId: 21, bookId: 40 },  // Matthew
+    { verseName: "Verse 36", verseId: 36, chapterId: 21, bookId: 42 },  // Luke
+    { verseName: "Verse 36", verseId: 36, chapterId: 21, bookId: 44 },  // Acts
+    /* Chapter 22 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 22, bookId: 4 },  // Numbers
+    { verseName: "Verse 36", verseId: 36, chapterId: 22, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 36", verseId: 36, chapterId: 22, bookId: 11 },  // 1 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 22, bookId: 40 },  // Matthew
+    { verseName: "Verse 36", verseId: 36, chapterId: 22, bookId: 42 },  // Luke
+    /* Chapter 23 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 23, bookId: 3 },  // Leviticus
+    { verseName: "Verse 36", verseId: 36, chapterId: 23, bookId: 10 },  // 2 Samuel
+    { verseName: "Verse 36", verseId: 36, chapterId: 23, bookId: 12 },  // 2 Kings
+    { verseName: "Verse 36", verseId: 36, chapterId: 23, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 36", verseId: 36, chapterId: 23, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 36", verseId: 36, chapterId: 23, bookId: 40 },  // Matthew
+    { verseName: "Verse 36", verseId: 36, chapterId: 23, bookId: 42 },  // Luke
+    /* Chapter 24 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 24, bookId: 1 },  // Genesis
+    { verseName: "Verse 36", verseId: 36, chapterId: 24, bookId: 40 },  // Matthew
+    { verseName: "Verse 36", verseId: 36, chapterId: 24, bookId: 42 },  // Luke
+    /* Chapter 25 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 25, bookId: 2 },  // Exodus
+    { verseName: "Verse 36", verseId: 36, chapterId: 25, bookId: 3 },  // Leviticus
+    { verseName: "Verse 36", verseId: 36, chapterId: 25, bookId: 9 },  // 1 Samuel
+    { verseName: "Verse 36", verseId: 36, chapterId: 25, bookId: 24 },  // Jeremiah
+    { verseName: "Verse 36", verseId: 36, chapterId: 25, bookId: 40 },  // Matthew
+    /* Chapter 26 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 26, bookId: 2 },  // Exodus
+    { verseName: "Verse 36", verseId: 36, chapterId: 26, bookId: 3 },  // Leviticus
+    { verseName: "Verse 36", verseId: 36, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 36", verseId: 36, chapterId: 26, bookId: 40 },  // Matthew
+    /* Chapter 27 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 27, bookId: 1 },  // Genesis
+    { verseName: "Verse 36", verseId: 36, chapterId: 27, bookId: 26 },  // Ezekiel
+    { verseName: "Verse 36", verseId: 36, chapterId: 27, bookId: 40 },  // Matthew
+    { verseName: "Verse 36", verseId: 36, chapterId: 27, bookId: 44 },  // Acts
+    /* Chapter 28 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 28, bookId: 2 },  // Exodus
+    { verseName: "Verse 36", verseId: 36, chapterId: 28, bookId: 5 },  // Deuteronomy
+    /* Chapter 29 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 29, bookId: 2 },  // Exodus
+    { verseName: "Verse 36", verseId: 36, chapterId: 29, bookId: 4 },  // Numbers
+    { verseName: "Verse 36", verseId: 36, chapterId: 29, bookId: 14 },  // 2 Chronicles
+    /* Chapter 30 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 30, bookId: 1 },  // Genesis
+    { verseName: "Verse 36", verseId: 36, chapterId: 30, bookId: 2 },  // Exodus
+    { verseName: "Verse 36", verseId: 36, chapterId: 30, bookId: 19 },  // Psalms
+    /* Chapter 31 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 31, bookId: 1 },  // Genesis
+    { verseName: "Verse 36", verseId: 36, chapterId: 31, bookId: 4 },  // Numbers
+    { verseName: "Verse 36", verseId: 36, chapterId: 31, bookId: 18 },  // Job
+    { verseName: "Verse 36", verseId: 36, chapterId: 31, bookId: 24 },  // Jeremiah
+    /* Chapter 32 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 32, bookId: 4 },  // Numbers
+    { verseName: "Verse 36", verseId: 36, chapterId: 32, bookId: 5 },  // Deuteronomy
+    { verseName: "Verse 36", verseId: 36, chapterId: 32, bookId: 24 },  // Jeremiah
+    /* Chapter 33 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 33, bookId: 4 },  // Numbers
+    /* Chapter 34 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 34, bookId: 18 },  // Job
+    /* Chapter 36 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 36, bookId: 1 },  // Genesis
+    { verseName: "Verse 36", verseId: 36, chapterId: 36, bookId: 2 },  // Exodus
+    { verseName: "Verse 36", verseId: 36, chapterId: 36, bookId: 26 },  // Ezekiel
+    /* Chapter 37 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 37, bookId: 1 },  // Genesis
+    { verseName: "Verse 36", verseId: 36, chapterId: 37, bookId: 19 },  // Psalms
+    { verseName: "Verse 36", verseId: 36, chapterId: 37, bookId: 23 },  // Isaiah
+    /* Chapter 38 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 38, bookId: 18 },  // Job
+    /* Chapter 39 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 39, bookId: 2 },  // Exodus
+    /* Chapter 40 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 40, bookId: 2 },  // Exodus
+    { verseName: "Verse 36", verseId: 36, chapterId: 40, bookId: 26 },  // Ezekiel
+    /* Chapter 41 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 41, bookId: 1 },  // Genesis
+    /* Chapter 42 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 42, bookId: 1 },  // Genesis
+    /* Chapter 48 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 48, bookId: 24 },  // Jeremiah
+    /* Chapter 49 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 49, bookId: 24 },  // Jeremiah
+    /* Chapter 50 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 50, bookId: 1 },  // Genesis
+    { verseName: "Verse 36", verseId: 36, chapterId: 50, bookId: 24 },  // Jeremiah
+    /* Chapter 51 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapters 68-150 */
+    { verseName: "Verse 36", verseId: 36, chapterId: 68, bookId: 19 },  // Psalms
+    { verseName: "Verse 36", verseId: 36, chapterId: 69, bookId: 19 },  // Psalms
+    { verseName: "Verse 36", verseId: 36, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 36", verseId: 36, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 36", verseId: 36, chapterId: 89, bookId: 19 },  // Psalms
+    { verseName: "Verse 36", verseId: 36, chapterId: 105, bookId: 19 },  // Psalms
+    { verseName: "Verse 36", verseId: 36, chapterId: 106, bookId: 19 },  // Psalms
+    { verseName: "Verse 36", verseId: 36, chapterId: 107, bookId: 19 },  // Psalms
+    { verseName: "Verse 36", verseId: 36, chapterId: 119, bookId: 19 },  // Psalms
   ];
 
   // dropdown cascade result
