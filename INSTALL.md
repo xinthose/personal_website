@@ -45,7 +45,7 @@ npm install node-sass --unsafe-perm
 ng generate module app-routing --flat --module=app
 ng generate component home bible
 Bible in JSON: https://github.com/thiagobodruk/bible
-
+ 
 # Commands
 
 ## Angular Commands
