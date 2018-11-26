@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import * as JSON_Books from "./data/books.json";
+
 @Component({
   selector: 'app-bible',
   templateUrl: './bible.component.html',
@@ -23,7 +25,7 @@ export class BibleComponent implements OnInit {
 
   // dropdown data
   public dataBooks: Array<{ bookName: string, bookId: number }> = [
-    { bookName: "Genesis", bookId: 1 },
+    { "bookName": "Genesis", bookId: 1 },
     { bookName: "Exodus", bookId: 2 },
     { bookName: "Leviticus", bookId: 3 },
     { bookName: "Numbers", bookId: 4 },
@@ -35363,6 +35365,349 @@ export class BibleComponent implements OnInit {
     { verseName: "Verse 60", verseId: 60, chapterId: 70, bookId: 19 },  // Psalms
     { verseName: "Verse 60", verseId: 60, chapterId: 78, bookId: 19 },  // Psalms
     { verseName: "Verse 60", verseId: 60, chapterId: 119, bookId: 19 },  // Psalms 
+    /************************************************************* Verse 61 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 1, bookId: 42 },  // Luke
+    /* Chapter 2 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 2, bookId: 15 },  // Ezra
+    /* Chapter 3 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 3, bookId: 25 },  // Lamentations
+    /* Chapter 6 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 61", verseId: 61, chapterId: 6, bookId: 43 },  // John
+    /* Chapter 7 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 61", verseId: 61, chapterId: 7, bookId: 16 },  // Nehemiah
+    /* Chapter 8 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 8, bookId: 11 },  // 1 Kings
+    /* Chapter 9 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 9, bookId: 42 },  // Luke
+    /* Chapter 14 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 14, bookId: 41 },  // Mark
+    /* Chapter 15 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 15, bookId: 6 },  // Joshua
+    /* Chapter 16 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 16, bookId: 26 },  // Ezekiel
+    /* Chapter 22 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 22, bookId: 42 },  // Luke
+    /* Chapter 24 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 24, bookId: 1 },  // Genesis
+    /* Chapter 26 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 61", verseId: 61, chapterId: 26, bookId: 40 },  // Matthew
+    /* Chapter 27 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 27, bookId: 40 },  // Matthew
+    /* Chapter 28 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 28, bookId: 5 },  // Deuteronomy
+    /* Chapter 30 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 30, bookId: 19 },  // Psalms
+    /* Chapter 50 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 50, bookId: 1 },  // Genesis
+    /* Chapter 51 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapters 68-150 */
+    { verseName: "Verse 61", verseId: 61, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 61", verseId: 61, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 61", verseId: 61, chapterId: 119, bookId: 19 },  // Psalms     
+    /************************************************************* Verse 62 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 1, bookId: 42 },  // Luke
+    /* Chapter 2 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 2, bookId: 15 },  // Ezra
+    /* Chapter 3 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 3, bookId: 25 },  // Lamentations
+    /* Chapter 6 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 62", verseId: 62, chapterId: 6, bookId: 43 },  // John
+    /* Chapter 7 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 62", verseId: 62, chapterId: 7, bookId: 16 },  // Nehemiah
+    /* Chapter 8 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 8, bookId: 11 },  // 1 Kings
+    /* Chapter 9 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 9, bookId: 42 },  // Luke
+    /* Chapter 14 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 14, bookId: 41 },  // Mark
+    /* Chapter 15 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 15, bookId: 6 },  // Joshua
+    /* Chapter 16 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 16, bookId: 26 },  // Ezekiel
+    /* Chapter 22 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 22, bookId: 42 },  // Luke
+    /* Chapter 24 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 24, bookId: 1 },  // Genesis
+    /* Chapter 26 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 62", verseId: 62, chapterId: 26, bookId: 40 },  // Matthew
+    /* Chapter 27 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 27, bookId: 40 },  // Matthew
+    /* Chapter 28 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 28, bookId: 5 },  // Deuteronomy
+    /* Chapter 30 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 30, bookId: 19 },  // Psalms
+    /* Chapter 50 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 50, bookId: 1 },  // Genesis
+    /* Chapter 51 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapters 68-150 */
+    { verseName: "Verse 62", verseId: 62, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 62", verseId: 62, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 62", verseId: 62, chapterId: 119, bookId: 19 },  // Psalms    
+    /************************************************************* Verse 63 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 1, bookId: 42 },  // Luke
+    /* Chapter 2 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 2, bookId: 15 },  // Ezra
+    /* Chapter 3 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 3, bookId: 25 },  // Lamentations
+    /* Chapter 6 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 63", verseId: 63, chapterId: 6, bookId: 43 },  // John
+    /* Chapter 7 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 63", verseId: 63, chapterId: 7, bookId: 16 },  // Nehemiah
+    /* Chapter 8 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 8, bookId: 11 },  // 1 Kings
+    /* Chapter 14 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 14, bookId: 41 },  // Mark
+    /* Chapter 15 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 15, bookId: 6 },  // Joshua
+    /* Chapter 16 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 16, bookId: 26 },  // Ezekiel
+    /* Chapter 22 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 22, bookId: 42 },  // Luke
+    /* Chapter 24 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 24, bookId: 1 },  // Genesis
+    /* Chapter 26 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 63", verseId: 63, chapterId: 26, bookId: 40 },  // Matthew
+    /* Chapter 27 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 27, bookId: 40 },  // Matthew
+    /* Chapter 28 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 28, bookId: 5 },  // Deuteronomy
+    /* Chapter 30 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 30, bookId: 19 },  // Psalms
+    /* Chapter 50 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 50, bookId: 1 },  // Genesis
+    /* Chapter 51 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapters 68-150 */
+    { verseName: "Verse 63", verseId: 63, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 63", verseId: 63, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 63", verseId: 63, chapterId: 119, bookId: 19 },  // Psalms      
+    /************************************************************* Verse 64 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 1, bookId: 42 },  // Luke
+    /* Chapter 2 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 2, bookId: 15 },  // Ezra
+    /* Chapter 3 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 3, bookId: 25 },  // Lamentations
+    /* Chapter 6 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 64", verseId: 64, chapterId: 6, bookId: 43 },  // John
+    /* Chapter 7 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 64", verseId: 64, chapterId: 7, bookId: 16 },  // Nehemiah
+    /* Chapter 8 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 8, bookId: 11 },  // 1 Kings
+    /* Chapter 14 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 14, bookId: 41 },  // Mark
+    /* Chapter 22 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 22, bookId: 42 },  // Luke
+    /* Chapter 24 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 24, bookId: 1 },  // Genesis
+    /* Chapter 26 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 64", verseId: 64, chapterId: 26, bookId: 40 },  // Matthew
+    /* Chapter 27 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 27, bookId: 40 },  // Matthew
+    /* Chapter 28 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 28, bookId: 5 },  // Deuteronomy
+    /* Chapter 30 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 30, bookId: 19 },  // Psalms
+    /* Chapter 50 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 50, bookId: 1 },  // Genesis
+    /* Chapter 51 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 51, bookId: 24 },  // Jeremiah
+    /* Chapters 68-150 */
+    { verseName: "Verse 64", verseId: 64, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 64", verseId: 64, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 64", verseId: 64, chapterId: 119, bookId: 19 },  // Psalms     
+    /************************************************************* Verse 65 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 65", verseId: 65, chapterId: 1, bookId: 42 },  // Luke
+    /* Chapter 2 */
+    { verseName: "Verse 65", verseId: 65, chapterId: 2, bookId: 15 },  // Ezra
+    /* Chapter 3 */
+    { verseName: "Verse 65", verseId: 65, chapterId: 3, bookId: 25 },  // Lamentations
+    /* Chapter 6 */
+    { verseName: "Verse 65", verseId: 65, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 65", verseId: 65, chapterId: 6, bookId: 43 },  // John
+    /* Chapter 7 */
+    { verseName: "Verse 65", verseId: 65, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 65", verseId: 65, chapterId: 7, bookId: 16 },  // Nehemiah
+    /* Chapter 8 */
+    { verseName: "Verse 65", verseId: 65, chapterId: 8, bookId: 11 },  // 1 Kings
+    /* Chapter 14 */
+    { verseName: "Verse 65", verseId: 65, chapterId: 14, bookId: 41 },  // Mark
+    /* Chapter 22 */
+    { verseName: "Verse 65", verseId: 65, chapterId: 22, bookId: 42 },  // Luke
+    /* Chapter 24 */
+    { verseName: "Verse 65", verseId: 65, chapterId: 24, bookId: 1 },  // Genesis
+    /* Chapter 26 */
+    { verseName: "Verse 65", verseId: 65, chapterId: 26, bookId: 4 },  // Numbers
+    { verseName: "Verse 65", verseId: 65, chapterId: 26, bookId: 40 },  // Matthew
+    /* Chapter 27 */
+    { verseName: "Verse 65", verseId: 65, chapterId: 27, bookId: 40 },  // Matthew
+    /* Chapter 28 */
+    { verseName: "Verse 65", verseId: 65, chapterId: 28, bookId: 5 },  // Deuteronomy
+    /* Chapter 30 */
+    { verseName: "Verse 65", verseId: 65, chapterId: 30, bookId: 19 },  // Psalms
+    /* Chapter 50 */
+    { verseName: "Verse 65", verseId: 65, chapterId: 50, bookId: 1 },  // Genesis
+    /* Chapters 68-150 */
+    { verseName: "Verse 65", verseId: 65, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 65", verseId: 65, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 65", verseId: 65, chapterId: 119, bookId: 19 },  // Psalms  
+    /************************************************************* Verse 66 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 66", verseId: 66, chapterId: 1, bookId: 42 },  // Luke
+    /* Chapter 2 */
+    { verseName: "Verse 66", verseId: 66, chapterId: 2, bookId: 15 },  // Ezra
+    /* Chapter 3 */
+    { verseName: "Verse 66", verseId: 66, chapterId: 3, bookId: 25 },  // Lamentations
+    /* Chapter 6 */
+    { verseName: "Verse 66", verseId: 66, chapterId: 6, bookId: 13 },  // 1 Chronicles
+    { verseName: "Verse 66", verseId: 66, chapterId: 6, bookId: 43 },  // John
+    /* Chapter 7 */
+    { verseName: "Verse 66", verseId: 66, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 66", verseId: 66, chapterId: 7, bookId: 16 },  // Nehemiah
+    /* Chapter 8 */
+    { verseName: "Verse 66", verseId: 66, chapterId: 8, bookId: 11 },  // 1 Kings
+    /* Chapter 14 */
+    { verseName: "Verse 66", verseId: 66, chapterId: 14, bookId: 41 },  // Mark
+    /* Chapter 22 */
+    { verseName: "Verse 66", verseId: 66, chapterId: 22, bookId: 42 },  // Luke
+    /* Chapter 24 */
+    { verseName: "Verse 66", verseId: 66, chapterId: 24, bookId: 1 },  // Genesis
+    /* Chapter 26 */
+    { verseName: "Verse 66", verseId: 66, chapterId: 26, bookId: 40 },  // Matthew
+    /* Chapter 27 */
+    { verseName: "Verse 66", verseId: 66, chapterId: 27, bookId: 40 },  // Matthew
+    /* Chapter 28 */
+    { verseName: "Verse 66", verseId: 66, chapterId: 28, bookId: 5 },  // Deuteronomy
+    /* Chapter 30 */
+    { verseName: "Verse 66", verseId: 66, chapterId: 30, bookId: 19 },  // Psalms
+    /* Chapter 50 */
+    { verseName: "Verse 66", verseId: 66, chapterId: 50, bookId: 1 },  // Genesis
+    /* Chapters 68-150 */
+    { verseName: "Verse 66", verseId: 66, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 66", verseId: 66, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 66", verseId: 66, chapterId: 119, bookId: 19 },  // Psalms  
+    /************************************************************* Verse 67 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 67", verseId: 67, chapterId: 1, bookId: 42 },  // Luke
+    /* Chapter 2 */
+    { verseName: "Verse 67", verseId: 67, chapterId: 2, bookId: 15 },  // Ezra
+    /* Chapter 6 */
+    { verseName: "Verse 67", verseId: 67, chapterId: 6, bookId: 43 },  // John
+    /* Chapter 7 */
+    { verseName: "Verse 67", verseId: 67, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 67", verseId: 67, chapterId: 7, bookId: 16 },  // Nehemiah
+    /* Chapter 14 */
+    { verseName: "Verse 67", verseId: 67, chapterId: 14, bookId: 41 },  // Mark
+    /* Chapter 22 */
+    { verseName: "Verse 67", verseId: 67, chapterId: 22, bookId: 42 },  // Luke
+    /* Chapter 24 */
+    { verseName: "Verse 67", verseId: 67, chapterId: 24, bookId: 1 },  // Genesis
+    /* Chapter 26 */
+    { verseName: "Verse 67", verseId: 67, chapterId: 26, bookId: 40 },  // Matthew
+    /* Chapter 28 */
+    { verseName: "Verse 67", verseId: 67, chapterId: 28, bookId: 5 },  // Deuteronomy
+    /* Chapter 30 */
+    { verseName: "Verse 67", verseId: 67, chapterId: 30, bookId: 19 },  // Psalms
+    /* Chapter 50 */
+    { verseName: "Verse 67", verseId: 67, chapterId: 50, bookId: 1 },  // Genesis
+    /* Chapters 68-150 */
+    { verseName: "Verse 67", verseId: 67, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 67", verseId: 67, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 67", verseId: 67, chapterId: 119, bookId: 19 },  // Psalms  
+    /************************************************************* Verse 68 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 68", verseId: 68, chapterId: 1, bookId: 42 },  // Luke
+    /* Chapter 2 */
+    { verseName: "Verse 68", verseId: 68, chapterId: 2, bookId: 15 },  // Ezra
+    /* Chapter 6 */
+    { verseName: "Verse 68", verseId: 68, chapterId: 6, bookId: 43 },  // John
+    /* Chapter 7 */
+    { verseName: "Verse 68", verseId: 68, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 68", verseId: 68, chapterId: 7, bookId: 16 },  // Nehemiah
+    /* Chapter 14 */
+    { verseName: "Verse 68", verseId: 68, chapterId: 14, bookId: 41 },  // Mark
+    /* Chapter 22 */
+    { verseName: "Verse 68", verseId: 68, chapterId: 22, bookId: 42 },  // Luke
+    /* Chapter 26 */
+    { verseName: "Verse 68", verseId: 68, chapterId: 26, bookId: 40 },  // Matthew
+    /* Chapter 28 */
+    { verseName: "Verse 68", verseId: 68, chapterId: 28, bookId: 5 },  // Deuteronomy
+    /* Chapter 30 */
+    { verseName: "Verse 68", verseId: 68, chapterId: 30, bookId: 19 },  // Psalms
+    /* Chapter 50 */
+    { verseName: "Verse 68", verseId: 68, chapterId: 50, bookId: 1 },  // Genesis
+    /* Chapters 68-150 */
+    { verseName: "Verse 68", verseId: 68, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 68", verseId: 68, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 68", verseId: 68, chapterId: 119, bookId: 19 },  // Psalms  
+    /************************************************************* Verse 69 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 69", verseId: 69, chapterId: 1, bookId: 42 },  // Luke
+    /* Chapter 2 */
+    { verseName: "Verse 69", verseId: 69, chapterId: 2, bookId: 15 },  // Ezra
+    /* Chapter 6 */
+    { verseName: "Verse 69", verseId: 69, chapterId: 6, bookId: 43 },  // John
+    /* Chapter 7 */
+    { verseName: "Verse 69", verseId: 69, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 69", verseId: 69, chapterId: 7, bookId: 16 },  // Nehemiah
+    /* Chapter 14 */
+    { verseName: "Verse 69", verseId: 69, chapterId: 14, bookId: 41 },  // Mark
+    /* Chapter 22 */
+    { verseName: "Verse 69", verseId: 69, chapterId: 22, bookId: 42 },  // Luke
+    /* Chapter 26 */
+    { verseName: "Verse 69", verseId: 69, chapterId: 26, bookId: 40 },  // Matthew
+    /* Chapter 28 */
+    { verseName: "Verse 69", verseId: 69, chapterId: 28, bookId: 5 },  // Deuteronomy
+    /* Chapter 30 */
+    { verseName: "Verse 69", verseId: 69, chapterId: 30, bookId: 19 },  // Psalms
+    /* Chapter 50 */
+    { verseName: "Verse 69", verseId: 69, chapterId: 50, bookId: 1 },  // Genesis
+    /* Chapters 68-150 */
+    { verseName: "Verse 69", verseId: 69, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 69", verseId: 69, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 69", verseId: 69, chapterId: 119, bookId: 19 },  // Psalms  
+    /************************************************************* Verse 70 *************************************************************/
+    /* Chapter 1 */
+    { verseName: "Verse 70", verseId: 70, chapterId: 1, bookId: 42 },  // Luke
+    /* Chapter 2 */
+    { verseName: "Verse 70", verseId: 70, chapterId: 2, bookId: 15 },  // Ezra
+    /* Chapter 6 */
+    { verseName: "Verse 70", verseId: 70, chapterId: 6, bookId: 43 },  // John
+    /* Chapter 7 */
+    { verseName: "Verse 70", verseId: 70, chapterId: 7, bookId: 4 },  // Numbers
+    { verseName: "Verse 70", verseId: 70, chapterId: 7, bookId: 16 },  // Nehemiah
+    /* Chapter 14 */
+    { verseName: "Verse 70", verseId: 70, chapterId: 14, bookId: 41 },  // Mark
+    /* Chapter 22 */
+    { verseName: "Verse 70", verseId: 70, chapterId: 22, bookId: 42 },  // Luke
+    /* Chapter 26 */
+    { verseName: "Verse 70", verseId: 70, chapterId: 26, bookId: 40 },  // Matthew
+    /* Chapter 30 */
+    { verseName: "Verse 70", verseId: 70, chapterId: 30, bookId: 19 },  // Psalms
+    /* Chapter 50 */
+    { verseName: "Verse 70", verseId: 70, chapterId: 50, bookId: 1 },  // Genesis
+    /* Chapters 68-150 */
+    { verseName: "Verse 70", verseId: 70, chapterId: 70, bookId: 19 },  // Psalms
+    { verseName: "Verse 70", verseId: 70, chapterId: 78, bookId: 19 },  // Psalms
+    { verseName: "Verse 70", verseId: 70, chapterId: 119, bookId: 19 },  // Psalms   
   ];
 
   // dropdown cascade result
