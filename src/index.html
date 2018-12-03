@@ -1,28 +1,31 @@
-<!doctype html> 
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>MyPersonalWebsite</title>
-    <base href="/">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+  <meta charset="utf-8">
+  <title>MyPersonalWebsite</title>
+  <base href="/">
 
-    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyBxrecCJDn5YCCDQpOa-Vz8lGbdvhLEXhg",
-        authDomain: "personal-website-ec598.firebaseapp.com",
-        databaseURL: "https://personal-website-ec598.firebaseio.com",
-        projectId: "personal-website-ec598",
-        storageBucket: "",
-        messagingSenderId: "781514453612"
-      };
-      firebase.initializeApp(config);
-    </script>
-  </head>
-  <body>
-    <app-root></app-root>
-  </body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBxrecCJDn5YCCDQpOa-Vz8lGbdvhLEXhg",
+      authDomain: "personal-website-ec598.firebaseapp.com",
+      databaseURL: "https://personal-website-ec598.firebaseio.com",
+      projectId: "personal-website-ec598",
+      storageBucket: "personal-website-ec598.appspot.com",
+      messagingSenderId: "781514453612"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+<body>
+  <app-root></app-root>
+</body>
+
 </html>
