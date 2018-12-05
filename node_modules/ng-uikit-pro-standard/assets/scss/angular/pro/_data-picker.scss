@@ -17,6 +17,16 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  .picker__holder {
+    overflow-y: visible;
+    display:none;
+  }
+  &.picker--opened {
+    .picker__holder {
+      display: block;
+    }
+  }
 }
 
 .picker__box .picker__table td.picker__day div.picker__day {

@@ -30,8 +30,8 @@ export declare class MdbDropdownDirective implements CompleterDropdown, OnDestro
     selectCurrent(): void;
     nextRow(): void;
     prevRow(): void;
-    private dropdownScrollTopTo(offset);
-    private dropdownRowTop();
-    private dropdownHeight();
-    private dropdownRowOffsetHeight(row);
+    private dropdownScrollTopTo;
+    private dropdownRowTop;
+    private dropdownHeight;
+    private dropdownRowOffsetHeight;
 }

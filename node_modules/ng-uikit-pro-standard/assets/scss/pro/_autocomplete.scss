@@ -40,3 +40,13 @@ button {
     }
   }
 }
+
+.form-inline {
+  .md-form {
+    .form-control {
+      &.mdb-autocomplete {
+        width: $form-inline-autocomplete-width;
+      }
+    }
+  }
+}

@@ -21,8 +21,8 @@ export declare class PageScrollDirective implements OnChanges, OnDestroy {
     constructor(pageScrollService: PageScrollService, router: Router, document: any);
     ngOnChanges(): void;
     ngOnDestroy(): void;
-    private generatePageScrollInstance();
-    private pushRouterState();
-    private scroll();
+    private generatePageScrollInstance;
+    private pushRouterState;
+    private scroll;
     handleClick(): boolean;
 }

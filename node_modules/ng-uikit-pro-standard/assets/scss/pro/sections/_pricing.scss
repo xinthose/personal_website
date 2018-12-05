@@ -65,6 +65,11 @@
         border-color: $pricing-card-purple-striped-li-border-color;
       }
     }
+    &.darker-striped {
+      li {
+        border-bottom: 1px solid $pricing-card-striped-li-border-bottom-color-darker;
+      }
+    }
   }
   .card-background {
     background-color: $pricing-card-dark-bgc;

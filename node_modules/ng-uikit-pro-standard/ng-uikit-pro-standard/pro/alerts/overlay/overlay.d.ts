@@ -26,18 +26,18 @@ export declare class Overlay {
      * Creates the DOM element for an overlay and appends it to the overlay container.
      * @returns Newly-created pane element
      */
-    private _createPaneElement(positionClass, overlayContainer?);
+    private _createPaneElement;
     /**
      * Create a DomPortalHost into which the overlay content can be loaded.
      * @param pane The DOM element to turn into a portal host.
      * @returns A portal host for the given DOM element.
      */
-    private _createPortalHost(pane);
+    private _createPortalHost;
     /**
      * Creates an OverlayRef for an overlay in the given DOM element.
      * @param pane DOM element for the overlay
      */
-    private _createOverlayRef(pane);
+    private _createOverlayRef;
 }
 /** Providers for Overlay and its related injectables. */
 export declare const OVERLAY_PROVIDERS: (typeof OverlayContainer | typeof Overlay)[];

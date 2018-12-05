@@ -67,6 +67,7 @@ export interface IndividualConfig {
      * default: false
      */
     onActivateTick?: boolean;
+    actionButton?: string;
 }
 export interface ToastIconClasses {
     error?: string;

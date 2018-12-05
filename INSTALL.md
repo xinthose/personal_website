@@ -1,20 +1,31 @@
 # Installation
 
 ## Linux
-- `cd /home/adam/Documents/svn/github/personal_website`
-- `git config user.email "adamdunsmoor@unseen.is"`
+- `cd /home/adam/Documents/svn/github/personal-website`
+- `git config user.email "adamdunsmoor@pm.me"`
 - `git config user.name "xinthose"`
 - `apt-get install nodejs npm build-essential`
 
-## Kendo-UI Module
+## Personal Website
+- `ng new personal-website --style=scss --routing`
+- `ng generate module app-routing --flat --module=app`
+- `ng generate component home bible`
+- Bible in JSON: https://github.com/thiagobodruk/bible
+ 
+## General
 - `npm install -g @angular/cli`
-- `ng new my-first-angular-project --style=scss`
-- `cd my-first-angular-project`
+- `npm install --save rxjs rxjs-compat @angular/http`
+
+## Kendo-UI (Progress)
 - `npm install --save @progress/kendo-angular-buttons @progress/kendo-angular-l10n @angular/animations @progress/kendo-angular-dropdowns`
 - `npm install --save @progress/kendo-theme-default`
-- `npm install`
-- `ng build --prod`
-- `ng serve`
+
+## MDBootstrap Pro 
+- tutorial: https://mdbootstrap.com/angular/5min-quickstart/
+    - click PRO
+- `npm install bootstrap --save`
+- `npm install angular-bootstrap-md --save`
+- `npm install --save chart.js@2.5.0 @types/chart.js easy-pie-chart@2.1.7 hammerjs@2.0.8 screenfull@3.3.0 font-awesome`
 
 ## Firebase Hosting
 - `npm install -g firebase-tools`
@@ -22,23 +33,6 @@
 - `firebase init`
 - `firebase deploy`
 
-## Bootstrap Module
-- `npm install angular-bootstrap-md --save`
-- `npm i -g @angular/cli`
-- `npm i -g typescript`
-- `npm install --save chart.js@2.5.0 font-awesome hammerjs`
-
-## Angular Universal
-- `npm install @angular/platform-server express --save`
-- `npm install ts-loader webpack-node-externals npm-run-all --save-dev`
-- `ng generate module server --flat --module=app`
-- `npm install node-sass --unsafe-perm`
-
-## Personal Website
-- `ng generate module app-routing --flat --module=app`
-- `ng generate component home bible`
-- Bible in JSON: https://github.com/thiagobodruk/bible
- 
 # Commands
 
 ## Angular Commands

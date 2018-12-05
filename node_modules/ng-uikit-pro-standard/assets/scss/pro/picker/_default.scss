@@ -14,16 +14,16 @@
  * When the picker is opened, the input element is "activated".
  */
 .picker__input.picker__input--active {
-  border-color: #0089ec;
+  border-color: $pickerinput-active-border-color;
 }
 /**
  * Note: the root picker element should *NOT* be styled more than what's here.
  */
 .picker {
-  font-size: 16px;
+  font-size: $picker-font-size;
   text-align: center;
-  line-height: 1.2;
-  color: #000000;
+  line-height: $picker-font-line-height;
+  color: $black;
   position: absolute;
   z-index: 10000;
   user-select: none;
@@ -35,7 +35,7 @@
     overflow-y: auto;
     overflow-scrolling: touch;
     position: fixed;
-    transition: background 0.15s ease-out, top 0s 0.15s;
+    @include transition-main($picker-holder-transition-bg, $picker-holder-transition-top);
     backface-visibility: hidden;
   }
   /*!
@@ -61,22 +61,22 @@
   .picker__frame {
     position: absolute;
     margin: 0 auto;
-    min-width: 256px;
-    max-width: 325px;
+    min-width: $picker-frame-min-width;
+    max-width: $picker-frame-max-width;
     //  picker width
-    width: 300px;
-    max-height: 350px;
-    filter: alpha(opacity=0);
+    width: $picker-frame-width;
+    max-height: $picker-frame-max-height;
+    filter: $picker-frame-filter;
     opacity: 0;
-    transition: all 0.15s ease-out;
+    @include transition-main($picker-frame-transition);
     @media (min-height: $pickerframe-wrap-box-breakpoint) {
       overflow: visible;
       top: auto;
-      bottom: -100%;
-      max-height: 80%;
+      bottom: $picker-frame-media-bottom;
+      max-height: $picker-frame-media-max-height;
     }
     @media (min-height: $pickerframe-mb-breakpoint) {
-      margin-bottom: 7.5%;
+      margin-bottom: $picker-frame-media-mb;
     }
     /**
      * The wrapper sets the stage to vertically align the box contents.
@@ -95,16 +95,16 @@
    * The box contains all the picker contents.
    */
   .picker__box {
-    background: #ffffff;
+    background: $white;
     display: table-cell;
     vertical-align: middle;
     @media (min-height: $pickerframe-wrap-box-breakpoint) {
       display: block;
-      border: 1px solid #777777;
-      border-top-color: #898989;
+      border: $picker-box-border solid $picker-box-border-color;
+      border-top-color: $picker-box-border-top-color;
       border-bottom-width: 0;
-      border-radius: 5px 5px 0 0;
-      box-shadow: 0 12px 36px 16px rgba(0, 0, 0, 0.24);
+      border-radius: $picker-box-border-radius;
+      box-shadow: $picker-box-box-shadow;
     }
   }
 }
@@ -117,16 +117,16 @@
   .picker__holder {
     top: 0;
     background: transparent;
-    zoom: 1;
-    background: rgba(0, 0, 0, 0.32);
-    transition: background 0.15s ease-out;
+    zoom: $picker-opened-holder-zoom;
+    background: $picker-opened-holder-bg;
+    @include transition-main($picker-opened-holder-transition);
   }
   .picker__frame {
     top: 0;
-    filter: alpha(opacity=100);
-    opacity: 1;
+    filter: $picker-opened-frame-filter;
+    opacity: $picker-opened-frame-opacity;
     @media (min-height: $pickerframe-pos-breakpoint) {
-      top: 10%;
+      top: $picker-opened-frame-media-top;
       bottom: auto;
     }
   }
@@ -143,5 +143,5 @@
 
 .datepicker.picker__input.picker__input--active,
 .timepicker.picker__input.picker__input--active {
-  border-bottom: 1px solid $blue-lighten-5;
+  border-bottom: $picker-custom-materialize-styles;
 }

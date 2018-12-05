@@ -15,5 +15,5 @@ export declare class OverlayContainer {
      * Create the overlay container element, which is simply a div
      * with the 'cdk-overlay-container' class on the document body.
      */
-    private _createContainer();
+    private _createContainer;
 }

@@ -1,19 +1,24 @@
 .hand-move {
-    .clockpicker-tick {
-        cursor: all-scroll !important;
-    }
+  .clockpicker-tick {
+    cursor: all-scroll !important;
+  }
 }
 
 .clockpicker-button {
-    cursor: pointer;
-    transition: 0.3s;
-    &:hover {
-        background-color: rgba(0,150,136,.25)
-    }
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: rgba(0, 150, 136, .25)
+  }
 }
 
 .darktheme .clockpicker-button {
-    &:hover {
-        background-color: rgba(255, 64, 129, 0.25);
-    }
+  &:hover {
+    background-color: rgba(255, 64, 129, 0.25);
+  }
+}
+
+.timepicker {
+  height: 32px !important;
 }

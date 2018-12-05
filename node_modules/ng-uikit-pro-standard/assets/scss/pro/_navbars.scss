@@ -20,8 +20,6 @@
 }
 
 .double-nav {
-  // z-index: 100;
-  color: $white-base;
   @media (max-width: $medium-screen) {
     padding-top: $navbar-double-small-padding;
     padding-bottom: $navbar-double-small-padding;

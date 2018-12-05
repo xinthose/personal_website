@@ -4,9 +4,14 @@ import { IMyMonth } from '../interfaces/month.interface';
 import { IMyMonthLabels } from '../interfaces/monthLabels.interface';
 import { IMyMarkedDates } from '../interfaces/markedDates.interface';
 import { IMyMarkedDate } from '../interfaces/markedDate.interface';
+import { IMyDateFormat } from '../interfaces/my-date-format.interface';
 export declare class UtilService {
     isDateValid(dateStr: string, dateFormat: string, minYear: number, maxYear: number, disableUntil: IMyDate, disableSince: IMyDate, disableWeekends: boolean, disableDays: Array<IMyDate>, disableDateRanges: Array<IMyDateRange>, monthLabels: IMyMonthLabels, enableDays: Array<IMyDate>): IMyDate;
+    getDateValue(dateStr: string, dateFormat: string, delimeters: Array<string>): Array<IMyDateFormat>;
+    getMonthNumberByMonthName(df: IMyDateFormat, monthLabels: IMyMonthLabels): number;
+    getNumberByValue(df: IMyDateFormat): number;
     getDateFormatSeparator(dateFormat: string): string;
+    getDateFormatDelimeters(dateFormat: string): Array<string> | any;
     isMonthLabelValid(monthLabel: string, monthLabels: IMyMonthLabels): number;
     isYearLabelValid(yearLabel: number, minYear: number, maxYear: number): number;
     parseDatePartNumber(dateFormat: string, dateString: string, datePart: string): number;

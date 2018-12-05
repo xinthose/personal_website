@@ -49,14 +49,14 @@ export declare class ToastService {
      */
     isDuplicate(message: string): boolean;
     /** create a clone of global config and apply individual settings */
-    private applyConfig(override?);
+    private applyConfig;
     /**
      * Find toast object by id
      */
-    private _findToast(toastId);
+    private _findToast;
     /**
      * Creates and attaches toast data to component
      * returns null if toast is duplicate and preventDuplicates == True
      */
-    private _buildNotification(toastType, message, title, config);
+    private _buildNotification;
 }

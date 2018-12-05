@@ -1,5 +1,39 @@
 // CAROUSELS PRO
 .carousel-multi-item {
+  margin-bottom: $carousel-multi-item-mb;
+  .carousel-inner .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+    display: block;
+  }
+  .carousel-indicators li {
+    height: $carousel-multi-item-indicators-li-height;
+    width: $carousel-multi-item-indicators-li-width;
+    max-width: $carousel-multi-item-indicators-li-max-width;
+    background-color: $primary-color;
+    margin-bottom: $carousel-multi-item-indicators-li-mb;
+  }
+  .carousel-indicators .active {
+    height: $carousel-multi-item-indicators-active-height;
+    width: $carousel-multi-item-indicators-active-width;
+    max-width: $carousel-multi-item-indicators-active-max-width;
+    background-color: $primary-color;
+    border-radius: $carousel-multi-item-indicators-active-border-radius;
+  }
+  .controls-top {
+    text-align: center;
+    margin-bottom: $carousel-multi-item-controls-top-mb;
+    .btn-floating {
+      background: $primary-color;
+    }
+  }
+  .carousel-indicators {
+    margin-bottom: $carousel-multi-item-indicators-mb;
+  }
+  .card-cascade.narrower {
+    margin-top: $carousel-multi-item-card-cascade-narrower-mt;
+    margin-bottom: $carousel-multi-item-card-cascade-narrower-mb;
+  }
   @media (min-width: 768px) {
     .col-md-4 {
       float: left;
@@ -7,91 +41,48 @@
       max-width: 100%;
     }
   }
-
-  .carousel-item.active,
-  .carousel-item-next,
-  .carousel-item-prev {
-    display: block;
-  }
-
-  margin-bottom: 100px;
-  .carousel-indicators li {
-    height: 20px;
-    width: 20px;
-    max-width: 20px;
-    background-color: $primary-color;
-    margin-bottom: -60px;
-  }
-  .carousel-indicators .active {
-    height: 25px;
-    width: 25px;
-    max-width: 25px;
-    background-color: $primary-color;
-    border-radius: 50%;
-  }
-  .controls-top {
-    text-align: center;
-    margin-bottom: 30px;
-    .btn-floating {
-      background: $primary-color;
-    }
-  }
-  .carousel-indicators {
-    margin-bottom: -2em;
-  }
-  .card {
-    margin: 1px;
-  }
-  .card-cascade.narrower {
-    margin-top: 20px;
-    margin-bottom: 5px;
-  }
 }
 
 @media only screen and (max-width: $medium-screen) {
   .carousel-multi-item {
     .carousel-indicators li {
-      margin-bottom: -30px;
+      margin-bottom: $carousel-multi-item-medium-screen-mb;
     }
   }
 }
 
-//Carousel with thumbnails
+// Carousel with thumbnails
 .carousel-thumbnails {
-  margin-bottom: 80px;
+  margin-bottom: $carousel-thumbnails-mb;
   .carousel-indicators {
-    margin-bottom: -75px;
+    margin-bottom: $carousel-thumbnails-indicators-mb;
     position: absolute;
     li {
       height: auto;
-      max-width: 100px;
-      width: 100px;
+      width: $carousel-thumbnails-indicators-li-width;
+      max-width: $carousel-thumbnails-indicators-li-max-width;
       border: none;
     }
     .active {
+      @extend .white;
       height: auto;
       width: auto;
-      @extend .white;
-      opacity: 0.5;
+      opacity: $carousel-thumbnails-indicators-active-opacity;
     }
     img {
-      max-width: 100px;
-      height: 50px;
+      max-width: $carousel-thumbnails-indicators-li-max-width;
+      height: auto;
       overflow: hidden;
       display: block;
     }
   }
 }
 
-@media only screen and (max-width: $small-screen) {
+@media only screen and (max-width: 540px) {
   .carousel-thumbnails {
-    margin-bottom: 60px;
+    margin-bottom: $carousel-thumbnails-sm-mb;
     .carousel-indicators {
-      margin-bottom: -60px;
-      img {
-        max-width: 50px;
-        height: 25px;
-      }
+      margin-bottom: $carousel-thumbnails-indicators-sm-mb;
     }
   }
 }

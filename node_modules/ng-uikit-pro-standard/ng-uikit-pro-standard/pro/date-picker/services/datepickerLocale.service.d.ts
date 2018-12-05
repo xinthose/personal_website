@@ -1,5 +1,5 @@
-import { IMyOptions } from '../interfaces/index';
+import { IMyLocales, IMyOptions } from '../interfaces/index';
 export declare class LocaleService {
-    private locales;
+    locales: IMyLocales;
     getLocaleOptions(locale: string): IMyOptions;
 }

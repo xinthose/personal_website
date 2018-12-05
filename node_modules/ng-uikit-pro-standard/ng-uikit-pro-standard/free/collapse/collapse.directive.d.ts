@@ -1,5 +1,6 @@
 import { ElementRef, EventEmitter, OnInit, Renderer2, AfterViewInit } from '@angular/core';
 export declare class CollapseDirective implements OnInit, AfterViewInit {
+    private document;
     showBsCollapse: EventEmitter<any>;
     shownBsCollapse: EventEmitter<any>;
     hideBsCollapse: EventEmitter<any>;
@@ -18,7 +19,8 @@ export declare class CollapseDirective implements OnInit, AfterViewInit {
     maxHeight: number;
     protected _el: ElementRef;
     protected _renderer: Renderer2;
-    constructor(_el: ElementRef, _renderer: Renderer2);
+    isBrowser: any;
+    constructor(_el: ElementRef, _renderer: Renderer2, document: any, platformId: string);
     ngOnInit(): void;
     ngAfterViewInit(): void;
     resize(): void;

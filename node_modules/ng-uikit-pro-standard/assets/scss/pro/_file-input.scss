@@ -9,13 +9,23 @@
   input {
     &.file-path {
       width: 100%;
-      height: $file-input-path;
+      // height: $file-input-path;
+      height: 36px;
     }
+  }
+  .btn {
+    float: left;
   }
   span {
     cursor: pointer;
   }
   input[type=file] {
+
+    // Needed to override webkit button
+    &::-webkit-file-upload-button {
+      display: none;
+    }
+
     position: absolute;
     top: 0;
     right: 0;
@@ -29,3 +39,5 @@
     filter: $file-input-filter;
   }
 }
+
+

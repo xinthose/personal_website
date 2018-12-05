@@ -1,4 +1,4 @@
-import { ElementRef, OnDestroy, OnInit, Renderer } from '@angular/core';
+import { ElementRef, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { ModalOptions } from './modal.options';
 export declare class ModalContainerComponent implements OnInit, OnDestroy {
     private _renderer;
@@ -14,7 +14,7 @@ export declare class ModalContainerComponent implements OnInit, OnDestroy {
     private isModalHiding;
     onClick(event: any): void;
     onEsc(): void;
-    constructor(options: ModalOptions, _element: ElementRef, _renderer: Renderer);
+    constructor(options: ModalOptions, _element: ElementRef, _renderer: Renderer2);
     ngOnInit(): void;
     ngOnDestroy(): void;
     hide(): void;

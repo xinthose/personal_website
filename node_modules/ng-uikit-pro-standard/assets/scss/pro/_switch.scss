@@ -1,54 +1,61 @@
 // Switch
 .switch label {
   cursor: pointer;
+
   input[type=checkbox] {
     opacity: 0;
-    width: 0;
-    height: 0;
-    &:checked + .lever {
+    @include switch-width-height(0, 0);
+
+    &:checked+.lever {
       background-color: map-get($switch-colors, "checked-lever-bg");
     }
-    &:checked + .lever:after {
+
+    &:checked+.lever:after {
       background-color: map-get($switch-colors, "bg");
-      left: 24px;
+      left: $switch-input-checkbox-checked-lever-after-left;
     }
-    &:checked:not(:disabled) ~ .lever:active:after {
-      box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px transparentize(map-get($switch-colors, "bg"), .9);
+
+    &:checked:not(:disabled)~.lever:active:after {
+      @include box-shadows($switch-lever-after-box-shadow-darker, $switch-lever-after-box-shadow-transp);
     }
-    &:not(:disabled) ~ .lever:active:after {
-      box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px rgba(0, 0, 0, .08);
+
+    &:not(:disabled)~.lever:active:after {
+      @include box-shadows($switch-lever-after-box-shadow-darker, $switch-lever-after-box-shadow-lighter);
     }
-    &:disabled + .lever {
+
+    &:disabled+.lever {
       cursor: default;
     }
-    &:disabled + .lever:after, &:disabled:checked + .lever:after {
+
+    &:disabled+.lever:after,
+    &:disabled:checked+.lever:after {
       background-color: $input-disabled-solid-color;
     }
   }
+
   .lever {
     content: "";
     display: inline-block;
     position: relative;
-    width: 40px;
-    height: 15px;
     background-color: map-get($switch-colors, "unchecked-lever-bg");
-    border-radius: 15px;
-    margin-right: 10px;
-    transition: background 0.3s ease;
+    border-radius: $switch-lever-border-radius-small;
+    margin-right: $switch-lever-mr;
     vertical-align: middle;
-    margin: 0 16px;
+    margin: $switch-lever-margin;
+    @include switch-width-height(2.5rem, 0.9375rem);
+    @include transition-main($switch-lever-after-transition-bg);
+
     &:after {
       content: "";
       position: absolute;
       display: inline-block;
-      width: 21px;
-      height: 21px;
       background-color: map-get($switch-colors, "unchecked-bg");
-      border-radius: 21px;
-      box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4);
-      left: -5px;
-      top: -3px;
-      transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease;
+      border-radius: $switch-lever-after-border-radius-high;
+      left: $switch-lever-after-left;
+      top: $switch-lever-after-top;
+      @include box-shadows($switch-lever-after-box-shadow-darker);
+      @include switch-width-height(1.3125rem, 1.3125rem);
+      @include transition-main($switch-lever-after-transition-left, $switch-lever-after-transition-bg, $switch-lever-after-transition-box);
     }
   }
 }

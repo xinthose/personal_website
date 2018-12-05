@@ -1,4 +1,5 @@
 import { NgbDateStruct } from './ngb-date-struct';
+export declare function NGB_DATEPICKER_PARSER_FORMATTER_FACTORY(): NgbDateISOParserFormatter;
 /**
  * Abstract type serving as a DI token for the service parsing and formatting dates for the NgbInputDatepicker
  * directive. A default implementation using the ISO 8601 format is provided, but you can provide another implementation

@@ -1,6 +1,7 @@
 import { OnInit } from '@angular/core';
 export declare class SimpleChartComponent implements OnInit {
-    percent: any;
+    customText: string;
+    percent: number;
     barColor: string;
     trackColor: string;
     scaleColor: string;

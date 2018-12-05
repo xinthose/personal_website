@@ -18,7 +18,7 @@ export declare class MaterialChipsComponent {
     registerOnTouched(fn: any): void;
     constructor();
     removeValue(value: string): void;
-    addValue(value: string): void;
+    addValue(value: string, event: any): void;
     writeValue(value: string[]): void;
     onFocus(): void;
     focusOutFunction(): void;

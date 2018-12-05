@@ -21,6 +21,6 @@ export declare class MdbInputCompleteDirective {
     onBlur(): any;
     onfocus(): void;
     searchStr: string;
-    private handleSelection();
-    private restoreSearchValue();
+    private handleSelection;
+    private restoreSearchValue;
 }

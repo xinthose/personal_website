@@ -7,4 +7,7 @@ export declare class NgbCarouselConfig {
     interval: number;
     wrap: boolean;
     keyboard: boolean;
+    pauseOnHover: boolean;
+    showNavigationArrows: boolean;
+    showNavigationIndicators: boolean;
 }

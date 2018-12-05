@@ -34,6 +34,7 @@ export declare class ToastComponent implements OnDestroy {
      * tells toastrService to remove this toast after animation time
      */
     remove(): void;
+    onActionClick(): void;
     tapToast(): void;
     stickAround(): void;
     delayedHideToast(): void;

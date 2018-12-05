@@ -1,24 +1,24 @@
 // Progress
-.progress {
+.md-progress {
   box-shadow: none;
   position: relative;
   display: block;
   width: 100%;
-  height: 4px;
+  height: $progress-height-mdb;
   overflow: hidden;
-  margin-bottom: 1rem;
-  background-color: #eee;
+  margin-bottom: $progress-margin-bottom;
+  background-color: $grey-lighten-3;
   .progress-bar {
     box-shadow: none;
-    height: 4px;
+    height: $progress-bar-height;
     border-radius: 0;
     background-color: $primary-color-dark;
   }
   .progress-bar-animated {
-    transition: width 2s ease-in-out;
+    transition: $progress-bar-animated-transition;
   }
   .indeterminate {
-    background-color: #90caf9;
+    background-color: $blue-lighten-3;
     &:before {
       content: "";
       position: absolute;
@@ -28,7 +28,7 @@
       bottom: 0;
       will-change: left, right;
       // Custom bezier
-      animation: indeterminate 2.1s cubic-bezier(0.650, 0.815, 0.735, 0.395) infinite;
+      animation: $progress-indeterminate-before-animation;
     }
     &:after {
       content: "";
@@ -39,8 +39,8 @@
       bottom: 0;
       will-change: left, right;
       // Custom bezier
-      animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite;
-      animation-delay: 1.15s;
+      animation: $progress-indeterminate-after-animation;
+      animation-delay: $progress-indeterminate-after-animation-delay;
     }
   }
   @include keyframes(indeterminate) {
@@ -116,23 +116,23 @@
 .preloader-wrapper {
   display: inline-block;
   position: relative;
-  width: 48px;
-  height: 48px;
+  width: $progress-preloader-width;
+  height: $progress-preloader-height;
   font-size: 0;
   &.small {
-    width: 36px;
-    height: 36px;
+    width: $progress-preloader-small-width;
+    height: $progress-preloader-small-height;
   }
   &.big {
-    width: 64px;
-    height: 64px;
+    width: $progress-preloader-big-width;
+    height: $progress-preloader-big-height;
   }
   &.active {
     /* duration: 360 * ARCTIME / (ARCSTARTROT + (360-ARCSIZE)) */
-    animation: container-rotate 1568ms linear infinite;
+    animation: $progress-preloader-active-animation;
   }
   &.crazy{
-    animation-duration: 333ms;
+    animation-duration: $progress-preloader-crazy-animation;
   }
   .spinner-layer {
     position: absolute;
@@ -146,33 +146,33 @@
     .gap-patch {
       position: absolute;
       top: 0;
-      left: 45%;
-      width: 10%;
+      left: $progress-spinner-gap-left;
+      width: $progress-spinner-gap-width;
       height: 100%;
       overflow: hidden;
       border-color: inherit;
       .circle {
-        width: 1000%;
-        left: -450%;
+        width: $progress-spinner-gap-circle-width;
+        left: $progress-spinner-gap-circle-left;
       }
     }
 
     .circle-clipper {
       display: inline-block;
       position: relative;
-      width: 50%;
+      width: $progress-spinner-circle-clipper-width;
       height: 100%;
       overflow: hidden;
       border-color: inherit;
       .circle {
-        width: 200%;
+        width: $progress-spinner-circle-clipper-circle-width;
         height: 100%;
-        border-width: 3px;
+        border-width: $progress-spinner-circle-clipper-circle-border-width;
         /* STROKEWIDTH */
         border-style: solid;
         border-color: inherit;
         border-bottom-color: transparent !important;
-        border-radius: 50%;
+        border-radius: $progress-spinner-circle-clipper-circle-border-radius;
         animation: none;
         position: absolute;
         top: 0;
@@ -182,19 +182,19 @@
       &.left .circle {
         left: 0;
         border-right-color: transparent !important;
-        transform: rotate(129deg);
+        transform: $progress-spinner-circle-clipper-left-circle-transform;
       }
       &.right .circle {
-        left: -100%;
+        left: $progress-spinner-circle-clipper-right-circle-left;
         border-left-color: transparent !important;
-        transform: rotate(-129deg);
+        transform: $progress-spinner-circle-clipper-right-circle-transform;
       }
     }
 
   }
   .spinner-blue,
   .spinner-blue-only {
-    border-color: #4285f4;
+    border-color: $primary-color;
   }
 
   .spinner-red,
@@ -213,12 +213,11 @@
   }
 }
 
-@keyframes container-rotate {
-  to {
-    transform: rotate(360deg)
+@include keyframes(container-rotate){
+  to{
+    transform: rotate(360deg);
   }
 }
-
 
 /**
  * IMPORTANT NOTE ABOUT CSS ANIMATION PROPERTIES (keanulee):
@@ -238,19 +237,19 @@
   .spinner-layer {
     &.spinner-blue {
       /* durations: 4 * ARCTIME */
-      animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both, blue-fade-in-out 5332ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both;
+      @include progress-animation-default($progress-active-spinner-main, $progress-active-spinner-blue);
     }
     &.spinner-red {
       /* durations: 4 * ARCTIME */
-      animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both, red-fade-in-out 5332ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both;
+      @include progress-animation-default($progress-active-spinner-main, $progress-active-spinner-red);
     }
     &.spinner-yellow {
       /* durations: 4 * ARCTIME */
-      animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both, yellow-fade-in-out 5332ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both;
+      @include progress-animation-default($progress-active-spinner-main, $progress-active-spinner-yellow);
     }
     &.spinner-green {
       /* durations: 4 * ARCTIME */
-      animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both, green-fade-in-out 5332ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both;
+      @include progress-animation-default($progress-active-spinner-main, $progress-active-spinner-green);
     }
     &.spinner-blue-only,
     &.spinner-red-only,
@@ -259,20 +258,20 @@
     &.spinner-primary-color-only {
       /* durations: 4 * ARCTIME */
       opacity: 1;
-      animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both;
+      @include progress-animation-default($progress-active-spinner-main);
     }
   }
   .circle-clipper.left .circle {
     /* duration: ARCTIME */
-    animation: left-spin 1333ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both;
+    animation: $progress-active-circle-left-spin;
   }
   .circle-clipper.right .circle {
     /* duration: ARCTIME */
-    animation: right-spin 1333ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both;
+    animation: $progress-active-circle-right-spin;
   }
 }
 
-@keyframes fill-unfill-rotate {
+@include keyframes(fill-unfill-rotate){
   12.5% {
     transform: rotate(135deg);
   }
@@ -307,7 +306,7 @@
   /* 4   * ARCSIZE */
 }
 
-@keyframes blue-fade-in-out {
+@include keyframes(blue-fade-in-out) {
   from {
     opacity: 1;
   }
@@ -328,7 +327,7 @@
   }
 }
 
-@keyframes red-fade-in-out {
+@include keyframes(red-fade-in-out) {
   from {
     opacity: 0;
   }
@@ -346,7 +345,7 @@
   }
 }
 
-@keyframes yellow-fade-in-out {
+@include keyframes (yellow-fade-in-out) {
   from {
     opacity: 0;
   }
@@ -364,7 +363,7 @@
   }
 }
 
-@keyframes green-fade-in-out {
+@include keyframes (green-fade-in-out) {
   from {
     opacity: 0;
   }
@@ -382,7 +381,7 @@
   }
 }
 
-@keyframes left-spin {
+@include keyframes(left-spin) {
   from {
     transform: rotate(130deg);
   }
@@ -394,7 +393,7 @@
   }
 }
 
-@keyframes right-spin {
+@include keyframes(right-spin) {
   from {
     transform: rotate(-130deg);
   }
@@ -408,14 +407,14 @@
 
 #spinnerContainer.cooldown {
   /* duration: SHRINK_TIME */
-  animation: container-rotate 1568ms linear infinite, fade-out 400ms cubic-bezier(0.4, 0.0, 0.2, 1);
+  @include progress-animation-default($progress-spinner-container-animation-rotate, $progress-spinner-container-animation-fade);
 }
 
-@keyframes fade-out {
-  from {
+@include keyframes(fade-out){
+  from{
     opacity: 1;
   }
-  to {
+  to{
     opacity: 0;
   }
 }
@@ -426,7 +425,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #000;
+  background-color: $black;
   /* change if the mask should have another color then white */
   z-index: 9998;
   /* makes sure it stays on top */

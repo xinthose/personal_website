@@ -24,31 +24,34 @@ ng2-completer {
   overflow-x: hidden;
   .completer-row {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 12px 15px;
     font-size: .875rem;
     .completer-description {
       font-size: 14px;
     }
     .completer-image-holder {
-      float: left;
-      width: 10%;
         .completer-image-default {
-          width: 16px; 
+          width: 16px;
           height: 16px;
       }
-    }
-    .completer-item-text-image {
-      float: right;
-      width: 90%;
     }
   }
   .completer-no-results,
   .completer-searching {
     padding: 12px 15px;
     font-size: .875rem;
-  }  
+  }
 }
 
 .completer-selected-row {
   background-color: #eee;
+}
+
+.completer-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
 }

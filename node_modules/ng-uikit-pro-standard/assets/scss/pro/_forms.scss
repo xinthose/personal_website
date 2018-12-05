@@ -1,21 +1,4 @@
 // FORMS PRO
-// hide default radio / checkbox
-%hide-radio-checkbox {
-  position: absolute;
-  left: -9999px;
-  visibility: hidden;
-}
-
-%base-radio-checkbox-label {
-  position: relative;
-  padding-left: 35px;
-  cursor: pointer;
-  display: inline-block;
-  height: 25px;
-  line-height: 25px;
-  font-size: 1rem;
-}
-
 .form-header {
   box-shadow: $z-depth-1-half;
   color: $form-header-color;

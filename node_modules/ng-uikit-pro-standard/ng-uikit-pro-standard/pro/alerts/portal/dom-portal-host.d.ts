@@ -17,5 +17,5 @@ export declare class DomPortalHost extends BasePortalHost {
      */
     attachComponentPortal<T>(portal: ComponentPortal<T>, newestOnTop: boolean): ComponentRef<T>;
     /** Gets the root HTMLElement for an instantiated component. */
-    private _getComponentRootNode(componentRef);
+    private _getComponentRootNode;
 }

@@ -11,17 +11,19 @@
   // Cascading cards
   &.card-cascade {
     .view {
-      box-shadow: $z-depth-1-half;
-      border-radius: $md-card-border-radius;
-      &.gradient-card-header {
-        @extend .white-text;
-        padding: $card-cascade-header-gradient-py $card-cascade-header-gradient-px;
-        text-align: center;
-        .card-header-title {
-          font-weight: 500;
-        }
-        .btn-floating {
-          background-color: $card-cascade-header-gradient-btn-floating-bgc;
+      &.view-cascade {
+        box-shadow: $z-depth-1-half;
+        border-radius: $md-card-border-radius;
+        &.gradient-card-header {
+          @extend .white-text;
+          padding: $card-cascade-header-gradient-py $card-cascade-header-gradient-px;
+          text-align: center;
+          .card-header-title {
+            font-weight: 500;
+          }
+          .btn-floating {
+            background-color: $card-cascade-header-gradient-btn-floating-bgc;
+          }
         }
       }
     }
@@ -29,31 +31,39 @@
       box-shadow: none;
       background-color: transparent;
       .view {
-        z-index: 2;
+        &.view-cascade {
+          z-index: 2;
+        }
       }
       .card-body {
-        box-shadow: $z-depth-1;
-        margin-left: $card-cascade-wider-card-body-mx;
-        margin-right: $card-cascade-wider-card-body-mx;
-        background: $card-cascade-wider-card-body-bg;
-        z-index: 1;
-        border-radius: 0 0 $md-card-border-radius $md-card-border-radius;
+        &.card-body-cascade {
+          box-shadow: $z-depth-1;
+          margin-left: $card-cascade-wider-card-body-mx;
+          margin-right: $card-cascade-wider-card-body-mx;
+          background: $card-cascade-wider-card-body-bg;
+          z-index: 1;
+          border-radius: 0 0 $md-card-border-radius $md-card-border-radius;
+        }
       }
       &.reverse {
         .card-body {
-          z-index: 3;
-          margin-top: $card-cascade-reverse-mt;
-          border-radius: $md-card-border-radius;
-          box-shadow: $z-depth-1-half;
+          &.card-body-cascade {
+            z-index: 3;
+            margin-top: $card-cascade-reverse-mt;
+            border-radius: $md-card-border-radius;
+            box-shadow: $z-depth-1-half;
+          }
         }
       }
     }
     &.narrower {
       margin-top: $card-cascade-narrower-mt;
       .view {
-        margin-left: $card-cascade-narrowe-view-mx;
-        margin-right: $card-cascade-narrowe-view-mx;
-        margin-top: $card-cascade-narrower-view-mt;
+        &.view-cascade {
+          margin-left: $card-cascade-narrowe-view-mx;
+          margin-right: $card-cascade-narrowe-view-mx;
+          margin-top: $card-cascade-narrower-view-mt;
+        }
       }
     }
     &.panel-cascade {

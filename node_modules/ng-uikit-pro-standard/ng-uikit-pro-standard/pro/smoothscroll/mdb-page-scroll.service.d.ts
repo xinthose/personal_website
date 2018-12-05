@@ -3,7 +3,7 @@ export declare class PageScrollService {
     private static instanceCounter;
     private runningInstances;
     private onInterrupted;
-    private stopInternal(interrupted, pageScrollInstance);
+    private stopInternal;
     /**
      * Start a scroll animation. All properties of the animation are stored in the given {@link PageScrollInstance} object.
      *

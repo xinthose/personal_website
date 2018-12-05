@@ -20,20 +20,20 @@ export declare class OptionList {
     /** Filter. **/
     readonly filtered: Array<Option>;
     filter(term: string): boolean;
-    private resetFilter();
+    private resetFilter;
     /** Highlight. **/
     readonly highlightedOption: Option;
     highlight(): void;
     highlightOption(option: Option): void;
     highlightNextOption(): void;
     highlightPreviousOption(): void;
-    private clearHighlightedOption();
-    private getHighlightedIndexFromList(options);
+    private clearHighlightedOption;
+    private getHighlightedIndexFromList;
     getHighlightedIndex(): number;
     /** Util. **/
     readonly hasShown: boolean;
     hasSelected(): boolean;
     hasShownSelected(): boolean;
-    private getFirstShown();
-    private getFirstShownSelected();
+    private getFirstShown;
+    private getFirstShownSelected;
 }

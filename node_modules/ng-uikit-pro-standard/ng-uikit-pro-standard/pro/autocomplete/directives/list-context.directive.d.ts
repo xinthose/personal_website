@@ -34,8 +34,8 @@ export declare class MdbListDirective implements OnInit, CompleterList {
     clear(): void;
     open(): void;
     isOpen(open: boolean): void;
-    private _clear();
-    private searchTimerComplete(term);
-    private refreshTemplate();
-    private getBestMatchIndex();
+    private _clear;
+    private searchTimerComplete;
+    private refreshTemplate;
+    private getBestMatchIndex;
 }

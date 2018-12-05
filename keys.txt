@@ -1,0 +1,1 @@
+sudo npm install git+https://oauth2:kU7br9KsnRvzwDYr6pXc@git.mdbootstrap.com/mdb/angular/ng-uikit-pro-standard.git --save
