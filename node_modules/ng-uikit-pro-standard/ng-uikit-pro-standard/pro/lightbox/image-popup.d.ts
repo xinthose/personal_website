@@ -9,8 +9,9 @@ export declare class ImageModalComponent implements OnInit {
     currentImageIndex: number;
     loading: boolean;
     showRepeat: boolean;
-    isMobile: boolean;
     openModalWindow: any;
+    caption: string;
+    isMobile: any;
     clicked: any;
     isBrowser: any;
     zoomed: string;

@@ -4,6 +4,7 @@ export declare class Option {
     disabled: boolean;
     highlighted: boolean;
     selected: boolean;
+    hovered?: boolean;
     shown: boolean;
     group: boolean;
     constructor(option: IOption);

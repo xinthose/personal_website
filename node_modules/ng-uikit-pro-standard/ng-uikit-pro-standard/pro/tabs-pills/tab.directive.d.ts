@@ -9,6 +9,7 @@ export declare class TabDirective implements OnInit, OnDestroy {
     removable: boolean;
     /** if set, will be added to the tab's class atribute */
     customClass: string;
+    tabOrder: number;
     /** tab active state toggle */
     active: boolean;
     /** fired when tab became active, $event:Tab equals to selected instance of Tab component */

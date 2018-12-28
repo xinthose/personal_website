@@ -41,7 +41,7 @@ export declare class CompleterComponent implements OnInit, ControlValueAccessor,
     keyup: EventEmitter<any>;
     keydown: EventEmitter<any>;
     completer: MdbCompleterDirective;
-    mdbInput: ElementRef;
+    mdbCompleterInput: ElementRef;
     labelEl: ElementRef;
     focused: boolean;
     state: string;

@@ -1,4 +1,4 @@
-import { OnChanges, OnInit, EventEmitter, ExistingProvider, ElementRef, Renderer2, AfterViewInit, SimpleChanges } from '@angular/core';
+import { OnChanges, OnInit, EventEmitter, ExistingProvider, ElementRef, Renderer2, AfterViewInit, SimpleChanges, ChangeDetectorRef } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { SelectDropdownComponent } from './select-dropdown.component';
 import { IOption } from './option-interface';
@@ -9,12 +9,14 @@ export declare class SelectComponent implements ControlValueAccessor, OnChanges,
     el: ElementRef;
     renderer: Renderer2;
     private document;
+    private cdRef;
     options: Array<IOption>;
     customClass: string;
     allowClear: boolean;
     disabled: boolean;
     highlightColor: string;
     highlightTextColor: string;
+    highlightFirst: boolean;
     multiple: boolean;
     noFilter: number;
     notFoundMsg: string;
@@ -24,16 +26,17 @@ export declare class SelectComponent implements ControlValueAccessor, OnChanges,
     filterEnabled: boolean;
     visibleOptions: number;
     tabindex: number;
+    enableSelectAll: boolean;
     opened: EventEmitter<any>;
     closed: EventEmitter<any>;
     selected: EventEmitter<IOption>;
     deselected: EventEmitter<IOption | IOption[]>;
     noOptionsFound: EventEmitter<string>;
     changed: EventEmitter<{}>;
-    selectionSpan: any;
+    selectionSpan: ElementRef;
     dropdown: SelectDropdownComponent;
-    filterInput: any;
-    clearButton: any;
+    filterInput: ElementRef;
+    clearButton: ElementRef;
     KEYS: any;
     _value: Array<any>;
     optionList: OptionList;
@@ -51,6 +54,7 @@ export declare class SelectComponent implements ControlValueAccessor, OnChanges,
     clearClicked: boolean;
     selectContainerClicked: boolean;
     optionHeight: number;
+    filterHeight: number;
     dropdownHeight: number;
     dropdownMaxHeight: number;
     width: number;
@@ -61,15 +65,15 @@ export declare class SelectComponent implements ControlValueAccessor, OnChanges,
     onTouched: () => void;
     /** Event handlers. **/
     closeSelect($event: any): void;
-    constructor(el: ElementRef, renderer: Renderer2, document: any, platformId: string);
+    constructor(el: ElementRef, renderer: Renderer2, document: any, platformId: string, cdRef: ChangeDetectorRef);
     ngOnInit(): void;
+    updateFilterHeight(): void;
     updateDropdownHeight(): void;
     ngAfterViewInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     setArrowUpIcon(): void;
     setArrowDownIcon(): void;
     isChild(elemnt: any): boolean;
-    onWindowClick(): void;
     onWindowResize(): void;
     onSelectContainerClick(event: any): void;
     onSelectContainerFocus(): void;
@@ -111,6 +115,7 @@ export declare class SelectComponent implements ControlValueAccessor, OnChanges,
     toggleSelectOption(option: Option): void;
     selectHighlightedOption(): void;
     deselectLast(): void;
+    onSelectAll(isSelected: boolean): void;
     /** Filter. **/
     clearFilterInput(): void;
     setMultipleFilterInput(value: string): void;

@@ -257,6 +257,11 @@ select {
       &.active, a, span:hover {
         background-color: $color !important;
       }
+      &.disabled {
+        &.active {
+          background-color: transparent !important;
+        }
+      }
     }
     .search-wrap input:focus {
       border-bottom: 1px solid $color;

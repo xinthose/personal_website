@@ -18,7 +18,7 @@ ng2-completer {
   width: 100%;
   background: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,.25);
-  z-index: 100;
+  z-index: 110;
   max-height: 210px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -54,4 +54,24 @@ ng2-completer {
   width: 32px;
   height: 32px;
   border-radius: 50%;
+}
+
+.validate-success.ng-valid .completer-input {
+  border-bottom: 1px solid $input-success-color !important;
+box-shadow: 0 1px 0 0 $input-success-color !important;
+}
+
+.validate-success.ng-valid .completer-holder label {
+color: $input-success-color !important;
+}
+
+.validate-error.ng-invalid.ng-touched .completer-input,
+.form-submitted .validate-error.ng-invalid .completer-input {
+border-bottom: 1px solid $input-error-color !important;
+box-shadow: 0 1px 0 0 $input-error-color !important;
+}
+
+.validate-error.ng-invalid.ng-touched .completer-holder label,
+.form-submitted .validate-error.ng-invalid .completer-holder label {
+color: $input-error-color !important;
 }

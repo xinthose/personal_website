@@ -1,5 +1,5 @@
 import { IMyLocales } from './interfaces/locale.interface';
-import { EventEmitter, OnChanges, SimpleChanges, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
+import { EventEmitter, OnChanges, SimpleChanges, ElementRef, Renderer2, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { IMyDate, IMyMonth, IMyWeek, IMyInputFieldChanged, IMyCalendarViewChanged, IMyInputFocusBlur } from './interfaces/index';
 import { LocaleService } from './services/datepickerLocale.service';
@@ -10,6 +10,7 @@ export declare class MDBDatePickerComponent implements OnChanges, ControlValueAc
     private renderer;
     private localeService;
     private utilService;
+    private cdRef;
     tabIndex: any;
     options: any;
     locale: string;
@@ -61,7 +62,7 @@ export declare class MDBDatePickerComponent implements OnChanges, ControlValueAc
     modalHeightBefore: any;
     isMobile: any;
     isBrowser: any;
-    constructor(elem: ElementRef, renderer: Renderer2, localeService: LocaleService, utilService: UtilService, platformId: string);
+    constructor(elem: ElementRef, renderer: Renderer2, localeService: LocaleService, utilService: UtilService, cdRef: ChangeDetectorRef, platformId: string);
     ngAfterViewInit(): void;
     ChangeZIndex(): void;
     onChangeCb: (_: any) => void;

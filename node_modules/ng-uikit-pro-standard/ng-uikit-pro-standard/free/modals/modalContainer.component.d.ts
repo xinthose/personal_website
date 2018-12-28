@@ -2,9 +2,10 @@ import { ElementRef, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { ModalOptions } from './modal.options';
 export declare class ModalContainerComponent implements OnInit, OnDestroy {
     private _renderer;
+    modalClass: string;
     tabindex: number;
     role: string;
-    modla: boolean;
+    modal: boolean;
     private mdbModalService;
     config: ModalOptions;
     isShown: boolean;
@@ -16,6 +17,7 @@ export declare class ModalContainerComponent implements OnInit, OnDestroy {
     onEsc(): void;
     constructor(options: ModalOptions, _element: ElementRef, _renderer: Renderer2);
     ngOnInit(): void;
+    updateContainerClass(): void;
     ngOnDestroy(): void;
     hide(): void;
 }

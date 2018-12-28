@@ -1,7 +1,9 @@
-import { TemplateRef, ViewContainerRef, EventEmitter, Renderer2, ElementRef, OnInit, OnDestroy, OnChanges, SimpleChanges } from '@angular/core';
+import { ElementRef, EventEmitter, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges, TemplateRef, ViewContainerRef } from '@angular/core';
 import { TooltipConfig } from './tooltip.service';
 import { ComponentLoaderFactory } from '../utils/component-loader/component-loader.factory';
 export declare class TooltipDirective implements OnInit, OnDestroy, OnChanges {
+    private _elementRef;
+    private platformId;
     /**
      * Content to be displayed as tooltip.
      */
@@ -41,12 +43,16 @@ export declare class TooltipDirective implements OnInit, OnDestroy, OnChanges {
     onHidden: EventEmitter<any>;
     hidden: EventEmitter<any>;
     delay: number;
+    customHeight: string;
     fadeDuration: number;
     protected _delayTimeoutId: any;
+    isBrowser: any;
     private _tooltip;
-    constructor(_viewContainerRef: ViewContainerRef, _renderer: Renderer2, _elementRef: ElementRef, cis: ComponentLoaderFactory, config: TooltipConfig);
+    constructor(_viewContainerRef: ViewContainerRef, _renderer: Renderer2, _elementRef: ElementRef, cis: ComponentLoaderFactory, config: TooltipConfig, platformId: string);
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
+    changePositionIfNotFit(): void;
+    getBottomOffset(): number;
     /**
      * Toggles an element’s tooltip. This is considered a “manual” triggering of
      * the tooltip.

@@ -10,6 +10,6 @@ export { RemoteData } from './services/remote-data.service';
 export { CompleterBaseData } from './services/base-data.service';
 export { MdbCompleterDirective } from './directives/completer.directive';
 export { MdbDropdownDirective } from './directives/dropdown.directive';
-export { MdbInputCompleteDirective } from './directives/input.directive';
+export { MdbInputCompleteDirective } from './directives/completer-input.directive';
 export { MdbListDirective } from './directives/list-context.directive';
 export { MdbRowDirective } from './directives/row.directive';

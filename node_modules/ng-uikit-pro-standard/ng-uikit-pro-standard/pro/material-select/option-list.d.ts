@@ -4,6 +4,8 @@ export declare class OptionList {
     private _options;
     private _highlightedOption;
     private _hasShown;
+    private _highlightFirst;
+    highlightFirst: boolean;
     setToNullValue: any;
     static equalValues(v0: Array<string>, v1: Array<string>): boolean;
     constructor(options: Array<IOption>);

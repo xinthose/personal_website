@@ -1,4 +1,5 @@
 import { ModuleWithProviders } from '@angular/core';
+export { MdbErrorDirective, MdbSuccessDirective, MdbValidateDirective, InputUtilitiesModule } from './input-utilities/index';
 export { MdbBreadcrumbComponent, MdbBreadcrumbItemComponent, BreadcrumbModule } from './breadcrumbs/index';
 export { MDBBadgeComponent, BadgeModule } from './badge/index';
 export { MdbTablePaginationComponent, MdbTableRowDirective, MdbTableScrollDirective, MdbTableSortDirective, MdbTableDirective, MdbTableService, TableModule } from './tables/index';
@@ -7,7 +8,7 @@ export { ButtonsModule, ButtonRadioDirective, ButtonCheckboxDirective, MdbBtnDir
 export { CardsFreeModule, MdbCardComponent, MdbCardBodyComponent, MdbCardImageComponent, MdbCardTextComponent, MdbCardTitleComponent, MdbCardFooterComponent, MdbCardHeaderComponent } from './cards/index';
 export { RippleModule, RippleDirective } from './ripple/index';
 export { WavesModule, WavesDirective } from './waves/index';
-export { InputsModule, MdbInputDirective } from './inputs/index';
+export { InputsModule, MdbInputDirective, MdbInput } from './inputs/index';
 export { NavbarModule } from './navbars/index';
 export { BsDropdownConfig, BsDropdownContainerComponent, BsDropdownDirective, BsDropdownMenuDirective, DropdownModule, BsDropdownState, BsDropdownToggleDirective } from './dropdown/index';
 export { CarouselComponent, CarouselConfig, CarouselModule } from './carousel/index';

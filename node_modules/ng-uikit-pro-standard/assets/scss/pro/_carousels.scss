@@ -6,6 +6,25 @@
   .carousel-item-prev {
     display: block;
   }
+  &.v-2 {
+    .carousel-inner .carousel-item.active,
+    .carousel-item-next,
+    .carousel-item-prev {
+      display: flex;
+    }
+    .carousel-item-right.active,
+    .carousel-item-next {
+      transform: translateX(33%);
+    }
+    .carousel-item-left.active,
+    .carousel-item-prev {
+      transform: translateX(-33%);
+    }
+    .carousel-item-right,
+    .carousel-item-left{ 
+      transform: translateX(0);
+    }
+  }
   .carousel-indicators li {
     height: $carousel-multi-item-indicators-li-height;
     width: $carousel-multi-item-indicators-li-width;

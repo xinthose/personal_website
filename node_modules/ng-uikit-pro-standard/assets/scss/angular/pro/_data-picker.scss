@@ -119,3 +119,27 @@
         overflow-y: scroll;
     }
 }
+
+.validate-success.ng-valid .mydp-date {
+    border-bottom: 1px solid $input-success-color !important;
+	box-shadow: 0 1px 0 0 $input-success-color !important;
+}
+
+.validate-success.ng-valid .mydp label {
+	color: $input-success-color !important;
+}
+
+.validate-error.ng-invalid.ng-touched .mydp-date,
+.form-submitted .validate-error.ng-invalid .mydp-date {
+	border-bottom: 1px solid $input-error-color !important;
+	box-shadow: 0 1px 0 0 $input-error-color !important;
+}
+
+.validate-error.ng-invalid.ng-touched .mydp label,
+.form-submitted .validate-error.ng-invalid .mydp label {
+	color: $input-error-color !important;
+}
+
+.md-form mdb-date-picker .md-form {
+    margin: 0;
+}
