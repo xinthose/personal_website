@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import books from './data/books.json';
 import chapters from './data/chapters.json';
 import verses from './data/verses.json';
+import bible from './data/en_kjv.json';
 
 @Component({
   selector: 'app-bible',
@@ -15,6 +16,9 @@ export class BibleComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  public verseText: string;
+  public verseLocation: string;
 
   // dropdown disable
   public isDisabledChapters: boolean = true;
@@ -72,5 +76,12 @@ export class BibleComponent implements OnInit {
   
   handleVerseChange(value: any) {
     this.selectedVerse = value;
+    console.debug("bookId = " + this.selectedBook.bookId.toString());
+    console.debug("chapterId = " + this.selectedChapter.chapterId.toString());
+    console.debug("verseId = " + this.selectedVerse.verseId.toString());
+    this.verseText = bible[this.selectedBook.bookId - 1]["chapters"][this.selectedChapter.chapterId - 1][this.selectedVerse.verseId - 1];
+    this.verseLocation = this.selectedBook.bookName + " " + this.selectedChapter.chapterName + " " + this.selectedVerse.verseName;
+    console.debug("verseText = " + this.verseText);
+    console.debug("verseLocation = " + this.verseLocation);
   }
 }
