@@ -18,7 +18,9 @@ export class BibleComponent implements OnInit {
   }
 
   public verseText: string;
+  public verseTitle: string;
   public verseLocation: string;
+  public showVerse: boolean;
 
   // dropdown disable
   public isDisabledChapters: boolean = true;
@@ -48,6 +50,7 @@ export class BibleComponent implements OnInit {
     this.selectedBook = value;
     this.selectedChapter = undefined;
     this.selectedVerse = undefined;
+    this.showVerse = false;
 
     if (value.bookId == this.defaultItemBook.bookId) {
       this.isDisabledChapters = true;
@@ -64,6 +67,7 @@ export class BibleComponent implements OnInit {
   handleChapterChange(value: any) {
     this.selectedChapter = value;
     this.selectedVerse = undefined;
+    this.showVerse = false;
 
     if (value.chapterId == this.defaultItemChapter.chapterId) {
       this.isDisabledVerses = true;
@@ -76,12 +80,9 @@ export class BibleComponent implements OnInit {
   
   handleVerseChange(value: any) {
     this.selectedVerse = value;
-    console.debug("bookId = " + this.selectedBook.bookId.toString());
-    console.debug("chapterId = " + this.selectedChapter.chapterId.toString());
-    console.debug("verseId = " + this.selectedVerse.verseId.toString());
-    this.verseText = bible[this.selectedBook.bookId - 1]["chapters"][this.selectedChapter.chapterId - 1][this.selectedVerse.verseId - 1];
-    this.verseLocation = this.selectedBook.bookName + " " + this.selectedChapter.chapterName + " " + this.selectedVerse.verseName;
-    console.debug("verseText = " + this.verseText);
-    console.debug("verseLocation = " + this.verseLocation);
+    this.verseText = bible[this.selectedBook.bookId - 1].chapters[this.selectedChapter.chapterId - 1][this.selectedVerse.verseId - 1];
+    this.verseTitle = this.selectedBook.bookName + " " + this.selectedChapter.chapterName + " " + this.selectedVerse.verseName;
+    this.verseLocation = bible[this.selectedBook.bookId - 1].abbrev + " " + this.selectedChapter.chapterId.toString() + ":" + this.selectedVerse.verseId.toString();
+    this.showVerse = true;
   }
 }

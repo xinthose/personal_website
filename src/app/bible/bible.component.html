@@ -1,4 +1,4 @@
-<main class="text-center" style="margin-top: 40px;">
+<main class="text-center" style="margin-top: 90px;">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -33,15 +33,15 @@
                 </kendo-dropdownlist>
             </div>
         </div>
-        <div class="row mt-2">
+        <div class="row mt-3" *ngIf="showVerse">
             <div class="col">
                 <div class="card">
                     <div class="gradient-card-header peach-gradient">
-                        <h2>{{verseLocation}}</h2>
+                        <h2>{{verseTitle}}</h2>
                     </div>
                     <div class="card-body text-center">
                         <p class="card-text">
-                            {{verseText}}
+                            {{verseLocation}} "{{verseText}}"
                         </p>
                     </div>
                 </div>
