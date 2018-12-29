@@ -35,19 +35,31 @@
 
 # Commands
 
-## Angular Commands
-- `ng --version`    // show angular version
-- `ng build --prod`   // build for production
+## Angular Commands (ng)
+- `ng -v`    // show angular version
+- `ng update --all --force` // update all angular packages
+- `ng build --prod --aot --base-href "/eds4/"`   // build for production
 
-## Node.js Commands
+## Kendo Node.js commands
+- `ncu -u -f /^@progress/`  // check progress widget versions
+
+## Node Commands
+- `node -v` // show node version
+
+## NPM Commands (Node Package Manager)
 - `npm -v`  // show npm version
 - `npm install -g npm`  // update npm version
-- `npm update`  // update all packages in the app
-- `npm install -g version-check`
+- `npm update`  # update all packages in the app
+- `npm install` -g version-check
+
 ### Install dependencies
 - `npm install -g npm-install-peers`
 - `npm-install-peers`
 - `npm install @angular/cli@latest`  // install latest version of angular cli
 
 ## Typescript Commands
-- `tsc -v`  // show typescript versio
+- `tsc -v`  // show typescript version
+ 
+## Github
+- `git config --global user.email "your github login email address"`  // set email address
+- `git config --global user.email`  // check email address
