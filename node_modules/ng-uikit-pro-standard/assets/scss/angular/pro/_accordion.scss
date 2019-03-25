@@ -1,5 +1,8 @@
 // ACCORDION
 .accordion {
+  .waves-effect, .waves-light {
+    z-index: unset;
+  }
     .sb-item-body {
         transition: 0.5s;
         overflow: hidden;

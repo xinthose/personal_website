@@ -11,7 +11,7 @@
   .contact {
     border-radius: 0 $md-card-border-radius $md-card-border-radius 0;
     background-color: $contact-section-bgc;
-    .fa {
+    .fas, .fab, .far {
       color: $contact-section-fa-color;
     }
   }

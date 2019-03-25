@@ -1,11 +1,20 @@
 // MDB Autocomplete
 .mdb-autocomplete {
   margin-bottom: $autocomplete-margin-bottom;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
 }
+
 button {
   &:focus {
     outline: 0 !important;
   }
+
   &.mdb-autocomplete-clear {
     position: absolute;
     z-index: 2;
@@ -14,6 +23,8 @@ button {
     visibility: hidden;
     border: none;
     background: transparent;
+    cursor: pointer;
+
     svg {
       fill: $autocomplete-clear-color;
     }
@@ -31,10 +42,12 @@ button {
   max-height: $autocomplete-wrap-max-height;
   padding-left: 0;
   background: $white-base;
+
   li {
     padding: $autocomplete-wrap-li-padding-y $autocomplete-wrap-li-padding-x;
     cursor: pointer;
     font-size: $autocomplete-wrap-li-font-size;
+
     &:hover {
       background: $autocomplete-wrap-li-hover-bg;
     }

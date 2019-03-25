@@ -1,5 +1,5 @@
 import { ModuleWithProviders } from '@angular/core';
-export { NgbDropdown, NgbDropdownToggle, NgbDropdownMenu } from './dropdown';
+export { NgbDropdown, NgbDropdownAnchor, NgbDropdownToggle, NgbDropdownMenu, NgbDropdownItem } from './dropdown';
 export { NgbDropdownConfig } from './dropdown-config';
 export declare class NgbDropdownModule {
     /**

@@ -84,7 +84,7 @@
     height: $pricing-card-circle-height;
     width: $pricing-card-circle-width;
     border-radius: $pricing-card-circle-border-radius;
-    .fa {
+    .fas, .fab, .far {
       font-size: $pricing-card-circle-icon-font-size;
     }
   }

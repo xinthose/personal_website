@@ -235,6 +235,12 @@ $checkbox-size: $icon-size !default;
             width: $icon-size;
             height: $icon-size;
             display: inline-block;
+            font-size: 0;
+
+            .k-ie &,
+            .k-edge & {
+                width: 0;
+            }
         }
 
         .k-rtl &,
