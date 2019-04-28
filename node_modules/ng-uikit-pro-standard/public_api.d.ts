@@ -13,6 +13,7 @@ export * from './lib/free/inputs/index';
 export * from './lib/free/modals/index';
 export * from './lib/free/navbars/index';
 export * from './lib/free/popover/index';
+export * from './lib/free/sticky-header/index';
 export * from './lib/free/tables/index';
 export * from './lib/free/tooltip/index';
 export * from './lib/free/waves/index';

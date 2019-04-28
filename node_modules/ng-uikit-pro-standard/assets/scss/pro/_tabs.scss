@@ -140,6 +140,31 @@
         }
       }
     }
+    &.tabs-animated {
+      li {
+        a {
+          &.active {
+            border: none;
+          }
+        }
+      }
+      @each $name, $color in $ctbc {
+        &.#{$name} {
+          .floor {
+            background-color: $color;
+          }
+        }
+      }
+      .floor {
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        z-index: 1200;
+        bottom: 0;
+        transition: all .4s linear;
+      }
+    }
   }
   .tab-content {
     &.card {
