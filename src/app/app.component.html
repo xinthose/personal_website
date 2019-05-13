@@ -1,27 +1,20 @@
-<!-- Header -->
 <header>
-    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo fixed-top scrolling-navbar" [containerInside]="false">
-        <logo>
-            <a class="logo navbar-brand" routerLink="/home">
-                <strong>{{title}}</strong>
-            </a>
-        </logo>
+    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo fixed-top scrolling-navbar">
         <links>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item waves-light" mdbRippleRadius>
-                    <nav>
-                        <a class="nav-link" routerLink="/bible">Bible</a>
-                    </nav>
+            <a class="navbar-brand" routerLink="/home">Xinthose</a>
+            <ul class="navbar-nav mr-auto mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/bible">Bible</a>
                 </li>
-                <li class="nav-item waves-light" mdbRippleRadius>
-                    <a class="nav-link">Doctrine</a>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/">Doctrine</a>
                 </li>
-                <li class="nav-item waves-light" mdbRippleRadius>
-                    <a class="nav-link">Code</a>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/">About</a>
                 </li>
             </ul>
         </links>
     </mdb-navbar>
 </header>
-<!-- Body -->
-<router-outlet></router-outlet>
+<router-outlet>
+</router-outlet>
