@@ -1,15 +1,15 @@
 import { EventEmitter, TemplateRef, OnInit } from '@angular/core';
 import { toString } from '../util/util';
 /**
- * Context for the typeahead result template in case you want to override the default one
+ * The context for the typeahead result template in case you want to override the default one.
  */
 export interface ResultTemplateContext {
     /**
-     * Your typeahead result data model
+     * Your typeahead result item.
      */
     result: any;
     /**
-     * Search term from the input used to get current result
+     * Search term from the `<input>` used to get current result.
      */
     term: string;
 }

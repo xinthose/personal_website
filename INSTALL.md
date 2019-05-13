@@ -11,7 +11,7 @@
 
 - `ng new personal-website --style=scss --routing`
 - `ng generate module app-routing --flat --module=app`
-- `ng generate component home bible`
+- `ng generate component home bible about`
 - Bible in JSON: <https://github.com/thiagobodruk/bible>
  
 ## General

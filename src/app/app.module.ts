@@ -19,12 +19,14 @@ import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { BibleComponent } from './bible/bible.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         HomeComponent,
         BibleComponent,
+        AboutComponent,
     ],
     imports: [
         // General

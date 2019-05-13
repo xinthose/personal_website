@@ -1,6 +1,16 @@
 import { NgbDateStruct } from './ngb-date-struct';
 /**
- * Simple class used for a date representation that datepicker also uses internally
+ * A simple class that represents a date that datepicker also uses internally.
+ *
+ * It is the implementation of the `NgbDateStruct` interface that adds some convenience methods,
+ * like `.equals()`, `.before()`, etc.
+ *
+ * All datepicker APIs consume `NgbDateStruct`, but return `NgbDate`.
+ *
+ * In many cases it is simpler to manipulate these objects together with
+ * [`NgbCalendar`](#/components/datepicker/api#NgbCalendar) than native JS Dates.
+ *
+ * See the [date format overview](#/components/datepicker/overview#date-model) for more details.
  *
  * @since 3.0.0
  */
@@ -18,21 +28,24 @@ export declare class NgbDate implements NgbDateStruct {
      */
     day: number;
     /**
-     * Static method. Creates a new date object from the NgbDateStruct, ex. NgbDate.from({year: 2000,
-     * month: 5, day: 1}). If the 'date' is already of NgbDate, the method will return the same object
+     * A **static method** that creates a new date object from the `NgbDateStruct`,
+     *
+     * ex. `NgbDate.from({year: 2000, month: 5, day: 1})`.
+     *
+     * If the `date` is already of `NgbDate` type, the method will return the same object.
      */
     static from(date: NgbDateStruct): NgbDate;
     constructor(year: number, month: number, day: number);
     /**
-     * Checks if current date is equal to another date
+     * Checks if the current date is equal to another date.
      */
     equals(other: NgbDateStruct): boolean;
     /**
-     * Checks if current date is before another date
+     * Checks if the current date is before another date.
      */
     before(other: NgbDateStruct): boolean;
     /**
-     * Checks if current date is after another date
+     * Checks if the current date is after another date.
      */
     after(other: NgbDateStruct): boolean;
 }

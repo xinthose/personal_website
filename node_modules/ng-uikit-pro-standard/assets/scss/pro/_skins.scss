@@ -234,6 +234,25 @@ $data in $skins {
       }
     }
 
+    .md-bg {
+
+      input[type=text],
+      input[type=password],
+      input[type=email],
+      input[type=url],
+      input[type=time],
+      input[type=date],
+      input[type=datetime-local],
+      input[type=tel],
+      input[type=number],
+      input[type=search-md],
+      input[type=search],
+      textarea.md-textarea {
+        background-image: linear-gradient(to bottom, map-get($data, skin-accent), map-get($data, skin-accent)),
+        linear-gradient(to bottom, $input-border-color, $input-border-color);
+      }
+    }
+
     // Custom inputs
     input[type="email"]:focus:not([readonly]),
     input[type="text"]:focus:not([readonly]),

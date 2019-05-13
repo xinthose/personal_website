@@ -1,9 +1,9 @@
 /**
- * The NgbCollapse directive provides a simple way to hide and show an element with animations.
+ * A directive to provide a simple way of hiding and showing elements on the page.
  */
 export declare class NgbCollapse {
     /**
-     * A flag indicating collapsed (true) or open (false) state.
+     * If `true`, will collapse the element or show it otherwise.
      */
     collapsed: boolean;
 }

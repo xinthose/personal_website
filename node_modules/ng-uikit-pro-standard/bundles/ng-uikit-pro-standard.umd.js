@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/platform-browser/animations'), require('@angular/platform-browser'), require('@angular/common/http'), require('@angular/router'), require('@angular/animations'), require('rxjs'), require('rxjs/operators'), require('@angular/common'), require('@angular/forms'), require('@angular/core')) :
-    typeof define === 'function' && define.amd ? define('ng-uikit-pro-standard', ['exports', '@angular/platform-browser/animations', '@angular/platform-browser', '@angular/common/http', '@angular/router', '@angular/animations', 'rxjs', 'rxjs/operators', '@angular/common', '@angular/forms', '@angular/core'], factory) :
-    (factory((global['ng-uikit-pro-standard'] = {}),global.ng.platformBrowser.animations,global.ng.platformBrowser,global.ng.common.http,global.ng.router,global.ng.animations,global.rxjs,global.rxjs.operators,global.ng.common,global.ng.forms,global.ng.core));
-}(this, (function (exports,animations,platformBrowser,http,router,animations$1,rxjs,operators,common,forms,i0) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/platform-browser'), require('@angular/common/http'), require('@angular/router'), require('@angular/animations'), require('rxjs'), require('rxjs/operators'), require('@angular/common'), require('@angular/forms'), require('@angular/core')) :
+    typeof define === 'function' && define.amd ? define('ng-uikit-pro-standard', ['exports', '@angular/platform-browser', '@angular/common/http', '@angular/router', '@angular/animations', 'rxjs', 'rxjs/operators', '@angular/common', '@angular/forms', '@angular/core'], factory) :
+    (factory((global['ng-uikit-pro-standard'] = {}),global.ng.platformBrowser,global.ng.common.http,global.ng.router,global.ng.animations,global.rxjs,global.rxjs.operators,global.ng.common,global.ng.forms,global.ng.core));
+}(this, (function (exports,platformBrowser,http,router,animations,rxjs,operators,common,forms,i0) { 'use strict';
 
     /**
      * @fileoverview added by tsickle
@@ -583,6 +583,74 @@
      * @fileoverview added by tsickle
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
+    var FixedButtonCaptionDirective = /** @class */ (function () {
+        function FixedButtonCaptionDirective(renderer, el) {
+            this.renderer = renderer;
+            this.el = el;
+        }
+        /**
+         * @return {?}
+         */
+        FixedButtonCaptionDirective.prototype.ngOnInit = /**
+         * @return {?}
+         */
+            function () {
+                this.createCaptionElement();
+            };
+        /**
+         * @return {?}
+         */
+        FixedButtonCaptionDirective.prototype.ngAfterViewInit = /**
+         * @return {?}
+         */
+            function () {
+                var _this = this;
+                this.renderer.listen(this.collapseButtonActivator, 'click', ( /**
+                 * @return {?}
+                 */function () {
+                    _this.renderer.addClass(_this.paragraphEl, 'fixed-button-caption');
+                    _this.renderer.setStyle(_this.paragraphEl, 'position', 'absolute');
+                    _this.renderer.setStyle(_this.paragraphEl, 'right', "60px");
+                    _this.renderer.setStyle(_this.paragraphEl, 'top', '10px');
+                    _this.renderer.setStyle(_this.el.nativeElement, 'overflow', 'visible');
+                }));
+            };
+        /**
+         * @return {?}
+         */
+        FixedButtonCaptionDirective.prototype.createCaptionElement = /**
+         * @return {?}
+         */
+            function () {
+                /** @type {?} */
+                var paragraph = this.renderer.createElement('p');
+                /** @type {?} */
+                var text = this.renderer.createText(this.caption);
+                this.renderer.appendChild(paragraph, text);
+                this.renderer.appendChild(this.el.nativeElement, paragraph);
+                this.paragraphEl = paragraph;
+            };
+        FixedButtonCaptionDirective.decorators = [
+            { type: i0.Directive, args: [{ selector: '[mdbFixedCaption]' },] }
+        ];
+        /** @nocollapse */
+        FixedButtonCaptionDirective.ctorParameters = function () {
+            return [
+                { type: i0.Renderer2 },
+                { type: i0.ElementRef }
+            ];
+        };
+        FixedButtonCaptionDirective.propDecorators = {
+            caption: [{ type: i0.Input, args: ['mdbFixedCaption',] }],
+            collapseButtonActivator: [{ type: i0.Input, args: ['collapseButton',] }]
+        };
+        return FixedButtonCaptionDirective;
+    }());
+
+    /**
+     * @fileoverview added by tsickle
+     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var ButtonsModule = /** @class */ (function () {
         function ButtonsModule() {
         }
@@ -597,8 +665,8 @@
             };
         ButtonsModule.decorators = [
             { type: i0.NgModule, args: [{
-                        declarations: [ButtonCheckboxDirective, ButtonRadioDirective, MdbBtnDirective],
-                        exports: [ButtonCheckboxDirective, ButtonRadioDirective, MdbBtnDirective]
+                        declarations: [ButtonCheckboxDirective, ButtonRadioDirective, MdbBtnDirective, FixedButtonCaptionDirective],
+                        exports: [ButtonCheckboxDirective, ButtonRadioDirective, MdbBtnDirective, FixedButtonCaptionDirective]
                     },] }
         ];
         return ButtonsModule;
@@ -1709,7 +1777,9 @@
                 }
                 if (this.isControls) {
                     this.carouselIndicators = this.el.nativeElement.querySelectorAll('.carousel-indicators > li');
-                    this.renderer.addClass(this.carouselIndicators[0], 'active');
+                    if (this.carouselIndicators.length) {
+                        this.renderer.addClass(this.carouselIndicators[0], 'active');
+                    }
                 }
             };
         /**
@@ -3135,10 +3205,10 @@
                         exportAs: 'bs-collapse',
                         template: '<ng-content></ng-content>',
                         animations: [
-                            animations$1.trigger('expandBody', [
-                                animations$1.state('collapsed', animations$1.style({ height: '0px' })),
-                                animations$1.state('expanded', animations$1.style({ height: '*' })),
-                                animations$1.transition('expanded <=> collapsed', animations$1.animate('500ms ease')),
+                            animations.trigger('expandBody', [
+                                animations.state('collapsed', animations.style({ height: '0px' })),
+                                animations.state('expanded', animations.style({ height: '*' })),
+                                animations.transition('expanded <=> collapsed', animations.animate('500ms ease')),
                             ])
                         ]
                     }] }
@@ -7693,6 +7763,7 @@
             this._navbarService = _navbarService;
             this.containerInside = true;
             this.collapseId = 'navbarCollapse';
+            this.scrollSensitivity = 120;
             this.shown = false;
             this.duration = 350; // ms
             // ms
@@ -7926,7 +7997,7 @@
          */
             function () {
                 if (this.navbar.nativeElement.classList.contains('scrolling-navbar')) {
-                    if (window.pageYOffset > 120) {
+                    if (window.pageYOffset > this.scrollSensitivity) {
                         this.renderer.addClass(this.navbar.nativeElement, 'top-nav-collapse');
                     }
                     else {
@@ -7967,6 +8038,7 @@
             SideClass: [{ type: i0.Input }],
             containerInside: [{ type: i0.Input }],
             collapseId: [{ type: i0.Input }],
+            scrollSensitivity: [{ type: i0.Input }],
             el: [{ type: i0.ViewChild, args: ['navbar',] }],
             mobile: [{ type: i0.ViewChild, args: ['mobile',] }],
             navbar: [{ type: i0.ViewChild, args: ['nav',] }],
@@ -8489,7 +8561,6 @@
                         exports: [StickyHeaderDirective],
                         imports: [
                             common.CommonModule,
-                            animations.BrowserAnimationsModule
                         ]
                     },] }
         ];
@@ -10267,10 +10338,10 @@
                         selector: 'mdb-item-body, mdb-accordion-item-body',
                         template: "<div #body class=\"sb-item-body\" [style.height]=\"height\" [@expandBody]=\"expandAnimationState\">\n    <div class=\"card-body {{ customClass }}\">\n    \t<ng-content></ng-content>\n    </div>\n</div>",
                         animations: [
-                            animations$1.trigger('expandBody', [
-                                animations$1.state('collapsed', animations$1.style({ height: '0px', visibility: 'hidden' })),
-                                animations$1.state('expanded', animations$1.style({ height: '*', visibility: 'visible' })),
-                                animations$1.transition('expanded <=> collapsed', animations$1.animate('500ms ease')),
+                            animations.trigger('expandBody', [
+                                animations.state('collapsed', animations.style({ height: '0px', visibility: 'hidden' })),
+                                animations.state('expanded', animations.style({ height: '*', visibility: 'visible' })),
+                                animations.transition('expanded <=> collapsed', animations.animate('500ms ease')),
                             ])
                         ]
                     }] }
@@ -11442,15 +11513,12 @@
                         selector: 'mdb-toast-component',
                         template: "<button *ngIf=\"options.closeButton\" (click)=\"remove()\" class=\"md-toast-close-button\">\n  &times;\n</button>\n<div *ngIf=\"title\" class=\"{{options.titleClass}}\" [attr.aria-label]=\"title\">\n  {{title}}\n</div>\n<div *ngIf=\"message && options.enableHtml\" class=\"{{options.messageClass}}\" [innerHTML]=\"message\">\n</div>\n<div *ngIf=\"message && !options.enableHtml\" class=\"{{options.messageClass}}\" [attr.aria-label]=\"message\">\n  {{message}}\n</div>\n<button *ngIf=\"options.actionButton\" class=\"btn btn-block md-toast-action mt-2\" (click)=\"onActionClick()\">{{ options.actionButton }}</button>\n<div *ngIf=\"options.progressBar\">\n  <div class=\"md-toast-progress\" [style.width.%]=\"width\"></div>\n</div>\n",
                         animations: [
-                            animations$1.trigger('flyInOut', [
-                                animations$1.state('inactive', animations$1.style({
-                                    display: 'none',
-                                    opacity: 0
-                                })),
-                                animations$1.state('active', animations$1.style({ opacity: .5 })),
-                                animations$1.state('removed', animations$1.style({ opacity: 0 })),
-                                animations$1.transition('inactive => active', animations$1.animate('300ms ease-in')),
-                                animations$1.transition('active => removed', animations$1.animate('300ms ease-in')),
+                            animations.trigger('flyInOut', [
+                                animations.state('inactive', animations.style({ opacity: 0 })),
+                                animations.state('active', animations.style({ opacity: .5 })),
+                                animations.state('removed', animations.style({ opacity: 0 })),
+                                animations.transition('inactive => active', animations.animate('300ms ease-in')),
+                                animations.transition('active => removed', animations.animate('300ms ease-in')),
                             ]),
                         ]
                     }] }
@@ -12104,52 +12172,52 @@
      */
     // SideNav
     /** @type {?} */
-    var slideIn = animations$1.trigger('slideIn', [
-        animations$1.state('inactive', animations$1.style({ opacity: 0, transform: 'translateX(-300%)' })),
-        animations$1.state('active', animations$1.style({ opacity: 1, transform: 'translateX(0)' })),
-        animations$1.transition('inactive => active', animations$1.animate('500ms ease')),
-        animations$1.transition('active => inactive', animations$1.animate('500ms ease')),
+    var slideIn = animations.trigger('slideIn', [
+        animations.state('inactive', animations.style({ opacity: 0, transform: 'translateX(-300%)' })),
+        animations.state('active', animations.style({ opacity: 1, transform: 'translateX(0)' })),
+        animations.transition('inactive => active', animations.animate('500ms ease')),
+        animations.transition('active => inactive', animations.animate('500ms ease')),
     ]);
     /** @type {?} */
-    var fadeIn = animations$1.trigger('fadeIn', [
-        animations$1.state('inactive', animations$1.style({ opacity: 0 })),
-        animations$1.state('active', animations$1.style({ opacity: 1 })),
-        animations$1.transition('inactive => active', animations$1.animate('500ms ease')),
-        animations$1.transition('active => inactive', animations$1.animate('500ms ease')),
+    var fadeIn = animations.trigger('fadeIn', [
+        animations.state('inactive', animations.style({ opacity: 0 })),
+        animations.state('active', animations.style({ opacity: 1 })),
+        animations.transition('inactive => active', animations.animate('500ms ease')),
+        animations.transition('active => inactive', animations.animate('500ms ease')),
     ]);
     /** @type {?} */
-    var slideOut = animations$1.trigger('slideOut', [
-        animations$1.state('inactive', animations$1.style({ opacity: 0, transform: 'translateX(-300%)' })),
-        animations$1.state('active', animations$1.style({ opacity: 1, transform: 'translateX(0)' })),
-        animations$1.transition('inactive => active', animations$1.animate('500ms ease')),
-        animations$1.transition('active => inactive', animations$1.animate('500ms ease')),
+    var slideOut = animations.trigger('slideOut', [
+        animations.state('inactive', animations.style({ opacity: 0, transform: 'translateX(-300%)' })),
+        animations.state('active', animations.style({ opacity: 1, transform: 'translateX(0)' })),
+        animations.transition('inactive => active', animations.animate('500ms ease')),
+        animations.transition('active => inactive', animations.animate('500ms ease')),
     ]);
     /** @type {?} */
-    var flipState = animations$1.trigger('flipState', [
-        animations$1.state('active', animations$1.style({ transform: 'rotateY(179.9deg)' })),
-        animations$1.state('inactive', animations$1.style({ transform: 'rotateY(0)' })),
+    var flipState = animations.trigger('flipState', [
+        animations.state('active', animations.style({ transform: 'rotateY(179.9deg)' })),
+        animations.state('inactive', animations.style({ transform: 'rotateY(0)' })),
     ]);
     // Rotating animation animation
     /** @type {?} */
-    var turnState = animations$1.trigger('turnState', [
-        animations$1.state('active', animations$1.style({ transform: 'rotateY(179.9deg)' })),
-        animations$1.state('inactive', animations$1.style({ transform: 'rotateY(0)' })),
+    var turnState = animations.trigger('turnState', [
+        animations.state('active', animations.style({ transform: 'rotateY(179.9deg)' })),
+        animations.state('inactive', animations.style({ transform: 'rotateY(0)' })),
     ]);
     // Social reveal animation
     /** @type {?} */
-    var iconsState = animations$1.trigger('iconsState', [
-        animations$1.state('isactive', animations$1.style({ visibility: 'visible', transform: 'translate(-6%)' })),
-        animations$1.state('isnotactive', animations$1.style({ visibility: 'hidden', transform: 'translate(27%)' })),
-        animations$1.transition('isactive => isnotactive', animations$1.animate('100ms ease-in')),
-        animations$1.transition('isnotactive => isactive', animations$1.animate('200ms ease-out')),
+    var iconsState = animations.trigger('iconsState', [
+        animations.state('isactive', animations.style({ visibility: 'visible', transform: 'translate(-6%)' })),
+        animations.state('isnotactive', animations.style({ visibility: 'hidden', transform: 'translate(27%)' })),
+        animations.transition('isactive => isnotactive', animations.animate('100ms ease-in')),
+        animations.transition('isnotactive => isactive', animations.animate('200ms ease-out')),
     ]);
     // Reveal animation animation
     /** @type {?} */
-    var socialsState = animations$1.trigger('socialsState', [
-        animations$1.state('active', animations$1.style({ visibility: 'visible', transform: 'translateY(-100%)' })),
-        animations$1.state('inactive', animations$1.style({ visibility: 'hidden', transform: 'translateY(0)' })),
-        animations$1.transition('* => void', animations$1.animate('200ms ease-in')),
-        animations$1.transition('void => *', animations$1.animate('200ms ease-out')),
+    var socialsState = animations.trigger('socialsState', [
+        animations.state('active', animations.style({ visibility: 'visible', transform: 'translateY(-100%)' })),
+        animations.state('inactive', animations.style({ visibility: 'hidden', transform: 'translateY(0)' })),
+        animations.transition('* => void', animations.animate('200ms ease-in')),
+        animations.transition('void => *', animations.animate('200ms ease-out')),
     ]);
     // image popup
     // export const zoomState: any = trigger('zoomState', [
@@ -12163,12 +12231,12 @@
     // ]);
     // alerts
     /** @type {?} */
-    var flyInOut = animations$1.trigger('flyInOut', [
-        animations$1.state('inactive', animations$1.style({ display: 'none', opacity: 0.7 })),
-        animations$1.state('active', animations$1.style({ opacity: 0.7 })),
-        animations$1.state('removed', animations$1.style({ opacity: 0 })),
-        animations$1.transition('inactive => active', animations$1.animate('300ms ease-in')),
-        animations$1.transition('active => removed', animations$1.animate('300ms ease-in')),
+    var flyInOut = animations.trigger('flyInOut', [
+        animations.state('inactive', animations.style({ display: 'none', opacity: 0.7 })),
+        animations.state('active', animations.style({ opacity: 0.7 })),
+        animations.state('removed', animations.style({ opacity: 0 })),
+        animations.transition('inactive => active', animations.animate('300ms ease-in')),
+        animations.transition('active => removed', animations.animate('300ms ease-in')),
     ]);
 
     /**
@@ -14935,11 +15003,11 @@
                         selector: 'mdb-autocomplete, mdb-completer',
                         template: "<div class=\"completer-holder md-form\" mdbCompleter>\n\n  <input #mdbCompleterInput [attr.id]=\"inputId.length > 0 ? inputId : null\" type=\"search\" class=\"completer-input form-control mdb-autocomplete\"\n    mdbCompleterInput [ngClass]=\"inputClass\" [(ngModel)]=\"searchStr\" (ngModelChange)=\"onChange($event)\" [attr.name]=\"inputName\" [placeholder]=\"placeholder\"\n    [attr.maxlength]=\"maxChars\" [tabindex]=\"fieldTabindex\" [disabled]=\"disableInput\" [clearSelected]=\"clearSelected\" [clearUnselected]=\"clearUnselected\"\n    [overrideSuggested]=\"overrideSuggested\" [openOnFocus]=\"openOnFocus\" [fillHighlighted]=\"fillHighlighted\" (blur)=\"onBlur()\"\n    (focus)=\"onFocus()\" autocomplete=\"off\" autocorrect=\"off\" autocapitalize=\"off\"\n  />\n  <button type=\"button\"\n  [tabindex]=\"clearButtonTabIndex\"\n  class=\"mdb-autocomplete-clear\"\n  (click)=\"activateClearButton($event)\"\n  (focus)=\"triggerClearButtonAnimation('focused')\"\n  (blur)=\"triggerClearButtonAnimation('unfocused')\"\n  (mouseenter)=\"triggerClearButtonAnimation('focused')\"\n  (mouseleave)=\"triggerClearButtonAnimation('unfocused')\"\n  [@focusAnimation]=\"{value: state}\">\n    &#x2715;\n  </button>\n  <label #labelEl [ngClass]=\"{'active': focused || value || placeholder}\">{{ label }}</label>\n  <div class=\"completer-dropdown-holder\" *mdbList=\"dataService;\n      minSearchLength: minSearchLength;\n      pause: pause;\n      autoMatch: autoMatch;\n      initialValue: initialValue;\n      autoHighlight: autoHighlight;\n      let items = results;\n      let searchActive = searching;\n      let isInitialized = searchInitialized;\n      let isOpen = isOpen;\">\n    <div class=\"completer-dropdown\" mdbAutocompleteDropdown *ngIf=\"isInitialized && isOpen && ((items.length > 0 || displayNoResults) || (searchActive && displaySearching))\">\n      <div *ngIf=\"searchActive && displaySearching\" class=\"completer-searching\">{{_textSearching}}</div>\n      <div *ngIf=\"!searchActive && (!items || items.length === 0)\" class=\"completer-no-results\">{{_textNoResults}}</div>\n      <div class=\"completer-row-wrapper\" *ngFor=\"let item of items; let rowIndex=index\">\n        <div class=\"completer-row\" [mdbRow]=\"rowIndex\" [dataItem]=\"item\">\n          <div class=\"completer-item-text\" [ngClass]=\"{'completer-item-text-image': item.image || item.image === '' }\">\n            <mdb-completer-list-item class=\"completer-title\" [text]=\"item.title\" [matchClass]=\"matchClass\" [searchStr]=\"searchStr\" [type]=\"'title'\"></mdb-completer-list-item>\n            <mdb-completer-list-item *ngIf=\"item.description && item.description != ''\" class=\"completer-description\" [text]=\"item.description\"\n              [matchClass]=\"matchClass\" [searchStr]=\"searchStr\" [type]=\"'description'\">\n            </mdb-completer-list-item>\n          </div>\n          <div *ngIf=\"item.image || item.image === ''\" class=\"completer-image-holder\">\n            <img *ngIf=\"item.image != ''\" src=\"{{item.image}}\" class=\"completer-image\" />\n            <div *ngIf=\"item.image === ''\" class=\"completer-image-default\"></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n",
                         providers: [COMPLETER_CONTROL_VALUE_ACCESSOR],
-                        animations: [animations$1.trigger('focusAnimation', [
-                                animations$1.state('unfocused', animations$1.style({ transform: 'scale(1.0, 1.0)', })),
-                                animations$1.state('focused', animations$1.style({ transform: 'scale(1.5, 1.5)' })),
-                                animations$1.transition('unfocused => focused', animations$1.animate('200ms ease-in')),
-                                animations$1.transition('focused => unfocused', animations$1.animate('200ms ease-in'))
+                        animations: [animations.trigger('focusAnimation', [
+                                animations.state('unfocused', animations.style({ transform: 'scale(1.0, 1.0)', })),
+                                animations.state('focused', animations.style({ transform: 'scale(1.5, 1.5)' })),
+                                animations.transition('unfocused => focused', animations.animate('200ms ease-in')),
+                                animations.transition('focused => unfocused', animations.animate('200ms ease-in'))
                             ])]
                     }] }
         ];
@@ -16152,6 +16220,20 @@
         /**
          * @return {?}
          */
+        CardRevealComponent.prototype.onWindowResize = /**
+         * @return {?}
+         */
+            function () {
+                if (this.cardOverflow && this.cardFront && this.cardReveal) {
+                    /** @type {?} */
+                    var height = this.cardFront.nativeElement.offsetHeight;
+                    this._r.setStyle(this.cardOverflow.nativeElement, 'height', height + 'px');
+                    this._r.setStyle(this.cardReveal.nativeElement.firstElementChild, 'height', height + 'px');
+                }
+            };
+        /**
+         * @return {?}
+         */
         CardRevealComponent.prototype.toggle = /**
          * @return {?}
          */
@@ -16162,19 +16244,18 @@
                 setTimeout(( /**
                  * @return {?}
                  */function () {
-                    try {
-                        /** @type {?} */
-                        var height = _this.cardFront.nativeElement.offsetHeight;
+                    /** @type {?} */
+                    var height = _this.cardFront.nativeElement.offsetHeight;
+                    _this._r.setStyle(_this.cardOverflow.nativeElement, 'height', height + 'px');
+                    if (_this.cardReveal) {
                         _this._r.setStyle(_this.cardReveal.nativeElement.firstElementChild, 'height', height + 'px');
-                        _this._r.setStyle(_this.cardOverflow.nativeElement, 'height', height + 'px');
                     }
-                    catch (error) { }
                 }), 0);
             };
         CardRevealComponent.decorators = [
             { type: i0.Component, args: [{
                         selector: 'mdb-card-reveal',
-                        template: "<div #cardOverflow class=\"card-overflow col-12\" >\n  <div #cardFront class=\"card-front\">\n    <ng-content select=\".card-front\" ></ng-content>\n  </div>\n  <div #cardReveal class=\"card-reveal\" *ngIf=\"show\"  [@socialsState]=\"socials\">\n    <ng-content select=\".card-reveal\"></ng-content>\n  </div>\n</div>\n",
+                        template: "<div #cardOverflow class=\"card-overflow\">\n  <div #cardFront class=\"card-front\">\n    <ng-content select=\".card-front\" ></ng-content>\n  </div>\n  <div #cardReveal class=\"card-reveal\" *ngIf=\"show\"  [@socialsState]=\"socials\">\n    <ng-content select=\".card-reveal\"></ng-content>\n  </div>\n</div>\n",
                         animations: [socialsState]
                     }] }
         ];
@@ -16187,7 +16268,8 @@
         CardRevealComponent.propDecorators = {
             cardReveal: [{ type: i0.ViewChild, args: ['cardReveal',] }],
             cardFront: [{ type: i0.ViewChild, args: ['cardFront',] }],
-            cardOverflow: [{ type: i0.ViewChild, args: ['cardOverflow',] }]
+            cardOverflow: [{ type: i0.ViewChild, args: ['cardOverflow',] }],
+            onWindowResize: [{ type: i0.HostListener, args: ['window:resize',] }]
         };
         return CardRevealComponent;
     }());
@@ -22951,11 +23033,11 @@
                         template: "<div (click)=\"$event.stopPropagation()\" class=\"dropdown-content\" #dropdownContent [ngStyle]=\"{'top.px': top, 'left.px': left, 'width.px': width}\"\n[@dropdownAnimation]=\"{value: state, params: {startHeight: startHeight, endHeight: endHeight}}\" (@dropdownAnimation.done)=\"onAnimationDone()\" (@dropdownAnimation.start)=\"onAnimationStart()\">\n  <div class=\"filter md-form px-2\" *ngIf=\"filterEnabled\">\n    <input\n    type=\"text\"\n    class=\"search form-control w-100 d-block\"\n    #filterInput\n    autocomplete=\"on\"\n    [placeholder]=\"placeholder\"\n    (input)=\"onSingleFilterInput($event)\"\n    (keydown)=\"onSingleFilterKeydown($event)\">\n  </div>\n\n  <div class=\"options\" #optionsList>\n    <ul class=\"select-dropdown\" [ngClass]=\"{'multiple-select-dropdown': multiple}\"\n    (wheel)=\"onOptionsWheel($event)\">\n      <li [ngStyle]=\"{ 'height.px': optionHeight }\" *ngIf=\"multiple && enableSelectAll && this.hasOptionsItems\" (click)=\"onSelectAllClick()\">\n        <span class=\"filtrable\" *ngIf=\"multiple\">\n          <input type=\"checkbox\" [checked]=\"selectAllSelected\" class=\"form-check-input {{customClass}}\">\n          <label></label>\n          {{selectAllLabel}}\n        </span>\n      </li>\n      <li *ngFor=\"let option of optionList.filtered\"\n        [ngClass]=\"{'active': option.highlighted, 'selected': option.selected, 'disabled': option.disabled, 'optgroup': option.group, 'd-flex justify-content-between flex-row-reverse align-items-center': option.icon}\"\n        [ngStyle]=\"{'height.px': optionHeight, 'line-height.px': optionHeight, 'background-color': getOptionStyle(option)['background-color'], 'color': getOptionStyle(option)['color']}\"\n        (click)=\"onOptionClick(option)\"\n        (mouseover)=\"option.hovered = true\"\n        (mouseleave)=\"option.hovered = false\">\n        <img class=\"rounded-circle\" [src]=\"option.icon\" *ngIf=\"option.icon !== ''\">\n        <span class=\"deselect-option\" *ngIf=\"!multiple\">{{option.label}}</span>\n        <span class=\"deselect-option\" *ngIf=\"multiple\">\n          <input type=\"checkbox\" [checked]=\"option.selected\" class=\"form-check-input {{customClass}}\" [disabled]=\"option.disabled\">\n          <label></label>\n          {{option.label}}\n        </span>\n      </li>\n      <li *ngIf=\"!this.hasOptionsItems\" class=\"message disabled\">\n        <span>{{notFoundMsg}}</span>\n      </li>\n    </ul>\n  </div>\n</div>\n",
                         encapsulation: i0.ViewEncapsulation.None,
                         changeDetection: i0.ChangeDetectionStrategy.Default,
-                        animations: [animations$1.trigger('dropdownAnimation', [
-                                animations$1.state('invisible', animations$1.style({ opacity: 0, height: '0px' })),
-                                animations$1.state('visible', animations$1.style({ opacity: 1, height: '*' })),
-                                animations$1.transition('invisible => visible', animations$1.animate('300ms ease')),
-                                animations$1.transition('visible => invisible', animations$1.animate('300ms ease'))
+                        animations: [animations.trigger('dropdownAnimation', [
+                                animations.state('invisible', animations.style({ opacity: 0, height: '0px' })),
+                                animations.state('visible', animations.style({ opacity: 1, height: '*' })),
+                                animations.transition('invisible => visible', animations.animate('300ms ease')),
+                                animations.transition('visible => invisible', animations.animate('300ms ease'))
                             ])]
                     }] }
         ];
@@ -25192,10 +25274,33 @@
         function SidenavComponent(platformId, el, renderer) {
             this.el = el;
             this.renderer = renderer;
+            this._sidenavTransform = 'translateX(-100%)';
             this.isBrowser = false;
             this.fixed = true;
+            this._side = 'left';
             this.isBrowser = common.isPlatformBrowser(platformId);
         }
+        Object.defineProperty(SidenavComponent.prototype, "side", {
+            get: /**
+             * @return {?}
+             */ function () { return this._side; },
+            set: /**
+             * @param {?} position
+             * @return {?}
+             */ function (position) {
+                if (position === 'left') {
+                    this._sidenavTransform = 'translateX(-100%)';
+                    this.renderer.removeClass(this.sideNav.nativeElement, 'side-nav-right');
+                }
+                else {
+                    this._sidenavTransform = 'translateX(100%)';
+                    this.renderer.addClass(this.sideNav.nativeElement, 'side-nav-right');
+                }
+                this._side = position;
+            },
+            enumerable: true,
+            configurable: true
+        });
         /**
          * @return {?}
          */
@@ -25203,6 +25308,9 @@
          * @return {?}
          */
             function () {
+                if (this._side === 'right') {
+                    this.renderer.addClass(this.sideNav.nativeElement, 'side-nav-right');
+                }
                 if (this.isBrowser) {
                     /** @type {?} */
                     var sidenav = this.el.nativeElement;
@@ -25231,8 +25339,8 @@
                         if (this.fixed) {
                             this.renderer.addClass(document.body, 'fixed-sn');
                             if (this.windwosWidth < +this.sidenavBreakpoint + 1) {
-                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', 'translateX(-100%)');
-                                this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateX(-100%)');
+                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', this._sidenavTransform);
+                                this.renderer.setStyle(this.el.nativeElement, 'transform', this._sidenavTransform);
                                 this.setShown(false);
                             }
                             else {
@@ -25243,8 +25351,8 @@
                         }
                         else {
                             this.renderer.addClass(document.body, 'hidden-sn');
-                            this.renderer.setStyle(this.sideNav.nativeElement, 'transform', 'translateX(-100%)');
-                            this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateX(-100%)');
+                            this.renderer.setStyle(this.sideNav.nativeElement, 'transform', this._sidenavTransform);
+                            this.renderer.setStyle(this.el.nativeElement, 'transform', this._sidenavTransform);
                             this.setShown(false);
                         }
                     }
@@ -25252,8 +25360,8 @@
                         if (this.fixed) {
                             this.renderer.addClass(document.body, 'fixed-sn');
                             if (this.windwosWidth < 1441) {
-                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', 'translateX(-100%)');
-                                this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateX(-100%)');
+                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', this._sidenavTransform);
+                                this.renderer.setStyle(this.el.nativeElement, 'transform', this._sidenavTransform);
                                 this.setShown(false);
                             }
                             else {
@@ -25264,8 +25372,8 @@
                         }
                         else {
                             this.renderer.addClass(document.body, 'hidden-sn');
-                            this.renderer.setStyle(this.sideNav.nativeElement, 'transform', 'translateX(-100%)');
-                            this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateX(-100%)');
+                            this.renderer.setStyle(this.sideNav.nativeElement, 'transform', this._sidenavTransform);
+                            this.renderer.setStyle(this.el.nativeElement, 'transform', this._sidenavTransform);
                             this.setShown(false);
                         }
                     }
@@ -25283,8 +25391,8 @@
                     if (this.sidenavBreakpoint) {
                         if (this.fixed) {
                             if (this.windwosWidth < +this.sidenavBreakpoint + 1) {
-                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', 'translateX(-100%)');
-                                this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateX(-100%)');
+                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', this._sidenavTransform);
+                                this.renderer.setStyle(this.el.nativeElement, 'transform', this._sidenavTransform);
                                 this.setShown(false);
                             }
                             if (this.windwosWidth > +this.sidenavBreakpoint && this.shown) {
@@ -25302,8 +25410,8 @@
                         }
                         else {
                             if (this.windwosWidth > +this.sidenavBreakpoint) {
-                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', 'translateX(-100%)');
-                                this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateX(-100%)');
+                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', this._sidenavTransform);
+                                this.renderer.setStyle(this.el.nativeElement, 'transform', this._sidenavTransform);
                                 this.hideOverlay();
                                 this.setShown(false);
                             }
@@ -25312,8 +25420,8 @@
                     else {
                         if (this.fixed) {
                             if (this.windwosWidth < 1441) {
-                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', 'translateX(-100%)');
-                                this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateX(-100%)');
+                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', this._sidenavTransform);
+                                this.renderer.setStyle(this.el.nativeElement, 'transform', this._sidenavTransform);
                                 this.setShown(false);
                             }
                             if (this.windwosWidth > 1440 && this.shown) {
@@ -25331,8 +25439,8 @@
                         }
                         else {
                             if (this.windwosWidth > 1440) {
-                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', 'translateX(-100%)');
-                                this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateX(-100%)');
+                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', this._sidenavTransform);
+                                this.renderer.setStyle(this.el.nativeElement, 'transform', this._sidenavTransform);
                                 this.hideOverlay();
                                 this.setShown(false);
                             }
@@ -25403,20 +25511,20 @@
                     if (this.sidenavBreakpoint) {
                         if (this.fixed) {
                             if (this.windwosWidth < +this.sidenavBreakpoint + 1) {
-                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', 'translateX(-100%)');
-                                this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateX(-100%)');
+                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', this._sidenavTransform);
+                                this.renderer.setStyle(this.el.nativeElement, 'transform', this._sidenavTransform);
                                 this.setShown(false);
                                 this.hideOverlay();
                             }
                             else {
-                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', 'translateX(-100%)');
-                                this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateX(-100%)');
+                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', this._sidenavTransform);
+                                this.renderer.setStyle(this.el.nativeElement, 'transform', this._sidenavTransform);
                                 this.setShown(false);
                             }
                         }
                         else {
-                            this.renderer.setStyle(this.sideNav.nativeElement, 'transform', 'translateX(-100%)');
-                            this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateX(-100%)');
+                            this.renderer.setStyle(this.sideNav.nativeElement, 'transform', this._sidenavTransform);
+                            this.renderer.setStyle(this.el.nativeElement, 'transform', this._sidenavTransform);
                             this.setShown(false);
                             this.hideOverlay();
                         }
@@ -25424,20 +25532,20 @@
                     else {
                         if (this.fixed) {
                             if (this.windwosWidth < 1441) {
-                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', 'translateX(-100%)');
-                                this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateX(-100%)');
+                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', this._sidenavTransform);
+                                this.renderer.setStyle(this.el.nativeElement, 'transform', this._sidenavTransform);
                                 this.setShown(false);
                                 this.hideOverlay();
                             }
                             else {
-                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', 'translateX(-100%)');
-                                this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateX(-100%)');
+                                this.renderer.setStyle(this.sideNav.nativeElement, 'transform', this._sidenavTransform);
+                                this.renderer.setStyle(this.el.nativeElement, 'transform', this._sidenavTransform);
                                 this.setShown(false);
                             }
                         }
                         else {
-                            this.renderer.setStyle(this.sideNav.nativeElement, 'transform', 'translateX(-100%)');
-                            this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateX(-100%)');
+                            this.renderer.setStyle(this.sideNav.nativeElement, 'transform', this._sidenavTransform);
+                            this.renderer.setStyle(this.el.nativeElement, 'transform', this._sidenavTransform);
                             this.setShown(false);
                             this.hideOverlay();
                         }
@@ -25536,6 +25644,7 @@
             class: [{ type: i0.Input }],
             fixed: [{ type: i0.Input }],
             sidenavBreakpoint: [{ type: i0.Input }],
+            side: [{ type: i0.Input }],
             sideNav: [{ type: i0.ViewChild, args: ['sidenav',] }],
             overlay: [{ type: i0.ViewChild, args: ['overlay',] }],
             windwosResize: [{ type: i0.HostListener, args: ['window:resize',] }]
@@ -27037,6 +27146,7 @@
     var MdbStepComponent = /** @class */ (function () {
         function MdbStepComponent(el) {
             this.el = el;
+            this.editable = true;
             this._isActive = false;
         }
         Object.defineProperty(MdbStepComponent.prototype, "isDone", {
@@ -27126,6 +27236,7 @@
         };
         MdbStepComponent.propDecorators = {
             content: [{ type: i0.ViewChild, args: [i0.TemplateRef,] }],
+            editable: [{ type: i0.Input }],
             name: [{ type: i0.Input }],
             label: [{ type: i0.Input }],
             stepForm: [{ type: i0.Input }]
@@ -27313,7 +27424,15 @@
             function (index) {
                 /** @type {?} */
                 var newStep = this._getStepByIndex(index);
+                /** @type {?} */
+                var newStepIndex = this.steps.toArray().findIndex(( /**
+                 * @param {?} step
+                 * @return {?}
+                 */function (step) { return step === newStep; }));
                 if (this.linear && !this._isNewStepLinear(index)) {
+                    return;
+                }
+                if (newStepIndex < this._activeStepIndex && !newStep.editable) {
                     return;
                 }
                 this._removeStepValidationClasses(newStep);
@@ -27569,11 +27688,11 @@
                         exportAs: 'mdbStepper',
                         template: "<div class=\"card-body\">\n  <ul #container class=\"stepper\" [ngClass]=\"{'horizontal': !vertical && horizontal}\">\n    <li [ngClass]=\"{'active': step.isActive, 'done': step.isDone, 'wrong': step.isWrong }\" class=\"step\" *ngFor=\"let step of steps; let i = index\">\n      <div #stepTitle class=\"step-title waves-effect waves-dark\" (click)=\"setNewActiveStep(i); onClick(i, $event)\">\n        {{ step.name }}\n        <span class=\"step-label\">{{ step.label }}</span>\n      </div>\n      <div #stepContent class=\"step-new-content\" [ngClass]=\"{'d-block': step.isActive }\" [@stepContentTransition]=\"!vertical && getAnimationState(i)\">\n          <ng-container [ngTemplateOutlet]=\"step.content\"></ng-container>\n      </div>\n    </li>\n  </ul>\n</div>\n",
                         encapsulation: i0.ViewEncapsulation.None,
-                        animations: [animations$1.trigger('stepContentTransition', [
-                                animations$1.state('previous', animations$1.style({ transform: 'translateX(-100%)', visibility: 'hidden' })),
-                                animations$1.state('next', animations$1.style({ transform: 'translateX(100%)', visibility: 'hidden' })),
-                                animations$1.state('current', animations$1.style({ transform: 'none', visibility: 'visible' })),
-                                animations$1.transition('* => *', animations$1.animate('600ms ease'))
+                        animations: [animations.trigger('stepContentTransition', [
+                                animations.state('previous', animations.style({ transform: 'translateX(-100%)', visibility: 'hidden' })),
+                                animations.state('next', animations.style({ transform: 'translateX(100%)', visibility: 'hidden' })),
+                                animations.state('current', animations.style({ transform: 'none', visibility: 'visible' })),
+                                animations.transition('* => *', animations.animate('600ms ease'))
                             ])],
                         providers: [WavesDirective]
                     }] }
@@ -29660,6 +29779,7 @@
     exports.ButtonsModule = ButtonsModule;
     exports.ButtonRadioDirective = ButtonRadioDirective;
     exports.ButtonCheckboxDirective = ButtonCheckboxDirective;
+    exports.FixedButtonCaptionDirective = FixedButtonCaptionDirective;
     exports.CardsFreeModule = CardsFreeModule;
     exports.MdbCardComponent = MdbCardComponent;
     exports.MdbCardBodyComponent = MdbCardBodyComponent;

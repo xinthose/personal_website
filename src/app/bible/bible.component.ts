@@ -79,10 +79,14 @@ export class BibleComponent implements OnInit {
   }
   
   handleVerseChange(value: any) {
-    this.selectedVerse = value;
-    this.verseText = bible[this.selectedBook.bookId - 1].chapters[this.selectedChapter.chapterId - 1][this.selectedVerse.verseId - 1];
-    this.verseTitle = this.selectedBook.bookName + " " + this.selectedChapter.chapterName + " " + this.selectedVerse.verseName;
-    this.verseLocation = bible[this.selectedBook.bookId - 1].abbrev + " " + this.selectedChapter.chapterId.toString() + ":" + this.selectedVerse.verseId.toString();
-    this.showVerse = true;
+    if (value.verseId) {
+      this.selectedVerse = value;
+      this.verseText = bible[this.selectedBook.bookId - 1].chapters[this.selectedChapter.chapterId - 1][this.selectedVerse.verseId - 1];
+      this.verseTitle = this.selectedBook.bookName + " " + this.selectedChapter.chapterName + " " + this.selectedVerse.verseName;
+      this.verseLocation = bible[this.selectedBook.bookId - 1].abbrev + " " + this.selectedChapter.chapterId.toString() + ":" + this.selectedVerse.verseId.toString();
+      this.showVerse = true;
+    } else {
+      this.showVerse = false;
+    }
   }
 }

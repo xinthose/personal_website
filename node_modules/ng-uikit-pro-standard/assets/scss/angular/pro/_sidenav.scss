@@ -16,6 +16,11 @@
     }
   }
 
+  &.side-nav-right {
+    left: auto;
+    right: 0 !important;
+  }
+
   &.side-nav-light {
     background-color: #e5e5e5;
 

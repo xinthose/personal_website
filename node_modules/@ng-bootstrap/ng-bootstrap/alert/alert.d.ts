@@ -1,23 +1,29 @@
 import { EventEmitter, Renderer2, ElementRef, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { NgbAlertConfig } from './alert-config';
 /**
- * Alerts can be used to provide feedback messages.
+ * Alert is a component to provide contextual feedback messages for user.
+ *
+ * It supports several alert types and can be dismissed.
  */
 export declare class NgbAlert implements OnInit, OnChanges {
     private _renderer;
     private _element;
     /**
-     * A flag indicating if a given alert can be dismissed (closed) by a user. If this flag is set, a close button (in a
-     * form of an ×) will be displayed.
+     * If `true`, alert can be dismissed by the user.
+     *
+     * The close button (×) will be displayed and you can be notified
+     * of the event with the `(close)` output.
      */
     dismissible: boolean;
     /**
-     * Alert type (CSS class). Bootstrap 4 recognizes the following types: "success", "info", "warning", "danger",
-     * "primary", "secondary", "light", "dark".
+     * Type of the alert.
+     *
+     * Bootstrap provides styles for the following types: `'success'`, `'info'`, `'warning'`, `'danger'`, `'primary'`,
+     * `'secondary'`, `'light'` and `'dark'`.
      */
     type: string;
     /**
-     * An event emitted when the close button is clicked. This event has no payload. Only relevant for dismissible alerts.
+     * An event emitted when the close button is clicked. It has no payload and only relevant for dismissible alerts.
      */
     close: EventEmitter<void>;
     constructor(config: NgbAlertConfig, _renderer: Renderer2, _element: ElementRef);
