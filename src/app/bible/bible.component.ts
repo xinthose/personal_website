@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { HttpClient } from "@angular/common/http";
-
 import { BibleService } from "../bible.service";
+
+interface dataBooksInt { bookName: string, bookId: number };
 
 @Component({
   selector: 'app-bible',
@@ -15,7 +15,7 @@ export class BibleComponent implements OnInit {
   verseTitle: string;
   verseLocation: string;
   showVerse: boolean;
-  debug: boolean = true;
+  debug: boolean = false;
 
   // dropdown disable
   isDisabledChapters: boolean = true;
@@ -27,9 +27,12 @@ export class BibleComponent implements OnInit {
   defaultItemVerse: { verseName: string, verseId: number } = { verseName: "Select Verse", verseId: null };
 
   // dropdown data
-  dataBooks: Array<{ bookName: string, bookId: number }>;
-  dataChapters: Array<{ chapterName: string, chapterId: number, bookId: number }>;
-  dataVerses: Array<{ verseName: string, verseId: number, chapterId: number, bookId: number }>;
+  dataBooks: any;
+  dataChapters: any;
+  dataVerses: any;
+  //dataBooks: Array<{ bookName: string, bookId: number }>;
+  //dataChapters: Array<{ chapterName: string, chapterId: number, bookId: number }>;
+  //dataVerses: Array<{ verseName: string, verseId: number, chapterId: number, bookId: number }>;
 
   // dropdown cascade result
   dataResultChapters: Array<{ chapterName: string, chapterId: number, bookId: number }>;
@@ -38,29 +41,44 @@ export class BibleComponent implements OnInit {
   // dropdown selection
   selectedBook: { bookName: string, bookId: number };
   selectedChapter: { chapterName: string, chapterId: number };
-  selectedVerse: { verseName: string, verseId: number };  
+  selectedVerse: { verseName: string, verseId: number };
 
   constructor(
     private bibleService: BibleService,
   ) {
-    // import * as books from './bible/data/books.json';
-    // import * as chapters from './bible/data/chapters.json';
-    // import * as verses from './bible/data/verses.json';    
-    // import * as bible from './data/en_kjv.json';
-
-    //this.dataBooks = books;
-    this.bibleService.fetch('./data/books.json')
+    // fetch JSON data asynchronously 
+    this.bibleService.fetch('./assets/bible/books.json')
       .subscribe(response => {
         if (this.debug) console.debug("response = " + JSON.stringify(response));
-        
+        this.dataBooks = response;
       }, error => {
         console.error(error);
       }, () => {
       });
-
-    // this.dataChapters = chapters;
-    // this.dataVerses = verses;
-    // this.bible = bible;
+    this.bibleService.fetch('./assets/bible/chapters.json')
+      .subscribe(response => {
+        if (this.debug) console.debug("response = " + JSON.stringify(response));
+        this.dataChapters = response;
+      }, error => {
+        console.error(error);
+      }, () => {
+      });
+    this.bibleService.fetch('./assets/bible/verses.json')
+      .subscribe(response => {
+        if (this.debug) console.debug("response = " + JSON.stringify(response));
+        this.dataVerses = response;
+      }, error => {
+        console.error(error);
+      }, () => {
+      });
+    this.bibleService.fetch('./assets/bible/en_kjv.json')
+      .subscribe(response => {
+        if (this.debug) console.debug("response = " + JSON.stringify(response));
+        this.bible = response;
+      }, error => {
+        console.error(error);
+      }, () => {
+      });
   }
 
   ngOnInit() {
@@ -99,7 +117,7 @@ export class BibleComponent implements OnInit {
       this.dataResultVerses = this.dataVerses.filter((s) => ((s.chapterId === value.chapterId) && (s.bookId === value.bookId)))
     }
   }
-  
+
   handleVerseChange(value: any) {
     if (value.verseId) {
       this.selectedVerse = value;
