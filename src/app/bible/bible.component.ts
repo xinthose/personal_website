@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import * as books from './data/books.json';
-import * as chapters from './data/chapters.json';
-import * as verses from './data/verses.json';
-import * as bible from './data/en_kjv.json';
+import { HttpClient } from "@angular/common/http";
+
+import { BibleService } from "../bible.service";
 
 @Component({
   selector: 'app-bible',
@@ -11,10 +10,12 @@ import * as bible from './data/en_kjv.json';
   styleUrls: ['./bible.component.scss']
 })
 export class BibleComponent implements OnInit {
+  bible: any;
   verseText: string;
   verseTitle: string;
   verseLocation: string;
   showVerse: boolean;
+  debug: boolean = true;
 
   // dropdown disable
   isDisabledChapters: boolean = true;
@@ -39,10 +40,27 @@ export class BibleComponent implements OnInit {
   selectedChapter: { chapterName: string, chapterId: number };
   selectedVerse: { verseName: string, verseId: number };  
 
-  constructor() {
-    this.dataBooks = books;
-    this.dataChapters = chapters;
-    this.dataVerses = verses;
+  constructor(
+    private bibleService: BibleService,
+  ) {
+    // import * as books from './bible/data/books.json';
+    // import * as chapters from './bible/data/chapters.json';
+    // import * as verses from './bible/data/verses.json';    
+    // import * as bible from './data/en_kjv.json';
+
+    //this.dataBooks = books;
+    this.bibleService.fetch('./data/books.json')
+      .subscribe(response => {
+        if (this.debug) console.debug("response = " + JSON.stringify(response));
+        
+      }, error => {
+        console.error(error);
+      }, () => {
+      });
+
+    // this.dataChapters = chapters;
+    // this.dataVerses = verses;
+    // this.bible = bible;
   }
 
   ngOnInit() {
@@ -85,9 +103,9 @@ export class BibleComponent implements OnInit {
   handleVerseChange(value: any) {
     if (value.verseId) {
       this.selectedVerse = value;
-      this.verseText = bible[this.selectedBook.bookId - 1].chapters[this.selectedChapter.chapterId - 1][this.selectedVerse.verseId - 1];
+      this.verseText = this.bible[this.selectedBook.bookId - 1].chapters[this.selectedChapter.chapterId - 1][this.selectedVerse.verseId - 1];
       this.verseTitle = this.selectedBook.bookName + " " + this.selectedChapter.chapterName + " " + this.selectedVerse.verseName;
-      this.verseLocation = bible[this.selectedBook.bookId - 1].abbrev + " " + this.selectedChapter.chapterId.toString() + ":" + this.selectedVerse.verseId.toString();
+      this.verseLocation = this.bible[this.selectedBook.bookId - 1].abbrev + " " + this.selectedChapter.chapterId.toString() + ":" + this.selectedVerse.verseId.toString();
       this.showVerse = true;
     } else {
       this.showVerse = false;

@@ -25,6 +25,10 @@
 
 - `for i in home bible about page-not-found; do ng g c "${i}"; done`
 
+#### Services
+
+- `ng g service bible`
+
 ## General
 
 - `npm i -g @angular/cli`
