@@ -41,9 +41,11 @@
 @import "dataviz";
 @import "map";
 
+
 // Barcodes
 @import "barcode";
 @import "qrcode";
+
 
 // Scheduling
 @import "calendar";
@@ -71,6 +73,7 @@
 @import "tabstrip";
 @import "toolbar";
 @import "treeview";
+@import "drawer";
 
 
 // Interactivity & UX
@@ -86,3 +89,7 @@
 
 // Chat
 @import "chat";
+
+
+// PDF Viewer
+@import "pdf-viewer";

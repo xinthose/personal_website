@@ -74,7 +74,7 @@
             margin-left: $dialog-button-gap;
 
             .k-rtl &,
-            [dir='rtl'] & {
+            [dir="rtl"] & {
                 margin-left: 0;
                 margin-right: $dialog-button-gap;
             }
@@ -93,7 +93,7 @@
             padding: $dialog-stretched-button-padding-y $dialog-stretched-button-padding-x;
             border-width: 0;
             text-overflow: ellipsis;
-            flex: 1 0 0;
+            flex: 1 0 0%;
             display: inline-block; // needed for ellipsis overflow
             overflow: hidden;
         }
@@ -103,7 +103,7 @@
             border-left-width: $dialog-stretched-button-border-width;
 
             .k-rtl &,
-            [dir='rtl'] & {
+            [dir="rtl"] & {
                 margin: 0;
                 border-left-width: 0;
                 border-right-width: $dialog-stretched-button-border-width;
@@ -148,7 +148,7 @@
         }
 
         .k-rtl,
-        [dir='rtl'] {
+        [dir="rtl"] {
 
             .k-dialog-buttongroup {
                 text-align: left;

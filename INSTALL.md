@@ -1,28 +1,42 @@
 # Installation
 
+## Visual Studio Code
+
+- Install Github extension
+- Set your Visual Studio Code Personal Access Token
+- Test commit and push
+
 ## Linux
 
 - `cd /home/adam/Documents/svn/github/personal-website`
-- `git config user.email "adamdunsmoor@pm.me"`
-- `git config user.name "xinthose"`
 - `apt-get install nodejs npm build-essential`
 
-## Personal Website
+## Angular 8
+
+### Installation
+
+- `npm i -g @angular/cli @angular/core @angular/forms @angular/forms terser typescript`
+
+### Create App (client directory)
+
+- `ng new personal-website --style=scss --enableIvy=false --routing=true`
+  
+#### Components
 
 - `ng new personal-website --style=scss --routing`
 - `ng generate module app-routing --flat --module=app`
 - `ng generate component home bible about page-not-found`
-- Bible in JSON: <https://github.com/thiagobodruk/bible>
+- 
 
 ## General
 
-- `npm install -g @angular/cli`
-- `npm install --save rxjs rxjs-compat @angular/http`
+- `npm i -g @angular/cli`
+- `npm i rxjs rxjs-compat @angular/http`
 
 ## Kendo-UI (Progress)
 
-- `npm install --save @progress/kendo-angular-buttons @progress/kendo-angular-l10n @angular/animations @progress/kendo-angular-dropdowns`
-- `npm install --save @progress/kendo-theme-default`
+- `npm i @progress/kendo-angular-buttons @progress/kendo-angular-l10n @angular/animations @progress/kendo-angular-dropdowns`
+- `npm i @progress/kendo-theme-default`
 
 ## MDBootstrap Pro
 
@@ -31,6 +45,10 @@
 - `npm i git+https://oauth2:XXXXXXXXXX_XXXXXXXXX@git.mdbootstrap.com/mdb/angular/ng-uikit-pro-standard.git --save`
 - `npm i chart.js@2.5.0 @types/chart.js easy-pie-chart@2.1.7 hammerjs@2.0.8 screenfull@3.3.0 @fortawesome/fontawesome-free animate.css`
   - 3rd party libraries
+
+## References
+
+- Bible in JSON: <https://github.com/thiagobodruk/bible>
 
 ## Commands -------------------------------------------------------------------------------------------------------------------------
 
