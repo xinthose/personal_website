@@ -29,7 +29,7 @@
               "src/web.config"
             ],
             "deployUrl": "/personal-website/",
-            "baseHref": "/personal-website/",            
+            "baseHref": "/personal-website/",
             "styles": [
               {
                 "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
@@ -46,7 +46,7 @@
             "scripts": [
               "node_modules/chart.js/dist/Chart.js",
               "node_modules/screenfull/dist/screenfull.js",
-              "node_modules/hammerjs/hammer.min.js"              
+              "node_modules/hammerjs/hammer.min.js"
             ]
           },
           "configurations": {

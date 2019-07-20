@@ -1,4 +1,4 @@
-# Installation
+# Xinthose Installation
 
 ## Visual Studio Code
 
@@ -23,10 +23,7 @@
   
 #### Components
 
-- `ng new personal-website --style=scss --routing`
-- `ng generate module app-routing --flat --module=app`
-- `ng generate component home bible about page-not-found`
-- 
+- `for i in home bible about page-not-found; do ng g c "${i}"; done`
 
 ## General
 
@@ -35,8 +32,8 @@
 
 ## Kendo-UI (Progress)
 
-- `npm i @progress/kendo-angular-buttons @progress/kendo-angular-l10n @angular/animations @progress/kendo-angular-dropdowns`
-- `npm i @progress/kendo-theme-default`
+- `ng add @progress/kendo-angular-buttons @progress/kendo-angular-dropdowns`
+- `npm i @progress/kendo-theme-material`
 
 ## MDBootstrap Pro
 

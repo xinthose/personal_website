@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-import books from './data/books.json';
-import chapters from './data/chapters.json';
-import verses from './data/verses.json';
-import bible from './data/en_kjv.json';
+import * as books from './data/books.json';
+import * as chapters from './data/chapters.json';
+import * as verses from './data/verses.json';
+import * as bible from './data/en_kjv.json';
 
 @Component({
   selector: 'app-bible',
