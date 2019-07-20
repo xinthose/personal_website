@@ -3,6 +3,7 @@ import { DatepickerViewModel, MonthViewModel } from './datepicker-view-model';
 import { NgbCalendar } from './ngb-calendar';
 import { NgbDatepickerI18n } from './datepicker-i18n';
 export declare function isChangedDate(prev: NgbDate, next: NgbDate): boolean;
+export declare function isChangedMonth(prev: NgbDate, next: NgbDate): boolean;
 export declare function dateComparator(prev: NgbDate, next: NgbDate): boolean;
 export declare function checkMinBeforeMax(minDate: NgbDate, maxDate: NgbDate): void;
 export declare function checkDateInRange(date: NgbDate, minDate: NgbDate, maxDate: NgbDate): NgbDate;
