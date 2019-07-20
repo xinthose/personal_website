@@ -11,41 +11,45 @@ import * as bible from './data/en_kjv.json';
   styleUrls: ['./bible.component.scss']
 })
 export class BibleComponent implements OnInit {
+  verseText: string;
+  verseTitle: string;
+  verseLocation: string;
+  showVerse: boolean;
 
-  constructor() { }
+  // dropdown disable
+  isDisabledChapters: boolean = true;
+  isDisabledVerses: boolean = true;
+
+  // dropdown default selection
+  defaultItemBook: { bookName: string, bookId: number } = { bookName: "Select Book", bookId: null };
+  defaultItemChapter: { chapterName: string, chapterId: number } = { chapterName: "Select Chapter", chapterId: null };
+  defaultItemVerse: { verseName: string, verseId: number } = { verseName: "Select Verse", verseId: null };
+
+  // dropdown data
+  dataBooks: Array<{ bookName: string, bookId: number }>;
+  dataChapters: Array<{ chapterName: string, chapterId: number, bookId: number }>;
+  dataVerses: Array<{ verseName: string, verseId: number, chapterId: number, bookId: number }>;
+
+  // dropdown cascade result
+  dataResultChapters: Array<{ chapterName: string, chapterId: number, bookId: number }>;
+  dataResultVerses: Array<{ verseName: string, verseId: number, chapterId: number }>;
+
+  // dropdown selection
+  selectedBook: { bookName: string, bookId: number };
+  selectedChapter: { chapterName: string, chapterId: number };
+  selectedVerse: { verseName: string, verseId: number };  
+
+  constructor() {
+    this.dataBooks = books;
+    this.dataChapters = chapters;
+    this.dataVerses = verses;
+  }
 
   ngOnInit() {
   }
 
-  public verseText: string;
-  public verseTitle: string;
-  public verseLocation: string;
-  public showVerse: boolean;
+  // dropdown changes
 
-  // dropdown disable
-  public isDisabledChapters: boolean = true;
-  public isDisabledVerses: boolean = true;
-
-  // dropdown default selection
-  public defaultItemBook: { bookName: string, bookId: number } = { bookName: "Select Book", bookId: null };
-  public defaultItemChapter: { chapterName: string, chapterId: number } = { chapterName: "Select Chapter", chapterId: null };
-  public defaultItemVerse: { verseName: string, verseId: number } = { verseName: "Select Verse", verseId: null };
-
-  // dropdown data
-  public dataBooks: Array<{ bookName: string, bookId: number }> = books;
-  public dataChapters: Array<{ chapterName: string, chapterId: number, bookId: number }> = chapters;
-  public dataVerses: Array<{ verseName: string, verseId: number, chapterId: number, bookId: number }> = verses;
-
-  // dropdown cascade result
-  public dataResultChapters: Array<{ chapterName: string, chapterId: number, bookId: number }>;
-  public dataResultVerses: Array<{ verseName: string, verseId: number, chapterId: number }>;
-
-  // dropdown selection
-  public selectedBook: { bookName: string, bookId: number };
-  public selectedChapter: { chapterName: string, chapterId: number };
-  public selectedVerse: { verseName: string, verseId: number };
-
-  // dropdown change
   handleBookChange(value: any) {
     this.selectedBook = value;
     this.selectedChapter = undefined;
