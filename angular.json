@@ -4,15 +4,15 @@
   "newProjectRoot": "projects",
   "projects": {
     "personal-website": {
-      "root": "",
-      "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "scss"
+          "style": "scss"
         }
       },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -21,23 +21,32 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.app.json",
+            "tsConfig": "tsconfig.app.json",
+            "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/web.config"
             ],
+            "deployUrl": "/personal-website/",
+            "baseHref": "/personal-website/",            
             "styles": [
-              "node_modules/font-awesome/scss/font-awesome.scss",
+              {
+                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+              },
+              "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/regular.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
               "node_modules/ng-uikit-pro-standard/assets/scss/bootstrap/bootstrap.scss",
               "node_modules/ng-uikit-pro-standard/assets/scss/mdb.scss",
-              "node_modules/@progress/kendo-theme-default/dist/all.css",
+              "node_modules/animate.css/animate.css",
               "src/styles.scss"
             ],
             "scripts": [
               "node_modules/chart.js/dist/Chart.js",
-              "node_modules/easy-pie-chart/dist/easypiechart.js",
               "node_modules/screenfull/dist/screenfull.js",
-              "node_modules/hammerjs/hammer.min.js"
+              "node_modules/hammerjs/hammer.min.js"              
             ]
           },
           "configurations": {
@@ -56,7 +65,14 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "9mb",
+                  "maximumError": "10mb"
+                }
+              ]
             }
           }
         },
@@ -82,46 +98,34 @@
           "options": {
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.spec.json",
-            "karmaConfig": "src/karma.conf.js",
-            "styles": [
-              "node_modules/font-awesome/scss/font-awesome.scss",
-              "node_modules/ng-uikit-pro-standard/assets/scss/bootstrap/bootstrap.scss",
-              "node_modules/ng-uikit-pro-standard/assets/scss/mdb.scss",
-              "node_modules/@progress/kendo-theme-default/dist/all.css",
-              "src/styles.scss"
-            ],
-            "scripts": [
-              "node_modules/chart.js/dist/Chart.js",
-              "node_modules/easy-pie-chart/dist/easypiechart.js",
-              "node_modules/screenfull/dist/screenfull.js",
-              "node_modules/hammerjs/hammer.min.js"
-            ],
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
               "src/assets"
-            ]
+            ],
+            "styles": [
+              {
+                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+              },
+              "src/styles.scss"
+            ],
+            "scripts": []
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "src/tsconfig.app.json",
-              "src/tsconfig.spec.json"
+              "tsconfig.app.json",
+              "tsconfig.spec.json",
+              "e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
             ]
           }
-        }
-      }
-    },
-    "personal-website-e2e": {
-      "root": "e2e/",
-      "projectType": "application",
-      "prefix": "",
-      "architect": {
+        },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
@@ -132,15 +136,6 @@
             "production": {
               "devServerTarget": "personal-website:serve:production"
             }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         }
       }

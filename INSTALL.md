@@ -13,7 +13,7 @@
 - `ng generate module app-routing --flat --module=app`
 - `ng generate component home bible about page-not-found`
 - Bible in JSON: <https://github.com/thiagobodruk/bible>
- 
+
 ## General
 
 - `npm install -g @angular/cli`
@@ -24,27 +24,20 @@
 - `npm install --save @progress/kendo-angular-buttons @progress/kendo-angular-l10n @angular/animations @progress/kendo-angular-dropdowns`
 - `npm install --save @progress/kendo-theme-default`
 
-## MDBootstrap Pro 
+## MDBootstrap Pro
 
 - tutorial: <https://mdbootstrap.com/angular/5min-quickstart/>
-    - click PRO
-- `npm install bootstrap --save`
-- `npm install angular-bootstrap-md --save`
-- `npm install --save chart.js@2.5.0 @types/chart.js easy-pie-chart@2.1.7 hammerjs@2.0.8 screenfull@3.3.0 font-awesome`
+  - click "PRO" underneath "npm iation"
+- `npm i git+https://oauth2:XXXXXXXXXX_XXXXXXXXX@git.mdbootstrap.com/mdb/angular/ng-uikit-pro-standard.git --save`
+- `npm i chart.js@2.5.0 @types/chart.js easy-pie-chart@2.1.7 hammerjs@2.0.8 screenfull@3.3.0 @fortawesome/fontawesome-free animate.css`
+  - 3rd party libraries
 
-## Firebase Hosting
-
-- `npm install -g firebase-tools`
-- `firebase login: hosting, dist, do not overwrite index.html`
-- `firebase init`
-- `firebase deploy`
-
-# Commands
+## Commands -------------------------------------------------------------------------------------------------------------------------
 
 ## Angular Commands (ng)
 
 - `ng --version`    // show angular version
-- `ng update --all --force` // update all angular packages
+- `ng update --all --force` // update all angular packages (ignore peer dependency errors)
 - `ng build --prod --aot`   // build for production
 - `ng serve --host 0.0.0.0` // allow outside PC's access to the app
 
@@ -59,17 +52,17 @@
 ## NPM Commands (Node Package Manager)
 
 - `npm -v`  // show npm version
-- `npm install -g npm`  // update npm version
+- `npm i -g npm`  // update npm version
 - `npm update`  # update all packages in the app
-- `npm install` -g version-check
-- npm install [package]@[version]   // install specific version of a package
+- npm i [package]@[version]   // install specific version of a package
 - `npm ls @progress/kendo-angular-scheduler`  // show version of a package
+- `npm i --package-lock-only` // only create `package-lock.json` file
 
 ### Install dependencies
 
-- `npm install -g npm-install-peers`
+- `npm i -g npm-install-peers`
 - `npm-install-peers`
-- `npm install @angular/cli@latest`  // install latest version of angular cli
+- `npm i @angular/cli@latest`  // install latest version of angular cli
 
 ## Typescript Commands
 
@@ -80,9 +73,24 @@
 - `git config --global user.email "your github login email address"`  // set email address
 - `git config --global user.email`  // check email address
 
+## pm2
+
+- Github: <https://github.com/Unitech/pm2>
+- `npm i pm2 pm2-logrotate -g`
+- `pm2 ls`  // list all running applications
+- `pm2 stop EDS4WSserver`
+- `pm2 restart EDS4WSserver`
+- `pm2 delete EDS4WSserver`
+- `pm2 describe EDS4WSserver`
+- `pm2 monit`   // monitor logs, custom metrics, & application information
+
+## link pm2 to <https://app.pm2.io/#/bucket/5beae26a3ca4a1db69a9056b/overview/servers>
+
+- `pm2 link 90n1bqb6mdqm111 mvp52pu0qi8k4v1 EDS`
+
 ### Update pm2
 
-- `npm install pm2@latest -g`
+- `npm i pm2@latest -g`
 - `pm2 update`
 
 ## Other
@@ -95,5 +103,5 @@
 
 ## Troubleshooting
 
-- `ERROR in The Angular Compiler requires TypeScript >=3.1.1 and <3.3.0 but 3.3.3 was found instead.`
-  - `npm install typescript@">=3.1.1 <3.3.0"`
+- `ERROR in The Angular Compiler requires TypeScript >=3.4.0 and <3.5.0 but 3.5.1 was found instead.`
+  - `npm i typescript@">=3.4.0 <3.5.0"`
