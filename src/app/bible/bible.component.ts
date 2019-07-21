@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import { BibleService } from "../bible.service";
 
-interface dataBooksInt { bookName: string, bookId: number };
-
 @Component({
   selector: 'app-bible',
   templateUrl: './bible.component.html',
@@ -27,12 +25,9 @@ export class BibleComponent implements OnInit {
   defaultItemVerse: { verseName: string, verseId: number } = { verseName: "Select Verse", verseId: null };
 
   // dropdown data
-  dataBooks: any;
-  dataChapters: any;
-  dataVerses: any;
-  //dataBooks: Array<{ bookName: string, bookId: number }>;
-  //dataChapters: Array<{ chapterName: string, chapterId: number, bookId: number }>;
-  //dataVerses: Array<{ verseName: string, verseId: number, chapterId: number, bookId: number }>;
+  dataBooks: Array<{ bookName: string, bookId: number }>;
+  dataChapters: Array<{ chapterName: string, chapterId: number, bookId: number }>;
+  dataVerses: Array<{ verseName: string, verseId: number, chapterId: number, bookId: number }>;
 
   // dropdown cascade result
   dataResultChapters: Array<{ chapterName: string, chapterId: number, bookId: number }>;
@@ -47,15 +42,15 @@ export class BibleComponent implements OnInit {
     private bibleService: BibleService,
   ) {
     // fetch JSON data asynchronously 
-    this.bibleService.fetch('./assets/bible/books.json')
-      .subscribe(response => {
-        if (this.debug) console.debug("response = " + JSON.stringify(response));
-        this.dataBooks = response;
-      }, error => {
-        console.error(error);
+    this.bibleService.fetchBooks()
+    .subscribe(response => {
+      if (this.debug) console.debug("response = " + JSON.stringify(response));
+      this.dataBooks = response;
+    }, error => {
+      console.error(error);
       }, () => {
       });
-    this.bibleService.fetch('./assets/bible/chapters.json')
+    this.bibleService.fetchChapters()
       .subscribe(response => {
         if (this.debug) console.debug("response = " + JSON.stringify(response));
         this.dataChapters = response;
@@ -63,7 +58,7 @@ export class BibleComponent implements OnInit {
         console.error(error);
       }, () => {
       });
-    this.bibleService.fetch('./assets/bible/verses.json')
+    this.bibleService.fetchVerses()
       .subscribe(response => {
         if (this.debug) console.debug("response = " + JSON.stringify(response));
         this.dataVerses = response;
