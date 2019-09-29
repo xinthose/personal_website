@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { GroupResult, groupBy } from '@progress/kendo-data-query';
+
 import { BibleService } from "../bible.service";
 
 @Component({
@@ -7,7 +9,7 @@ import { BibleService } from "../bible.service";
   templateUrl: './bible.component.html',
   styleUrls: ['./bible.component.scss']
 })
-export class BibleComponent implements OnInit {
+export class BibleComponent {
   bible: any;
   verseText: string;
   verseTitle: string;
@@ -25,7 +27,7 @@ export class BibleComponent implements OnInit {
   defaultItemVerse: { verseName: string, verseId: number } = { verseName: "Select Verse", verseId: null };
 
   // dropdown data
-  dataBooks: Array<{ bookName: string, bookId: number }>;
+  dataBooksGrouped: GroupResult[];
   dataChapters: Array<{ chapterName: string, chapterId: number, bookId: number }>;
   dataVerses: Array<{ verseName: string, verseId: number, chapterId: number, bookId: number }>;
 
@@ -45,7 +47,7 @@ export class BibleComponent implements OnInit {
     this.bibleService.fetchBooks()
     .subscribe(response => {
       if (this.debug) console.debug("response = " + JSON.stringify(response));
-      this.dataBooks = response;
+      this.dataBooksGrouped = groupBy(response, [{field: "subcategory"}]);;
     }, error => {
       console.error(error);
       }, () => {
@@ -74,9 +76,6 @@ export class BibleComponent implements OnInit {
         console.error(error);
       }, () => {
       });
-  }
-
-  ngOnInit() {
   }
 
   // dropdown changes

@@ -1,6 +1,6 @@
 {
   "name": "personal-website",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xinthose/personal_website.git"
@@ -29,6 +29,7 @@
     "@progress/kendo-angular-dropdowns": "^4.1.0",
     "@progress/kendo-angular-l10n": "^2.0.0",
     "@progress/kendo-angular-popup": "^3.0.0",
+    "@progress/kendo-data-query": "^1.5.2",
     "@progress/kendo-theme-default": "^4.3.3",
     "@progress/kendo-theme-material": "^3.3.4",
     "@types/chart.js": "^2.8.5",

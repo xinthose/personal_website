@@ -13,7 +13,7 @@ export class BibleService {
     return this.http.get(file);
   }
   public fetchBooks() {
-    return this.http.get<Array<{ bookName: string, bookId: number }>>('./assets/bible/books.json');
+    return this.http.get<Array<any>>('./assets/bible/books.json');
   }
   public fetchChapters() {
     return this.http.get<Array<{ chapterName: string, chapterId: number, bookId: number }>>('./assets/bible/chapters.json');

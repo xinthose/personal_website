@@ -2,7 +2,7 @@
     <div class="container text-center">
             <div class="row justify-content-center">
                     <div class="col">
-                <kendo-dropdownlist [data]="dataBooks" [value]="selectedBook" [defaultItem]="defaultItemBook"
+                <kendo-dropdownlist [data]="dataBooksGrouped" [value]="selectedBook" [defaultItem]="defaultItemBook"
                     [textField]="'bookName'" [valueField]="'bookId'" (valueChange)="handleBookChange($event)">
                 </kendo-dropdownlist>
                 <kendo-dropdownlist [disabled]="isDisabledChapters" [defaultItem]="defaultItemChapter"
