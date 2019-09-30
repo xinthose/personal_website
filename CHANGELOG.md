@@ -4,6 +4,7 @@
 
 - group Bible books dropdown by Old/New Testament
 - add Website Version to about page
+- remove `personal-website` from `deployUrl` and `baseHref` in `angular.json` (it was unnecessary)
 
 ## 1.0.2 (7/20/2019)
 
