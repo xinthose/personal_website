@@ -10,16 +10,18 @@ import { BibleService } from "../bible.service";
   styleUrls: ['./bible.component.scss']
 })
 export class BibleComponent {
+  debug: boolean = true;
+
   bible: any;
   verseText: string;
   verseTitle: string;
   verseLocation: string;
   showVerse: boolean;
-  debug: boolean = false;
 
   // dropdown disable
   isDisabledChapters: boolean = true;
   isDisabledVerses: boolean = true;
+  disableSelectedVerseEnd: boolean = true;
 
   // dropdown default selection
   defaultItemBook: { bookName: string, bookId: number } = { bookName: "Select Book", bookId: null };
@@ -38,18 +40,19 @@ export class BibleComponent {
   // dropdown selection
   selectedBook: { bookName: string, bookId: number };
   selectedChapter: { chapterName: string, chapterId: number };
-  selectedVerse: { verseName: string, verseId: number };
+  selectedVerseStart: { verseName: string, verseId: number };
+  selectedVerseEnd: { verseName: string, verseId: number };
 
   constructor(
     private bibleService: BibleService,
   ) {
     // fetch JSON data asynchronously 
     this.bibleService.fetchBooks()
-    .subscribe(response => {
-      if (this.debug) console.debug("response = " + JSON.stringify(response));
-      this.dataBooksGrouped = groupBy(response, [{field: "subcategory"}]);;
-    }, error => {
-      console.error(error);
+      .subscribe(response => {
+        if (this.debug) console.debug("response = " + JSON.stringify(response));
+        this.dataBooksGrouped = groupBy(response, [{ field: "subcategory" }]);;
+      }, error => {
+        console.error(error);
       }, () => {
       });
     this.bibleService.fetchChapters()
@@ -83,7 +86,8 @@ export class BibleComponent {
   handleBookChange(value: any) {
     this.selectedBook = value;
     this.selectedChapter = undefined;
-    this.selectedVerse = undefined;
+    this.selectedVerseStart = undefined;
+    this.selectedVerseEnd = undefined;
     this.showVerse = false;
 
     if (value.bookId == this.defaultItemBook.bookId) {
@@ -100,7 +104,8 @@ export class BibleComponent {
 
   handleChapterChange(value: any) {
     this.selectedChapter = value;
-    this.selectedVerse = undefined;
+    this.selectedVerseStart = undefined;
+    this.selectedVerseEnd = undefined;
     this.showVerse = false;
 
     if (value.chapterId == this.defaultItemChapter.chapterId) {
@@ -112,15 +117,79 @@ export class BibleComponent {
     }
   }
 
-  handleVerseChange(value: any) {
+  handleSelectedVerseStart(value: any) {
+    // verse selected
     if (value.verseId) {
-      this.selectedVerse = value;
-      this.verseText = this.bible[this.selectedBook.bookId - 1].chapters[this.selectedChapter.chapterId - 1][this.selectedVerse.verseId - 1];
-      this.verseTitle = this.selectedBook.bookName + " " + this.selectedChapter.chapterName + " " + this.selectedVerse.verseName;
-      this.verseLocation = this.bible[this.selectedBook.bookId - 1].abbrev + " " + this.selectedChapter.chapterId.toString() + ":" + this.selectedVerse.verseId.toString();
-      this.showVerse = true;
+      // set data
+      this.selectedVerseStart = value;
+      this.disableSelectedVerseEnd = false;
+      this.setBibleInfo();
+    } else {
+      this.showVerse = false;
+      this.disableSelectedVerseEnd = true;
+    }
+  }
+
+  handleSelectedVerseEnd(value: any) {
+    // verse selected
+    if (value.verseId) {
+      // set data
+      this.selectedVerseEnd = value;
+      this.setBibleInfo();
     } else {
       this.showVerse = false;
     }
   }
+
+  setBibleInfo() {
+    // get data
+    let bookId = this.selectedBook.bookId;
+    let bookName = this.selectedBook.bookName;
+    let bookAbbrev = this.bible[bookId - 1].abbrev;
+
+    let chapterId = this.selectedChapter.chapterId;
+    let chapterName = this.selectedChapter.chapterName;
+
+    let verseIdStart = this.selectedVerseStart.verseId;
+    let verseNameStart = this.selectedVerseStart.verseName;
+
+    let verseIdEnd = verseIdStart;
+    let verseNameEnd = "";
+    if (this.selectedVerseEnd) {
+      verseIdEnd = this.selectedVerseEnd.verseId;
+      verseNameEnd = this.selectedVerseEnd.verseName;
+    }
+
+    let numVerses = 1;
+    if (verseIdEnd != verseIdStart) {
+      numVerses = verseIdEnd - verseIdStart + 1;
+    }
+    if (this.debug) {
+      console.debug("numVerses = " + numVerses.toString());
+    }
+
+    let verseText = "";
+    for (let index = 0; index < numVerses; index++) {
+      verseText += this.bible[bookId - 1].chapters[chapterId - 1][verseIdStart + index - 1];
+      verseText += "  ";
+    }
+    verseText = verseText.trimRight();  // remove white space at end of string
+    if (this.debug) {
+      console.debug("verseText = " + verseText);
+    }
+
+    let verseTitle = bookName + " " + chapterName + " " + verseNameStart;
+    let verseLocation = bookAbbrev + " " + chapterId.toString() + ":" + verseIdStart.toString();
+    if (verseIdEnd != verseIdStart) {
+      verseTitle += " to " + verseNameEnd;
+      verseLocation += "-" + verseIdEnd.toString();
+    }
+
+    // set data
+    this.verseText = verseText;
+    this.verseTitle = verseTitle;
+    this.verseLocation = verseLocation;
+    this.showVerse = true;
+  }
+
 }
