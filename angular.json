@@ -28,8 +28,8 @@
               "src/assets",
               "src/web.config"
             ],
-            "deployUrl": "/personal-website/",
-            "baseHref": "/personal-website/",
+            "deployUrl": "/",
+            "baseHref": "/",
             "styles": [
               {
                 "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
