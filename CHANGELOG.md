@@ -1,9 +1,16 @@
 # Changelog
 
+## 1.0.4 (12/16/2019)
+
+- in `bible`, allow selection of a range of verses, not just one
+- in `page-not-found`, fix incorrect `src` for `404.png`
+- fix this issue in `en_kjv.json`: Judges 5 only has 31 verses, not 32
+
 ## 1.0.3 (9/29/2019)
 
 - group Bible books dropdown by Old/New Testament
 - add Website Version to about page
+- remove `personal-website` from `deployUrl` and `baseHref` in `angular.json` (it was unnecessary)
 
 ## 1.0.2 (7/20/2019)
 
