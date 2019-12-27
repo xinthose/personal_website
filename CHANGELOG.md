@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5 ()
+
+- add Bible Kendo grid
+
 ## 1.0.4 (12/16/2019)
 
 - in `bible`, allow selection of a range of verses, not just one

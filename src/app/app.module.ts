@@ -26,6 +26,8 @@ import { HomeComponent } from './home/home.component';
 import { BibleComponent } from './bible/bible.component';
 import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { GridModule } from '@progress/kendo-angular-grid';
+
 
 @NgModule({
     declarations: [
@@ -47,6 +49,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
         // Progress
         ButtonsModule,
         DropDownsModule,
+        GridModule,
     ],
     providers: [
         MDBSpinningPreloader,

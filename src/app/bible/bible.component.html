@@ -49,5 +49,28 @@
                 </mdb-card>
             </div>
         </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col">
+                <mdb-card>
+                    <mdb-card-body>
+                        <mdb-card-title>
+                            <h4>Bible Grid</h4>
+                        </mdb-card-title>
+                        <mdb-card-text>
+                            <kendo-grid [data]="gridData" [loading]="view.loading" [height]="600">
+                                <kendo-grid-column field="bookId" title="Book">
+                                </kendo-grid-column>
+                                <kendo-grid-column field="chapterId" title="Chapter">
+                                </kendo-grid-column>
+                                <kendo-grid-column field="verseId" title="Verse">
+                                </kendo-grid-column>
+                                <kendo-grid-column field="verseName" title="Text">
+                                </kendo-grid-column>
+                            </kendo-grid>
+                        </mdb-card-text>
+                    </mdb-card-body>
+                </mdb-card>
+            </div>
+        </div>
     </div>
 </main>

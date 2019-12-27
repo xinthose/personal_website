@@ -50,6 +50,7 @@
 ## References
 
 - Bible in JSON: <https://github.com/thiagobodruk/bible>
+- API.Bible: <https://docs.api.bible/docs>
 
 ## Commands -------------------------------------------------------------------------------------------------------------------------
 
