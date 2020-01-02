@@ -19,6 +19,7 @@ export class BibleComponent {
   verseTitle: string;
   verseLocation: string;
   showVerse: boolean;
+  showVerseNumbers: boolean;
 
   // dropdown disable
   isDisabledChapters: boolean = true;
@@ -172,8 +173,14 @@ export class BibleComponent {
 
     let verseText = "";
     for (let index = 0; index < numVerses; index++) {
-      verseText += this.bible[bookId - 1].chapters[chapterId - 1][verseIdStart + index - 1];
-      verseText += "  ";
+      if (this.showVerseNumbers) {
+        verseText += "<p>" + verseIdStart.toString() + " ";
+        verseText += this.bible[bookId - 1].chapters[chapterId - 1][verseIdStart + index - 1];
+        verseText += "</p>";
+      } else {
+        verseText += this.bible[bookId - 1].chapters[chapterId - 1][verseIdStart + index - 1];
+        verseText += "  ";
+      }
     }
     verseText = verseText.trimRight();  // remove white space at end of string
     if (this.debug) {

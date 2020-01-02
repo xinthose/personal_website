@@ -13,9 +13,10 @@ import { FormsModule } from '@angular/forms';
 
 // Import the Animations module
 
-// Kendo
+// Progress
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
+import { InputsModule } from '@progress/kendo-angular-inputs';
 
 // Bootstrap
 import { MDBBootstrapModulesPro } from 'ng-uikit-pro-standard';
@@ -50,6 +51,7 @@ import { GridModule } from '@progress/kendo-angular-grid';
         ButtonsModule,
         DropDownsModule,
         GridModule,
+        InputsModule,
     ],
     providers: [
         MDBSpinningPreloader,

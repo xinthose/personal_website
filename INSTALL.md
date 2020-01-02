@@ -36,7 +36,7 @@
 
 ## Kendo-UI (Progress)
 
-- `ng add @progress/kendo-angular-buttons @progress/kendo-angular-dropdowns @progress/kendo-data-query`
+- `ng add @progress/kendo-angular-buttons @progress/kendo-angular-dropdowns @progress/kendo-data-query @progress/kendo-angular-inputs`
 - `npm i @progress/kendo-theme-material`
 
 ## MDBootstrap Pro
