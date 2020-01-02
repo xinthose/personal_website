@@ -2,12 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 // Progress
 import { GroupResult, groupBy } from '@progress/kendo-data-query';
-import { GridDataResult, DataStateChangeEvent } from '@progress/kendo-angular-grid';
 import { Observable } from 'rxjs';
-import { State } from '@progress/kendo-data-query';
 
 import { BibleService } from "../bible.service";
-import { BibleServiceGrid1 } from "../bible.service";
 
 @Component({
   selector: 'app-bible',
@@ -48,22 +45,10 @@ export class BibleComponent {
   selectedVerseStart: { verseName: string, verseId: number };
   selectedVerseEnd: { verseName: string, verseId: number };
 
-  // Bible Grid
-  public view: Observable <GridDataResult>;
-  public gridData: any;
-
   constructor(
     private bibleService: BibleService,
-    private bibleServiceGrid1: BibleServiceGrid1,
   ) {
-    // fetch JSON data asynchronously 
-    this.view = bibleServiceGrid1;
-    const state: State = {};
-    this.bibleServiceGrid1.query(state);
-    this.view.subscribe(res => {
-      this.gridData = res;
-      });
-
+    // fetch JSON data asynchronously
     this.bibleService.fetchBooks()
       .subscribe(response => {
         if (this.debug) console.debug("response = " + JSON.stringify(response));
