@@ -13,6 +13,7 @@ import { BibleService } from "../bible.service";
 })
 export class BibleComponent {
   debug: boolean = true;
+  advDebug: boolean = false;
 
   bible: any;
   verseText: string;
@@ -52,7 +53,7 @@ export class BibleComponent {
     // fetch JSON data asynchronously
     this.bibleService.fetchBooks()
       .subscribe(response => {
-        if (this.debug) {
+        if (this.advDebug) {
           console.debug("fetchBooks >> response = %O", response);
         }
         this.dataBooksGrouped = groupBy(response, [{ field: "subcategory" }]);;
@@ -62,7 +63,7 @@ export class BibleComponent {
       });
     this.bibleService.fetchChapters()
       .subscribe(response => {
-        if (this.debug) {
+        if (this.advDebug) {
           console.debug("fetchChapters >> response = %O", response);
         }
         this.dataChapters = response;
@@ -72,7 +73,7 @@ export class BibleComponent {
       });
     this.bibleService.fetchVerses()
       .subscribe(response => {
-        if (this.debug) {
+        if (this.advDebug) {
           console.debug("fetchVerses >> response = %O", response);
         }
         this.dataVerses = response;
@@ -82,7 +83,7 @@ export class BibleComponent {
       });
     this.bibleService.fetch('./assets/bible/en_kjv.json')
       .subscribe(response => {
-        if (this.debug) {
+        if (this.advDebug) {
           console.debug("Bible >> response = %O", response);
         }
         this.bible = response;
@@ -194,13 +195,12 @@ export class BibleComponent {
 
     let verseText = "";
     for (let index = 0; index < numVerses; index++) {
+      let passage = this.bible[bookId - 1].chapters[chapterId - 1][verseIdStart + index - 1];
       if (this.showVerseNumbers) {
-        verseText += (verseIdStart + index).toString() + " ";
-        verseText += this.bible[bookId - 1].chapters[chapterId - 1][verseIdStart + index - 1];
-        verseText += " ";
+        verseText += "[" + (verseIdStart + index).toString() + "] ";
+        verseText += passage + " ";
       } else {
-        verseText += this.bible[bookId - 1].chapters[chapterId - 1][verseIdStart + index - 1];
-        verseText += "  ";
+        verseText += passage + "  ";
       }
     }
     verseText = verseText.trimRight();  // remove white space at end of string
