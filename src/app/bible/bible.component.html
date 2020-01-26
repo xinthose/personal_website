@@ -42,9 +42,9 @@
                             <h4>Options</h4>
                         </mdb-card-title>
                         <mdb-card-text>
-                            <span>Show Verse Numbers</span>
+                            <span>Show Inline Verse Numbers</span>
                             <br />
-                            <kendo-switch [(ngModel)]="showVerseNumbers" [onLabel]="'Yes'" [offLabel]="'No'"></kendo-switch>        
+                            <kendo-switch [(ngModel)]="showVerseNumbers" (valueChange)="showVerseNumbersChange()" [onLabel]="'Yes'" [offLabel]="'No'"></kendo-switch>        
                         </mdb-card-text>
                     </mdb-card-body>
                 </mdb-card>

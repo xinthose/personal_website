@@ -52,7 +52,9 @@ export class BibleComponent {
     // fetch JSON data asynchronously
     this.bibleService.fetchBooks()
       .subscribe(response => {
-        if (this.debug) console.debug("response = " + JSON.stringify(response));
+        if (this.debug) {
+          console.debug("fetchBooks >> response = %O", response);
+        }
         this.dataBooksGrouped = groupBy(response, [{ field: "subcategory" }]);;
       }, error => {
         console.error(error);
@@ -60,7 +62,9 @@ export class BibleComponent {
       });
     this.bibleService.fetchChapters()
       .subscribe(response => {
-        if (this.debug) console.debug("response = " + JSON.stringify(response));
+        if (this.debug) {
+          console.debug("fetchChapters >> response = %O", response);
+        }
         this.dataChapters = response;
       }, error => {
         console.error(error);
@@ -68,7 +72,9 @@ export class BibleComponent {
       });
     this.bibleService.fetchVerses()
       .subscribe(response => {
-        if (this.debug) console.debug("response = " + JSON.stringify(response));
+        if (this.debug) {
+          console.debug("fetchVerses >> response = %O", response);
+        }
         this.dataVerses = response;
       }, error => {
         console.error(error);
@@ -76,7 +82,9 @@ export class BibleComponent {
       });
     this.bibleService.fetch('./assets/bible/en_kjv.json')
       .subscribe(response => {
-        if (this.debug) console.debug("response = " + JSON.stringify(response));
+        if (this.debug) {
+          console.debug("Bible >> response = %O", response);
+        }
         this.bible = response;
       }, error => {
         console.error(error);
@@ -144,7 +152,20 @@ export class BibleComponent {
     }
   }
 
+  // switch changes
+  showVerseNumbersChange() {
+    if (this.showVerse) {
+      this.setBibleInfo();
+    }
+  }
+
+  // functions
+  
   setBibleInfo() {
+    console.assert(this.selectedVerseStart, "verse not selected");
+    console.assert(this.selectedBook, "book not selected");
+    console.assert(this.selectedChapter, "chapter not selected");
+    
     // get data
     let bookId = this.selectedBook.bookId;
     let bookName = this.selectedBook.bookName;
@@ -174,9 +195,9 @@ export class BibleComponent {
     let verseText = "";
     for (let index = 0; index < numVerses; index++) {
       if (this.showVerseNumbers) {
-        verseText += "<p>" + verseIdStart.toString() + " ";
+        verseText += (verseIdStart + index).toString() + " ";
         verseText += this.bible[bookId - 1].chapters[chapterId - 1][verseIdStart + index - 1];
-        verseText += "</p>";
+        verseText += " ";
       } else {
         verseText += this.bible[bookId - 1].chapters[chapterId - 1][verseIdStart + index - 1];
         verseText += "  ";
