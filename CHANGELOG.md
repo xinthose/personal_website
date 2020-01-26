@@ -2,7 +2,7 @@
 
 ## 1.0.5 ()
 
-- add Bible Kendo grid
+- add options: show bible verses
 
 ## 1.0.4 (12/16/2019)
 
