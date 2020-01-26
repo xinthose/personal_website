@@ -163,9 +163,9 @@ export class BibleComponent {
   // functions
   
   setBibleInfo() {
-    console.assert(this.selectedVerseStart, "verse not selected");
-    console.assert(this.selectedBook, "book not selected");
-    console.assert(this.selectedChapter, "chapter not selected");
+    console.assert(this.selectedVerseStart != null, "verse not selected");
+    console.assert(this.selectedBook != null, "book not selected");
+    console.assert(this.selectedChapter != null, "chapter not selected");
     
     // get data
     let bookId = this.selectedBook.bookId;
