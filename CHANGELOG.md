@@ -3,6 +3,7 @@
 ## 1.0.5 ()
 
 - add options: show inline verse numbers
+- update Angular 8 to 9
 
 ## 1.0.4 (12/16/2019)
 
