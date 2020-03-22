@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.5 ()
+## 1.0.5 (3/21/2020)
 
 - add options: show inline verse numbers
 - update Angular 8 to 9

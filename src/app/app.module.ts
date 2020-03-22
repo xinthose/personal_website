@@ -11,8 +11,6 @@ import 'hammerjs';
 // Forms
 import { FormsModule } from '@angular/forms';
 
-// Import the Animations module
-
 // Progress
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { DropDownsModule } from '@progress/kendo-angular-dropdowns';

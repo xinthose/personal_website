@@ -15,11 +15,11 @@
 
 ### Installation
 
-- `npm i -g @angular/cli @angular/core @angular/forms @angular/forms terser typescript`
+- `npm i -g @angular/cli @angular/core @angular/forms @angular/http @angular/forms @angular/localize terser typescript`
 
 ### Create App (client directory)
 
-- `ng new personal-website --style=scss --enableIvy=false --routing=true`
+- `ng new personal-website --style=scss --routing=true`
   
 #### Components
 
@@ -31,8 +31,7 @@
 
 ## General
 
-- `npm i -g @angular/cli`
-- `npm i rxjs rxjs-compat @angular/http`
+- `npm i rxjs rxjs-compat`
 
 ## Kendo-UI (Progress)
 
@@ -51,6 +50,18 @@
 
 - Bible in JSON: <https://github.com/thiagobodruk/bible>
 - API.Bible: <https://docs.api.bible/docs>
+
+## Hosting Website with Firebase
+
+### Installation
+
+- `npm i -g firebase firebase-tools`
+
+### Hosting
+
+- `firebase login`
+- `firebase init`
+- `firebase deploy --only hosting:personal-website-ec598`
 
 ## Commands -------------------------------------------------------------------------------------------------------------------------
 
