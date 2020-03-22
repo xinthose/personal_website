@@ -51,17 +51,13 @@
 - Bible in JSON: <https://github.com/thiagobodruk/bible>
 - API.Bible: <https://docs.api.bible/docs>
 
-## Hosting Website with Firebase
+## Hosting Website with Amazon Web Services
 
 ### Installation
 
-- `npm i -g firebase firebase-tools`
 
 ### Hosting
 
-- `firebase login`
-- `firebase init`
-- `firebase deploy --only hosting:personal-website-ec598`
 
 ## Commands -------------------------------------------------------------------------------------------------------------------------
 

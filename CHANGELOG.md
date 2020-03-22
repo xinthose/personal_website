@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.6 ()
+
+- host website with Amazon Web Services
+
 ## 1.0.5 (3/21/2020)
 
 - add options: show inline verse numbers
