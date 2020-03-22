@@ -4,6 +4,7 @@
 
 - add options: show inline verse numbers
 - update Angular 8 to 9
+- host website with firebase
 
 ## 1.0.4 (12/16/2019)
 
