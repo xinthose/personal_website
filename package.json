@@ -1,6 +1,6 @@
 {
   "name": "personal-website",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xinthose/personal_website.git"
@@ -71,6 +71,6 @@
     "protractor": "^5.4.3",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.7.5"
+    "typescript": "^3.8.3"
   }
 }
