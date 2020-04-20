@@ -2,7 +2,7 @@
 
 ## 1.0.6 ()
 
-- host website with Amazon Web Services
+- host website with A2 Hosting - Node.js Application
 
 ## 1.0.5 (3/21/2020)
 
