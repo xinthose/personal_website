@@ -15,7 +15,7 @@
 
 ### Installation
 
-- `npm i -g @angular/cli @angular/core @angular/forms @angular/http @angular/forms @angular/localize terser typescript`
+- `npm i @angular/cli @angular/core @angular/forms @angular/http @angular/forms @angular/localize terser typescript`
 
 ### Create App (client directory)
 
@@ -130,5 +130,5 @@
 
 ## Troubleshooting
 
-- `ERROR in The Angular Compiler requires TypeScript >=3.4.0 and <3.5.0 but 3.5.1 was found instead.`
-  - `npm i typescript@">=3.4.0 <3.5.0"`
+- `ERROR in The Angular Compiler requires TypeScript >=3.6.4 and <3.9.0 but 3.9.7 was found instead.`
+  - `npm i typescript@">=3.6.4 <3.9.0"`

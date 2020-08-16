@@ -2,8 +2,7 @@
 
 ## 1.0.6 (4/19/2020)
 
-- host website with A2 Hosting - Node.js Application
-- update packages
+- host website with AWS and node.js with express
 
 ## 1.0.5 (3/21/2020)
 
