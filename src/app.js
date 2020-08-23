@@ -1,35 +1,57 @@
 var port = process.env.PORT || 3000,
-    http = require('http'),
-    fs = require('fs'),
-    html = fs.readFileSync('index.html');
+  http = require('http'),
+  fs = require('fs'),
+  html = fs.readFileSync('index.html');
 
-var log = function(entry) {
-    fs.appendFileSync('/tmp/sample-app.log', new Date().toISOString() + ' - ' + entry + '\n');
+var log = function (entry) {
+  fs.appendFileSync('/tmp/sample-app.log', new Date().toISOString() + ' - ' + entry + '\n');
 };
 
-var server = http.createServer(function (req, res) {
-    if (req.method === 'POST') {
+var server = http.createServer((request, response) => {
+  fs.readFile(`.${request.url}`, (err, data) => {
+      if (err) {
+          response.writeHeader(404, {
+              'Content-Type': 'text/plain'
+          })
+          response.write('404 Not Found')
+          response.end()
+          return
+      }
+
+      if (request.url.endsWith('.html')) {
+          response.writeHeader(200, {
+              'Content-Type': 'text/html'
+          })
+      }
+
+      if (request.url.endsWith('.js')) {
+          response.writeHeader(200, {
+              'Content-Type': 'application/javascript'
+          })
+      }
+
+      if (response.method === 'POST') {
         var body = '';
 
-        req.on('data', function(chunk) {
-            body += chunk;
+        response.on('data', function (chunk) {
+          body += chunk;
         });
 
-        req.on('end', function() {
-            if (req.url === '/') {
-                log('Received message: ' + body);
-            } else if (req.url = '/scheduled') {
-                log('Received task ' + req.headers['x-aws-sqsd-taskname'] + ' scheduled at ' + req.headers['x-aws-sqsd-scheduled-at']);
-            }
+        response.on('end', function () {
+          if (response.url === '/') {
+            log('Received message: ' + body);
+          } else if (response.url = '/scheduled') {
+            log('Received task ' + response.headers['x-aws-sqsd-taskname'] + ' scheduled at ' + response.headers['x-aws-sqsd-scheduled-at']);
+          }
 
-            res.writeHead(200, 'OK', {'Content-Type': 'text/plain'});
-            res.end();
+          res.writeHead(200, 'OK', { 'Content-Type': 'text/plain' });
+          res.end();
         });
-    } else {
-        res.writeHead(200);
-        res.write(html);
-        res.end();
-    }
+      }
+
+      response.write(data)
+      response.end()
+  })
 });
 
 // Listen on port 3000, IP defaults to 127.0.0.1
