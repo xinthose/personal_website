@@ -25,9 +25,7 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/app.js",
-              "src/cron.yaml"
+              "src/assets"
             ],
             "deployUrl": "/",
             "baseHref": "/",
