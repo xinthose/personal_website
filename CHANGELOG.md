@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.6 (4/19/2020)
+## 1.0.6 (8/23/2020)
 
 - host website with AWS and node.js with express
 

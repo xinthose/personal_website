@@ -26,7 +26,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/web.config"
+              "src/app.js",
+              "src/cron.yaml"
             ],
             "deployUrl": "/",
             "baseHref": "/",

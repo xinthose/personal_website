@@ -67,5 +67,6 @@ typings/
 # System Files
 .DS_Store
 Thumbs.db
-keys.txt
-Ftp admin@xinthose.com.xml
+
+# Other
+KEYS.md
