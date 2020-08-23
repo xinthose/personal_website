@@ -1,5 +1,5 @@
 {
-  "name": "personal-website",
+  "name": "xinthose.com",
   "version": "1.0.6",
   "repository": {
     "type": "git",
@@ -8,7 +8,7 @@
   "private": false,
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node app.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
