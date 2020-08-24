@@ -27,9 +27,6 @@
               "src/favicon.ico",
               "src/assets",
               "src/server.js",
-              "src/cron.yaml",
-              "src/EBSampleApp-Nodejs.iml",
-              "src/package.json",
               "src/.ebextensions"
             ],
             "deployUrl": "/",
