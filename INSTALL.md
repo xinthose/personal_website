@@ -11,11 +11,26 @@
 - `cd /home/adam/Documents/svn/github/personal-website`
 - `apt-get install nodejs npm build-essential`
 
-## Angular 8
+## Angular
 
 ### Installation
 
-- `npm i @angular/cli @angular/core @angular/forms @angular/http @angular/forms @angular/localize terser typescript`
+#### General
+
+- `npm i @angular/cli @angular/core @angular/forms @angular/http @angular/forms @angular/localize terser typescript rxjs express compression`
+
+#### Kendo-UI (Progress)
+
+- `ng add @progress/kendo-angular-buttons @progress/kendo-angular-dropdowns @progress/kendo-data-query @progress/kendo-angular-inputs`
+- `npm i @progress/kendo-theme-material`
+
+#### MDBootstrap Pro
+
+- tutorial: <https://mdbootstrap.com/angular/5min-quickstart/>
+  - click "PRO" underneath "npm iation"
+- `npm i git+https://oauth2:XXXXXXXXXX_XXXXXXXXX@git.mdbootstrap.com/mdb/angular/ng-uikit-pro-standard.git --save`
+- `npm i chart.js@2.5.0 @types/chart.js easy-pie-chart@2.1.7 hammerjs@2.0.8 screenfull@3.3.0 @fortawesome/fontawesome-free animate.css`
+  - 3rd party libraries
 
 ### Create App (client directory)
 
@@ -29,23 +44,6 @@
 
 - `ng g service bible`
 
-## General
-
-- `npm i rxjs rxjs-compat express`
-
-## Kendo-UI (Progress)
-
-- `ng add @progress/kendo-angular-buttons @progress/kendo-angular-dropdowns @progress/kendo-data-query @progress/kendo-angular-inputs`
-- `npm i @progress/kendo-theme-material`
-
-## MDBootstrap Pro
-
-- tutorial: <https://mdbootstrap.com/angular/5min-quickstart/>
-  - click "PRO" underneath "npm iation"
-- `npm i git+https://oauth2:XXXXXXXXXX_XXXXXXXXX@git.mdbootstrap.com/mdb/angular/ng-uikit-pro-standard.git --save`
-- `npm i chart.js@2.5.0 @types/chart.js easy-pie-chart@2.1.7 hammerjs@2.0.8 screenfull@3.3.0 @fortawesome/fontawesome-free animate.css`
-  - 3rd party libraries
-
 ## References
 
 - Bible in JSON: <https://github.com/thiagobodruk/bible>
@@ -56,43 +54,27 @@
 - copy `package.json` into `dist/personal-website` before zipping files
 - when zipping files for update, select all files in `dist/personal-website` and ZIP them, do not zip parent folder `dist/personal-website`
 
-## Commands -------------------------------------------------------------------------------------------------------------------------
+## Commands
 
-## Angular Commands (ng)
+### Angular Commands (ng)
 
 - `ng --version`    // show angular version
 - `ng update --all --force` // update all angular packages (ignore peer dependency errors)
 - `ng build --prod --aot`   // build for production
 - `ng serve --host 0.0.0.0` // allow outside PC's access to the app
-
-## Kendo Node.js commands
-
-- `ncu -u -f /^@progress/`  // check progress widget versions
-
-## Node Commands
-
+- `tsc -v`  // show typescript version
 - `node -v` // show node version
 
-## NPM Commands (Node Package Manager)
+### NPM Commands (Node Package Manager)
 
 - `npm -v`  // show npm version
 - `npm i -g npm`  // update npm version
 - `npm update`  # update all packages in the app
-- npm i [package]@[version]   // install specific version of a package
+- `npm i [package]@[version]`   // install specific version of a package
 - `npm ls @progress/kendo-angular-scheduler`  // show version of a package
 - `npm i --package-lock-only` // only create `package-lock.json` file
 
-### Install dependencies
-
-- `npm i -g npm-install-peers`
-- `npm-install-peers`
-- `npm i @angular/cli@latest`  // install latest version of angular cli
-
-## Typescript Commands
-
-- `tsc -v`  // show typescript version
-
-## Github
+### Github
 
 - `git config --global user.email "your github login email address"`  // set email address
 - `git config --global user.email`  // check email address
@@ -108,7 +90,7 @@
 - `pm2 describe EDS4WSserver`
 - `pm2 monit`   // monitor logs, custom metrics, & application information
 
-## link pm2 to <https://app.pm2.io/#/bucket/5beae26a3ca4a1db69a9056b/overview/servers>
+### link pm2 to <https://app.pm2.io/#/bucket/5beae26a3ca4a1db69a9056b/overview/servers>
 
 - `pm2 link 90n1bqb6mdqm111 mvp52pu0qi8k4v1 EDS`
 
@@ -116,14 +98,6 @@
 
 - `npm i pm2@latest -g`
 - `pm2 update`
-
-## Other
-
-- `http-server`
-
-## Notes
-
-- `[style.height.%]="100"`  // full height grid (as long as content)
 
 ## Troubleshooting
 
