@@ -31,7 +31,7 @@
 
 ## General
 
-- `npm i rxjs rxjs-compat`
+- `npm i rxjs rxjs-compat express`
 
 ## Kendo-UI (Progress)
 

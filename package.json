@@ -8,7 +8,7 @@
   "private": false,
   "scripts": {
     "ng": "ng",
-    "start": "node app.js",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -48,6 +48,7 @@
     "animate.css": "^3.7.2",
     "chart.js": "^2.5.0",
     "easy-pie-chart": "^2.1.7",
+    "express": "^4.17.1",
     "hammerjs": "^2.0.8",
     "ng-uikit-pro-standard": "git+https://oauth2:G5j6vN4xwHEsdwswaAC2@git.mdbootstrap.com/mdb/angular/ng-uikit-pro-standard.git",
     "rxjs": "^6.5.5",
