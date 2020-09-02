@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.7 (9/1/2020)
+
+- add Bible verse share feature and URL handling
+
 ## 1.0.6 (8/23/2020)
 
 - host website with AWS and node.js with express

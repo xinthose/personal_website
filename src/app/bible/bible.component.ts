@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from "@angular/router";
 
 // Progress
 import { GroupResult, groupBy } from '@progress/kendo-data-query';
@@ -49,6 +50,8 @@ export class BibleComponent {
 
   constructor(
     private bibleService: BibleService,
+    private router: Router,
+    private route: ActivatedRoute,
   ) {
     // fetch JSON data asynchronously
     this.bibleService.fetchBooks()
