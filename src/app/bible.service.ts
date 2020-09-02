@@ -1,24 +1,31 @@
 import { Injectable } from '@angular/core';
-
 import { HttpClient } from "@angular/common/http";
+
+// interfaces
+import { BibleBooks } from "./shared/BibleBooks";
 
 @Injectable({
   providedIn: 'root'
 })
 export class BibleService {
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient
+    ) { }
 
-  public fetch(file: string) {
-    return this.http.get(file);
+  fetch(file: string): Promise<any> {
+    return this.http.get(file).toPromise();
   }
-  public fetchBooks() {
-    return this.http.get<Array<any>>('./assets/bible/books.json');
+
+  fetchBooks(): Promise<any> {
+    return this.http.get<BibleBooks>('./assets/bible/books.json').toPromise();
   }
-  public fetchChapters() {
-    return this.http.get<Array<{ chapterName: string, chapterId: number, bookId: number }>>('./assets/bible/chapters.json');
+
+  fetchChapters(): Promise<any> {
+    return this.http.get<Array<{ chapterName: string, chapterId: number, bookId: number }>>('./assets/bible/chapters.json').toPromise();
   }
-  public fetchVerses() {
-    return this.http.get<Array<{ verseName: string, verseId: number, chapterId: number, bookId: number }>>('./assets/bible/verses.json');
+
+  fetchVerses(): Promise<any> {
+    return this.http.get<Array<{ verseName: string, verseId: number, chapterId: number, bookId: number }>>('./assets/bible/verses.json').toPromise();
   }
 }

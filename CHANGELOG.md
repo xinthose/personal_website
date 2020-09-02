@@ -3,6 +3,7 @@
 ## 1.0.7 (9/1/2020)
 
 - add Bible verse share feature and URL handling
+- use `async` and `await` to load the Bible
 
 ## 1.0.6 (8/23/2020)
 

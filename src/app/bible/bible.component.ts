@@ -3,16 +3,18 @@ import { Router, ActivatedRoute, ParamMap } from "@angular/router";
 
 // Progress
 import { GroupResult, groupBy } from '@progress/kendo-data-query';
-import { Observable } from 'rxjs';
 
 import { BibleService } from "../bible.service";
+
+// interfaces
+import { BibleBooks } from "../shared/BibleBooks";
 
 @Component({
   selector: 'app-bible',
   templateUrl: './bible.component.html',
   styleUrls: ['./bible.component.scss']
 })
-export class BibleComponent {
+export class BibleComponent implements OnInit {
   debug: boolean = true;
   advDebug: boolean = false;
 
@@ -53,47 +55,20 @@ export class BibleComponent {
     private router: Router,
     private route: ActivatedRoute,
   ) {
-    // fetch JSON data asynchronously
-    this.bibleService.fetchBooks()
-      .subscribe(response => {
-        if (this.advDebug) {
-          console.debug("fetchBooks >> response = %O", response);
-        }
-        this.dataBooksGrouped = groupBy(response, [{ field: "subcategory" }]);;
-      }, error => {
-        console.error(error);
-      }, () => {
-      });
-    this.bibleService.fetchChapters()
-      .subscribe(response => {
-        if (this.advDebug) {
-          console.debug("fetchChapters >> response = %O", response);
-        }
-        this.dataChapters = response;
-      }, error => {
-        console.error(error);
-      }, () => {
-      });
-    this.bibleService.fetchVerses()
-      .subscribe(response => {
-        if (this.advDebug) {
-          console.debug("fetchVerses >> response = %O", response);
-        }
-        this.dataVerses = response;
-      }, error => {
-        console.error(error);
-      }, () => {
-      });
-    this.bibleService.fetch('./assets/bible/en_kjv.json')
-      .subscribe(response => {
-        if (this.advDebug) {
-          console.debug("Bible >> response = %O", response);
-        }
-        this.bible = response;
-      }, error => {
-        console.error(error);
-      }, () => {
-      });
+  }
+
+  async ngOnInit() {
+    try {
+      // get the Bible
+      const books = await this.bibleService.fetchBooks();
+      this.dataBooksGrouped = groupBy(books, [{ field: "subcategory" }]);;
+
+      this.dataChapters = await this.bibleService.fetchChapters();
+      this.dataVerses = await this.bibleService.fetchVerses();
+      this.bible = await this.bibleService.fetch('./assets/bible/en_kjv.json');
+    } catch (error) {
+        console.error("BibleComponent.ngOnInit >> error = " + error);
+    }
   }
 
   // dropdown changes
@@ -164,12 +139,12 @@ export class BibleComponent {
   }
 
   // functions
-  
+
   setBibleInfo() {
     console.assert(this.selectedVerseStart != null, "verse not selected");
     console.assert(this.selectedBook != null, "book not selected");
     console.assert(this.selectedChapter != null, "chapter not selected");
-    
+
     // get data
     let bookId = this.selectedBook.bookId;
     let bookName = this.selectedBook.bookName;
