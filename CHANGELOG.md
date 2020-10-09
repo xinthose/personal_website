@@ -1,9 +1,9 @@
 # Changelog
 
-## 1.0.7 (9/1/2020)
+## 1.0.7 (10/8/2020)
 
-- add Bible verse share feature and URL handling
 - use `async` and `await` to load the Bible
+- **Major:** update ANgular 9 to 10
 
 ## 1.0.6 (8/23/2020)
 
@@ -12,7 +12,7 @@
 ## 1.0.5 (3/21/2020)
 
 - add options: show inline verse numbers
-- update Angular 8 to 9
+- **Major:** update Angular 8 to 9
 - host website with firebase
 
 ## 1.0.4 (12/16/2019)
@@ -29,7 +29,7 @@
 
 ## 1.0.2 (7/20/2019)
 
-- update Angular from v7 to v8
+- **Major:** update Angular from v7 to v8
 
 ## 1.0.1 (5/12/2019)
 
