@@ -7,7 +7,9 @@ import { GroupResult, groupBy } from '@progress/kendo-data-query';
 import { BibleService } from "../bible.service";
 
 // interfaces
-import { BibleBooks } from "../shared/BibleBooks";
+import { Book } from "../shared/bible/Book";
+import { Chapter } from "../shared/bible/chapter";
+import { Verse } from "../shared/bible/verse";
 
 @Component({
   selector: 'app-bible',
@@ -19,11 +21,11 @@ export class BibleComponent implements OnInit {
   advDebug: boolean = false;
 
   bible: any;
-  verseText: string;
-  verseTitle: string;
-  verseLocation: string;
-  showVerse: boolean;
-  showVerseNumbers: boolean;
+  verseText: string = "";
+  verseTitle: string = "";
+  verseLocation: string = "";
+  showVerse: boolean = false;
+  showVerseNumbers: boolean = false;
 
   // dropdown disable
   isDisabledChapters: boolean = true;
@@ -31,24 +33,24 @@ export class BibleComponent implements OnInit {
   disableSelectedVerseEnd: boolean = true;
 
   // dropdown default selection
-  defaultItemBook: { bookName: string, bookId: number } = { bookName: "Select Book", bookId: null };
-  defaultItemChapter: { chapterName: string, chapterId: number } = { chapterName: "Select Chapter", chapterId: null };
-  defaultItemVerse: { verseName: string, verseId: number } = { verseName: "Select Verse", verseId: null };
+  defaultItemBook: { bookName: string, bookId: number } = { bookName: "Select Book", bookId: 0 };
+  defaultItemChapter: { chapterName: string, chapterId: number } = { chapterName: "Select Chapter", chapterId: 0 };
+  defaultItemVerse: { verseName: string, verseId: number } = { verseName: "Select Verse", verseId: 0 };
 
   // dropdown data
-  dataBooksGrouped: GroupResult[];
-  dataChapters: Array<{ chapterName: string, chapterId: number, bookId: number }>;
-  dataVerses: Array<{ verseName: string, verseId: number, chapterId: number, bookId: number }>;
+  dataBooksGrouped!: GroupResult[];
+  dataChapters: Array<{ chapterName: string, chapterId: number, bookId: number }> = [];
+  dataVerses: Array<{ verseName: string, verseId: number, chapterId: number, bookId: number }> = [];
 
   // dropdown cascade result
-  dataResultChapters: Array<{ chapterName: string, chapterId: number, bookId: number }>;
-  dataResultVerses: Array<{ verseName: string, verseId: number, chapterId: number }>;
+  dataResultChapters: Array<{ chapterName: string, chapterId: number, bookId: number }> = [];
+  dataResultVerses: Array<{ verseName: string, verseId: number, chapterId: number }> = [];
 
   // dropdown selection
-  selectedBook: { bookName: string, bookId: number };
-  selectedChapter: { chapterName: string, chapterId: number };
-  selectedVerseStart: { verseName: string, verseId: number };
-  selectedVerseEnd: { verseName: string, verseId: number };
+  selectedBook: Book = { bookName: "", bookId: 0 };
+  selectedChapter: Chapter = { chapterName: "", chapterId: 0 };
+  selectedVerseStart: Verse = { verseName: "", verseId: 0 };
+  selectedVerseEnd: Verse = { verseName: "", verseId: 0 };
 
   constructor(
     private bibleService: BibleService,
@@ -67,7 +69,7 @@ export class BibleComponent implements OnInit {
       this.dataVerses = await this.bibleService.fetchVerses();
       this.bible = await this.bibleService.fetch('./assets/bible/en_kjv.json');
     } catch (error) {
-        console.error("BibleComponent.ngOnInit >> error = " + error);
+      console.error("BibleComponent.ngOnInit >> error = " + error);
     }
   }
 
@@ -75,9 +77,9 @@ export class BibleComponent implements OnInit {
 
   handleBookChange(value: any) {
     this.selectedBook = value;
-    this.selectedChapter = undefined;
-    this.selectedVerseStart = undefined;
-    this.selectedVerseEnd = undefined;
+    this.selectedChapter = { chapterName: "", chapterId: 0 };
+    this.selectedVerseStart = { verseName: "", verseId: 0 };
+    this.selectedVerseEnd = { verseName: "", verseId: 0 };
     this.showVerse = false;
 
     if (value.bookId == this.defaultItemBook.bookId) {
@@ -94,8 +96,8 @@ export class BibleComponent implements OnInit {
 
   handleChapterChange(value: any) {
     this.selectedChapter = value;
-    this.selectedVerseStart = undefined;
-    this.selectedVerseEnd = undefined;
+    this.selectedVerseStart = { verseName: "", verseId: 0 };
+    this.selectedVerseEnd = { verseName: "", verseId: 0 };
     this.showVerse = false;
 
     if (value.chapterId == this.defaultItemChapter.chapterId) {

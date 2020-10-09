@@ -9,7 +9,7 @@ import * as website_package from "package.json";
 })
 export class AboutComponent {
 
-  websiteVersion: string;
+  websiteVersion: string = "";
 
   constructor() {
     this.websiteVersion = website_package.version;

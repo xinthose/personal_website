@@ -2,8 +2,9 @@
 
 ## 1.0.7 (10/8/2020)
 
-- use `async` and `await` to load the Bible
 - **Major:** update ANgular 9 to 10
+- use `async` and `await` to load the Bible
+- add more strict settings in `tsconfig.json`
 
 ## 1.0.6 (8/23/2020)
 

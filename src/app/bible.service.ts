@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 
 // interfaces
-import { BibleBooks } from "./shared/BibleBooks";
+import { Book } from "./shared/bible/Book";
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +18,7 @@ export class BibleService {
   }
 
   fetchBooks(): Promise<any> {
-    return this.http.get<BibleBooks>('./assets/bible/books.json').toPromise();
+    return this.http.get<Book>('./assets/bible/books.json').toPromise();
   }
 
   fetchChapters(): Promise<any> {
