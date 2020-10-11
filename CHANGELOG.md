@@ -2,7 +2,7 @@
 
 ## 1.0.7 (10/8/2020)
 
-- **Major:** update ANgular 9 to 10
+- **Major:** update Angular 9 to 10
 - use `async` and `await` to load the Bible
 - add more strict settings in `tsconfig.json`
 - add copy button for verse text
