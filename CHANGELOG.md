@@ -5,6 +5,7 @@
 - **Major:** update ANgular 9 to 10
 - use `async` and `await` to load the Bible
 - add more strict settings in `tsconfig.json`
+- add copy button for verse text
 
 ## 1.0.6 (8/23/2020)
 

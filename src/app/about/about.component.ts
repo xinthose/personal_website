@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import * as website_package from "package.json";
+import * as website_package from "../../../package.json";
 
 @Component({
   selector: 'app-about',

@@ -55,7 +55,10 @@
                 <mdb-card>
                     <mdb-card-body>
                         <mdb-card-title>
-                            <h4>{{verseTitle}}</h4>
+                            <h4>
+                                {{verseTitle}}
+                                <button kendoButton class="ml-2" [icon]="'copy'" (click)="copyBibleVerse()">Copy</button>
+                            </h4>
                         </mdb-card-title>
                         <mdb-card-text>
                             {{verseLocation}} "{{verseText}}"

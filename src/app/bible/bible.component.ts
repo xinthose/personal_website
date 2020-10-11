@@ -4,12 +4,16 @@ import { Router, ActivatedRoute, ParamMap } from "@angular/router";
 // Progress
 import { GroupResult, groupBy } from '@progress/kendo-data-query';
 
+// Services
 import { BibleService } from "../bible.service";
 
 // interfaces
 import { Book } from "../shared/bible/Book";
 import { Chapter } from "../shared/bible/chapter";
 import { Verse } from "../shared/bible/verse";
+
+// other
+import { ClipboardService } from 'ngx-clipboard';
 
 @Component({
   selector: 'app-bible',
@@ -56,6 +60,7 @@ export class BibleComponent implements OnInit {
     private bibleService: BibleService,
     private router: Router,
     private route: ActivatedRoute,
+    private clipBoard: ClipboardService
   ) {
   }
 
@@ -202,4 +207,8 @@ export class BibleComponent implements OnInit {
     this.showVerse = true;
   }
 
+  copyBibleVerse () {
+    const verse = this.verseLocation + " \"" + this.verseText + "\"";
+    this.clipBoard.copy(verse);
+  }
 }
