@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from "@angular/router";
+import { trigger, transition, useAnimation } from '@angular/animations';
 
 // Progress
 import { GroupResult, groupBy } from '@progress/kendo-data-query';
+import { DropDownListComponent } from '@progress/kendo-angular-dropdowns';
 
 // Services
 import { BibleService } from "../bible.service";
@@ -14,15 +16,21 @@ import { Verse } from "../shared/bible/verse";
 
 // other
 import { ClipboardService } from 'ngx-clipboard';
+import { jello } from 'ngx-animate';
 
 @Component({
   selector: 'app-bible',
   templateUrl: './bible.component.html',
-  styleUrls: ['./bible.component.scss']
+  styleUrls: ['./bible.component.scss'],
+  animations: [
+    trigger('jello', [transition('* => *', useAnimation(jello))])
+  ],
 })
 export class BibleComponent implements OnInit {
   debug: boolean = true;
   advDebug: boolean = false;
+  showAnimation: boolean = false;
+  @ViewChild("verseEndDropdownList", { static: false }) public verseEndDropdownList!: DropDownListComponent;
 
   bible: any;
   verseText: string = "";
@@ -119,7 +127,17 @@ export class BibleComponent implements OnInit {
     if (value.verseId) {
       // set data
       this.selectedVerseStart = value;
-      this.disableSelectedVerseEnd = false;
+
+      // set verse end same as beginning if it was empty or less in value
+      if ((!this.selectedVerseEnd.verseId) || (this.selectedVerseStart.verseId > this.selectedVerseEnd.verseId)) {
+        this.disableSelectedVerseEnd = false;
+        this.selectedVerseEnd = value;
+        this.verseEndDropdownList.writeValue(value);
+      } else {
+        this.disableSelectedVerseEnd = false;
+      }
+
+      // set Bible info
       this.setBibleInfo();
     } else {
       this.showVerse = false;
@@ -207,8 +225,14 @@ export class BibleComponent implements OnInit {
     this.showVerse = true;
   }
 
-  copyBibleVerse () {
+  copyBibleVerse() {
+    // build verse for copying
     const verse = this.verseLocation + " \"" + this.verseText + "\"";
+    
+    // copy verse to clipboard
     this.clipBoard.copy(verse);
+
+    // shake copy button
+    this.showAnimation = !this.showAnimation;
   }
 }

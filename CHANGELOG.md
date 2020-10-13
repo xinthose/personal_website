@@ -1,6 +1,11 @@
 # Changelog
 
-## 1.0.7 (10/8/2020)
+## 1.0.8 (10/12/2020)
+
+- add animation to verse copy button when it is clicked
+- auto-set verse end based on the position of verse start
+
+## 1.0.7 (10/11/2020)
 
 - **Major:** update ANgular 9 to 10
 - use `async` and `await` to load the Bible

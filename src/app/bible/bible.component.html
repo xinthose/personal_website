@@ -26,7 +26,7 @@
                             <br />
                             <span>to</span>
                             <br />
-                            <kendo-dropdownlist [disabled]="disableSelectedVerseEnd" [defaultItem]="defaultItemVerse"
+                            <kendo-dropdownlist #verseEndDropdownList [disabled]="disableSelectedVerseEnd" [defaultItem]="defaultItemVerse"
                                 [data]="dataResultVerses" [value]="selectedVerseEnd" [textField]="'verseName'"
                                 [valueField]="'verseId'" (valueChange)="handleSelectedVerseEnd($event)">
                             </kendo-dropdownlist>
@@ -57,7 +57,7 @@
                         <mdb-card-title>
                             <h4>
                                 {{verseTitle}}
-                                <button kendoButton class="ml-2" [icon]="'copy'" (click)="copyBibleVerse()">Copy</button>
+                                <button kendoButton class="ml-2" [icon]="'copy'" [@jello]="showAnimation" (click)="copyBibleVerse()">Copy</button>
                             </h4>
                         </mdb-card-title>
                         <mdb-card-text>
