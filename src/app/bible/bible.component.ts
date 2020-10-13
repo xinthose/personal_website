@@ -10,9 +10,9 @@ import { DropDownListComponent } from '@progress/kendo-angular-dropdowns';
 import { BibleService } from "../bible.service";
 
 // interfaces
-import { Book } from "../shared/bible/Book";
-import { Chapter } from "../shared/bible/chapter";
-import { Verse } from "../shared/bible/verse";
+import { Book } from "./../shared/bible/Book";
+import { Chapter } from "./../shared/bible/Chapter";
+import { Verse } from "./../shared/bible/Verse";
 
 // other
 import { ClipboardService } from 'ngx-clipboard';
@@ -188,6 +188,7 @@ export class BibleComponent implements OnInit {
       verseNameEnd = this.selectedVerseEnd.verseName;
     }
 
+    // get number of verses selected
     let numVerses = 1;
     if (verseIdEnd != verseIdStart) {
       numVerses = verseIdEnd - verseIdStart + 1;
@@ -196,6 +197,7 @@ export class BibleComponent implements OnInit {
       console.debug("numVerses = " + numVerses.toString());
     }
 
+    // build verse text
     let verseText = "";
     for (let index = 0; index < numVerses; index++) {
       let passage = this.bible[bookId - 1].chapters[chapterId - 1][verseIdStart + index - 1];
@@ -211,6 +213,7 @@ export class BibleComponent implements OnInit {
       console.debug("verseText = " + verseText);
     }
 
+    // get verse title and location
     let verseTitle = bookName + " " + chapterName + " " + verseNameStart;
     let verseLocation = bookAbbrev + " " + chapterId.toString() + ":" + verseIdStart.toString();
     if (verseIdEnd != verseIdStart) {
