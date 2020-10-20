@@ -1,9 +1,9 @@
 # Changelog
 
-## 1.0.8 (10/12/2020)
+## 1.0.8 (10/19/2020)
 
 - add animation to verse copy button when it is clicked
-- auto-set verse end based on the position of verse start
+- auto-set verse end based on the position of verse 
 
 ## 1.0.7 (10/11/2020)
 
