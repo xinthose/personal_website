@@ -9,23 +9,27 @@
                             <h4>Select Bible</h4>
                         </mdb-card-title>
                         <mdb-card-text>
+                            <!-- Book -->
                             <kendo-dropdownlist [data]="dataBooksGrouped" [value]="selectedBook"
                                 [defaultItem]="defaultItemBook" [textField]="'bookName'" [valueField]="'bookId'"
                                 (valueChange)="handleBookChange($event)">
                             </kendo-dropdownlist>
                             <br />
+                            <!-- Chapter -->
                             <kendo-dropdownlist [disabled]="isDisabledChapters" [defaultItem]="defaultItemChapter"
                                 [data]="dataResultChapters" [value]="selectedChapter" [textField]="'chapterName'"
                                 [valueField]="'chapterId'" (valueChange)="handleChapterChange($event)">
                             </kendo-dropdownlist>
                             <br />
-                            <kendo-dropdownlist [disabled]="isDisabledVerses" [defaultItem]="defaultItemVerse"
+                            <!-- Verse Start -->
+                            <kendo-dropdownlist [disabled]="disableSelectedVerseStart" [defaultItem]="defaultItemVerse"
                                 [data]="dataResultVerses" [value]="selectedVerseStart" [textField]="'verseName'"
                                 [valueField]="'verseId'" (valueChange)="handleSelectedVerseStart($event)">
                             </kendo-dropdownlist>
                             <br />
                             <span>to</span>
                             <br />
+                            <!-- Verse End -->
                             <kendo-dropdownlist #verseEndDropdownList [disabled]="disableSelectedVerseEnd" [defaultItem]="defaultItemVerse"
                                 [data]="dataResultVerses" [value]="selectedVerseEnd" [textField]="'verseName'"
                                 [valueField]="'verseId'" (valueChange)="handleSelectedVerseEnd($event)">
@@ -60,7 +64,7 @@
                                 <!-- Copy -->
                                 <button kendoButton class="ml-2" [icon]="'copy'" [@jello]="showAnimation" (click)="copyBibleVerse()">Copy</button>
                                 <!-- Share -->
-                                <kendo-dropdownbutton [data]="shareBibleVerseData" (itemClick)="shareBibleVerse()">
+                                <kendo-dropdownbutton class="ml-2" [icon]="'share'" [data]="shareBibleVerseData" (itemClick)="shareBibleVerse($event)">
                                     Share
                                 </kendo-dropdownbutton>
                             </h4>

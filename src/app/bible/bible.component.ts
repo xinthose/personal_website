@@ -45,7 +45,7 @@ export class BibleComponent implements OnInit {
 
   // dropdown disable
   isDisabledChapters: boolean = true;
-  isDisabledVerses: boolean = true;
+  disableSelectedVerseStart: boolean = true;
   disableSelectedVerseEnd: boolean = true;
 
   // dropdown default selection
@@ -107,7 +107,8 @@ export class BibleComponent implements OnInit {
       this.dataResultChapters = this.dataChapters.filter((s) => s.bookId === value.bookId)
     }
 
-    this.isDisabledVerses = true;
+    this.disableSelectedVerseStart = true;
+    this.disableSelectedVerseEnd = true;
     this.dataResultVerses = [];
   }
 
@@ -118,10 +119,11 @@ export class BibleComponent implements OnInit {
     this.showVerse = false;
 
     if (value.chapterId == this.defaultItemChapter.chapterId) {
-      this.isDisabledVerses = true;
+      this.disableSelectedVerseStart = true;
+      this.disableSelectedVerseEnd = true;
       this.dataResultVerses = [];
     } else {
-      this.isDisabledVerses = false;
+      this.disableSelectedVerseStart = false;
       this.dataResultVerses = this.dataVerses.filter((s) => ((s.chapterId === value.chapterId) && (s.bookId === value.bookId)))
     }
   }
@@ -244,6 +246,13 @@ export class BibleComponent implements OnInit {
   }
 
   shareBibleVerse(e: any) {
-    console.log(e);
+    switch (e.text) {
+      case this.shareBibleVerseData[0].text:  // Copy Link
+        
+        break;
+      default:
+        console.error("e.text unhandled >> e.text = " + e.text);
+        break;
+    }
   }
 }
