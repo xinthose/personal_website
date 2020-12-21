@@ -1,9 +1,15 @@
 # Changelog
 
+## 1.0.9 (12/20/2020)
+
+- `bible.component`
+  - add share button to share page current configuration (Bible verse and options)
+
 ## 1.0.8 (10/19/2020)
 
-- add animation to verse copy button when it is clicked
-- auto-set verse end based on the position of verse 
+- `bible.component`
+  - add animation to verse copy button when it is clicked
+  - auto-set verse end based on the position of verse 
 
 ## 1.0.7 (10/11/2020)
 

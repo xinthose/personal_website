@@ -43,6 +43,7 @@
     "@progress/kendo-theme-default": "^4.29.0",
     "@progress/kendo-theme-material": "^3.25.0",
     "@types/chart.js": "^2.9.29",
+    "@ungap/url-search-params": "^0.2.2",
     "animate.css": "^3.7.2",
     "chart.js": "^2.9.4",
     "compression": "^1.7.4",

@@ -57,7 +57,12 @@
                         <mdb-card-title>
                             <h4>
                                 {{verseTitle}}
+                                <!-- Copy -->
                                 <button kendoButton class="ml-2" [icon]="'copy'" [@jello]="showAnimation" (click)="copyBibleVerse()">Copy</button>
+                                <!-- Share -->
+                                <kendo-dropdownbutton [data]="shareBibleVerseData" (itemClick)="shareBibleVerse()">
+                                    Share
+                                </kendo-dropdownbutton>
                             </h4>
                         </mdb-card-title>
                         <mdb-card-text>

@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from "@angular/router";
 import { trigger, transition, useAnimation } from '@angular/animations';
+import URLSearchParams from '@ungap/url-search-params';  // <https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams>
 
 // Progress
 import { GroupResult, groupBy } from '@progress/kendo-data-query';
@@ -38,6 +39,9 @@ export class BibleComponent implements OnInit {
   verseLocation: string = "";
   showVerse: boolean = false;
   showVerseNumbers: boolean = false;
+  shareBibleVerseData: Array<{ text: string }> = [
+    { text: 'Copy Link' },
+  ];
 
   // dropdown disable
   isDisabledChapters: boolean = true;
@@ -237,5 +241,9 @@ export class BibleComponent implements OnInit {
 
     // shake copy button
     this.showAnimation = !this.showAnimation;
+  }
+
+  shareBibleVerse(e: any) {
+    console.log(e);
   }
 }
