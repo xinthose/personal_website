@@ -18,6 +18,7 @@ import { Verse } from "./../shared/bible/Verse";
 // other
 import { ClipboardService } from 'ngx-clipboard';
 import { jello } from 'ngx-animate';
+import { environment } from 'environments/environment';
 
 @Component({
   selector: 'app-bible',
@@ -32,6 +33,7 @@ export class BibleComponent implements OnInit {
   advDebug: boolean = false;
   showAnimation: boolean = false;
   @ViewChild("verseEndDropdownList", { static: false }) public verseEndDropdownList!: DropDownListComponent;
+  url: string = environment.production ? "http://www.xinthose.com/bible/" : "http://localhost:4200/bible/";
 
   bible: any;
   verseText: string = "";
@@ -246,13 +248,28 @@ export class BibleComponent implements OnInit {
   }
 
   shareBibleVerse(e: any) {
-    switch (e.text) {
-      case this.shareBibleVerseData[0].text:  // Copy Link
-        
-        break;
-      default:
-        console.error("e.text unhandled >> e.text = " + e.text);
-        break;
+    try {
+      const searchParams = new URLSearchParams();
+
+      // save search parameters
+      switch (e.text) {
+        case this.shareBibleVerseData[0].text:  // Copy Link
+          // save selected verse in parameters 
+          searchParams.append("bookId", this.selectedBook.bookId.toString());
+          searchParams.append("chapterId", this.selectedChapter.chapterId.toString());
+          searchParams.append("verseIdStart", this.selectedVerseStart.verseId.toString());
+          searchParams.append("verseIdEnd", this.selectedVerseEnd.verseId.toString());
+
+          // get URL to copy
+          const url: string = this.url + searchParams.toString();
+          console.log(url);
+          break;
+        default:
+          console.error("e.text unhandled >> e.text = " + e.text);
+          break;
+      }
+    } catch (error) {
+      console.error(error);      
     }
   }
 }
