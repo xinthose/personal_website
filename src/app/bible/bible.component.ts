@@ -263,6 +263,9 @@ export class BibleComponent implements OnInit {
           // get URL to copy
           const url: string = this.url + searchParams.toString();
           console.log(url);
+
+          // copy URL to clipboard
+          this.clipBoard.copy(url);
           break;
         default:
           console.error("e.text unhandled >> e.text = " + e.text);
