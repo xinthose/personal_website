@@ -1,11 +1,11 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { Router, ActivatedRoute, ParamMap } from "@angular/router";
-import { trigger, transition, useAnimation } from '@angular/animations';
-import URLSearchParams from '@ungap/url-search-params';  // <https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams>
+import { trigger, transition, useAnimation } from "@angular/animations";
+import URLSearchParams from "@ungap/url-search-params";  // <https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams>
 
 // Progress
-import { GroupResult, groupBy } from '@progress/kendo-data-query';
-import { DropDownListComponent } from '@progress/kendo-angular-dropdowns';
+import { GroupResult, groupBy } from "@progress/kendo-data-query";
+import { DropDownListComponent } from "@progress/kendo-angular-dropdowns";
 
 // Services
 import { BibleService } from "../bible.service";
@@ -15,17 +15,21 @@ import { Book } from "./../shared/bible/Book";
 import { Chapter } from "./../shared/bible/Chapter";
 import { Verse } from "./../shared/bible/Verse";
 
+// rxjs
+import { combineLatest } from "rxjs";
+import { switchMap } from "rxjs/operators";
+
 // other
-import { ClipboardService } from 'ngx-clipboard';
-import { jello } from 'ngx-animate';
-import { environment } from 'environments/environment';
+import { ClipboardService } from "ngx-clipboard";
+import { jello } from "ngx-animate";
+import { environment } from "environments/environment";
 
 @Component({
-  selector: 'app-bible',
-  templateUrl: './bible.component.html',
-  styleUrls: ['./bible.component.scss'],
+  selector: "app-bible",
+  templateUrl: "./bible.component.html",
+  styleUrls: ["./bible.component.scss"],
   animations: [
-    trigger('jello', [transition('* => *', useAnimation(jello))])
+    trigger("jello", [transition("* => *", useAnimation(jello))])
   ],
 })
 export class BibleComponent implements OnInit {
@@ -42,7 +46,7 @@ export class BibleComponent implements OnInit {
   showVerse: boolean = false;
   showVerseNumbers: boolean = false;
   shareBibleVerseData: Array<{ text: string }> = [
-    { text: 'Copy Link' },
+    { text: "Copy Link" },
   ];
 
   // dropdown disable
@@ -86,7 +90,21 @@ export class BibleComponent implements OnInit {
 
       this.dataChapters = await this.bibleService.fetchChapters();
       this.dataVerses = await this.bibleService.fetchVerses();
-      this.bible = await this.bibleService.fetch('./assets/bible/en_kjv.json');
+      this.bible = await this.bibleService.fetch("./assets/bible/en_kjv.json");
+
+      // check for URL parameters
+      // http://localhost:4200/bible/1/1/1/2 (book, chapter, verse start, verse end)
+      this.route.paramMap.subscribe((pathParams: any) => {
+        // get data
+        const bookId: number = pathParams.get("bookId") || 0;
+        const chapterId: number = pathParams.get("chapterId") || 0;
+        const verseIdStart: number = pathParams.get("verseIdStart") || 0;
+        const verseIdEnd: number = pathParams.get("verseIdEnd") || 0;
+        
+        // set data
+        
+        console.log(bookId, chapterId, verseIdStart, verseIdEnd);
+      });
     } catch (error) {
       console.error("BibleComponent.ngOnInit >> error = " + error);
     }
@@ -239,7 +257,7 @@ export class BibleComponent implements OnInit {
   copyBibleVerse() {
     // build verse for copying
     const verse = this.verseLocation + " \"" + this.verseText + "\"";
-    
+
     // copy verse to clipboard
     this.clipBoard.copy(verse);
 
@@ -272,7 +290,7 @@ export class BibleComponent implements OnInit {
           break;
       }
     } catch (error) {
-      console.error(error);      
+      console.error(error);
     }
   }
 }
