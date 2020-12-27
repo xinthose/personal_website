@@ -35,6 +35,7 @@ import { environment } from "environments/environment";
 export class BibleComponent implements OnInit {
   debug: boolean = true;
   advDebug: boolean = false;
+  logLoc: string = "BibleComponent.";
   showAnimation: boolean = false;
   @ViewChild("verseEndDropdownList", { static: false }) public verseEndDropdownList!: DropDownListComponent;
   url: string = environment.production ? "http://www.xinthose.com/bible/" : "http://localhost:4200/bible/";
@@ -267,20 +268,20 @@ export class BibleComponent implements OnInit {
 
   shareBibleVerse(e: any) {
     try {
-      const searchParams = new URLSearchParams();
-
-      // save search parameters
       switch (e.text) {
         case this.shareBibleVerseData[0].text:  // Copy Link
-          // save selected verse in parameters 
-          searchParams.append("bookId", this.selectedBook.bookId.toString());
-          searchParams.append("chapterId", this.selectedChapter.chapterId.toString());
-          searchParams.append("verseIdStart", this.selectedVerseStart.verseId.toString());
-          searchParams.append("verseIdEnd", this.selectedVerseEnd.verseId.toString());
+          // save selected verse in parameters
+          const searchArr: Array<Number> = [];
+          searchArr.push(this.selectedBook.bookId);
+          searchArr.push(this.selectedChapter.chapterId);
+          searchArr.push(this.selectedVerseStart.verseId);
+          searchArr.push(this.selectedVerseEnd.verseId);
 
           // get URL to copy
-          const url: string = this.url + searchParams.toString();
-          console.log(url);
+          const url: string = `${this.url}${searchArr.join("/")}`;
+          if (this.debug) {
+            console.debug(this.logLoc + "shareBibleVerse >> url = " + url);
+          }
 
           // copy URL to clipboard
           this.clipBoard.copy(url);
