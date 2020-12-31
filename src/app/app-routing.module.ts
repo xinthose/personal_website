@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'bible/:bookId/:chapterId', component: BibleComponent },
   { path: 'bible/:bookId/:chapterId/:verseIdStart', component: BibleComponent },
   { path: 'bible/:bookId/:chapterId/:verseIdStart/:verseIdEnd', component: BibleComponent },
-  // other  
+  // other
   { path: '**', component: PageNotFoundComponent },
 ];
 @NgModule({

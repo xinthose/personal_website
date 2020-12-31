@@ -37,6 +37,9 @@ export class BibleComponent implements OnInit {
   advDebug: boolean = false;
   logLoc: string = "BibleComponent.";
   showAnimation: boolean = false;
+  @ViewChild("bookDropdownList", { static: false }) public bookDropdownList!: DropDownListComponent;
+  @ViewChild("chapterDropdownList", { static: false }) public chapterDropdownList!: DropDownListComponent;
+  @ViewChild("verseStartDropdownList", { static: false }) public verseStartDropdownList!: DropDownListComponent;
   @ViewChild("verseEndDropdownList", { static: false }) public verseEndDropdownList!: DropDownListComponent;
   url: string = environment.production ? "http://www.xinthose.com/bible/" : "http://localhost:4200/bible/";
 
@@ -103,7 +106,19 @@ export class BibleComponent implements OnInit {
         const verseIdEnd: number = pathParams.get("verseIdEnd") || 0;
         
         // set data
-        
+        if (bookId) {
+          this.bookDropdownList.writeValue(bookId);
+        }
+        if (chapterId) {
+          this.chapterDropdownList.writeValue(chapterId);
+        }
+        if (verseIdStart) {
+          this.verseStartDropdownList.writeValue(verseIdStart);
+        }
+        if (verseIdEnd) {
+          this.verseEndDropdownList.writeValue(verseIdEnd);
+        }
+
         console.log(bookId, chapterId, verseIdStart, verseIdEnd);
       });
     } catch (error) {

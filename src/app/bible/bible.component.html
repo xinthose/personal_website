@@ -10,19 +10,19 @@
                         </mdb-card-title>
                         <mdb-card-text>
                             <!-- Book -->
-                            <kendo-dropdownlist [data]="dataBooksGrouped" [value]="selectedBook"
+                            <kendo-dropdownlist #bookDropdownList [data]="dataBooksGrouped" [value]="selectedBook"
                                 [defaultItem]="defaultItemBook" [textField]="'bookName'" [valueField]="'bookId'"
                                 (valueChange)="handleBookChange($event)">
                             </kendo-dropdownlist>
                             <br />
                             <!-- Chapter -->
-                            <kendo-dropdownlist [disabled]="isDisabledChapters" [defaultItem]="defaultItemChapter"
+                            <kendo-dropdownlist #chapterDropdownList [disabled]="isDisabledChapters" [defaultItem]="defaultItemChapter"
                                 [data]="dataResultChapters" [value]="selectedChapter" [textField]="'chapterName'"
                                 [valueField]="'chapterId'" (valueChange)="handleChapterChange($event)">
                             </kendo-dropdownlist>
                             <br />
                             <!-- Verse Start -->
-                            <kendo-dropdownlist [disabled]="disableSelectedVerseStart" [defaultItem]="defaultItemVerse"
+                            <kendo-dropdownlist #verseStartDropdownList [disabled]="disableSelectedVerseStart" [defaultItem]="defaultItemVerse"
                                 [data]="dataResultVerses" [value]="selectedVerseStart" [textField]="'verseName'"
                                 [valueField]="'verseId'" (valueChange)="handleSelectedVerseStart($event)">
                             </kendo-dropdownlist>
