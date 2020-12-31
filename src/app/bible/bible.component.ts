@@ -107,16 +107,18 @@ export class BibleComponent implements OnInit {
         
         // set data
         if (bookId) {
-          this.bookDropdownList.writeValue(bookId);
+          const val = { bookId: bookId };
+          this.bookDropdownList.writeValue(val);
+          this.handleBookChange(val);
         }
         if (chapterId) {
-          this.chapterDropdownList.writeValue(chapterId);
+          this.chapterDropdownList.writeValue({ chapterId: chapterId });
         }
         if (verseIdStart) {
-          this.verseStartDropdownList.writeValue(verseIdStart);
+          this.verseStartDropdownList.writeValue({ verseId: verseIdStart });
         }
         if (verseIdEnd) {
-          this.verseEndDropdownList.writeValue(verseIdEnd);
+          this.verseEndDropdownList.writeValue({ verseId: verseIdEnd });
         }
 
         console.log(bookId, chapterId, verseIdStart, verseIdEnd);
@@ -129,6 +131,7 @@ export class BibleComponent implements OnInit {
   // dropdown changes
 
   handleBookChange(value: any) {
+    console.log(value);
     this.selectedBook = value;
     this.selectedChapter = { chapterName: "", chapterId: 0 };
     this.selectedVerseStart = { verseName: "", verseId: 0 };
