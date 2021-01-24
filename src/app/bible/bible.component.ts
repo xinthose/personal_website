@@ -23,7 +23,6 @@ import { switchMap } from "rxjs/operators";
 import { ClipboardService } from "ngx-clipboard";
 import { jello } from "ngx-animate";
 import { environment } from "environments/environment";
-import { threadId } from "worker_threads";
 
 @Component({
   selector: "app-bible",
