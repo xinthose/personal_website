@@ -4,7 +4,7 @@ import { trigger, transition, useAnimation } from "@angular/animations";
 import URLSearchParams from "@ungap/url-search-params";  // <https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams>
 
 // Progress
-import { GroupResult, groupBy } from "@progress/kendo-data-query";
+import { GroupResult, groupBy, AggregateResult } from "@progress/kendo-data-query";
 import { DropDownListComponent } from "@progress/kendo-angular-dropdowns";
 
 // Services
@@ -89,7 +89,7 @@ export class BibleComponent implements OnInit {
   async ngOnInit() {
     try {
       // get the Bible
-      const books = await this.bibleService.fetchBooks();
+      const books: any = await this.bibleService.fetchBooks();
       this.dataBooksGrouped = groupBy(books, [{ field: "subcategory" }]);;
 
       this.dataChapters = await this.bibleService.fetchChapters();
@@ -107,7 +107,7 @@ export class BibleComponent implements OnInit {
 
         // set data
         if (bookId) {
-          this.bookDropdownList.writeValue(val);
+          this.bookDropdownList.writeValue({ bookId: bookId });
         }
         if (chapterId) {
           this.chapterDropdownList.writeValue({ chapterId: chapterId });
@@ -131,9 +131,9 @@ export class BibleComponent implements OnInit {
   handleBookChange(value: any) {
     console.log(value);
     this.selectedBook = value;
-    this.selectedChapter = { chapterName: "", chapterId: 0 };
-    this.selectedVerseStart = { verseName: "", verseId: 0 };
-    this.selectedVerseEnd = { verseName: "", verseId: 0 };
+    this.selectedChapter = { chapterName: "", chapterId: 0, bookId: 0 };
+    this.selectedVerseStart = { verseName: "", verseId: 0, chapterId: 0, bookId: 0 };
+    this.selectedVerseEnd = { verseName: "", verseId: 0, chapterId: 0, bookId: 0 };
     this.showVerse = false;
 
     if (value.bookId == this.defaultItemBook.bookId) {
@@ -151,8 +151,8 @@ export class BibleComponent implements OnInit {
 
   handleChapterChange(value: any) {
     this.selectedChapter = value;
-    this.selectedVerseStart = { verseName: "", verseId: 0 };
-    this.selectedVerseEnd = { verseName: "", verseId: 0 };
+    this.selectedVerseStart = { verseName: "", verseId: 0, chapterId: 0, bookId: 0 };
+    this.selectedVerseEnd = { verseName: "", verseId: 0, chapterId: 0, bookId: 0 };
     this.showVerse = false;
 
     if (value.chapterId == this.defaultItemChapter.chapterId) {

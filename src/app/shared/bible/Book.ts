@@ -1,5 +1,5 @@
 export interface Book {
-    bookName: string, 
+    bookName: string,
     bookId: number,
     subcategory: string,
 }
