@@ -3,6 +3,8 @@ import { HttpClient } from "@angular/common/http";
 
 // interfaces
 import { Book } from "./shared/bible/Book";
+import { Chapter } from "./shared/bible/Chapter";
+import { Verse } from "./shared/bible/Verse";
 
 @Injectable({
   providedIn: 'root'
@@ -17,15 +19,15 @@ export class BibleService {
     return this.http.get(file).toPromise();
   }
 
-  fetchBooks(): Promise<any> {
-    return this.http.get<Book>('./assets/bible/books.json').toPromise();
+  fetchBooks(): Promise<Array<Book>> {
+    return this.http.get<Array<Book>>('./assets/bible/books.json').toPromise();
   }
 
-  fetchChapters(): Promise<any> {
-    return this.http.get<Array<{ chapterName: string, chapterId: number, bookId: number }>>('./assets/bible/chapters.json').toPromise();
+  fetchChapters(): Promise<Array<Chapter>> {
+    return this.http.get<Array<Chapter>>('./assets/bible/chapters.json').toPromise();
   }
 
-  fetchVerses(): Promise<any> {
-    return this.http.get<Array<{ verseName: string, verseId: number, chapterId: number, bookId: number }>>('./assets/bible/verses.json').toPromise();
+  fetchVerses(): Promise<Array<Verse>> {
+    return this.http.get<Array<Verse>>('./assets/bible/verses.json').toPromise();
   }
 }

@@ -59,24 +59,24 @@ export class BibleComponent implements OnInit {
   disableSelectedVerseEnd: boolean = true;
 
   // dropdown default selection
-  defaultItemBook: { bookName: string, bookId: number } = { bookName: "Select Book", bookId: 0 };
-  defaultItemChapter: { chapterName: string, chapterId: number } = { chapterName: "Select Chapter", chapterId: 0 };
-  defaultItemVerse: { verseName: string, verseId: number } = { verseName: "Select Verse", verseId: 0 };
+  defaultItemBook: Book = { bookName: "Select Book", bookId: 0, subcategory: "" };
+  defaultItemChapter: Chapter = { chapterName: "Select Chapter", chapterId: 0, bookId: 0 };
+  defaultItemVerse: Verse = { verseName: "Select Verse", verseId: 0, chapterId: 0, bookId: 0 };
 
   // dropdown data
   dataBooksGrouped!: GroupResult[];
-  dataChapters: Array<{ chapterName: string, chapterId: number, bookId: number }> = [];
-  dataVerses: Array<{ verseName: string, verseId: number, chapterId: number, bookId: number }> = [];
+  dataChapters: Array<Chapter> = [];
+  dataVerses: Array<Verse> = [];
 
   // dropdown cascade result
-  dataResultChapters: Array<{ chapterName: string, chapterId: number, bookId: number }> = [];
-  dataResultVerses: Array<{ verseName: string, verseId: number, chapterId: number }> = [];
+  dataResultChapters: Array<Chapter> = [];
+  dataResultVerses: Array<Verse> = [];
 
   // dropdown selection
-  selectedBook: Book = { bookName: "", bookId: 0 };
-  selectedChapter: Chapter = { chapterName: "", chapterId: 0 };
-  selectedVerseStart: Verse = { verseName: "", verseId: 0 };
-  selectedVerseEnd: Verse = { verseName: "", verseId: 0 };
+  selectedBook: Book = { bookName: "", bookId: 0, subcategory: "" };
+  selectedChapter: Chapter = { chapterName: "", chapterId: 0, bookId: 0 };
+  selectedVerseStart: Verse = { verseName: "", verseId: 0, chapterId: 0, bookId: 0 };
+  selectedVerseEnd: Verse = { verseName: "", verseId: 0, chapterId: 0, bookId: 0 };
 
   constructor(
     private bibleService: BibleService,
@@ -104,12 +104,10 @@ export class BibleComponent implements OnInit {
         const chapterId: number = pathParams.get("chapterId") || 0;
         const verseIdStart: number = pathParams.get("verseIdStart") || 0;
         const verseIdEnd: number = pathParams.get("verseIdEnd") || 0;
-        
+
         // set data
         if (bookId) {
-          const val = { bookId: bookId };
           this.bookDropdownList.writeValue(val);
-          this.handleBookChange(val);
         }
         if (chapterId) {
           this.chapterDropdownList.writeValue({ chapterId: chapterId });

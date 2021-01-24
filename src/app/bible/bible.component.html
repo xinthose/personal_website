@@ -16,23 +16,26 @@
                             </kendo-dropdownlist>
                             <br />
                             <!-- Chapter -->
-                            <kendo-dropdownlist #chapterDropdownList [disabled]="isDisabledChapters" [defaultItem]="defaultItemChapter"
-                                [data]="dataResultChapters" [value]="selectedChapter" [textField]="'chapterName'"
-                                [valueField]="'chapterId'" (valueChange)="handleChapterChange($event)">
+                            <kendo-dropdownlist #chapterDropdownList [disabled]="isDisabledChapters"
+                                [defaultItem]="defaultItemChapter" [data]="dataResultChapters" [value]="selectedChapter"
+                                [textField]="'chapterName'" [valueField]="'chapterId'"
+                                (valueChange)="handleChapterChange($event)">
                             </kendo-dropdownlist>
                             <br />
                             <!-- Verse Start -->
-                            <kendo-dropdownlist #verseStartDropdownList [disabled]="disableSelectedVerseStart" [defaultItem]="defaultItemVerse"
-                                [data]="dataResultVerses" [value]="selectedVerseStart" [textField]="'verseName'"
-                                [valueField]="'verseId'" (valueChange)="handleSelectedVerseStart($event)">
+                            <kendo-dropdownlist #verseStartDropdownList [disabled]="disableSelectedVerseStart"
+                                [defaultItem]="defaultItemVerse" [data]="dataResultVerses" [value]="selectedVerseStart"
+                                [textField]="'verseName'" [valueField]="'verseId'"
+                                (valueChange)="handleSelectedVerseStart($event)">
                             </kendo-dropdownlist>
                             <br />
                             <span>to</span>
                             <br />
                             <!-- Verse End -->
-                            <kendo-dropdownlist #verseEndDropdownList [disabled]="disableSelectedVerseEnd" [defaultItem]="defaultItemVerse"
-                                [data]="dataResultVerses" [value]="selectedVerseEnd" [textField]="'verseName'"
-                                [valueField]="'verseId'" (valueChange)="handleSelectedVerseEnd($event)">
+                            <kendo-dropdownlist #verseEndDropdownList [disabled]="disableSelectedVerseEnd"
+                                [defaultItem]="defaultItemVerse" [data]="dataResultVerses" [value]="selectedVerseEnd"
+                                [textField]="'verseName'" [valueField]="'verseId'"
+                                (valueChange)="handleSelectedVerseEnd($event)">
                             </kendo-dropdownlist>
                         </mdb-card-text>
                     </mdb-card-body>
@@ -48,7 +51,8 @@
                         <mdb-card-text>
                             <span>Show Inline Verse Numbers</span>
                             <br />
-                            <kendo-switch [(ngModel)]="showVerseNumbers" (valueChange)="showVerseNumbersChange()" [onLabel]="'Yes'" [offLabel]="'No'"></kendo-switch>        
+                            <kendo-switch [(ngModel)]="showVerseNumbers" (valueChange)="showVerseNumbersChange()"
+                                [onLabel]="'Yes'" [offLabel]="'No'"></kendo-switch>
                         </mdb-card-text>
                     </mdb-card-body>
                 </mdb-card>
@@ -62,9 +66,11 @@
                             <h4>
                                 {{verseTitle}}
                                 <!-- Copy -->
-                                <button kendoButton class="ml-2" [icon]="'copy'" [@jello]="showAnimation" (click)="copyBibleVerse()">Copy</button>
+                                <button kendoButton class="ml-2" [icon]="'copy'" [@jello]="showAnimation"
+                                    (click)="copyBibleVerse()">Copy</button>
                                 <!-- Share -->
-                                <kendo-dropdownbutton class="ml-2" [icon]="'share'" [data]="shareBibleVerseData" (itemClick)="shareBibleVerse($event)">
+                                <kendo-dropdownbutton class="ml-2" [icon]="'share'" [data]="shareBibleVerseData"
+                                    (itemClick)="shareBibleVerse($event)">
                                     Share
                                 </kendo-dropdownbutton>
                             </h4>

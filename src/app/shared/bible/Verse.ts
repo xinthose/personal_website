@@ -1,4 +1,6 @@
 export interface Verse {
-    verseName: string, 
+    verseName: string,
     verseId: number,
+    chapterId: number,
+    bookId: number,
 }
