@@ -23,6 +23,7 @@ import { switchMap } from "rxjs/operators";
 import { ClipboardService } from "ngx-clipboard";
 import { jello } from "ngx-animate";
 import { environment } from "environments/environment";
+import { threadId } from "worker_threads";
 
 @Component({
   selector: "app-bible",
@@ -72,7 +73,7 @@ export class BibleComponent implements OnInit {
   dataResultChapters: Array<Chapter> = [];
   dataResultVerses: Array<Verse> = [];
 
-  // dropdown selection
+  // dropdown values (selection)
   selectedBook: Book = { bookName: "", bookId: 0, subcategory: "" };
   selectedChapter: Chapter = { chapterName: "", chapterId: 0, bookId: 0 };
   selectedVerseStart: Verse = { verseName: "", verseId: 0, chapterId: 0, bookId: 0 };
@@ -107,16 +108,61 @@ export class BibleComponent implements OnInit {
 
         // set data
         if (bookId) {
-          this.bookDropdownList.writeValue({ bookId: bookId });
+          // find book
+          const result: Book = books.find((book: Book) => {
+            return book.bookId == bookId
+          })
+          if (this.debug) {
+            console.debug("ngOnInit >> set book to " + JSON.stringify(result));
+          }
+
+          // set value in dropdown
+          //this.bookDropdownList.writeValue(result);
+          if (result) {
+            this.selectedBook = result;
+          }
         }
         if (chapterId) {
-          this.chapterDropdownList.writeValue({ chapterId: chapterId });
+          // find chapter
+          const result = this.dataChapters.find((chapter: Chapter) => {
+            return chapter.chapterId == chapterId
+          })
+          if (this.debug) {
+            console.debug("ngOnInit >> set chapter to " + JSON.stringify(result));
+          }
+
+          // set value in dropdown
+          if (result) {
+            this.selectedChapter = result;
+          }
         }
         if (verseIdStart) {
-          this.verseStartDropdownList.writeValue({ verseId: verseIdStart });
+          // find starting verse
+          const result = this.dataVerses.find((verse: Verse) => {
+            return verse.verseId == verseIdStart
+          })
+          if (this.debug) {
+            console.debug("ngOnInit >> set verse start to " + JSON.stringify(result));
+          }
+
+          // set value in dropdown
+          if (result) {
+            this.selectedVerseStart = result;
+          }
         }
         if (verseIdEnd) {
-          this.verseEndDropdownList.writeValue({ verseId: verseIdEnd });
+          // find ending verse
+          const result = this.dataVerses.find((verse: Verse) => {
+            return verse.verseId == verseIdEnd
+          })
+          if (this.debug) {
+            console.debug("ngOnInit >> set verse end to " + JSON.stringify(result));
+          }
+
+          // set value in dropdown
+          if (result) {
+            this.selectedVerseEnd = result;
+          }
         }
 
         console.log(bookId, chapterId, verseIdStart, verseIdEnd);
