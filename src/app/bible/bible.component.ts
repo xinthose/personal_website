@@ -75,10 +75,10 @@ export class BibleComponent implements OnInit, AfterViewInit {
   dataResultVerses: Array<Verse> = [];
 
   // dropdown values (selection)
-  selectedBook: Book = { bookName: "", bookId: 0, subcategory: "" };
-  selectedChapter: Chapter = { chapterName: "", chapterId: 0, bookId: 0 };
-  selectedVerseStart: Verse = { verseName: "", verseId: 0, chapterId: 0, bookId: 0 };
-  selectedVerseEnd: Verse = { verseName: "", verseId: 0, chapterId: 0, bookId: 0 };
+  selectedBook: number = 0;
+  selectedChapter: number = 0;
+  selectedVerseStart: number = 0;
+  selectedVerseEnd: number = 0;
 
   constructor(
     private bibleService: BibleService,
@@ -105,11 +105,6 @@ export class BibleComponent implements OnInit, AfterViewInit {
   }
 
   async ngAfterViewInit() {
-    // make sure the data is loaded (ngOnInit does not finish fast enough)
-    this.dataBooks = await this.bibleService.fetchBooks();
-    this.dataChapters = await this.bibleService.fetchChapters();
-    this.dataVerses = await this.bibleService.fetchVerses();
-
     // check for URL parameters
     // http://localhost:4200/bible/1/1/1/2 (book, chapter, verse start, verse end)
     const bookId: number = Number(this.route.snapshot.params.bookId) || 0;
@@ -118,63 +113,10 @@ export class BibleComponent implements OnInit, AfterViewInit {
     const verseIdEnd: number = Number(this.route.snapshot.params.verseIdEnd) || 0;
 
     // set data
-    if (bookId) {
-      // find book
-      const result: Book = this.dataBooks.find((book: Book) => {
-        return book.bookId == bookId
-      })
-      if (this.debug) {
-        console.debug("ngOnInit >> set book to " + JSON.stringify(result));
-      }
-
-      // set value in dropdown
-      //this.bookDropdownList.writeValue(result);
-      if (result) {
-        this.selectedBook = result;
-      }
-    }
-    if (chapterId) {
-      // find chapter
-      const result = this.dataChapters.find((chapter: Chapter) => {
-        return chapter.chapterId == chapterId
-      })
-      if (this.debug) {
-        console.debug("ngOnInit >> set chapter to " + JSON.stringify(result));
-      }
-
-      // set value in dropdown
-      if (result) {
-        this.selectedChapter = result;
-      }
-    }
-    if (verseIdStart) {
-      // find starting verse
-      const result = this.dataVerses.find((verse: Verse) => {
-        return verse.verseId == verseIdStart
-      })
-      if (this.debug) {
-        console.debug("ngOnInit >> set verse start to " + JSON.stringify(result));
-      }
-
-      // set value in dropdown
-      if (result) {
-        this.selectedVerseStart = result;
-      }
-    }
-    if (verseIdEnd) {
-      // find ending verse
-      const result = this.dataVerses.find((verse: Verse) => {
-        return verse.verseId == verseIdEnd
-      })
-      if (this.debug) {
-        console.debug("ngOnInit >> set verse end to " + JSON.stringify(result));
-      }
-
-      // set value in dropdown
-      if (result) {
-        this.selectedVerseEnd = result;
-      }
-    }
+    this.selectedBook = bookId;
+    this.selectedChapter = chapterId;
+    this.selectedVerseStart = verseIdStart;
+    this.selectedVerseEnd = verseIdEnd;
 
     console.log(bookId, chapterId, verseIdStart, verseIdEnd);
   }
@@ -184,9 +126,9 @@ export class BibleComponent implements OnInit, AfterViewInit {
   handleBookChange(value: any) {
     console.log(value);
     this.selectedBook = value;
-    this.selectedChapter = { chapterName: "", chapterId: 0, bookId: 0 };
-    this.selectedVerseStart = { verseName: "", verseId: 0, chapterId: 0, bookId: 0 };
-    this.selectedVerseEnd = { verseName: "", verseId: 0, chapterId: 0, bookId: 0 };
+    this.selectedChapter = 0;
+    this.selectedVerseStart = 0;
+    this.selectedVerseEnd = 0;
     this.showVerse = false;
 
     if (value.bookId == this.defaultItemBook.bookId) {
@@ -204,8 +146,8 @@ export class BibleComponent implements OnInit, AfterViewInit {
 
   handleChapterChange(value: any) {
     this.selectedChapter = value;
-    this.selectedVerseStart = { verseName: "", verseId: 0, chapterId: 0, bookId: 0 };
-    this.selectedVerseEnd = { verseName: "", verseId: 0, chapterId: 0, bookId: 0 };
+    this.selectedVerseStart = 0;
+    this.selectedVerseEnd = 0;
     this.showVerse = false;
 
     if (value.chapterId == this.defaultItemChapter.chapterId) {
@@ -225,7 +167,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
       this.selectedVerseStart = value;
 
       // set verse end same as beginning if it was empty or less in value
-      if ((!this.selectedVerseEnd.verseId) || (this.selectedVerseStart.verseId > this.selectedVerseEnd.verseId)) {
+      if ((!this.selectedVerseEnd) || (this.selectedVerseStart > this.selectedVerseEnd)) {
         this.disableSelectedVerseEnd = false;
         this.selectedVerseEnd = value;
         this.verseEndDropdownList.writeValue(value);
@@ -267,21 +209,31 @@ export class BibleComponent implements OnInit, AfterViewInit {
     console.assert(this.selectedChapter != null, "chapter not selected");
 
     // get data
-    let bookId = this.selectedBook.bookId;
-    let bookName = this.selectedBook.bookName;
-    let bookAbbrev = this.bible[bookId - 1].abbrev;
-
-    let chapterId = this.selectedChapter.chapterId;
-    let chapterName = this.selectedChapter.chapterName;
-
-    let verseIdStart = this.selectedVerseStart.verseId;
-    let verseNameStart = this.selectedVerseStart.verseName;
-
+    const bookId = 0;
+    const bookName = this.dataBooks.bookName;
+    const bookAbbrev = this.bible[bookId - 1].abbrev;
+    const chapterId = this.selectedChapter;
+    const verseIdStart = this.selectedVerseStart;
     let verseIdEnd = verseIdStart;
+
+    // get array data
+    const chapter = this.dataChapters.find((chapter: Chapter) => {
+      return chapter.chapterId == chapterId
+    });
+    const verseStart = this.dataVerses.find((verse: Verse) => {
+      return verse.verseId == verseIdStart
+    });
+    const verseEnd = this.dataVerses.find((verse: Verse) => {
+      return verse.verseId == verseIdEnd
+    });
+
+    // find ending verse
+    const chapterName: string = chapter ? chapter.chapterName : "";
+    const verseNameStart: string = verseStart ? verseStart.verseName : "";
+
     let verseNameEnd = "";
     if (this.selectedVerseEnd) {
-      verseIdEnd = this.selectedVerseEnd.verseId;
-      verseNameEnd = this.selectedVerseEnd.verseName;
+      verseNameEnd = verseEnd ? verseEnd.verseName : "";
     }
 
     // get number of verses selected
@@ -341,10 +293,10 @@ export class BibleComponent implements OnInit, AfterViewInit {
         case this.shareBibleVerseData[0].text:  // Copy Link
           // save selected verse in parameters
           const searchArr: Array<Number> = [];
-          searchArr.push(this.selectedBook.bookId);
-          searchArr.push(this.selectedChapter.chapterId);
-          searchArr.push(this.selectedVerseStart.verseId);
-          searchArr.push(this.selectedVerseEnd.verseId);
+          searchArr.push(this.selectedBook);
+          searchArr.push(this.selectedChapter);
+          searchArr.push(this.selectedVerseStart);
+          searchArr.push(this.selectedVerseEnd);
 
           // get URL to copy
           const url: string = `${this.url}${searchArr.join("/")}`;

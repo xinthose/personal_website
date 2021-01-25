@@ -10,32 +10,32 @@
                         </mdb-card-title>
                         <mdb-card-text>
                             <!-- Book -->
-                            <kendo-dropdownlist #bookDropdownList [data]="dataBooks" [value]="selectedBook"
+                            <kendo-dropdownlist #bookDropdownList [data]="dataBooks" [(ngModel)]="selectedBook"
                                 [defaultItem]="defaultItemBook" [textField]="'bookName'" [valueField]="'bookId'"
-                                (valueChange)="handleBookChange($event)">
+                                (valueChange)="handleBookChange($event)" valuePrimitive="true">
                             </kendo-dropdownlist>
                             <br />
                             <!-- Chapter -->
                             <kendo-dropdownlist #chapterDropdownList [disabled]="isDisabledChapters"
-                                [defaultItem]="defaultItemChapter" [data]="dataResultChapters" [value]="selectedChapter"
-                                [textField]="'chapterName'" [valueField]="'chapterId'"
-                                (valueChange)="handleChapterChange($event)">
+                                [defaultItem]="defaultItemChapter" [data]="dataResultChapters"
+                                [(ngModel)]="selectedChapter" [textField]="'chapterName'" [valueField]="'chapterId'"
+                                (valueChange)="handleChapterChange($event)" valuePrimitive="true">
                             </kendo-dropdownlist>
                             <br />
                             <!-- Verse Start -->
                             <kendo-dropdownlist #verseStartDropdownList [disabled]="disableSelectedVerseStart"
-                                [defaultItem]="defaultItemVerse" [data]="dataResultVerses" [value]="selectedVerseStart"
-                                [textField]="'verseName'" [valueField]="'verseId'"
-                                (valueChange)="handleSelectedVerseStart($event)">
+                                [defaultItem]="defaultItemVerse" [data]="dataResultVerses"
+                                [(ngModel)]="selectedVerseStart" [textField]="'verseName'" [valueField]="'verseId'"
+                                (valueChange)="handleSelectedVerseStart($event)" valuePrimitive="true">
                             </kendo-dropdownlist>
                             <br />
                             <span>to</span>
                             <br />
                             <!-- Verse End -->
                             <kendo-dropdownlist #verseEndDropdownList [disabled]="disableSelectedVerseEnd"
-                                [defaultItem]="defaultItemVerse" [data]="dataResultVerses" [value]="selectedVerseEnd"
-                                [textField]="'verseName'" [valueField]="'verseId'"
-                                (valueChange)="handleSelectedVerseEnd($event)">
+                                [defaultItem]="defaultItemVerse" [data]="dataResultVerses"
+                                [(ngModel)]="selectedVerseEnd" [textField]="'verseName'" [valueField]="'verseId'"
+                                (valueChange)="handleSelectedVerseEnd($event)" valuePrimitive="true">
                             </kendo-dropdownlist>
                         </mdb-card-text>
                     </mdb-card-body>
