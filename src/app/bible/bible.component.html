@@ -1,12 +1,6 @@
 <main>
     <div class="container text-center">
         <div class="row justify-content-center mt-3">
-            <div class="col">
-                <kendo-dropdownlist #productTypeChild [defaultItem]="productTypeDefaultItem" [data]="productTypeData"
-                    [textField]="'Description'" [valueField]="'ProductTypeID'" [(ngModel)]="ProductTypeID"
-                    valuePrimitive="true">
-                </kendo-dropdownlist>
-            </div>
             <!-- Select Bible -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
                 <mdb-card>
@@ -16,9 +10,9 @@
                         </mdb-card-title>
                         <mdb-card-text>
                             <!-- Book -->
-                            <kendo-dropdownlist #bookDropdownList [data]="dataBooks" [(ngModel)]="selectedBookNum"
+                            <kendo-dropdownlist #bookDropdownList [data]="dataBooks" [value]="selectedBook"
                                 [defaultItem]="defaultItemBook" [textField]="'bookName'" [valueField]="'bookId'"
-                                (valueChange)="handleBookChange($event)" valuePrimitive="true">
+                                (valueChange)="handleBookChange($event)">
                             </kendo-dropdownlist>
                             <br />
                             <!-- Chapter -->

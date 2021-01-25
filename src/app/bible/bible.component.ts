@@ -43,16 +43,6 @@ export class BibleComponent implements OnInit, AfterViewInit {
   @ViewChild("verseStartDropdownList", { static: false }) public verseStartDropdownList!: DropDownListComponent;
   @ViewChild("verseEndDropdownList", { static: false }) public verseEndDropdownList!: DropDownListComponent;
   url: string = environment.production ? "http://www.xinthose.com/bible/" : "http://localhost:4200/bible/";
-  @ViewChild("productTypeChild", { static: true }) public productTypeChild!: DropDownListComponent;
-  ProductTypeID: number = 0;
-  productTypeData: Array<{ Description: string, ProductTypeID: number, SubProductTypeID: number }> = [{
-    Description: "Test 1", ProductTypeID: 1, SubProductTypeID: 1
-  }, {
-    Description: "Test 2", ProductTypeID: 2, SubProductTypeID: 2
-  }, {
-    Description: "Test 3", ProductTypeID: 3, SubProductTypeID: 3
-  }];
-  productTypeDefaultItem: { Description: string, ProductTypeID: number } = { Description: "Select type...", ProductTypeID: 0 };
 
   bible: any;
   verseText: string = "";
@@ -86,7 +76,6 @@ export class BibleComponent implements OnInit, AfterViewInit {
 
   // dropdown values (selection)
   selectedBook: Book = { bookName: "", bookId: 0, subcategory: "" };
-  selectedBookNum: number = 0;
   selectedChapter: Chapter = { chapterName: "", chapterId: 0, bookId: 0 };
   selectedVerseStart: Verse = { verseName: "", verseId: 0, chapterId: 0, bookId: 0 };
   selectedVerseEnd: Verse = { verseName: "", verseId: 0, chapterId: 0, bookId: 0 };
@@ -116,82 +105,78 @@ export class BibleComponent implements OnInit, AfterViewInit {
   }
 
   async ngAfterViewInit() {
-    //this.productTypeChild.writeValue(this.productTypeData[0]);
-    this.ProductTypeID = 1;
+    // make sure the data is loaded (ngOnInit does not finish fast enough)
     this.dataBooks = await this.bibleService.fetchBooks();
-    this.selectedBookNum = 2;
+    this.dataChapters = await this.bibleService.fetchChapters();
+    this.dataVerses = await this.bibleService.fetchVerses();
 
     // check for URL parameters
     // http://localhost:4200/bible/1/1/1/2 (book, chapter, verse start, verse end)
-    this.route.paramMap.subscribe((pathParams: any) => {
-      // get data
-      const bookId: number = pathParams.get("bookId") || 0;
-      const chapterId: number = pathParams.get("chapterId") || 0;
-      const verseIdStart: number = pathParams.get("verseIdStart") || 0;
-      const verseIdEnd: number = pathParams.get("verseIdEnd") || 0;
+    const bookId: number = Number(this.route.snapshot.params.bookId) || 0;
+    const chapterId: number = Number(this.route.snapshot.params.chapterId) || 0;
+    const verseIdStart: number = Number(this.route.snapshot.params.verseIdStart) || 0;
+    const verseIdEnd: number = Number(this.route.snapshot.params.verseIdEnd) || 0;
 
-      // set data
-      if (bookId) {
-        // find book
-        // const result: Book = this.dataBooks.find((book: Book) => {
-        //   return book.bookId == bookId
-        // })
-        // if (this.debug) {
-        //   console.debug("ngOnInit >> set book to " + JSON.stringify(result));
-        // }
-
-        // set value in dropdown
-        //this.bookDropdownList.writeValue(result);
-        // if (result) {
-        //   //this.selectedBook = result;
-        // }
-        this.selectedBookNum = bookId;
+    // set data
+    if (bookId) {
+      // find book
+      const result: Book = this.dataBooks.find((book: Book) => {
+        return book.bookId == bookId
+      })
+      if (this.debug) {
+        console.debug("ngOnInit >> set book to " + JSON.stringify(result));
       }
-      /*if (chapterId) {
-        // find chapter
-        const result = this.dataChapters.find((chapter: Chapter) => {
-          return chapter.chapterId == chapterId
-        })
-        if (this.debug) {
-          console.debug("ngOnInit >> set chapter to " + JSON.stringify(result));
-        }
 
-        // set value in dropdown
-        if (result) {
-          this.selectedChapter = result;
-        }
+      // set value in dropdown
+      //this.bookDropdownList.writeValue(result);
+      if (result) {
+        this.selectedBook = result;
       }
-      if (verseIdStart) {
-        // find starting verse
-        const result = this.dataVerses.find((verse: Verse) => {
-          return verse.verseId == verseIdStart
-        })
-        if (this.debug) {
-          console.debug("ngOnInit >> set verse start to " + JSON.stringify(result));
-        }
-
-        // set value in dropdown
-        if (result) {
-          this.selectedVerseStart = result;
-        }
+    }
+    if (chapterId) {
+      // find chapter
+      const result = this.dataChapters.find((chapter: Chapter) => {
+        return chapter.chapterId == chapterId
+      })
+      if (this.debug) {
+        console.debug("ngOnInit >> set chapter to " + JSON.stringify(result));
       }
-      if (verseIdEnd) {
-        // find ending verse
-        const result = this.dataVerses.find((verse: Verse) => {
-          return verse.verseId == verseIdEnd
-        })
-        if (this.debug) {
-          console.debug("ngOnInit >> set verse end to " + JSON.stringify(result));
-        }
 
-        // set value in dropdown
-        if (result) {
-          this.selectedVerseEnd = result;
-        }
-      }*/
+      // set value in dropdown
+      if (result) {
+        this.selectedChapter = result;
+      }
+    }
+    if (verseIdStart) {
+      // find starting verse
+      const result = this.dataVerses.find((verse: Verse) => {
+        return verse.verseId == verseIdStart
+      })
+      if (this.debug) {
+        console.debug("ngOnInit >> set verse start to " + JSON.stringify(result));
+      }
 
-      console.log(bookId, chapterId, verseIdStart, verseIdEnd);
-    });
+      // set value in dropdown
+      if (result) {
+        this.selectedVerseStart = result;
+      }
+    }
+    if (verseIdEnd) {
+      // find ending verse
+      const result = this.dataVerses.find((verse: Verse) => {
+        return verse.verseId == verseIdEnd
+      })
+      if (this.debug) {
+        console.debug("ngOnInit >> set verse end to " + JSON.stringify(result));
+      }
+
+      // set value in dropdown
+      if (result) {
+        this.selectedVerseEnd = result;
+      }
+    }
+
+    console.log(bookId, chapterId, verseIdStart, verseIdEnd);
   }
 
   // dropdown changes
