@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import * as website_package from "../../../package.json";
+import * as myPackage from "../../../package.json";
 
 @Component({
   selector: 'app-about',
@@ -12,7 +12,7 @@ export class AboutComponent {
   websiteVersion: string = "";
 
   constructor() {
-    this.websiteVersion = website_package.version;
+    this.websiteVersion = myPackage.version;
   }
 
 
