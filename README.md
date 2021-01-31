@@ -6,5 +6,5 @@
 
 ## Bible sources
 
-<https://github.com/thiagobodruk/bible>
+- <https://github.com/thiagobodruk/bible>
 - <https://github.com/aruljohn/Bible-kjv>
