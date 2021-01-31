@@ -1,6 +1,11 @@
 # Changelog
 
-## 1.0.9 (12/20/2020)
+## 1.0.10 (1/31/2021)
+
+- use Bible text from this repository: <https://github.com/aruljohn/Bible-kjv> instead of this one: <https://github.com/thiagobodruk/bible> because the later has unicode characters in it
+  - thiagobodruk's repository also seems to have mistakes judging by the PR requests and has not been maintained for almost a year
+
+## 1.0.9 (1/30/2020)
 
 - `bible.component`
   - add share button to share current Bible verse(s) selected and automatically load them from the URL
