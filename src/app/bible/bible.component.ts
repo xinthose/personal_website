@@ -112,12 +112,21 @@ export class BibleComponent implements OnInit, AfterViewInit {
     const verseIdEnd: number = Number(this.route.snapshot.params.verseIdEnd) || 0;
 
     // set dropdown selections
-    this.selectedBook = bookId;
-    this.selectedChapter = chapterId;
-    this.selectedVerseStart = verseIdStart;
-    this.selectedVerseEnd = verseIdEnd;
-
-    if (bookId) this.handleBookChange(bookId);
+    if (bookId) {
+      setTimeout(() => {
+        this.selectedBook = bookId;
+        this.handleBookChange(bookId);
+        if (chapterId) {
+          this.selectedChapter = chapterId;
+          this.handleChapterChange(chapterId);
+        }
+        if (verseIdStart) {
+          this.selectedVerseStart = verseIdStart;
+          this.selectedVerseEnd = verseIdEnd;
+          this.handleSelectedVerseStart(verseIdStart);
+        }
+      }, 1000);
+    }
 
     console.log(bookId, chapterId, verseIdStart, verseIdEnd);
   }
