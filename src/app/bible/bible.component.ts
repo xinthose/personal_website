@@ -214,12 +214,15 @@ export class BibleComponent implements OnInit, AfterViewInit {
     console.assert(this.selectedBook != null, "book not selected");
     console.assert(this.selectedChapter != null, "chapter not selected");
 
-    // get data
-    const bookName = this.dataBooks.bookName;
-    const bookAbbrev = this.bible[this.selectedBook - 1].abbrev;
-    let verseIdEnd = this.selectedVerseStart;
+    // set verse end to start if not selected yet
+    if (!this.selectedVerseEnd) {
+      this.selectedVerseEnd = this.selectedVerseStart;
+    }
 
     // get array data
+    const book = this.dataBooks.find((book: Book) => {
+      return book.bookId == this.selectedBook
+    });
     const chapter = this.dataChapters.find((chapter: Chapter) => {
       return chapter.chapterId == this.selectedChapter
     });
@@ -227,8 +230,21 @@ export class BibleComponent implements OnInit, AfterViewInit {
       return verse.verseId == this.selectedVerseStart
     });
     const verseEnd = this.dataVerses.find((verse: Verse) => {
-      return verse.verseId == verseIdEnd
+      return verse.verseId == this.selectedVerseEnd
     });
+
+    // get data
+    const bookName = book.bookName;
+    const bookAbbrev = this.bible[this.selectedBook - 1].abbrev;
+
+    // get number of verses selected
+    let numVerses = 1;
+    if (this.selectedVerseEnd != this.selectedVerseStart) {
+      numVerses = this.selectedVerseEnd - this.selectedVerseStart + 1;
+    }
+    if (this.debug) {
+      console.debug("numVerses = " + numVerses.toString());
+    }
 
     // get chapter and verse name
     const chapterName: string = chapter ? chapter.chapterName : "";
@@ -240,14 +256,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
       verseNameEnd = verseEnd ? verseEnd.verseName : "";
     }
 
-    // get number of verses selected
-    let numVerses = 1;
-    if (verseIdEnd != this.selectedVerseStart) {
-      numVerses = verseIdEnd - this.selectedVerseStart + 1;
-    }
-    if (this.debug) {
-      console.debug("numVerses = " + numVerses.toString());
-    }
+
 
     // build verse text
     let verseText = "";
@@ -268,9 +277,9 @@ export class BibleComponent implements OnInit, AfterViewInit {
     // get verse title and location
     let verseTitle = bookName + " " + chapterName + " " + verseNameStart;
     let verseLocation = bookAbbrev + " " + this.selectedChapter.toString() + ":" + this.selectedVerseStart.toString();
-    if (verseIdEnd != this.selectedVerseStart) {
+    if (this.selectedVerseEnd != this.selectedVerseStart) {
       verseTitle += " to " + verseNameEnd;
-      verseLocation += "-" + verseIdEnd.toString();
+      verseLocation += "-" + this.selectedVerseEnd.toString();
     }
 
     // set data
