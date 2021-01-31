@@ -3,7 +3,7 @@
 ## 1.0.9 (12/20/2020)
 
 - `bible.component`
-  - add share button to share page current configuration (Bible verse and options)
+  - add share button to share current Bible verse(s) selected and automatically load them from the URL
 
 ## 1.0.8 (10/19/2020)
 
