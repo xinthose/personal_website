@@ -38,10 +38,10 @@ export class BibleComponent implements OnInit, AfterViewInit {
   advDebug: boolean = false;
   logLoc: string = "BibleComponent.";
   showAnimation: boolean = false;
-  @ViewChild("bookDropdownList", { static: false }) public bookDropdownList!: DropDownListComponent;
-  @ViewChild("chapterDropdownList", { static: false }) public chapterDropdownList!: DropDownListComponent;
-  @ViewChild("verseStartDropdownList", { static: false }) public verseStartDropdownList!: DropDownListComponent;
-  @ViewChild("verseEndDropdownList", { static: false }) public verseEndDropdownList!: DropDownListComponent;
+  @ViewChild("bookDropdownList", { static: true }) public bookDropdownList!: DropDownListComponent;
+  @ViewChild("chapterDropdownList", { static: true }) public chapterDropdownList!: DropDownListComponent;
+  @ViewChild("verseStartDropdownList", { static: true }) public verseStartDropdownList!: DropDownListComponent;
+  @ViewChild("verseEndDropdownList", { static: true }) public verseEndDropdownList!: DropDownListComponent;
   url: string = environment.production ? "http://www.xinthose.com/bible/" : "http://localhost:4200/bible/";
 
   bible: any;
@@ -91,41 +91,46 @@ export class BibleComponent implements OnInit, AfterViewInit {
 
   async ngOnInit() {
     try {
-      // get the Bible
-      this.dataBooks = await this.bibleService.fetchBooks();
-      this.dataBooksGrouped = groupBy(this.dataBooks, [{ field: "subcategory" }]);
-
-      this.dataChapters = await this.bibleService.fetchChapters();
-      this.dataVerses = await this.bibleService.fetchVerses();
-
     } catch (error) {
       console.error("BibleComponent.ngOnInit >> error = " + error);
     }
   }
 
   async ngAfterViewInit() {
+    // get the Bible
+    this.dataBooks = await this.bibleService.fetchBooks();
+    this.dataBooksGrouped = groupBy(this.dataBooks, [{ field: "subcategory" }]);
+
+    this.dataChapters = await this.bibleService.fetchChapters();
+    this.dataVerses = await this.bibleService.fetchVerses();
+
     // check for URL parameters
     // http://localhost:4200/bible/1/1/1/2 (book, chapter, verse start, verse end)
     const bookId: number = Number(this.route.snapshot.params.bookId) || 0;
     const chapterId: number = Number(this.route.snapshot.params.chapterId) || 0;
     const verseIdStart: number = Number(this.route.snapshot.params.verseIdStart) || 0;
     const verseIdEnd: number = Number(this.route.snapshot.params.verseIdEnd) || 0;
+    console.log(bookId, chapterId, verseIdStart, verseIdEnd);
+
 
     // set dropdown selections
     if (bookId) {
-      setTimeout(() => {
-        this.selectedBook = bookId;
-        this.handleBookChange(bookId);
-        if (chapterId) {
-          this.selectedChapter = chapterId;
-          this.handleChapterChange(chapterId);
-        }
-        if (verseIdStart) {
-          this.selectedVerseStart = verseIdStart;
-          this.selectedVerseEnd = verseIdEnd;
-          this.handleSelectedVerseStart(verseIdStart);
-        }
-      }, 1000);
+      this.selectedBook = bookId;
+      await this.handleBookChange(bookId);
+
+      if (chapterId) {
+        this.selectedChapter = chapterId;
+        this.handleChapterChange(chapterId);
+      }
+      if (verseIdStart) {
+        this.selectedVerseStart = verseIdStart;
+        this.selectedVerseEnd = verseIdEnd;
+        this.handleSelectedVerseStart(verseIdStart);
+
+        // open/close first dropdown to get DOM to update
+        this.bookDropdownList.toggle();
+        this.bookDropdownList.toggle();
+      }
     }
   }
 
