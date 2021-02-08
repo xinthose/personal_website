@@ -71,6 +71,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
   dataVerses: Array<Verse> = [];
 
   // dropdown cascade result
+  dataResultBooks: Array<Book> = [];
   dataResultChapters: Array<Chapter> = [];
   dataResultVerses: Array<Verse> = [];
 
@@ -143,10 +144,11 @@ export class BibleComponent implements OnInit, AfterViewInit {
         this.dataResultChapters = [];
       } else {
         this.isDisabledChapters = false;
-        this.dataResultChapters = this.dataChapters.filter((s) => s.bookId === bookId);
+        this.dataResultChapters = this.dataChapters.filter((s: Chapter) => s.bookId === bookId);
 
         // get Bible for book
-        let bookURL: string = "./assets/bible/text/" + this.dataResultChapters[0].chapterName + ".json";
+        this.dataResultBooks = this.dataBooks.filter((s: Book) => s.bookId === bookId);
+        let bookURL: string = "./assets/bible/text/" + this.dataResultBooks[0].bookName + ".json";
         bookURL = bookURL.replace(/ /g, ''); // remove white space in case of numbers in front
         this.bible = await this.bibleService.fetch(bookURL);
       }
@@ -177,7 +179,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
       this.dataResultVerses = [];
     } else if (chapter) {
       this.disableSelectedVerseStart = false;
-      this.dataResultVerses = this.dataVerses.filter((s) => ((s.chapterId === chapter.chapterId) && (s.bookId === chapter.bookId)))
+      this.dataResultVerses = this.dataVerses.filter((s: Verse) => ((s.chapterId === chapter.chapterId) && (s.bookId === chapter.bookId)))
     }
   }
 
