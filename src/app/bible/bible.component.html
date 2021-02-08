@@ -10,7 +10,7 @@
                         </mdb-card-title>
                         <mdb-card-text>
                             <!-- Book -->
-                            <kendo-dropdownlist #bookDropdownList [data]="dataBooks" [(ngModel)]="selectedBook"
+                            <kendo-dropdownlist #bookDropdownList [data]="dataBooksGrouped" [(ngModel)]="selectedBook"
                                 [defaultItem]="defaultItemBook" [textField]="'bookName'" [valueField]="'bookId'"
                                 (valueChange)="handleBookChange($event)" valuePrimitive="true">
                             </kendo-dropdownlist>

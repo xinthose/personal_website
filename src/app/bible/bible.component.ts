@@ -112,7 +112,6 @@ export class BibleComponent implements OnInit, AfterViewInit {
     const verseIdEnd: number = Number(this.route.snapshot.params.verseIdEnd) || 0;
     console.log(bookId, chapterId, verseIdStart, verseIdEnd);
 
-
     // set dropdown selections
     if (bookId) {
       this.selectedBook = bookId;
@@ -126,11 +125,11 @@ export class BibleComponent implements OnInit, AfterViewInit {
         this.selectedVerseStart = verseIdStart;
         this.selectedVerseEnd = verseIdEnd;
         this.handleSelectedVerseStart(verseIdStart);
-
-        // open/close first dropdown to get DOM to update
-        this.bookDropdownList.toggle();
-        this.bookDropdownList.toggle();
       }
+
+      // open/close first dropdown to get DOM to update
+      this.bookDropdownList.toggle();
+      this.bookDropdownList.toggle();
     }
   }
 
