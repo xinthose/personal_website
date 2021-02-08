@@ -4,6 +4,7 @@
 
 - use Bible text from this repository: <https://github.com/aruljohn/Bible-kjv> instead of this one: <https://github.com/thiagobodruk/bible> because the later has unicode characters in it
   - thiagobodruk's repository also seems to have mistakes judging by the PR requests and has not been maintained for almost a year
+  - books are loaded from individual json files instead of one Bible json file
 
 ## 1.0.9 (1/30/2020)
 

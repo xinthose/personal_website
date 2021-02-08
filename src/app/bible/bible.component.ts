@@ -96,7 +96,6 @@ export class BibleComponent implements OnInit, AfterViewInit {
 
       this.dataChapters = await this.bibleService.fetchChapters();
       this.dataVerses = await this.bibleService.fetchVerses();
-      this.bible = await this.bibleService.fetch("./assets/bible/en_kjv.json");
 
     } catch (error) {
       console.error("BibleComponent.ngOnInit >> error = " + error);
@@ -127,30 +126,38 @@ export class BibleComponent implements OnInit, AfterViewInit {
         }
       }, 1000);
     }
-
-    console.log(bookId, chapterId, verseIdStart, verseIdEnd);
   }
 
   // dropdown changes
 
-  handleBookChange(bookId: number) {
-    // reset values
-    this.selectedChapter = 0;
-    this.selectedVerseStart = 0;
-    this.selectedVerseEnd = 0;
-    this.showVerse = false;
+  async handleBookChange(bookId: number) {
+    try {
+      // reset values
+      this.selectedChapter = 0;
+      this.selectedVerseStart = 0;
+      this.selectedVerseEnd = 0;
+      this.showVerse = false;
 
-    if (bookId == this.defaultItemBook.bookId) {
-      this.isDisabledChapters = true;
-      this.dataResultChapters = [];
-    } else {
-      this.isDisabledChapters = false;
-      this.dataResultChapters = this.dataChapters.filter((s) => s.bookId === bookId)
+      if (bookId == this.defaultItemBook.bookId) {
+        this.isDisabledChapters = true;
+        this.dataResultChapters = [];
+      } else {
+        this.isDisabledChapters = false;
+        this.dataResultChapters = this.dataChapters.filter((s) => s.bookId === bookId);
+
+        // get Bible for book
+        let bookURL: string = "./assets/bible/text/" + this.dataResultChapters[0].chapterName + ".json";
+        bookURL = bookURL.replace(/ /g, ''); // remove white space in case of numbers in front
+        this.bible = await this.bibleService.fetch(bookURL);
+      }
+
+      this.disableSelectedVerseStart = true;
+      this.disableSelectedVerseEnd = true;
+      this.dataResultVerses = [];
+
+    } catch (error) {
+      console.error("BibleComponent.handleBookChange >> error = " + error);
     }
-
-    this.disableSelectedVerseStart = true;
-    this.disableSelectedVerseEnd = true;
-    this.dataResultVerses = [];
   }
 
   handleChapterChange(chapterId: number) {
@@ -244,7 +251,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
 
     // get data
     const bookName = book.bookName;
-    const bookAbbrev = this.bible[this.selectedBook - 1].abbrev;
+    const bookAbbrev = this.bible.abbrev;
 
     // get number of verses selected
     let numVerses = 1;
@@ -265,12 +272,10 @@ export class BibleComponent implements OnInit, AfterViewInit {
       verseNameEnd = verseEnd ? verseEnd.verseName : "";
     }
 
-
-
     // build verse text
     let verseText = "";
     for (let index = 0; index < numVerses; index++) {
-      let passage = this.bible[this.selectedBook - 1].chapters[this.selectedChapter - 1][this.selectedVerseStart + index - 1];
+      let passage = this.bible.chapters[this.selectedChapter - 1].verses[this.selectedVerseStart + index - 1].text;
       if (this.showVerseNumbers) {
         verseText += "[" + (this.selectedVerseStart + index).toString() + "] ";
         verseText += passage + " ";
