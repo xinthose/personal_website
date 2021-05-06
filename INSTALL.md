@@ -53,6 +53,7 @@
 
 - copy `package.json` into `dist/personal-website` before zipping files
 - when zipping files for update, select all files in `dist/personal-website` and ZIP them, do not zip parent folder `dist/personal-website`
+- use this zip file to upload and deploy on Elastic Beanstalk
 
 ## Commands
 
