@@ -11,9 +11,9 @@ import { DropDownListComponent } from "@progress/kendo-angular-dropdowns";
 import { BibleService } from "../bible.service";
 
 // interfaces
-import { Book } from "./../shared/bible/Book";
-import { Chapter } from "./../shared/bible/Chapter";
-import { Verse } from "./../shared/bible/Verse";
+import { Book } from "../interfaces/bible/BookIntf";
+import { Chapter } from "../interfaces/bible/ChapterIntf";
+import { Verse } from "../interfaces/bible/VerseIntf";
 
 // rxjs
 import { combineLatest } from "rxjs";
