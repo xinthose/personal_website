@@ -321,3 +321,212 @@ select (select count(v) from bible.t_kjv where b = 3 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 3 and c = 26) as ch26,
 (select count(v) from bible.t_kjv where b = 2 and c = 27) as ch27
 ```
+
+### Numbers
+
+``` sql
+select (select count(v) from bible.t_kjv where b = 4 and c = 1) as ch1,
+(select count(v) from bible.t_kjv where b = 4 and c = 2) as ch2,
+(select count(v) from bible.t_kjv where b = 4 and c = 3) as ch3,
+(select count(v) from bible.t_kjv where b = 4 and c = 4) as ch4,
+(select count(v) from bible.t_kjv where b = 4 and c = 5) as ch5,
+(select count(v) from bible.t_kjv where b = 4 and c = 6) as ch6,
+(select count(v) from bible.t_kjv where b = 4 and c = 7) as ch7,
+(select count(v) from bible.t_kjv where b = 4 and c = 8) as ch8,
+(select count(v) from bible.t_kjv where b = 4 and c = 9) as ch9,
+(select count(v) from bible.t_kjv where b = 4 and c = 10) as ch10,
+(select count(v) from bible.t_kjv where b = 4 and c = 11) as ch11,
+(select count(v) from bible.t_kjv where b = 4 and c = 12) as ch12,
+(select count(v) from bible.t_kjv where b = 4 and c = 13) as ch13,
+(select count(v) from bible.t_kjv where b = 4 and c = 14) as ch14,
+(select count(v) from bible.t_kjv where b = 4 and c = 15) as ch15,
+(select count(v) from bible.t_kjv where b = 4 and c = 16) as ch16,
+(select count(v) from bible.t_kjv where b = 4 and c = 17) as ch17,
+(select count(v) from bible.t_kjv where b = 4 and c = 18) as ch18,
+(select count(v) from bible.t_kjv where b = 4 and c = 19) as ch19,
+(select count(v) from bible.t_kjv where b = 4 and c = 20) as ch20,
+(select count(v) from bible.t_kjv where b = 4 and c = 21) as ch21,
+(select count(v) from bible.t_kjv where b = 4 and c = 22) as ch22,
+(select count(v) from bible.t_kjv where b = 4 and c = 23) as ch23,
+(select count(v) from bible.t_kjv where b = 4 and c = 24) as ch24,
+(select count(v) from bible.t_kjv where b = 4 and c = 25) as ch25,
+(select count(v) from bible.t_kjv where b = 4 and c = 26) as ch26,
+(select count(v) from bible.t_kjv where b = 4 and c = 27) as ch27,
+(select count(v) from bible.t_kjv where b = 4 and c = 28) as ch28,
+(select count(v) from bible.t_kjv where b = 4 and c = 29) as ch29,
+(select count(v) from bible.t_kjv where b = 4 and c = 30) as ch30,
+(select count(v) from bible.t_kjv where b = 4 and c = 31) as ch31,
+(select count(v) from bible.t_kjv where b = 4 and c = 32) as ch32,
+(select count(v) from bible.t_kjv where b = 4 and c = 33) as ch33,
+(select count(v) from bible.t_kjv where b = 4 and c = 34) as ch34,
+(select count(v) from bible.t_kjv where b = 4 and c = 35) as ch35,
+(select count(v) from bible.t_kjv where b = 4 and c = 36) as ch36
+```
+
+### Deuteronomy
+
+``` sql
+select (select count(v) from bible.t_kjv where b = 5 and c = 1) as ch1,
+(select count(v) from bible.t_kjv where b = 5 and c = 2) as ch2,
+(select count(v) from bible.t_kjv where b = 5 and c = 3) as ch3,
+(select count(v) from bible.t_kjv where b = 5 and c = 4) as ch4,
+(select count(v) from bible.t_kjv where b = 5 and c = 5) as ch5,
+(select count(v) from bible.t_kjv where b = 5 and c = 6) as ch6,
+(select count(v) from bible.t_kjv where b = 5 and c = 7) as ch7,
+(select count(v) from bible.t_kjv where b = 5 and c = 8) as ch8,
+(select count(v) from bible.t_kjv where b = 5 and c = 9) as ch9,
+(select count(v) from bible.t_kjv where b = 5 and c = 10) as ch10,
+(select count(v) from bible.t_kjv where b = 5 and c = 11) as ch11,
+(select count(v) from bible.t_kjv where b = 5 and c = 12) as ch12,
+(select count(v) from bible.t_kjv where b = 5 and c = 13) as ch13,
+(select count(v) from bible.t_kjv where b = 5 and c = 14) as ch14,
+(select count(v) from bible.t_kjv where b = 5 and c = 15) as ch15,
+(select count(v) from bible.t_kjv where b = 5 and c = 16) as ch16,
+(select count(v) from bible.t_kjv where b = 5 and c = 17) as ch17,
+(select count(v) from bible.t_kjv where b = 5 and c = 18) as ch18,
+(select count(v) from bible.t_kjv where b = 5 and c = 19) as ch19,
+(select count(v) from bible.t_kjv where b = 5 and c = 20) as ch20,
+(select count(v) from bible.t_kjv where b = 5 and c = 21) as ch21,
+(select count(v) from bible.t_kjv where b = 5 and c = 22) as ch22,
+(select count(v) from bible.t_kjv where b = 5 and c = 23) as ch23,
+(select count(v) from bible.t_kjv where b = 5 and c = 24) as ch24,
+(select count(v) from bible.t_kjv where b = 5 and c = 25) as ch25,
+(select count(v) from bible.t_kjv where b = 5 and c = 26) as ch26,
+(select count(v) from bible.t_kjv where b = 5 and c = 27) as ch27,
+(select count(v) from bible.t_kjv where b = 5 and c = 28) as ch28,
+(select count(v) from bible.t_kjv where b = 5 and c = 29) as ch29,
+(select count(v) from bible.t_kjv where b = 5 and c = 30) as ch30,
+(select count(v) from bible.t_kjv where b = 5 and c = 31) as ch31,
+(select count(v) from bible.t_kjv where b = 5 and c = 32) as ch32,
+(select count(v) from bible.t_kjv where b = 5 and c = 33) as ch33,
+(select count(v) from bible.t_kjv where b = 5 and c = 34) as ch34
+```
+
+### Joshua
+
+``` sql
+select (select count(v) from bible.t_kjv where b = 6 and c = 1) as ch1,
+(select count(v) from bible.t_kjv where b = 6 and c = 2) as ch2,
+(select count(v) from bible.t_kjv where b = 6 and c = 3) as ch3,
+(select count(v) from bible.t_kjv where b = 6 and c = 4) as ch4,
+(select count(v) from bible.t_kjv where b = 6 and c = 5) as ch5,
+(select count(v) from bible.t_kjv where b = 6 and c = 6) as ch6,
+(select count(v) from bible.t_kjv where b = 6 and c = 7) as ch7,
+(select count(v) from bible.t_kjv where b = 6 and c = 8) as ch8,
+(select count(v) from bible.t_kjv where b = 6 and c = 9) as ch9,
+(select count(v) from bible.t_kjv where b = 6 and c = 10) as ch10,
+(select count(v) from bible.t_kjv where b = 6 and c = 11) as ch11,
+(select count(v) from bible.t_kjv where b = 6 and c = 12) as ch12,
+(select count(v) from bible.t_kjv where b = 6 and c = 13) as ch13,
+(select count(v) from bible.t_kjv where b = 6 and c = 14) as ch14,
+(select count(v) from bible.t_kjv where b = 6 and c = 15) as ch15,
+(select count(v) from bible.t_kjv where b = 6 and c = 16) as ch16,
+(select count(v) from bible.t_kjv where b = 6 and c = 17) as ch17,
+(select count(v) from bible.t_kjv where b = 6 and c = 18) as ch18,
+(select count(v) from bible.t_kjv where b = 6 and c = 19) as ch19,
+(select count(v) from bible.t_kjv where b = 6 and c = 20) as ch20,
+(select count(v) from bible.t_kjv where b = 6 and c = 21) as ch21,
+(select count(v) from bible.t_kjv where b = 6 and c = 22) as ch22,
+(select count(v) from bible.t_kjv where b = 6 and c = 23) as ch23,
+(select count(v) from bible.t_kjv where b = 6 and c = 24) as ch24
+```
+
+### Judges
+
+``` sql
+select (select count(v) from bible.t_kjv where b = 7 and c = 1) as ch1,
+(select count(v) from bible.t_kjv where b = 7 and c = 2) as ch2,
+(select count(v) from bible.t_kjv where b = 7 and c = 3) as ch3,
+(select count(v) from bible.t_kjv where b = 7 and c = 4) as ch4,
+(select count(v) from bible.t_kjv where b = 7 and c = 5) as ch5,
+(select count(v) from bible.t_kjv where b = 7 and c = 6) as ch6,
+(select count(v) from bible.t_kjv where b = 7 and c = 7) as ch7,
+(select count(v) from bible.t_kjv where b = 7 and c = 8) as ch8,
+(select count(v) from bible.t_kjv where b = 7 and c = 9) as ch9,
+(select count(v) from bible.t_kjv where b = 7 and c = 10) as ch10,
+(select count(v) from bible.t_kjv where b = 7 and c = 11) as ch11,
+(select count(v) from bible.t_kjv where b = 7 and c = 12) as ch12,
+(select count(v) from bible.t_kjv where b = 7 and c = 13) as ch13,
+(select count(v) from bible.t_kjv where b = 7 and c = 14) as ch14,
+(select count(v) from bible.t_kjv where b = 7 and c = 15) as ch15,
+(select count(v) from bible.t_kjv where b = 7 and c = 16) as ch16,
+(select count(v) from bible.t_kjv where b = 7 and c = 17) as ch17,
+(select count(v) from bible.t_kjv where b = 7 and c = 18) as ch18,
+(select count(v) from bible.t_kjv where b = 7 and c = 19) as ch19,
+(select count(v) from bible.t_kjv where b = 7 and c = 20) as ch20,
+(select count(v) from bible.t_kjv where b = 7 and c = 21) as ch21
+```
+
+### Ruth
+
+``` sql
+select (select count(v) from bible.t_kjv where b = 8 and c = 1) as ch1,
+(select count(v) from bible.t_kjv where b = 8 and c = 2) as ch2,
+(select count(v) from bible.t_kjv where b = 8 and c = 3) as ch3,
+(select count(v) from bible.t_kjv where b = 8 and c = 4) as ch4
+```
+
+### 1 Samuel
+
+``` sql
+select (select count(v) from bible.t_kjv where b = 9 and c = 1) as ch1,
+(select count(v) from bible.t_kjv where b = 9 and c = 2) as ch2,
+(select count(v) from bible.t_kjv where b = 9 and c = 3) as ch3,
+(select count(v) from bible.t_kjv where b = 9 and c = 4) as ch4,
+(select count(v) from bible.t_kjv where b = 9 and c = 5) as ch5,
+(select count(v) from bible.t_kjv where b = 9 and c = 6) as ch6,
+(select count(v) from bible.t_kjv where b = 9 and c = 7) as ch7,
+(select count(v) from bible.t_kjv where b = 9 and c = 8) as ch8,
+(select count(v) from bible.t_kjv where b = 9 and c = 9) as ch9,
+(select count(v) from bible.t_kjv where b = 9 and c = 10) as ch10,
+(select count(v) from bible.t_kjv where b = 9 and c = 11) as ch11,
+(select count(v) from bible.t_kjv where b = 9 and c = 12) as ch12,
+(select count(v) from bible.t_kjv where b = 9 and c = 13) as ch13,
+(select count(v) from bible.t_kjv where b = 9 and c = 14) as ch14,
+(select count(v) from bible.t_kjv where b = 9 and c = 15) as ch15,
+(select count(v) from bible.t_kjv where b = 9 and c = 16) as ch16,
+(select count(v) from bible.t_kjv where b = 9 and c = 17) as ch17,
+(select count(v) from bible.t_kjv where b = 9 and c = 18) as ch18,
+(select count(v) from bible.t_kjv where b = 9 and c = 19) as ch19,
+(select count(v) from bible.t_kjv where b = 9 and c = 20) as ch20,
+(select count(v) from bible.t_kjv where b = 9 and c = 21) as ch21,
+(select count(v) from bible.t_kjv where b = 9 and c = 22) as ch22,
+(select count(v) from bible.t_kjv where b = 9 and c = 23) as ch23,
+(select count(v) from bible.t_kjv where b = 9 and c = 24) as ch24,
+(select count(v) from bible.t_kjv where b = 9 and c = 25) as ch25,
+(select count(v) from bible.t_kjv where b = 9 and c = 26) as ch26,
+(select count(v) from bible.t_kjv where b = 9 and c = 27) as ch27,
+(select count(v) from bible.t_kjv where b = 9 and c = 28) as ch28,
+(select count(v) from bible.t_kjv where b = 9 and c = 29) as ch29,
+(select count(v) from bible.t_kjv where b = 9 and c = 30) as ch30,
+(select count(v) from bible.t_kjv where b = 9 and c = 31) as ch31
+```
+
+### 2 Samuel
+
+``` sql
+select (select count(v) from bible.t_kjv where b = 10 and c = 1) as ch1,
+(select count(v) from bible.t_kjv where b = 10 and c = 2) as ch2,
+(select count(v) from bible.t_kjv where b = 10 and c = 3) as ch3,
+(select count(v) from bible.t_kjv where b = 10 and c = 4) as ch4,
+(select count(v) from bible.t_kjv where b = 10 and c = 5) as ch5,
+(select count(v) from bible.t_kjv where b = 10 and c = 6) as ch6,
+(select count(v) from bible.t_kjv where b = 10 and c = 7) as ch7,
+(select count(v) from bible.t_kjv where b = 10 and c = 8) as ch8,
+(select count(v) from bible.t_kjv where b = 10 and c = 9) as ch9,
+(select count(v) from bible.t_kjv where b = 10 and c = 10) as ch10,
+(select count(v) from bible.t_kjv where b = 10 and c = 11) as ch11,
+(select count(v) from bible.t_kjv where b = 10 and c = 12) as ch12,
+(select count(v) from bible.t_kjv where b = 10 and c = 13) as ch13,
+(select count(v) from bible.t_kjv where b = 10 and c = 14) as ch14,
+(select count(v) from bible.t_kjv where b = 10 and c = 15) as ch15,
+(select count(v) from bible.t_kjv where b = 10 and c = 16) as ch16,
+(select count(v) from bible.t_kjv where b = 10 and c = 17) as ch17,
+(select count(v) from bible.t_kjv where b = 10 and c = 18) as ch18,
+(select count(v) from bible.t_kjv where b = 10 and c = 19) as ch19,
+(select count(v) from bible.t_kjv where b = 10 and c = 20) as ch20,
+(select count(v) from bible.t_kjv where b = 10 and c = 21) as ch21,
+(select count(v) from bible.t_kjv where b = 10 and c = 22) as ch22,
+(select count(v) from bible.t_kjv where b = 10 and c = 23) as ch23,
+(select count(v) from bible.t_kjv where b = 10 and c = 24) as ch24
+```
