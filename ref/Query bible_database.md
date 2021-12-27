@@ -186,6 +186,7 @@ union all select count(v) from t_kjv where v = 174
 union all select count(v) from t_kjv where v = 175
 union all select count(v) from t_kjv where v = 176
 ;
+;
 ```
 
 ## Query database for number of verses in chapter
@@ -243,6 +244,7 @@ select (select count(v) from bible.t_kjv where b = 1 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 1 and c = 48) as ch48,
 (select count(v) from bible.t_kjv where b = 1 and c = 49) as ch49,
 (select count(v) from bible.t_kjv where b = 1 and c = 50) as ch50
+;
 ```
 
 ### Exodus
@@ -288,6 +290,7 @@ select (select count(v) from bible.t_kjv where b = 2 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 2 and c = 38) as ch38,
 (select count(v) from bible.t_kjv where b = 2 and c = 39) as ch39,
 (select count(v) from bible.t_kjv where b = 2 and c = 40) as ch40
+;
 ```
 
 ### Leviticus
@@ -320,6 +323,7 @@ select (select count(v) from bible.t_kjv where b = 3 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 3 and c = 25) as ch25,
 (select count(v) from bible.t_kjv where b = 3 and c = 26) as ch26,
 (select count(v) from bible.t_kjv where b = 2 and c = 27) as ch27
+;
 ```
 
 ### Numbers
@@ -361,6 +365,7 @@ select (select count(v) from bible.t_kjv where b = 4 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 4 and c = 34) as ch34,
 (select count(v) from bible.t_kjv where b = 4 and c = 35) as ch35,
 (select count(v) from bible.t_kjv where b = 4 and c = 36) as ch36
+;
 ```
 
 ### Deuteronomy
@@ -400,6 +405,7 @@ select (select count(v) from bible.t_kjv where b = 5 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 5 and c = 32) as ch32,
 (select count(v) from bible.t_kjv where b = 5 and c = 33) as ch33,
 (select count(v) from bible.t_kjv where b = 5 and c = 34) as ch34
+;
 ```
 
 ### Joshua
@@ -429,6 +435,7 @@ select (select count(v) from bible.t_kjv where b = 6 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 6 and c = 22) as ch22,
 (select count(v) from bible.t_kjv where b = 6 and c = 23) as ch23,
 (select count(v) from bible.t_kjv where b = 6 and c = 24) as ch24
+;
 ```
 
 ### Judges
@@ -455,6 +462,7 @@ select (select count(v) from bible.t_kjv where b = 7 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 7 and c = 19) as ch19,
 (select count(v) from bible.t_kjv where b = 7 and c = 20) as ch20,
 (select count(v) from bible.t_kjv where b = 7 and c = 21) as ch21
+;
 ```
 
 ### Ruth
@@ -464,6 +472,7 @@ select (select count(v) from bible.t_kjv where b = 8 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 8 and c = 2) as ch2,
 (select count(v) from bible.t_kjv where b = 8 and c = 3) as ch3,
 (select count(v) from bible.t_kjv where b = 8 and c = 4) as ch4
+;
 ```
 
 ### 1 Samuel
@@ -500,6 +509,7 @@ select (select count(v) from bible.t_kjv where b = 9 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 9 and c = 29) as ch29,
 (select count(v) from bible.t_kjv where b = 9 and c = 30) as ch30,
 (select count(v) from bible.t_kjv where b = 9 and c = 31) as ch31
+;
 ```
 
 ### 2 Samuel
@@ -529,6 +539,7 @@ select (select count(v) from bible.t_kjv where b = 10 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 10 and c = 22) as ch22,
 (select count(v) from bible.t_kjv where b = 10 and c = 23) as ch23,
 (select count(v) from bible.t_kjv where b = 10 and c = 24) as ch24
+;
 ```
 
 ### 1 Kings
@@ -556,6 +567,7 @@ select (select count(v) from bible.t_kjv where b = 11 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 11 and c = 20) as ch20,
 (select count(v) from bible.t_kjv where b = 11 and c = 21) as ch21,
 (select count(v) from bible.t_kjv where b = 11 and c = 22) as ch22
+;
 ```
 
 ### 2 Kings
@@ -586,6 +598,7 @@ select (select count(v) from bible.t_kjv where b = 12 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 12 and c = 23) as ch23,
 (select count(v) from bible.t_kjv where b = 12 and c = 24) as ch24,
 (select count(v) from bible.t_kjv where b = 12 and c = 25) as ch25
+;
 ```
 
 ### 1 Chronicles
@@ -620,6 +633,7 @@ select (select count(v) from bible.t_kjv where b = 13 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 13 and c = 27) as ch27,
 (select count(v) from bible.t_kjv where b = 13 and c = 28) as ch28,
 (select count(v) from bible.t_kjv where b = 13 and c = 29) as ch29
+;
 ```
 
 ### 2 Chronicles
@@ -661,6 +675,7 @@ select (select count(v) from bible.t_kjv where b = 14 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 14 and c = 34) as ch34,
 (select count(v) from bible.t_kjv where b = 14 and c = 35) as ch35,
 (select count(v) from bible.t_kjv where b = 14 and c = 36) as ch36
+;
 ```
 
 ### Ezra
@@ -676,6 +691,7 @@ select (select count(v) from bible.t_kjv where b = 15 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 15 and c = 8) as ch8,
 (select count(v) from bible.t_kjv where b = 15 and c = 9) as ch9,
 (select count(v) from bible.t_kjv where b = 15 and c = 10) as ch10
+;
 ```
 
 ### Nehemiah
@@ -694,6 +710,7 @@ select (select count(v) from bible.t_kjv where b = 16 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 16 and c = 11) as ch11,
 (select count(v) from bible.t_kjv where b = 16 and c = 12) as ch12,
 (select count(v) from bible.t_kjv where b = 16 and c = 13) as ch13
+;
 ```
 
 ### Esther
@@ -709,6 +726,7 @@ select (select count(v) from bible.t_kjv where b = 17 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 17 and c = 8) as ch8,
 (select count(v) from bible.t_kjv where b = 17 and c = 9) as ch9,
 (select count(v) from bible.t_kjv where b = 17 and c = 10) as ch10
+;
 ```
 
 ### Job
@@ -756,6 +774,7 @@ select (select count(v) from bible.t_kjv where b = 18 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 18 and c = 40) as ch40,
 (select count(v) from bible.t_kjv where b = 18 and c = 41) as ch41,
 (select count(v) from bible.t_kjv where b = 18 and c = 42) as ch42
+;
 ```
 
 ### Psalms
@@ -911,6 +930,7 @@ select (select count(v) from bible.t_kjv where b = 19 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 19 and c = 148) as ch148,
 (select count(v) from bible.t_kjv where b = 19 and c = 149) as ch149,
 (select count(v) from bible.t_kjv where b = 19 and c = 150) as ch150
+;
 ```
 
 ### Proverbs
@@ -947,6 +967,7 @@ select (select count(v) from bible.t_kjv where b = 20 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 20 and c = 29) as ch29,
 (select count(v) from bible.t_kjv where b = 20 and c = 30) as ch30,
 (select count(v) from bible.t_kjv where b = 20 and c = 31) as ch31
+;
 ```
 
 ### Ecclesiastes
@@ -964,6 +985,7 @@ select (select count(v) from bible.t_kjv where b = 21 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 21 and c = 10) as ch10,
 (select count(v) from bible.t_kjv where b = 21 and c = 11) as ch11,
 (select count(v) from bible.t_kjv where b = 21 and c = 12) as ch12
+;
 ```
 
 ### Song of Solomon
@@ -977,6 +999,7 @@ select (select count(v) from bible.t_kjv where b = 22 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 22 and c = 6) as ch6,
 (select count(v) from bible.t_kjv where b = 22 and c = 7) as ch7,
 (select count(v) from bible.t_kjv where b = 22 and c = 8) as ch8
+;
 ```
 
 ### Isaiah
@@ -1048,6 +1071,7 @@ select (select count(v) from bible.t_kjv where b = 23 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 23 and c = 64) as ch64,
 (select count(v) from bible.t_kjv where b = 23 and c = 65) as ch65,
 (select count(v) from bible.t_kjv where b = 23 and c = 66) as ch66
+;
 ```
 
 ### Jeremiah
@@ -1105,6 +1129,7 @@ select (select count(v) from bible.t_kjv where b = 24 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 24 and c = 50) as ch50,
 (select count(v) from bible.t_kjv where b = 24 and c = 51) as ch51,
 (select count(v) from bible.t_kjv where b = 24 and c = 52) as ch52
+;
 ```
 
 ### Lamentations
@@ -1115,6 +1140,7 @@ select (select count(v) from bible.t_kjv where b = 25 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 25 and c = 3) as ch3,
 (select count(v) from bible.t_kjv where b = 25 and c = 4) as ch4,
 (select count(v) from bible.t_kjv where b = 25 and c = 5) as ch5,
+;
 ```
 
 ### Ezekiel
@@ -1168,6 +1194,7 @@ select (select count(v) from bible.t_kjv where b = 26 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 26 and c = 46) as ch46,
 (select count(v) from bible.t_kjv where b = 26 and c = 47) as ch47,
 (select count(v) from bible.t_kjv where b = 26 and c = 48) as ch48
+;
 ```
 
 ### Daniel
@@ -1185,6 +1212,7 @@ select (select count(v) from bible.t_kjv where b = 27 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 27 and c = 10) as ch10,
 (select count(v) from bible.t_kjv where b = 27 and c = 11) as ch11,
 (select count(v) from bible.t_kjv where b = 27 and c = 12) as ch12
+;
 ```
 
 ### Hosea
@@ -1204,6 +1232,7 @@ select (select count(v) from bible.t_kjv where b = 28 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 28 and c = 12) as ch12,
 (select count(v) from bible.t_kjv where b = 28 and c = 13) as ch13,
 (select count(v) from bible.t_kjv where b = 28 and c = 14) as ch14
+;
 ```
 
 ### Joel
@@ -1212,6 +1241,7 @@ select (select count(v) from bible.t_kjv where b = 28 and c = 1) as ch1,
 select (select count(v) from bible.t_kjv where b = 29 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 29 and c = 2) as ch2,
 (select count(v) from bible.t_kjv where b = 29 and c = 3) as ch3
+;
 ```
 
 ### Amos
@@ -1226,12 +1256,14 @@ select (select count(v) from bible.t_kjv where b = 30 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 30 and c = 7) as ch7,
 (select count(v) from bible.t_kjv where b = 30 and c = 8) as ch8,
 (select count(v) from bible.t_kjv where b = 30 and c = 9) as ch9
+;
 ```
 
 ### Obadiah
 
 ``` sql
 select (select count(v) from bible.t_kjv where b = 31 and c = 1) as ch1
+;
 ```
 
 ### Jonah
@@ -1241,6 +1273,7 @@ select (select count(v) from bible.t_kjv where b = 32 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 32 and c = 2) as ch2,
 (select count(v) from bible.t_kjv where b = 32 and c = 3) as ch3,
 (select count(v) from bible.t_kjv where b = 32 and c = 4) as ch4
+;
 ```
 
 ### Micah
@@ -1253,6 +1286,7 @@ select (select count(v) from bible.t_kjv where b = 33 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 33 and c = 5) as ch5,
 (select count(v) from bible.t_kjv where b = 33 and c = 6) as ch6,
 (select count(v) from bible.t_kjv where b = 33 and c = 7) as ch7
+;
 ```
 
 ### Nahum
@@ -1261,6 +1295,7 @@ select (select count(v) from bible.t_kjv where b = 33 and c = 1) as ch1,
 select (select count(v) from bible.t_kjv where b = 34 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 34 and c = 2) as ch2,
 (select count(v) from bible.t_kjv where b = 34 and c = 3) as ch3
+;
 ```
 
 ### Habakkuk
@@ -1269,6 +1304,7 @@ select (select count(v) from bible.t_kjv where b = 34 and c = 1) as ch1,
 select (select count(v) from bible.t_kjv where b = 35 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 35 and c = 2) as ch2,
 (select count(v) from bible.t_kjv where b = 35 and c = 3) as ch3
+;
 ```
 
 ### Zephaniah
@@ -1277,6 +1313,7 @@ select (select count(v) from bible.t_kjv where b = 35 and c = 1) as ch1,
 select (select count(v) from bible.t_kjv where b = 36 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 36 and c = 2) as ch2,
 (select count(v) from bible.t_kjv where b = 36 and c = 3) as ch3
+;
 ```
 
 ### Haggai
@@ -1284,6 +1321,7 @@ select (select count(v) from bible.t_kjv where b = 36 and c = 1) as ch1,
 ``` sql
 select (select count(v) from bible.t_kjv where b = 37 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 37 and c = 2) as ch2
+;
 ```
 
 ### Zechariah
@@ -1303,6 +1341,7 @@ select (select count(v) from bible.t_kjv where b = 38 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 38 and c = 12) as ch12,
 (select count(v) from bible.t_kjv where b = 38 and c = 13) as ch13,
 (select count(v) from bible.t_kjv where b = 38 and c = 14) as ch14
+;
 ```
 
 ### Malachi
@@ -1312,6 +1351,7 @@ select (select count(v) from bible.t_kjv where b = 39 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 39 and c = 2) as ch2,
 (select count(v) from bible.t_kjv where b = 39 and c = 3) as ch3,
 (select count(v) from bible.t_kjv where b = 39 and c = 4) as ch4
+;
 ```
 
 ### Matthew
@@ -1345,6 +1385,7 @@ select (select count(v) from bible.t_kjv where b = 40 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 40 and c = 26) as ch26,
 (select count(v) from bible.t_kjv where b = 40 and c = 27) as ch27,
 (select count(v) from bible.t_kjv where b = 40 and c = 28) as ch28
+;
 ```
 
 ### Mark
@@ -1366,6 +1407,7 @@ select (select count(v) from bible.t_kjv where b = 41 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 41 and c = 14) as ch14,
 (select count(v) from bible.t_kjv where b = 41 and c = 15) as ch15,
 (select count(v) from bible.t_kjv where b = 41 and c = 16) as ch16
+;
 ```
 
 ### Luke
@@ -1395,6 +1437,7 @@ select (select count(v) from bible.t_kjv where b = 42 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 42 and c = 22) as ch22,
 (select count(v) from bible.t_kjv where b = 42 and c = 23) as ch23,
 (select count(v) from bible.t_kjv where b = 42 and c = 24) as ch24
+;
 ```
 
 ### John
@@ -1421,6 +1464,7 @@ select (select count(v) from bible.t_kjv where b = 43 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 43 and c = 19) as ch19,
 (select count(v) from bible.t_kjv where b = 43 and c = 20) as ch20,
 (select count(v) from bible.t_kjv where b = 43 and c = 21) as ch21
+;
 ```
 
 ### Acts
@@ -1454,6 +1498,7 @@ select (select count(v) from bible.t_kjv where b = 44 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 44 and c = 26) as ch26,
 (select count(v) from bible.t_kjv where b = 44 and c = 27) as ch27,
 (select count(v) from bible.t_kjv where b = 44 and c = 28) as ch28
+;
 ```
 
 ### Romans
@@ -1475,6 +1520,7 @@ select (select count(v) from bible.t_kjv where b = 45 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 45 and c = 14) as ch14,
 (select count(v) from bible.t_kjv where b = 45 and c = 15) as ch15,
 (select count(v) from bible.t_kjv where b = 45 and c = 16) as ch16
+;
 ```
 
 ### 1 Corinthians
@@ -1496,6 +1542,7 @@ select (select count(v) from bible.t_kjv where b = 46 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 46 and c = 14) as ch14,
 (select count(v) from bible.t_kjv where b = 46 and c = 15) as ch15,
 (select count(v) from bible.t_kjv where b = 46 and c = 16) as ch16
+;
 ```
 
 ### 2 Corinthians
@@ -1514,6 +1561,7 @@ select (select count(v) from bible.t_kjv where b = 47 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 47 and c = 11) as ch11,
 (select count(v) from bible.t_kjv where b = 47 and c = 12) as ch12,
 (select count(v) from bible.t_kjv where b = 47 and c = 13) as ch13
+;
 ```
 
 ### Galatians
@@ -1525,6 +1573,7 @@ select (select count(v) from bible.t_kjv where b = 48 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 48 and c = 4) as ch4,
 (select count(v) from bible.t_kjv where b = 48 and c = 5) as ch5,
 (select count(v) from bible.t_kjv where b = 48 and c = 6) as ch6
+;
 ```
 
 ### Ephesians
@@ -1536,6 +1585,7 @@ select (select count(v) from bible.t_kjv where b = 49 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 49 and c = 4) as ch4,
 (select count(v) from bible.t_kjv where b = 49 and c = 5) as ch5,
 (select count(v) from bible.t_kjv where b = 49 and c = 6) as ch6
+;
 ```
 
 ### Philippians
@@ -1545,6 +1595,7 @@ select (select count(v) from bible.t_kjv where b = 50 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 50 and c = 2) as ch2,
 (select count(v) from bible.t_kjv where b = 50 and c = 3) as ch3,
 (select count(v) from bible.t_kjv where b = 50 and c = 4) as ch4
+;
 ```
 
 ### Colossians
@@ -1554,6 +1605,7 @@ select (select count(v) from bible.t_kjv where b = 51 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 51 and c = 2) as ch2,
 (select count(v) from bible.t_kjv where b = 51 and c = 3) as ch3,
 (select count(v) from bible.t_kjv where b = 51 and c = 4) as ch4
+;
 ```
 
 ### 1 Thessalonians
@@ -1564,6 +1616,7 @@ select (select count(v) from bible.t_kjv where b = 52 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 52 and c = 3) as ch3,
 (select count(v) from bible.t_kjv where b = 52 and c = 4) as ch4,
 (select count(v) from bible.t_kjv where b = 52 and c = 5) as ch5
+;
 ```
 
 ### 2 Thessalonians
@@ -1572,6 +1625,7 @@ select (select count(v) from bible.t_kjv where b = 52 and c = 1) as ch1,
 select (select count(v) from bible.t_kjv where b = 53 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 53 and c = 2) as ch2,
 (select count(v) from bible.t_kjv where b = 53 and c = 3) as ch3
+;
 ```
 
 ### 1 Timothy
@@ -1583,6 +1637,7 @@ select (select count(v) from bible.t_kjv where b = 54 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 54 and c = 4) as ch4,
 (select count(v) from bible.t_kjv where b = 54 and c = 5) as ch5,
 (select count(v) from bible.t_kjv where b = 54 and c = 6) as ch6
+;
 ```
 
 ### 2 Timothy
@@ -1592,6 +1647,7 @@ select (select count(v) from bible.t_kjv where b = 55 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 55 and c = 2) as ch2,
 (select count(v) from bible.t_kjv where b = 55 and c = 3) as ch3,
 (select count(v) from bible.t_kjv where b = 55 and c = 4) as ch4
+;
 ```
 
 ### Titus
@@ -1600,12 +1656,14 @@ select (select count(v) from bible.t_kjv where b = 55 and c = 1) as ch1,
 select (select count(v) from bible.t_kjv where b = 56 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 56 and c = 2) as ch2,
 (select count(v) from bible.t_kjv where b = 56 and c = 3) as ch3
+;
 ```
 
 ### Philemon
 
 ``` sql
 select (select count(v) from bible.t_kjv where b = 57 and c = 1) as ch1
+;
 ```
 
 ### Hebrews
@@ -1624,6 +1682,7 @@ select (select count(v) from bible.t_kjv where b = 58 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 58 and c = 11) as ch11,
 (select count(v) from bible.t_kjv where b = 58 and c = 12) as ch12,
 (select count(v) from bible.t_kjv where b = 58 and c = 13) as ch13
+;
 ```
 
 ### James
@@ -1634,6 +1693,7 @@ select (select count(v) from bible.t_kjv where b = 59 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 59 and c = 3) as ch3,
 (select count(v) from bible.t_kjv where b = 59 and c = 4) as ch4,
 (select count(v) from bible.t_kjv where b = 59 and c = 5) as ch5
+;
 ```
 
 ### 1 Peter
@@ -1644,6 +1704,7 @@ select (select count(v) from bible.t_kjv where b = 60 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 60 and c = 3) as ch3,
 (select count(v) from bible.t_kjv where b = 60 and c = 4) as ch4,
 (select count(v) from bible.t_kjv where b = 60 and c = 5) as ch5
+;
 ```
 
 ### 2 Peter
@@ -1652,6 +1713,7 @@ select (select count(v) from bible.t_kjv where b = 60 and c = 1) as ch1,
 select (select count(v) from bible.t_kjv where b = 61 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 61 and c = 2) as ch2,
 (select count(v) from bible.t_kjv where b = 61 and c = 3) as ch3
+;
 ```
 
 ### 1 John
@@ -1662,24 +1724,28 @@ select (select count(v) from bible.t_kjv where b = 62 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 62 and c = 3) as ch3,
 (select count(v) from bible.t_kjv where b = 62 and c = 4) as ch4,
 (select count(v) from bible.t_kjv where b = 62 and c = 5) as ch5
+;
 ```
 
 ### 2 John
 
 ``` sql
 select (select count(v) from bible.t_kjv where b = 63 and c = 1) as ch1
+;
 ```
 
 ### 3 John
 
 ``` sql
 select (select count(v) from bible.t_kjv where b = 64 and c = 1) as ch1
+;
 ```
 
 ### Jude
 
 ``` sql
 select (select count(v) from bible.t_kjv where b = 65 and c = 1) as ch1
+;
 ```
 
 ### Revelation
@@ -1707,4 +1773,5 @@ select (select count(v) from bible.t_kjv where b = 66 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 66 and c = 20) as ch20,
 (select count(v) from bible.t_kjv where b = 66 and c = 21) as ch21,
 (select count(v) from bible.t_kjv where b = 66 and c = 22) as ch22
+;
 ```
