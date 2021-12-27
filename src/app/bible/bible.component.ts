@@ -11,9 +11,9 @@ import { DropDownListComponent } from "@progress/kendo-angular-dropdowns";
 import { BibleService } from "../bible.service";
 
 // interfaces
-import { Book } from "../interfaces/bible/BookIntf";
-import { Chapter } from "../interfaces/bible/ChapterIntf";
-import { Verse } from "../interfaces/bible/VerseIntf";
+import { BookIntf } from "../interfaces/bible/BookIntf";
+import { ChapterIntf } from "../interfaces/bible/ChapterIntf";
+import { VerseIntf } from "../interfaces/bible/VerseIntf";
 
 // rxjs
 import { combineLatest } from "rxjs";
@@ -60,20 +60,20 @@ export class BibleComponent implements OnInit, AfterViewInit {
   disableSelectedVerseEnd: boolean = true;
 
   // dropdown default selection
-  defaultItemBook: Book = { bookName: "Select Book", bookId: 0, subcategory: "" };
-  defaultItemChapter: Chapter = { chapterName: "Select Chapter", chapterId: 0, bookId: 0 };
-  defaultItemVerse: Verse = { verseName: "Select Verse", verseId: 0, chapterId: 0, bookId: 0 };
+  defaultItemBook: BookIntf = { bookName: "Select Book", bookId: 0, subcategory: "" };
+  defaultItemChapter: ChapterIntf = { chapterName: "Select Chapter", chapterId: 0, bookId: 0 };
+  defaultItemVerse: VerseIntf = { verseName: "Select Verse", verseId: 0, chapterId: 0, bookId: 0 };
 
   // dropdown data
   dataBooks: any; // leave as any type for grouping
   dataBooksGrouped!: GroupResult[];
-  dataChapters: Array<Chapter> = [];
-  dataVerses: Array<Verse> = [];
+  dataChapters: Array<ChapterIntf> = [];
+  dataVerses: Array<VerseIntf> = [];
 
   // dropdown cascade result
-  dataResultBooks: Array<Book> = [];
-  dataResultChapters: Array<Chapter> = [];
-  dataResultVerses: Array<Verse> = [];
+  dataResultBooks: Array<BookIntf> = [];
+  dataResultChapters: Array<ChapterIntf> = [];
+  dataResultVerses: Array<VerseIntf> = [];
 
   // dropdown values (selection)
   selectedBook: number = 0;
@@ -148,10 +148,10 @@ export class BibleComponent implements OnInit, AfterViewInit {
         this.dataResultChapters = [];
       } else {
         this.isDisabledChapters = false;
-        this.dataResultChapters = this.dataChapters.filter((s: Chapter) => s.bookId === bookId);
+        this.dataResultChapters = this.dataChapters.filter((s: ChapterIntf) => s.bookId === bookId);
 
         // get Bible for book
-        this.dataResultBooks = this.dataBooks.filter((s: Book) => s.bookId === bookId);
+        this.dataResultBooks = this.dataBooks.filter((s: BookIntf) => s.bookId === bookId);
         let bookURL: string = "./assets/bible/text/" + this.dataResultBooks[0].bookName + ".json";
         bookURL = bookURL.replace(/ /g, ''); // remove white space in case of numbers in front
         this.bible = await this.bibleService.fetch(bookURL);
@@ -168,7 +168,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
 
   handleChapterChange(chapterId: number) {
     // get chapter
-    const chapter = this.dataChapters.find((chapter: Chapter) => {
+    const chapter = this.dataChapters.find((chapter: ChapterIntf) => {
       return chapter.chapterId == chapterId
     });
 
@@ -183,14 +183,14 @@ export class BibleComponent implements OnInit, AfterViewInit {
       this.dataResultVerses = [];
     } else if (chapter) {
       this.disableSelectedVerseStart = false;
-      this.dataResultVerses = this.dataVerses.filter((s: Verse) => ((s.chapterId === chapter.chapterId) && (s.bookId === chapter.bookId)))
+      this.dataResultVerses = this.dataVerses.filter((s: VerseIntf) => ((s.chapterId === chapter.chapterId) && (s.bookId === chapter.bookId)))
     }
   }
 
   handleSelectedVerseStart(verseId: number) {
     // verse selected
     if (verseId) {
-      const verse = this.dataVerses.find((verse: Verse) => {
+      const verse = this.dataVerses.find((verse: VerseIntf) => {
         return verse.verseId == verseId
       });
 
@@ -242,16 +242,16 @@ export class BibleComponent implements OnInit, AfterViewInit {
     }
 
     // get array data
-    const book = this.dataBooks.find((book: Book) => {
+    const book = this.dataBooks.find((book: BookIntf) => {
       return book.bookId == this.selectedBook
     });
-    const chapter = this.dataChapters.find((chapter: Chapter) => {
+    const chapter = this.dataChapters.find((chapter: ChapterIntf) => {
       return chapter.chapterId == this.selectedChapter
     });
-    const verseStart = this.dataVerses.find((verse: Verse) => {
+    const verseStart = this.dataVerses.find((verse: VerseIntf) => {
       return verse.verseId == this.selectedVerseStart
     });
-    const verseEnd = this.dataVerses.find((verse: Verse) => {
+    const verseEnd = this.dataVerses.find((verse: VerseIntf) => {
       return verse.verseId == this.selectedVerseEnd
     });
 
