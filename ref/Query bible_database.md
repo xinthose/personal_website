@@ -322,7 +322,7 @@ select (select count(v) from bible.t_kjv where b = 3 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 3 and c = 24) as ch24,
 (select count(v) from bible.t_kjv where b = 3 and c = 25) as ch25,
 (select count(v) from bible.t_kjv where b = 3 and c = 26) as ch26,
-(select count(v) from bible.t_kjv where b = 2 and c = 27) as ch27
+(select count(v) from bible.t_kjv where b = 3 and c = 27) as ch27
 ;
 ```
 
