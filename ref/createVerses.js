@@ -1,6 +1,5 @@
-import { writeFile } from "fs";
-
 // variables
+var fs = require('fs');
 var arr = [];
 var totalNumVerses = 0;
 var chapter = 0;
@@ -364,12 +363,14 @@ for (let index = 0; index < bible.length; index++) {
     }
 
     // totalize number of verses (to double check result)
-    totalNumVerses += numVerses;
+    totalNumVerses += numVersesCh;
   }
 }
 
 console.log("totalNumVerses = " + totalNumVerses.toString());
 
 // write to JSON file
-var json = JSON.stringify(arr);
-writeFile("verses.json", json, "utf8", callback);
+var json = JSON.stringify(arr, null, 2);
+fs.writeFileSync("verses.json", json, "utf8");
+
+// using the Node.js command prompt, cd to the directory of this file and run `node createVerses.js`, it will create file `verses.json` in the same directory
