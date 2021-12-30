@@ -1139,7 +1139,7 @@ select (select count(v) from bible.t_kjv where b = 25 and c = 1) as ch1,
 (select count(v) from bible.t_kjv where b = 25 and c = 2) as ch2,
 (select count(v) from bible.t_kjv where b = 25 and c = 3) as ch3,
 (select count(v) from bible.t_kjv where b = 25 and c = 4) as ch4,
-(select count(v) from bible.t_kjv where b = 25 and c = 5) as ch5,
+(select count(v) from bible.t_kjv where b = 25 and c = 5) as ch5
 ;
 ```
 
