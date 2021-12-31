@@ -21,7 +21,7 @@
 
 - `bible.component`
   - add animation to verse copy button when it is clicked
-  - auto-set verse end based on the position of verse 
+  - auto-set verse end based on the position of verse
 
 ## 1.0.7 (10/11/2020)
 

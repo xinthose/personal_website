@@ -39,9 +39,7 @@
               "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/regular.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
-              "node_modules/ng-uikit-pro-standard/assets/scss/bootstrap/bootstrap.scss",
-              "node_modules/ng-uikit-pro-standard/assets/scss/mdb.scss",
-              "node_modules/animate.css/animate.css",
+              "node_modules/mdb-angular-ui-kit/assets/scss/mdb.scss",
               "src/styles.scss"
             ],
             "scripts": [
