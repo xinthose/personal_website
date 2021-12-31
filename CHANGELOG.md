@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0 (12/30/2021)
+
+- add excel file (`KJV Bible Info.xlsx`) with all Bible data in it
+- add Node.js utility `createVerses.js` to create `verses.json` file (it had errors before because it was made by hand)
+- update Angular version from 10 to 13
+
 ## 1.0.10 (2/7/2021)
 
 - use Bible text from this repository: <https://github.com/aruljohn/Bible-kjv> instead of this one: <https://github.com/thiagobodruk/bible> because the later has unicode characters in it

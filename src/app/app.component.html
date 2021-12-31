@@ -1,20 +1,21 @@
-<header id="app_header">
-    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo fixed-top scrolling-navbar">
-        <links>
-            <a class="navbar-brand" routerLink="/home">Xinthose</a>
-            <ul class="navbar-nav mr-auto mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/bible">Bible</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/">Doctrine</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/about">About</a>
-                </li>
-            </ul>
-        </links>
-    </mdb-navbar>
-</header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Xinthose.com</a>
+    <button class="navbar-toggler" type="button" (click)="toggler.toggle()">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" mdbCollapse #toggler="mdbCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="bible">Bible</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <router-outlet>
 </router-outlet>

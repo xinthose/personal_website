@@ -13,25 +13,6 @@
 
 ## Angular
 
-### Installation
-
-#### General
-
-- `npm i @angular/cli @angular/core @angular/forms @angular/http @angular/forms @angular/localize terser typescript rxjs express compression ngx-clipboard ngx-animate @ungap/url-search-params`
-
-#### Kendo-UI (Progress)
-
-- `ng add @progress/kendo-angular-buttons @progress/kendo-angular-dropdowns @progress/kendo-data-query @progress/kendo-angular-inputs`
-- `npm i @progress/kendo-theme-material`
-
-#### MDBootstrap Pro
-
-- tutorial: <https://mdbootstrap.com/angular/5min-quickstart/>
-  - click "PRO" underneath "npm iation"
-- `npm i git+https://oauth2:XXXXXXXXXX_XXXXXXXXX@git.mdbootstrap.com/mdb/angular/ng-uikit-pro-standard.git --save`
-- `npm i chart.js@2.5.0 @types/chart.js easy-pie-chart@2.1.7 hammerjs@2.0.8 screenfull@3.3.0 @fortawesome/fontawesome-free animate.css`
-  - 3rd party libraries
-
 ### Create App (client directory)
 
 - `ng new personal-website --style=scss --routing=true`
@@ -39,6 +20,18 @@
 #### Components
 
 - `for i in home bible about page-not-found; do ng g c "${i}"; done`
+
+### Installation
+
+- `npm i @angular/cli @angular/core @angular/forms @angular/http @angular/forms @angular/localize terser typescript rxjs express compression ngx-clipboard ngx-animate @ungap/url-search-params`
+- Progress
+  - `ng add @progress/kendo-angular-buttons @progress/kendo-angular-dropdowns @progress/kendo-data-query @progress/kendo-angular-inputs`
+  - `npm i @progress/kendo-theme-material`
+- MDBootstrap v5 Angular <https://mdbootstrap.com/docs/b5/angular/>
+  - `ng add mdb-angular-ui-kit`
+    - answer yes to all questions
+- `ng add @fortawesome/angular-fontawesome`
+  - choose free icons
 
 #### Services
 
