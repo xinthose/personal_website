@@ -8,3 +8,7 @@
 
 - <https://github.com/thiagobodruk/bible>
 - <https://github.com/aruljohn/Bible-kjv>
+
+## Wakatime
+
+[![wakatime](https://wakatime.com/badge/github/xinthose/personal_website.svg)](https://wakatime.com/badge/github/xinthose/personal_website)
