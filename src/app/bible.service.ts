@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 
 // interfaces
@@ -6,8 +6,11 @@ import { BookIntf } from "./interfaces/bible/BookIntf";
 import { ChapterIntf } from "./interfaces/bible/ChapterIntf";
 import { VerseIntf } from "./interfaces/bible/VerseIntf";
 
+// rxjs
+import { firstValueFrom } from "rxjs";
+
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class BibleService {
 
@@ -20,14 +23,14 @@ export class BibleService {
   }
 
   fetchBooks(): Promise<Array<BookIntf>> {
-    return this.http.get<Array<BookIntf>>('./assets/bible/books.json').toPromise();
+    return firstValueFrom(this.http.get<Array<BookIntf>>("./assets/bible/books.json"));
   }
 
   fetchChapters(): Promise<Array<ChapterIntf>> {
-    return this.http.get<Array<ChapterIntf>>('./assets/bible/chapters.json').toPromise();
+    return firstValueFrom(this.http.get<Array<ChapterIntf>>("./assets/bible/chapters.json"));
   }
 
   fetchVerses(): Promise<Array<VerseIntf>> {
-    return this.http.get<Array<VerseIntf>>('./assets/bible/verses.json').toPromise();
+    return firstValueFrom(this.http.get<Array<VerseIntf>>("./assets/bible/verses.json"));
   }
 }
