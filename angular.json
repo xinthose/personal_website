@@ -28,7 +28,6 @@
               "src/server.js",
               "src/.ebextensions"
             ],
-            "deployUrl": "/",
             "baseHref": "/",
             "styles": [
               {
@@ -42,12 +41,7 @@
               "node_modules/mdb-angular-ui-kit/assets/scss/mdb.scss",
               "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/chart.js/dist/Chart.js",
-              "node_modules/easy-pie-chart/dist/easypiechart.js",
-              "node_modules/screenfull/dist/screenfull.js",
-              "node_modules/hammerjs/hammer.min.js"
-            ],
+            "scripts": [],
             "vendorChunk": true,
             "extractLicenses": false,
             "buildOptimizer": false,
