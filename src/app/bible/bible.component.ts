@@ -219,7 +219,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
   }
 
   // switch changes
-  showVerseNumbersChange() {
+  showVerseNumbersChange(value: boolean) {
     if (this.showVerse) {
       this.setBibleInfo();
     }
@@ -228,10 +228,6 @@ export class BibleComponent implements OnInit, AfterViewInit {
   // functions
 
   setBibleInfo() {
-    console.assert(this.selectedVerseStart != null, "verse not selected");
-    console.assert(this.selectedBook != null, "book not selected");
-    console.assert(this.selectedChapter != null, "chapter not selected");
-
     // set verse end to start if not selected yet
     if (!this.selectedVerseEnd) {
       this.selectedVerseEnd = this.selectedVerseStart;
