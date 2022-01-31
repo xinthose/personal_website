@@ -9,34 +9,44 @@
               <h4>Bible Selection</h4>
             </div>
             <div class="card-text">
-              <!-- Book -->
-              <kendo-dropdownlist #bookDropdownList [data]="dataBooksGrouped" [(ngModel)]="selectedBook"
-                [defaultItem]="defaultItemBook" [textField]="'bookName'" [valueField]="'bookId'"
-                (valueChange)="handleBookChange($event)" valuePrimitive="true">
-              </kendo-dropdownlist>
-              <br />
-              <!-- Chapter -->
-              <kendo-dropdownlist #chapterDropdownList [disabled]="isDisabledChapters"
-                [defaultItem]="defaultItemChapter" [data]="dataResultChapters" [(ngModel)]="selectedChapter"
-                [textField]="'chapterName'" [valueField]="'chapterId'" (valueChange)="handleChapterChange($event)"
-                valuePrimitive="true">
-              </kendo-dropdownlist>
-              <br />
-              <!-- Verse Start -->
-              <kendo-dropdownlist #verseStartDropdownList [disabled]="disableSelectedVerseStart"
-                [defaultItem]="defaultItemVerse" [data]="dataResultVerses" [(ngModel)]="selectedVerseStart"
-                [textField]="'verseName'" [valueField]="'verseId'" (valueChange)="handleSelectedVerseStart($event)"
-                valuePrimitive="true">
-              </kendo-dropdownlist>
-              <br />
-              <span>to</span>
-              <br />
-              <!-- Verse End -->
-              <kendo-dropdownlist #verseEndDropdownList [disabled]="disableSelectedVerseEnd"
-                [defaultItem]="defaultItemVerse" [data]="dataResultVerses" [(ngModel)]="selectedVerseEnd"
-                [textField]="'verseName'" [valueField]="'verseId'" (valueChange)="handleSelectedVerseEnd($event)"
-                valuePrimitive="true">
-              </kendo-dropdownlist>
+              <ul class="list-group list-group-flush">
+                <!-- Type Selection -->
+                <li class="list-group-item">
+                  <kendo-autocomplete [data]="listItems" [suggest]="true" placeholder="e.g. Gen 1:1-2">
+                  </kendo-autocomplete>
+                </li>
+                <!-- Manual Selection -->
+                <li class="list-group-item">
+                  <!-- Book -->
+                  <kendo-dropdownlist #bookDropdownList [data]="dataBooksGrouped" [(ngModel)]="selectedBook"
+                    [defaultItem]="defaultItemBook" [textField]="'bookName'" [valueField]="'bookId'"
+                    (valueChange)="handleBookChange($event)" valuePrimitive="true">
+                  </kendo-dropdownlist>
+                  <br />
+                  <!-- Chapter -->
+                  <kendo-dropdownlist #chapterDropdownList [disabled]="isDisabledChapters"
+                    [defaultItem]="defaultItemChapter" [data]="dataResultChapters" [(ngModel)]="selectedChapter"
+                    [textField]="'chapterName'" [valueField]="'chapterId'" (valueChange)="handleChapterChange($event)"
+                    valuePrimitive="true">
+                  </kendo-dropdownlist>
+                  <br />
+                  <!-- Verse Start -->
+                  <kendo-dropdownlist #verseStartDropdownList [disabled]="disableSelectedVerseStart"
+                    [defaultItem]="defaultItemVerse" [data]="dataResultVerses" [(ngModel)]="selectedVerseStart"
+                    [textField]="'verseName'" [valueField]="'verseId'" (valueChange)="handleSelectedVerseStart($event)"
+                    valuePrimitive="true">
+                  </kendo-dropdownlist>
+                  <br />
+                  <span>to</span>
+                  <br />
+                  <!-- Verse End -->
+                  <kendo-dropdownlist #verseEndDropdownList [disabled]="disableSelectedVerseEnd"
+                    [defaultItem]="defaultItemVerse" [data]="dataResultVerses" [(ngModel)]="selectedVerseEnd"
+                    [textField]="'verseName'" [valueField]="'verseId'" (valueChange)="handleSelectedVerseEnd($event)"
+                    valuePrimitive="true">
+                  </kendo-dropdownlist>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -58,6 +68,7 @@
         </div>
       </div>
     </div>
+    <!-- Verse Content -->
     <div class="row justify-content-center mt-4" *ngIf="showVerse">
       <div class="col">
         <div class="card">
