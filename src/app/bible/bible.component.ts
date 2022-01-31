@@ -15,10 +15,6 @@ import { BookIntf } from "../interfaces/bible/BookIntf";
 import { ChapterIntf } from "../interfaces/bible/ChapterIntf";
 import { VerseIntf } from "../interfaces/bible/VerseIntf";
 
-// rxjs
-import { combineLatest } from "rxjs";
-import { switchMap } from "rxjs/operators";
-
 // other
 import { ClipboardService } from "ngx-clipboard";
 import { jello } from "ngx-animate";
