@@ -347,10 +347,9 @@ for (let index = 0; index < bible.length; index++) {
   const chVerses = element.chVerses;
 
   // iterate over chapter verses
-  for (let index1 = 0; index1 < chVerses.length; index1++) {
+  for (let chapter = 1; chapter <= chVerses.length; chapter++) {
     // get data
-    const numVersesCh = chVerses[index1];
-    chapter = index1 + 1;
+    const numVersesCh = chVerses[chapter - 1];
 
     // push data for each verse
     for (let verse = 1; verse <= numVersesCh; verse++) {
