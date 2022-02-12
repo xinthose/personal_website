@@ -45,13 +45,15 @@ export class BibleComponent implements OnInit, AfterViewInit {
   bibleBook!: BibleBookIntf;
   bookId: number = 0;
   verseText: string = "";
-  verseTitle: string = "";
   verseLocation: string = "";
   showVerse: boolean = false;
-  showVerseNumbers: boolean = false;
   shareBibleVerseData: Array<{ text: string }> = [
     { text: "Copy Link" },
   ];
+
+  // options
+  abbreviateBook: boolean = false;
+  showVerseNumbers: boolean = false;
 
   // dropdown disable
   isDisabledChapters: boolean = true;
@@ -247,6 +249,12 @@ export class BibleComponent implements OnInit, AfterViewInit {
   }
 
   // switch changes
+  abbreviateBookChange(value: boolean) {
+    if (this.showVerse) {
+      this.setBibleInfo();
+    }
+  }
+
   showVerseNumbersChange(value: boolean) {
     if (this.showVerse) {
       this.setBibleInfo();
@@ -315,16 +323,18 @@ export class BibleComponent implements OnInit, AfterViewInit {
     }
 
     // get verse title and location
-    let verseTitle = bookName + " " + chapterName + " " + verseNameStart;
-    let verseLocation = bookAbbrev + " " + this.selectedChapter.toString() + ":" + this.selectedVerseStart.toString();
+    let verseLocation: string = "";
+    if (this.abbreviateBook) {
+      verseLocation = `${bookAbbrev} ${this.selectedChapter}:${this.selectedVerseStart}`;
+    } else {
+      verseLocation = `${bookName} ${this.selectedChapter}:${this.selectedVerseStart}`;
+    }
     if (this.selectedVerseEnd != this.selectedVerseStart) {
-      verseTitle += " to " + verseNameEnd;
-      verseLocation += "-" + this.selectedVerseEnd.toString();
+      verseLocation += `-${this.selectedVerseEnd}`;
     }
 
     // set data
     this.verseText = verseText;
-    this.verseTitle = verseTitle;
     this.verseLocation = verseLocation;
     this.showVerse = true;
   }
