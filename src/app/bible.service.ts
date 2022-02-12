@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 
 // interfaces
+import { BibleBookIntf } from "./interfaces/bible/BibleBookIntf";
 import { BookIntf } from "./interfaces/bible/BookIntf";
 import { ChapterIntf } from "./interfaces/bible/ChapterIntf";
 import { VerseIntf } from "./interfaces/bible/VerseIntf";
@@ -18,8 +19,8 @@ export class BibleService {
     private http: HttpClient
   ) { }
 
-  fetch(file: string): Promise<any> {
-    return this.http.get(file).toPromise();
+  fetchBibleBook(file: string): Promise<BibleBookIntf> {
+    return firstValueFrom(this.http.get<BibleBookIntf>(file));
   }
 
   fetchBooks(): Promise<Array<BookIntf>> {

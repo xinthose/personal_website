@@ -1,8 +1,6 @@
 // variables
 var fs = require('fs');
-var arr = [];
-var totalNumVerses = 0;
-var chapter = 0;
+var debug = false;
 
 // data
 var bible = [
@@ -340,11 +338,17 @@ var bible = [
 ]
 
 // push data into array
-for (let index = 0; index < bible.length; index++) {
+var arr = [];
+var totalNumVerses = 0;
+// for (let index = 0; index < bible.length; index++) {
+for (let index = 0; index < 1; index++) {
   // get data
-  const element = bible[index];
+  const element = bible[8];
   const bookId = element.bookId;
   const chVerses = element.chVerses;
+  if (debug) {
+    console.debug(`### bookId = ${bookId}; chVerses.length = ${chVerses.length}`);
+  }
 
   // iterate over chapter verses
   for (let chapter = 1; chapter <= chVerses.length; chapter++) {
@@ -353,6 +357,9 @@ for (let index = 0; index < bible.length; index++) {
 
     // push data for each verse
     for (let verse = 1; verse <= numVersesCh; verse++) {
+      if (debug) {
+        console.debug(`chapter = ${chapter}; numVersesCh = ${numVersesCh}; verse = ${verse}`);
+      }
       arr.push({
         "verseName": "Verse " + verse.toString(),
         "verseId": verse,

@@ -11,6 +11,7 @@ import { DropDownListComponent } from "@progress/kendo-angular-dropdowns";
 import { BibleService } from "../bible.service";
 
 // interfaces
+import { BibleBookIntf } from "../interfaces/bible/BibleBookIntf";
 import { BookIntf } from "../interfaces/bible/BookIntf";
 import { ChapterIntf } from "../interfaces/bible/ChapterIntf";
 import { VerseIntf } from "../interfaces/bible/VerseIntf";
@@ -19,6 +20,7 @@ import { VerseIntf } from "../interfaces/bible/VerseIntf";
 import { ClipboardService } from "ngx-clipboard";
 import { jello } from "ngx-animate";
 import { environment } from "environments/environment";
+import config from "../../assets/config.json";
 
 @Component({
   selector: "app-bible",
@@ -30,9 +32,9 @@ import { environment } from "environments/environment";
   ],
 })
 export class BibleComponent implements OnInit, AfterViewInit {
-  debug: boolean = true;
-  advDebug: boolean = false;
-  logLoc: string = "BibleComponent.";
+  debug: boolean = config.debug;
+  advDebug: boolean = config.advDebug;
+  logID: string = "BibleComponent.";
   showAnimation: boolean = false;
   @ViewChild("bookDropdownList", { static: true }) public bookDropdownList!: DropDownListComponent;
   @ViewChild("chapterDropdownList", { static: true }) public chapterDropdownList!: DropDownListComponent;
@@ -40,7 +42,8 @@ export class BibleComponent implements OnInit, AfterViewInit {
   @ViewChild("verseEndDropdownList", { static: true }) public verseEndDropdownList!: DropDownListComponent;
   url: string = environment.production ? "http://www.xinthose.com/bible/" : "http://localhost:4200/bible/";
 
-  bible: any;
+  bibleBook!: BibleBookIntf;
+  bookId: number = 0;
   verseText: string = "";
   verseTitle: string = "";
   verseLocation: string = "";
@@ -67,7 +70,6 @@ export class BibleComponent implements OnInit, AfterViewInit {
   dataVerses: Array<VerseIntf> = [];
 
   // dropdown cascade result
-  dataResultBooks: Array<BookIntf> = [];
   dataResultChapters: Array<ChapterIntf> = [];
   dataResultVerses: Array<VerseIntf> = [];
 
@@ -107,7 +109,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
   }
 
   async ngAfterViewInit() {
-    // get the Bible
+    // get the Bible book
     this.dataBooks = await this.bibleService.fetchBooks();
     this.dataBooksGrouped = groupBy(this.dataBooks, [{ field: "subcategory" }]);
 
@@ -138,8 +140,10 @@ export class BibleComponent implements OnInit, AfterViewInit {
       }
 
       // open/close first dropdown to get DOM to update
-      this.bookDropdownList.toggle();
-      this.bookDropdownList.toggle();
+      setTimeout(() => {
+        this.bookDropdownList.toggle();
+        this.bookDropdownList.toggle();
+      });
     }
   }
 
@@ -148,6 +152,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
   async handleBookChange(bookId: number) {
     try {
       // reset values
+      this.bookId = bookId;
       this.selectedChapter = 0;
       this.selectedVerseStart = 0;
       this.selectedVerseEnd = 0;
@@ -159,12 +164,15 @@ export class BibleComponent implements OnInit, AfterViewInit {
       } else {
         this.isDisabledChapters = false;
         this.dataResultChapters = this.dataChapters.filter((s: ChapterIntf) => s.bookId === bookId);
+        if (this.debug) {
+          console.debug(`${this.logID}handleBookChange >> dataResultChapters = ${JSON.stringify(this.dataResultChapters)}`);
+        }
 
         // get Bible for book
-        this.dataResultBooks = this.dataBooks.filter((s: BookIntf) => s.bookId === bookId);
-        let bookURL: string = "./assets/bible/text/" + this.dataResultBooks[0].bookName + ".json";
+        const dataResultBooks: Array<BookIntf> = this.dataBooks.filter((s: BookIntf) => s.bookId === bookId);
+        let bookURL: string = "./assets/bible/text/" + dataResultBooks[0].bookName + ".json";
         bookURL = bookURL.replace(/ /g, ''); // remove white space in case of numbers in front
-        this.bible = await this.bibleService.fetch(bookURL);
+        this.bibleBook = await this.bibleService.fetchBibleBook(bookURL);
       }
 
       this.disableSelectedVerseStart = true;
@@ -178,9 +186,12 @@ export class BibleComponent implements OnInit, AfterViewInit {
 
   handleChapterChange(chapterId: number) {
     // get chapter
-    const chapter = this.dataChapters.find((chapter: ChapterIntf) => {
-      return chapter.chapterId == chapterId
+    const chapter: ChapterIntf | undefined = this.dataChapters.find((chapter: ChapterIntf) => {
+      return ((chapter.chapterId == chapterId) && (chapter.bookId == this.bookId))
     });
+    if (this.debug) {
+      console.debug(`${this.logID}handleChapterChange >> chapter = ${JSON.stringify(chapter)}`);
+    }
 
     // reset values
     this.selectedVerseStart = 0;
@@ -193,7 +204,10 @@ export class BibleComponent implements OnInit, AfterViewInit {
       this.dataResultVerses = [];
     } else if (chapter) {
       this.disableSelectedVerseStart = false;
-      this.dataResultVerses = this.dataVerses.filter((s: VerseIntf) => ((s.chapterId === chapter.chapterId) && (s.bookId === chapter.bookId)))
+      this.dataResultVerses = this.dataVerses.filter((s: VerseIntf) => ((s.chapterId === chapter.chapterId) && (s.bookId === chapter.bookId)));
+      if (this.debug) {
+        console.debug(`${this.logID}handleChapterChange >> dataResultVerses = ${JSON.stringify(this.dataResultVerses)}`);
+      }
     }
   }
 
@@ -263,7 +277,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
 
     // get data
     const bookName = book.bookName;
-    const bookAbbrev = this.bible.abbrev;
+    const bookAbbrev = this.bibleBook.abbrev;
 
     // get number of verses selected
     let numVerses = 1;
@@ -287,7 +301,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
     // build verse text
     let verseText = "";
     for (let index = 0; index < numVerses; index++) {
-      let passage = this.bible.chapters[this.selectedChapter - 1].verses[this.selectedVerseStart + index - 1].text;
+      let passage = this.bibleBook.chapters[this.selectedChapter - 1].verses[this.selectedVerseStart + index - 1].text;
       if (this.showVerseNumbers) {
         verseText += "[" + (this.selectedVerseStart + index).toString() + "] ";
         verseText += passage + " ";
@@ -340,7 +354,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
           // get URL to copy
           const url: string = `${this.url}${searchArr.join("/")}`;
           if (this.debug) {
-            console.debug(this.logLoc + "shareBibleVerse >> url = " + url);
+            console.debug(this.logID + "shareBibleVerse >> url = " + url);
           }
 
           // copy URL to clipboard
