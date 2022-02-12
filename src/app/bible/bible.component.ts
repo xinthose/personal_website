@@ -83,16 +83,16 @@ export class BibleComponent implements OnInit, AfterViewInit {
 
   // autocomplete verse search
   public listItems: Array<string> = [
-    "Gen 1:1",
-    "Gen 1:2",
-    "Gen 1:3",
-    "Gen 1:4",
-    "Gen 1:5",
-    "Gen 2:1",
-    "Gen 2:2",
-    "Gen 2:3",
-    "Gen 2:4",
-    "Gen 2:5",
+    "Genesis 1:1",
+    "Genesis 1:2",
+    "Genesis 1:3",
+    "Genesis 1:4",
+    "Genesis 1:5",
+    "Genesis 2:1",
+    "Genesis 2:2",
+    "Genesis 2:3",
+    "Genesis 2:4",
+    "Genesis 2:5",
   ];
 
   constructor(

@@ -57,6 +57,7 @@
     "easy-pie-chart": "^2.1.7",
     "express": "^4.17.2",
     "hammerjs": "^2.0.8",
+    "jsonminify": "^0.4.2",
     "mdb-angular-ui-kit": "^1.6.1",
     "ngx-animate": "^1.0.1",
     "ngx-clipboard": "^15.0.1",
