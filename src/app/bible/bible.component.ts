@@ -82,18 +82,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
   selectedVerseEnd: number = 0;
 
   // autocomplete verse search
-  public listItems: Array<string> = [
-    "Genesis 1:1",
-    "Genesis 1:2",
-    "Genesis 1:3",
-    "Genesis 1:4",
-    "Genesis 1:5",
-    "Genesis 2:1",
-    "Genesis 2:2",
-    "Genesis 2:3",
-    "Genesis 2:4",
-    "Genesis 2:5",
-  ];
+  public searchVerses: Array<string> = [];
 
   constructor(
     private bibleService: BibleService,
@@ -117,6 +106,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
 
     this.dataChapters = await this.bibleService.fetchChapters();
     this.dataVerses = await this.bibleService.fetchVerses();
+    this.searchVerses = await this.bibleService.fetchSearchVerses();
 
     // check for URL parameters
     // http://localhost:4200/bible/1/1/1/2 (book, chapter, verse start, verse end)

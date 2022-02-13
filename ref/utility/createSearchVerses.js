@@ -404,38 +404,35 @@ var bible = [
 
 // push data into array
 var arr = [];
-// for (let index = 0; index < bible.length; index++) {
-for (let index = 0; index < 1; index++) {
+for (let index = 0; index < bible.length; index++) {
   // get data
-  const element = bible[8];
-  const bookId = element.bookId;
+  const element = bible[index];
+  const bookName = element.name;
   const chVerses = element.chVerses;
-  if (debug) {
-    console.debug(`### bookId = ${bookId}; chVerses.length = ${chVerses.length}`);
-  }
 
   // iterate over chapter verses
   for (let chapter = 1; chapter <= chVerses.length; chapter++) {
+    arr.push(`${bookName} ${chapter}`);
+
+    // Note: adding verses and their possible ranges makes the autocomplete widget too slow to be usable
     // get data
-    const numVersesCh = chVerses[chapter - 1];
+    /*const numVersesCh = chVerses[chapter - 1];
 
     // push data for each verse
     for (let verse = 1; verse <= numVersesCh; verse++) {
-      if (debug) {
-        console.debug(`chapter = ${chapter}; numVersesCh = ${numVersesCh}; verse = ${verse}`);
+      arr.push(`${bookName} ${chapter}:${verse}`);
+      for (let verseRange = 1; verseRange <= numVersesCh; verseRange++) {
+        if (verse === verseRange) {
+          arr.push(`${bookName} ${chapter}:${verse}`);
+        } else {
+          arr.push(`${bookName} ${chapter}:${verse}-${verseRange}`);
+        }
       }
-      arr.push({
-        "verseName": "Verse " + verse.toString(),
-        "verseId": verse,
-        "chapterId": chapter,
-        "bookId": bookId
-      });
-    }
+    }*/
   }
 }
 
-// write to JSON file
-var json = JSON.stringify(arr, null, 2);
-fs.writeFileSync("verses.json", json, "utf8");
+// write to file
+fs.writeFileSync("searchVerses.json", JSON.stringify(arr), "utf8");
 
-// using the Node.js command prompt, cd to the directory of this file and run `node createVerses.js`, it will create file `verses.json` in the same directory
+// using the Node.js command prompt, cd to the directory of this file and run `node createSearchVerses.js`, it will create file `searchVerses.json` in the same directory

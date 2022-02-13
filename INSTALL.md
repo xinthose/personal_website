@@ -23,8 +23,6 @@
     - answer yes to all questions
 - `ng add @fortawesome/angular-fontawesome`
   - choose free icons
-- for `ref/utility` helper Node.js files
-  - `npm i jsonminify`
 
 ## References
 

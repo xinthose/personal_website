@@ -1,6 +1,5 @@
 // variables
 var fs = require('fs');
-var jsonminify = require("jsonminify");
 var debug = false;
 
 // data
@@ -375,10 +374,7 @@ for (let index = 0; index < bible.length; index++) {
 
 console.log("totalNumVerses = " + totalNumVerses.toString());
 
-// write to JSON file the minified array
-console.log("start minify");
-var json = jsonminify(JSON.stringify(arr, null, 2));
-console.log("write to file");
-fs.writeFileSync("verses.json", json, "utf8");
+// write to file
+fs.writeFileSync("verses.json", JSON.stringify(arr), "utf8");
 
 // using the Node.js command prompt, cd to the directory of this file and run `node createVerses.js`, it will create file `verses.json` in the same directory

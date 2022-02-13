@@ -34,4 +34,8 @@ export class BibleService {
   fetchVerses(): Promise<Array<VerseIntf>> {
     return firstValueFrom(this.http.get<Array<VerseIntf>>("./assets/bible/verses.json"));
   }
+
+  fetchSearchVerses(): Promise<Array<string>> {
+    return firstValueFrom(this.http.get<Array<string>>("./assets/bible/searchVerses.json"));
+  }
 }
