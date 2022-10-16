@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.2 (10/15/2022)
+
+- update packages
+
+
 ## 1.1.1 (2/12/2022)
 
 - *Bug*: in file  `bible.component.ts` funtion `handleChapterChange`, the filter to get `chapter` was not also querying based on the currently selected `bookId`, returning results for the book of Genesis everytime
