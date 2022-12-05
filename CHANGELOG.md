@@ -1,9 +1,13 @@
 # Changelog
 
+## 1.1.3 (12/4/2022)
+
+- update packages
+- update `.browserslistrc` to work on mobile browsers
+
 ## 1.1.2 (10/15/2022)
 
 - update packages
-
 
 ## 1.1.1 (2/12/2022)
 
