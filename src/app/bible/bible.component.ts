@@ -8,7 +8,7 @@ import { GroupResult, groupBy, AggregateResult } from "@progress/kendo-data-quer
 import { DropDownListComponent } from "@progress/kendo-angular-dropdowns";
 
 // Services
-import { BibleService } from "../bible.service";
+import { BibleService } from "src/app/bible.service";
 
 // interfaces
 import { BibleBookIntf } from "../interfaces/bible/BibleBookIntf";
@@ -18,7 +18,7 @@ import { VerseIntf } from "../interfaces/bible/VerseIntf";
 
 // other
 import { ClipboardService } from "ngx-clipboard";
-import { environment } from './environments/environment';
+import { environment } from "src/environments/environment";
 import config from "../../assets/config.json";
 
 @Component({

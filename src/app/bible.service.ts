@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable, Output, EventEmitter } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 
 // interfaces
@@ -14,6 +14,10 @@ import { firstValueFrom } from "rxjs";
   providedIn: "root"
 })
 export class BibleService {
+  private logID: string = "BibleService.";
+  // event emitters
+  @Output() bibleSelected$: EventEmitter<boolean> = new EventEmitter();
+  @Output() aboutSelected$: EventEmitter<boolean> = new EventEmitter();
 
   constructor(
     private http: HttpClient
