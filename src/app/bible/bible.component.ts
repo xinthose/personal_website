@@ -28,9 +28,9 @@ import config from "../../assets/config.json";
   encapsulation: ViewEncapsulation.None,
 })
 export class BibleComponent implements OnInit, AfterViewInit {
+  public logID: string = "BibleComponent.";
   debug: boolean = config.debug;
   advDebug: boolean = config.advDebug;
-  logID: string = "BibleComponent.";
   showAnimation: boolean = false;
   @ViewChild("bookDropdownList", { static: true }) public bookDropdownList!: DropDownListComponent;
   @ViewChild("chapterDropdownList", { static: true }) public chapterDropdownList!: DropDownListComponent;
@@ -88,11 +88,11 @@ export class BibleComponent implements OnInit, AfterViewInit {
   ) {
   }
 
-  async ngOnInit() {
-    try {
-    } catch (error) {
-      console.error("BibleComponent.ngOnInit >> error = " + error);
-    }
+  ngOnInit() {
+    // set active class in navbar
+    setTimeout(() => {
+      this.bibleService.bibleSelected$.emit(true);
+    });
   }
 
   async ngAfterViewInit() {
@@ -106,10 +106,10 @@ export class BibleComponent implements OnInit, AfterViewInit {
 
     // check for URL parameters
     // http://localhost:4200/bible/1/1/1/2 (book, chapter, verse start, verse end)
-    const bookId: number = Number(this.route.snapshot.params.bookId) || 0;
-    const chapterId: number = Number(this.route.snapshot.params.chapterId) || 0;
-    const verseIdStart: number = Number(this.route.snapshot.params.verseIdStart) || 0;
-    const verseIdEnd: number = Number(this.route.snapshot.params.verseIdEnd) || 0;
+    const bookId: number = Number(this.route.snapshot.params["bookId"]) || 0;
+    const chapterId: number = Number(this.route.snapshot.params["chapterId"]) || 0;
+    const verseIdStart: number = Number(this.route.snapshot.params["verseIdStart"]) || 0;
+    const verseIdEnd: number = Number(this.route.snapshot.params["verseIdEnd"]) || 0;
     console.log(bookId, chapterId, verseIdStart, verseIdEnd);
 
     // set dropdown selections
@@ -303,7 +303,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
         verseText += passage + "  ";
       }
     }
-    verseText = verseText.trimRight();  // remove white space at end of string
+    verseText = verseText.trimEnd();  // remove white space at end of string
     if (this.debug) {
       console.debug("verseText = " + verseText);
     }
