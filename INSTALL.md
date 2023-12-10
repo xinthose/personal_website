@@ -1,28 +1,32 @@
 # Xinthose Installation
 
+## Packages
+
+- `npm i @angular/cli @angular/core @angular/forms @angular/http @angular/forms @angular/localize terser typescript rxjs express compression ngx-clipboard ngx-animate @ungap/url-search-params bootstrap`
+- Progress
+  - `ng add @progress/kendo-angular-buttons`
+  - `ng add @progress/kendo-angular-dropdowns`
+  - `ng add @progress/kendo-data-query`
+  - `ng add @progress/kendo-angular-inputs`
+  - `ng add @progress/kendo-angular-navigation`
+  - `npm i @progress/kendo-theme-material`
+- `ng add @fortawesome/angular-fontawesome`
+  - choose free icons
+
 ## Create App (client directory)
 
 - `ng new personal-website --style=scss --routing=true`
 
-### Components
+## Components
 
-- `for i in home bible about page-not-found; do ng g c "${i}"; done`
+- `ng g c home`
+- `ng g c bible`
+- `ng g c about`
+- `ng g c page-not-found`
 
-#### Services
+## Services
 
 - `ng g service bible`
-
-### Packages
-
-- `npm i @angular/cli @angular/core @angular/forms @angular/http @angular/forms @angular/localize terser typescript rxjs express compression ngx-clipboard ngx-animate @ungap/url-search-params`
-- Progress
-  - `ng add @progress/kendo-angular-buttons @progress/kendo-angular-dropdowns @progress/kendo-data-query @progress/kendo-angular-inputs`
-  - `npm i @progress/kendo-theme-material`
-- MDBootstrap v5 Angular <https://mdbootstrap.com/docs/b5/angular/>
-  - `ng add mdb-angular-ui-kit`
-    - answer yes to all questions
-- `ng add @fortawesome/angular-fontawesome`
-  - choose free icons
 
 ## References
 
@@ -38,4 +42,4 @@
 ## Troubleshooting
 
 - `ERROR in The Angular Compiler requires TypeScript >=3.6.4 and <3.9.0 but 3.9.7 was found instead.`
-  - `npm i typescript@">=3.6.4 <3.9.0"`
+  - `npm i typescript@">=5.2.0 <5.3.0"`

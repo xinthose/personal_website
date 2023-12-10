@@ -1,23 +1,18 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "module": "es2020",
+    "module": "es6",
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ESNext",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "ESNext",
-      "dom"
-    ],
+    "target": "es6",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es6", "dom"],
     "resolveJsonModule": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
@@ -25,14 +20,13 @@
     "strictPropertyInitialization": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "esModuleInterop": true
+    "noImplicitReturns": true
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": false
   },
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
-  ]
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }

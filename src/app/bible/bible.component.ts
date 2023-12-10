@@ -18,8 +18,7 @@ import { VerseIntf } from "../interfaces/bible/VerseIntf";
 
 // other
 import { ClipboardService } from "ngx-clipboard";
-import { jello } from "ngx-animate";
-import { environment } from "environments/environment";
+import { environment } from './environments/environment';
 import config from "../../assets/config.json";
 
 @Component({
@@ -27,9 +26,6 @@ import config from "../../assets/config.json";
   templateUrl: "./bible.component.html",
   styleUrls: ["./bible.component.scss"],
   encapsulation: ViewEncapsulation.None,
-  animations: [
-    trigger("jello", [transition("* => *", useAnimation(jello))])
-  ],
 })
 export class BibleComponent implements OnInit, AfterViewInit {
   debug: boolean = config.debug;

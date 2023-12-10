@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0 (12/9/2023)
+
+- update packages
+
 ## 1.1.3 (12/4/2022)
 
 - update packages
