@@ -3,6 +3,10 @@ import { Component, OnInit } from '@angular/core';
 // Services
 import { BibleService } from "src/app/bible.service";
 
+// Icons
+import { faMonument } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 // other
 import myPackage from "../../../package.json";
 
@@ -14,6 +18,9 @@ import myPackage from "../../../package.json";
 export class AboutComponent implements OnInit {
   public logID: string = "AboutComponent.";
   public websiteVersion: string = "";
+  // icons
+  public faMonument = faMonument;
+  public faGithub = faGithub;
 
   constructor(
     private bibleService: BibleService,
