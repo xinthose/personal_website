@@ -1,14 +1,24 @@
-import { Component, OnInit, ViewChild, ViewEncapsulation, AfterViewInit } from "@angular/core";
+import { Component, OnInit, ViewChild, ViewEncapsulation, AfterViewInit, isDevMode } from "@angular/core";
 import { Router, ActivatedRoute, ParamMap } from "@angular/router";
+import { CommonModule } from '@angular/common';
 import { trigger, transition, useAnimation } from "@angular/animations";
 import URLSearchParams from "@ungap/url-search-params";  // <https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams>
 
+// Forms
+import { FormsModule } from '@angular/forms';
+
 // Progress
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
+import { InputsModule } from '@progress/kendo-angular-inputs';
 import { GroupResult, groupBy, AggregateResult } from "@progress/kendo-data-query";
 import { DropDownListComponent } from "@progress/kendo-angular-dropdowns";
 
 // Services
 import { BibleService } from "src/app/bible.service";
+
+// icons
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // interfaces
 import { BibleBookIntf } from "../interfaces/bible/BibleBookIntf";
@@ -18,11 +28,19 @@ import { VerseIntf } from "../interfaces/bible/VerseIntf";
 
 // other
 import { ClipboardService } from "ngx-clipboard";
-import { environment } from "src/environments/environment";
 import config from "../../assets/config.json";
 
 @Component({
   selector: "app-bible",
+  standalone: true,
+  imports: [
+    CommonModule,
+    FormsModule,
+    FontAwesomeModule,
+    ButtonsModule,
+    DropDownsModule,
+    InputsModule,
+  ],
   templateUrl: "./bible.component.html",
   styleUrls: ["./bible.component.scss"],
   encapsulation: ViewEncapsulation.None,
@@ -36,7 +54,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
   @ViewChild("chapterDropdownList", { static: true }) public chapterDropdownList!: DropDownListComponent;
   @ViewChild("verseStartDropdownList", { static: true }) public verseStartDropdownList!: DropDownListComponent;
   @ViewChild("verseEndDropdownList", { static: true }) public verseEndDropdownList!: DropDownListComponent;
-  url: string = environment.production ? "http://www.xinthose.com/bible/" : "http://localhost:4200/bible/";
+  url: string = isDevMode() ? "http://localhost:4200/bible/" : "http://www.xinthose.com/bible/";
 
   bibleBook!: BibleBookIntf;
   bookId: number = 0;

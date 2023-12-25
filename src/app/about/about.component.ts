@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { BibleService } from "src/app/bible.service";
 
 // Icons
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faMonument } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -12,6 +13,10 @@ import myPackage from "../../../package.json";
 
 @Component({
   selector: 'app-about',
+  standalone: true,
+  imports: [
+    FontAwesomeModule,
+  ],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
