@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation, AfterViewInit, isDevMode } from "@angular/core";
 import { Router, ActivatedRoute, ParamMap } from "@angular/router";
-import { CommonModule } from '@angular/common';
+
 import { trigger, transition, useAnimation } from "@angular/animations";
 import URLSearchParams from "@ungap/url-search-params";  // <https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams>
 
@@ -33,13 +33,12 @@ import config from "../../assets/config.json";
 @Component({
     selector: "app-bible",
     imports: [
-        CommonModule,
-        FormsModule,
-        FontAwesomeModule,
-        ButtonsModule,
-        DropDownsModule,
-        InputsModule,
-    ],
+    FormsModule,
+    FontAwesomeModule,
+    ButtonsModule,
+    DropDownsModule,
+    InputsModule
+],
     templateUrl: "./bible.component.html",
     styleUrls: ["./bible.component.scss"],
     encapsulation: ViewEncapsulation.None
