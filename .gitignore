@@ -37,6 +37,7 @@ build/Release
 
 # Dependency directories
 node_modules/
+node_modules1/
 jspm_packages/
 dist/
 public/
@@ -72,3 +73,5 @@ Thumbs.db
 # Other
 KEYS.md
 ~$*
+
+telerik-license.txt

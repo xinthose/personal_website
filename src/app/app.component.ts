@@ -1,5 +1,11 @@
 import { Component, OnDestroy } from '@angular/core';
 import { Router } from "@angular/router";
+import { KENDO_BUTTONS } from "@progress/kendo-angular-buttons";
+import { KENDO_ICONS } from "@progress/kendo-angular-icons";
+import { KENDO_INDICATORS } from "@progress/kendo-angular-indicators";
+import { KENDO_LAYOUT } from "@progress/kendo-angular-layout";
+import { KENDO_NAVIGATION } from "@progress/kendo-angular-navigation";
+import { bellIcon, menuIcon, SVGIcon } from "@progress/kendo-svg-icons";
 
 // Services
 import { BibleService } from "src/app/bible.service";
@@ -12,6 +18,13 @@ import { Subscription } from "rxjs";
 
 @Component({
   selector: 'app-root',
+  imports: [
+    KENDO_LAYOUT,
+    KENDO_INDICATORS,
+    KENDO_ICONS,
+    KENDO_NAVIGATION,
+    KENDO_BUTTONS,
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
