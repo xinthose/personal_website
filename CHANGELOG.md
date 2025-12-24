@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0 (12/24/2025)
+
+- update packages (Angular 17 to 21)
+
 ## 1.2.0 (12/9/2023)
 
 - update packages
