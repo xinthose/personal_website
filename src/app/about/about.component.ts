@@ -12,13 +12,12 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import myPackage from "../../../package.json";
 
 @Component({
-  selector: 'app-about',
-  standalone: true,
-  imports: [
-    FontAwesomeModule,
-  ],
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+    selector: 'app-about',
+    imports: [
+        FontAwesomeModule,
+    ],
+    templateUrl: './about.component.html',
+    styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
   public logID: string = "AboutComponent.";

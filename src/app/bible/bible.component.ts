@@ -31,19 +31,18 @@ import { ClipboardService } from "ngx-clipboard";
 import config from "../../assets/config.json";
 
 @Component({
-  selector: "app-bible",
-  standalone: true,
-  imports: [
-    CommonModule,
-    FormsModule,
-    FontAwesomeModule,
-    ButtonsModule,
-    DropDownsModule,
-    InputsModule,
-  ],
-  templateUrl: "./bible.component.html",
-  styleUrls: ["./bible.component.scss"],
-  encapsulation: ViewEncapsulation.None,
+    selector: "app-bible",
+    imports: [
+        CommonModule,
+        FormsModule,
+        FontAwesomeModule,
+        ButtonsModule,
+        DropDownsModule,
+        InputsModule,
+    ],
+    templateUrl: "./bible.component.html",
+    styleUrls: ["./bible.component.scss"],
+    encapsulation: ViewEncapsulation.None
 })
 export class BibleComponent implements OnInit, AfterViewInit {
   public logID: string = "BibleComponent.";
