@@ -5,11 +5,10 @@ import { Router, ActivatedRoute, ParamMap } from "@angular/router";
 import { FormsModule } from '@angular/forms';
 
 // Progress
-import { ButtonsModule } from '@progress/kendo-angular-buttons';
-import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
-import { InputsModule } from '@progress/kendo-angular-inputs';
-import { GroupResult, groupBy, AggregateResult } from "@progress/kendo-data-query";
-import { DropDownListComponent } from "@progress/kendo-angular-dropdowns";
+import { KENDO_BUTTONS } from '@progress/kendo-angular-buttons';
+import { KENDO_INPUTS } from '@progress/kendo-angular-inputs';
+import { GroupResult, groupBy } from "@progress/kendo-data-query";
+import { KENDO_DROPDOWNS, DropDownListComponent } from "@progress/kendo-angular-dropdowns";
 
 // Services
 import { BibleService } from "src/app/bible.service";
@@ -32,13 +31,13 @@ import config from "../../assets/config.json";
   imports: [
     FormsModule,
     FontAwesomeModule,
-    ButtonsModule,
-    DropDownsModule,
-    InputsModule
+    KENDO_BUTTONS,
+    KENDO_DROPDOWNS,
+    KENDO_INPUTS
   ],
   templateUrl: "./bible.component.html",
   styleUrls: ["./bible.component.scss"],
-  encapsulation: ViewEncapsulation.None
+  //encapsulation: ViewEncapsulation.None
 })
 export class BibleComponent implements OnInit, AfterViewInit {
   public logID: string = "BibleComponent.";
