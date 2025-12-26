@@ -34,12 +34,14 @@ import { Subscription } from "rxjs";
 export class AppComponent implements OnDestroy {
   public logID: string = "AppComponent.";
   // navigation selected
+  public homeSelected: boolean = false;
   public bibleSelected: boolean = false;
   public aboutSelected: boolean = false;
   // icons
   public faBookBible = faBookBible;
   public faCircleInfo = faCircleInfo;
   // subscriptions
+  private homeSelected$!: Subscription;
   private bibleSelected$!: Subscription;
   private aboutSelected$!: Subscription;
 
@@ -48,6 +50,10 @@ export class AppComponent implements OnDestroy {
     private bibleService: BibleService,
   ) {
     // subscribe to navigation changes to color button
+    this.homeSelected$ = this.bibleService.homeSelected$.subscribe((homeSelected: boolean) => {
+      this.resetSelection();
+      this.homeSelected = homeSelected;
+    });
     this.bibleSelected$ = this.bibleService.bibleSelected$.subscribe((bibleSelected: boolean) => {
       this.resetSelection();
       this.bibleSelected = bibleSelected;
@@ -59,11 +65,13 @@ export class AppComponent implements OnDestroy {
   }
 
   private resetSelection(): void {
+    this.homeSelected = false;
     this.bibleSelected = false;
     this.aboutSelected = false;
   }
 
   ngOnDestroy() {
+    this.homeSelected$.unsubscribe();
     this.bibleSelected$.unsubscribe();
     this.aboutSelected$.unsubscribe();
   }

@@ -16,6 +16,7 @@ import { firstValueFrom } from "rxjs";
 export class BibleService {
   private logID: string = "BibleService.";
   // event emitters
+  @Output() homeSelected$: EventEmitter<boolean> = new EventEmitter();
   @Output() bibleSelected$: EventEmitter<boolean> = new EventEmitter();
   @Output() aboutSelected$: EventEmitter<boolean> = new EventEmitter();
 
