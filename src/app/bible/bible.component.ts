@@ -9,6 +9,7 @@ import { KENDO_BUTTONS } from '@progress/kendo-angular-buttons';
 import { KENDO_INPUTS } from '@progress/kendo-angular-inputs';
 import { GroupResult, groupBy } from "@progress/kendo-data-query";
 import { KENDO_DROPDOWNS, DropDownListComponent } from "@progress/kendo-angular-dropdowns";
+import { SVGIcon, copyIcon, shareIcon } from '@progress/kendo-svg-icons';
 
 // Services
 import { BibleService } from "src/app/bible.service";
@@ -49,6 +50,10 @@ export class BibleComponent implements OnInit, AfterViewInit {
   @ViewChild("verseStartDropdownList", { static: true }) public verseStartDropdownList!: DropDownListComponent;
   @ViewChild("verseEndDropdownList", { static: true }) public verseEndDropdownList!: DropDownListComponent;
   url: string = isDevMode() ? "http://localhost:4200/bible/" : "http://www.xinthose.com/bible/";
+
+  // icons
+  copyIcon: SVGIcon = copyIcon;
+  shareIcon: SVGIcon = shareIcon;
 
   bibleBook!: BibleBookIntf;
   bookId: number = 0;

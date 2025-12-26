@@ -9,6 +9,6 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideAnimationsAsync()   // required for Kendo UI as of 12/26/2025
+    provideAnimationsAsync()   // required for Kendo UI
   ]
 };
