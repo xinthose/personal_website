@@ -80,7 +80,8 @@
             "development": {
               "buildTarget": "personal-website:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n",
