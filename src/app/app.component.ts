@@ -1,5 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import { Router } from "@angular/router";
+import { RouterModule, Router } from "@angular/router";
 import { KENDO_BUTTONS } from "@progress/kendo-angular-buttons";
 import { KENDO_ICONS } from "@progress/kendo-angular-icons";
 import { KENDO_INDICATORS } from "@progress/kendo-angular-indicators";
@@ -11,6 +11,7 @@ import { bellIcon, menuIcon, SVGIcon } from "@progress/kendo-svg-icons";
 import { BibleService } from "src/app/bible.service";
 
 // icons
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faBookBible, faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 
 // rxjs
@@ -19,6 +20,8 @@ import { Subscription } from "rxjs";
 @Component({
   selector: 'app-root',
   imports: [
+    RouterModule,
+    FontAwesomeModule,
     KENDO_LAYOUT,
     KENDO_INDICATORS,
     KENDO_ICONS,

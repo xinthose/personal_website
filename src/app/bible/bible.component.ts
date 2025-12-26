@@ -1,9 +1,6 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation, AfterViewInit, isDevMode } from "@angular/core";
 import { Router, ActivatedRoute, ParamMap } from "@angular/router";
 
-import { trigger, transition, useAnimation } from "@angular/animations";
-import URLSearchParams from "@ungap/url-search-params";  // <https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams>
-
 // Forms
 import { FormsModule } from '@angular/forms';
 
@@ -31,17 +28,17 @@ import { ClipboardService } from "ngx-clipboard";
 import config from "../../assets/config.json";
 
 @Component({
-    selector: "app-bible",
-    imports: [
+  selector: "app-bible",
+  imports: [
     FormsModule,
     FontAwesomeModule,
     ButtonsModule,
     DropDownsModule,
     InputsModule
-],
-    templateUrl: "./bible.component.html",
-    styleUrls: ["./bible.component.scss"],
-    encapsulation: ViewEncapsulation.None
+  ],
+  templateUrl: "./bible.component.html",
+  styleUrls: ["./bible.component.scss"],
+  encapsulation: ViewEncapsulation.None
 })
 export class BibleComponent implements OnInit, AfterViewInit {
   public logID: string = "BibleComponent.";
