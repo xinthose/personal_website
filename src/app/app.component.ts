@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, inject } from '@angular/core';
 import { RouterModule, Router } from "@angular/router";
 import { KENDO_BUTTONS } from "@progress/kendo-angular-buttons";
 import { KENDO_ICONS } from "@progress/kendo-angular-icons";
@@ -9,6 +9,7 @@ import { bellIcon, menuIcon, SVGIcon } from "@progress/kendo-svg-icons";
 
 // Services
 import { BibleService } from "src/app/bible.service";
+import { AnalyticsService } from './analytics.service';
 
 // icons
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -44,6 +45,8 @@ export class AppComponent implements OnDestroy {
   private homeSelected$!: Subscription;
   private bibleSelected$!: Subscription;
   private aboutSelected$!: Subscription;
+  // analytics
+  private analytics = inject(AnalyticsService);
 
   constructor(
     public router: Router,
@@ -62,6 +65,9 @@ export class AppComponent implements OnDestroy {
       this.resetSelection();
       this.aboutSelected = aboutSelected;
     });
+
+    // analytics
+    this.analytics.initPageViewTracking('G-SD2BG9TGQP');
   }
 
   private resetSelection(): void {
