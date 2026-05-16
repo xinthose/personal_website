@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 // Services
-import { BibleService } from "src/app/bible.service";
+import { BibleService } from "@app/bible.service";
 
 @Component({
   selector: 'app-home',

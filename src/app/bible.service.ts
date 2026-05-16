@@ -2,10 +2,10 @@ import { Injectable, Output, EventEmitter } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 
 // interfaces
-import { BibleBookIntf } from "./interfaces/bible/BibleBookIntf";
-import { BookIntf } from "./interfaces/bible/BookIntf";
-import { ChapterIntf } from "./interfaces/bible/ChapterIntf";
-import { VerseIntf } from "./interfaces/bible/VerseIntf";
+import { BibleBookIntf } from "@app/interfaces/bible/BibleBookIntf";
+import { BookIntf } from "@app/interfaces/bible/BookIntf";
+import { ChapterIntf } from "@app/interfaces/bible/ChapterIntf";
+import { VerseIntf } from "@app/interfaces/bible/VerseIntf";
 
 // rxjs
 import { firstValueFrom } from "rxjs";

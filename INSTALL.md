@@ -33,6 +33,13 @@
 - Bible in JSON: <https://github.com/thiagobodruk/bible>
 - API.Bible: <https://docs.api.bible/docs>
 
+## How to Update Repository Packages
+
+- `npm install -g npm-check-updates`
+- `ncu`
+- `ncu -u`
+- `npm install --force`
+
 ## Hosting Website with Firebase
 
 - `npm install -g firebase-tools`

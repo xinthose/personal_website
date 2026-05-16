@@ -8,7 +8,7 @@ import { KENDO_NAVIGATION } from "@progress/kendo-angular-navigation";
 import { bellIcon, menuIcon, SVGIcon } from "@progress/kendo-svg-icons";
 
 // Services
-import { BibleService } from "src/app/bible.service";
+import { BibleService } from "@app/bible.service";
 import { AnalyticsService } from './analytics.service';
 
 // icons

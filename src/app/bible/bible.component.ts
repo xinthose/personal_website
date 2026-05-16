@@ -12,7 +12,7 @@ import { KENDO_DROPDOWNS, DropDownListComponent } from "@progress/kendo-angular-
 import { SVGIcon, copyIcon, shareIcon } from '@progress/kendo-svg-icons';
 
 // Services
-import { BibleService } from "src/app/bible.service";
+import { BibleService } from "@app/bible.service";
 
 // icons
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
