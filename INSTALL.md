@@ -33,6 +33,16 @@
 - Bible in JSON: <https://github.com/thiagobodruk/bible>
 - API.Bible: <https://docs.api.bible/docs>
 
+## Hosting Website with Firebase
+
+- `npm install -g firebase-tools`
+- `firebase login`
+- `firebase init`
+  - select "App Hosting"
+- enable Service Usage API when you get an error, run `firebase init` again
+- `firebase apphosting:secrets:set TELERIK_LICENSE`
+- copy and paste the contents of `telerik-license.txt` when prompted (may take 20 seconds)
+
 ## Hosting Website with Amazon Web Services
 
 - copy `server/package.json` and `server/server.js` into `dist/personal-website`

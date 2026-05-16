@@ -9,6 +9,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
+    "postinstall": "npx kendo-ui-license activate",
     "build": "ng build --configuration production",
     "build-dev": "ng build --configuration development",
     "watch": "ng build --watch --configuration development",
