@@ -50,11 +50,19 @@
 - `firebase apphosting:secrets:set TELERIK_LICENSE`
 - copy and paste the contents of `telerik-license.txt` when prompted (may take 20 seconds)
 
-## Hosting Website with Amazon Web Services
+## Firebase Cloud Functions
 
-- copy `server/package.json` and `server/server.js` into `dist/personal-website`
-- select all files in `dist/personal-website` and ZIP them, do not zip parent folder `dist/personal-website`
-- use this zip file to upload and deploy on Elastic Beanstalk
+- `npm install -g firebase-tools`
+- `firebase login`
+- `firebase init`
+  - select "Cloud Functions"
+- `firebase deploy --only functions`
+
+## OHBC Twilio Chat Room Setup
+
+- `cd functions`
+- `npm install twilio`
+- `npm install -D eslint-config-prettier`
 
 ## Troubleshooting
 
