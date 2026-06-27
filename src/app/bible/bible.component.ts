@@ -125,7 +125,7 @@ export class BibleComponent implements OnInit, AfterViewInit {
     this.searchVerses = await this.bibleService.fetchSearchVerses();
 
     // check for URL parameters
-    // http://localhost:4200/bible/1/1/1/2 (book, chapter, verse start, verse end)
+    // test: http://localhost:4200/bible/1/1/1/2 (book, chapter, verse start, verse end)
     const bookId: number = Number(this.route.snapshot.params["bookId"]) || 0;
     const chapterId: number = Number(this.route.snapshot.params["chapterId"]) || 0;
     const verseIdStart: number = Number(this.route.snapshot.params["verseIdStart"]) || 0;

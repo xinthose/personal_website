@@ -6,16 +6,16 @@
 
 ### Install Packages
 
-- `npm i -g @angular/cli` 
+- `npm i -g @angular/cli`
 - `@angular/core @angular/forms @angular/http @angular/forms @angular/localize terser typescript rxjs express compression ngx-clipboard ngx-animate @ungap/url-search-params bootstrap`
 - Progress
   - download `telerik-license.txt` from <https://www.telerik.com/account/your-licenses/license-keys> and put it in the top level of this repository, then run the command `npx kendo-ui-license activate`
+  - `npm i @progress/kendo-theme-material @progress/kendo-angular-common`
   - `ng add @progress/kendo-angular-buttons`
   - `ng add @progress/kendo-angular-dropdowns`
   - `ng add @progress/kendo-data-query`
   - `ng add @progress/kendo-angular-inputs`
   - `ng add @progress/kendo-angular-navigation`
-  - `npm i @progress/kendo-theme-material`
 - `ng add @fortawesome/angular-fontawesome`
   - choose free icons
 
