@@ -115,7 +115,10 @@ export class BibleComponent implements OnInit, AfterViewInit {
   async ngAfterViewInit() {
     // get the Bible book
     this.dataBooks = await this.bibleService.fetchBooks();
-    this.dataBooksGrouped = groupBy(this.dataBooks, [{ field: "subcategory" }]);
+    this.dataBooksGrouped = groupBy(this.dataBooks, [{
+      field: "subcategory",
+      dir: "desc"
+    }]);
 
     this.dataChapters = await this.bibleService.fetchChapters();
     this.dataVerses = await this.bibleService.fetchVerses();

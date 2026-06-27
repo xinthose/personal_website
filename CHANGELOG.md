@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.1 (6/27/2026)
+
+- *Bug*: display Old Testament books before New Testament
+
 ## 1.3.0 (12/24/2025)
 
 - update packages (Angular 17 to 21)
